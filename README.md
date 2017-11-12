@@ -2,12 +2,12 @@
 
 Source for [haensl.github.io](https://haensl.github.io).
 
-# Quick Start
+## Quick Start
 
 ```
 npm start
 ```
 
-# [CHANGELOG](CHANGELOG.md)
+### [CHANGELOG](CHANGELOG.md)
 
-# [LICENSE](LICENSE) GPLv3.0
+[Licensed](LICENSE) under GPLv3.0
