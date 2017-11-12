@@ -1,0 +1,203 @@
+:root {
+  --purple: #8000cb;
+  --gray: #8e8683;
+  --beige: #f7ede4;
+  --white: #eee;
+  --black: #000;
+  --transitionDuration: .25s;
+}
+
+* {
+  box-sizing: border-box;
+  /**
+  outline: 1px solid red;
+  */
+}
+
+body, html {
+  width: 100%;
+  display: flex;
+  flex: 1 0 100vh;
+  flex-direction: column;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+body {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  font-size: 120%;
+  letter-spacing: .1em;
+  background-color: #fff;
+  color: var(--black);
+  box-shadow: inset -2px 2px 3px 1px var(--gray);
+  padding: 0 3rem;
+}
+
+footer {
+  justify-self: flex-end;
+}
+
+footer.active > a {
+  color: var(--purple);
+}
+
+p {
+  text-align: justify;
+}
+
+p,
+q {
+  font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
+}
+
+a {
+  transition: color var(--transitionDuration) ease;
+}
+
+a:link,
+a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+main a:link,
+main a:visited {
+  color: var(--gray);
+}
+
+main a:hover,
+main a:focus,
+main a:active {
+  color: var(--purple);
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.block {
+  display: block;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.centering {
+  text-align: center;
+}
+
+#header {
+  display: flex;
+}
+
+#main-menu li.active>a {
+  color: var(--purple);
+}
+
+#burger-menu-button {
+  margin-right: auto;
+}
+
+#burger-menu-button:hover {
+  cursor: pointer;
+}
+
+#burger-menu {
+}
+
+#avatar {
+  align-self: center;
+}
+
+#social-links {
+}
+
+#social-links > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#social-links a {
+  display: inline-block;
+}
+
+#social-links li:hover {
+  cursor: pointer;
+}
+
+#profile {
+  display: none;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+#profile > * {
+  margin-bottom: 1rem;
+}
+
+#profile > *:last-child {
+  margin-bottom: 0;
+}
+
+#profile-tagline {
+  font-size: 1.2rem;
+}
+
+#profile-id {
+  font-size: 2rem;
+}
+
+#wrapper {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+#content-wrapper {
+  display: flex;
+  flex: 1 1 75%;
+  flex-direction: column;
+}
+
+#greeting {
+  margin-bottom: 0;
+}
+
+@media(min-width: 425px) {
+  #burger-menu-button {
+    display: none;
+  }
+
+  #header-menu-wrapper {
+    margin-right: auto;
+  }
+
+  #profile {
+    display: flex;
+  }
+}
+
