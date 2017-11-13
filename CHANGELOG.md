@@ -1,3 +1,6 @@
+### 1.1.1
+* Add noopener to external links.
+
 ### 1.1.0
 * Publish ansible.tar.gz
 

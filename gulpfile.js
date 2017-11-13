@@ -11,7 +11,8 @@ const FOLDER_SRC = 'src';
 const DIRECTIVE_CSS_INCLUDE = '<!-- INCLUDE_CSS -->';
 const OPTS_HTMLMIN = {
   collapseWhitespace: true,
-  removeComments: true
+  removeComments: true,
+  minifyJS: true
 };
 
 const folderExists = (folder) =>
@@ -47,6 +48,7 @@ gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
   del([`${FOLDER_DIST}/assets/*`], {
     force: true
   }));
+
 
 gulp.task('css', ['clean:css'], () =>
   gulp.src(`${FOLDER_SRC}/*.css`)
