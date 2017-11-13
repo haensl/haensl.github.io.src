@@ -5,6 +5,7 @@ Source for [haensl.github.io](https://haensl.github.io).
 ## Quick Start
 
 ```
+npm i
 npm start
 ```
 
