@@ -1,3 +1,6 @@
+### 1.1.2
+* Fix burger menu button styles.
+
 ### 1.1.1
 * Add noopener to external links.
 
