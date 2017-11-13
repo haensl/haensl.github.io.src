@@ -1,0 +1,305 @@
+:root {
+  --purple: #8000cb;
+  --gray: #8e8683;
+  --beige: #f7ede4;
+  --white: #eee;
+  --black: #000;
+  --twitterBlue: #5ea9dd;
+  --xingLightGreen: #d4d600;
+  --xingDarkGreen: #005a5f;
+  --linkedInBlue: #0077b5;
+  --transitionDuration: .25s;
+  --boxShadow: 2px 0 3px 1px var(--gray);
+  --boxShadowInset: inset 0 2px 3px 1px var(--gray);
+  --boxShadowInsetMinusX: inset -2px 2px 3px 1px var(--gray);
+}
+
+* {
+  box-sizing: border-box;
+  /**
+  outline: 1px solid red;
+  */
+}
+
+body, html {
+  width: 100%;
+  display: flex;
+  flex: 1 0 100vh;
+  flex-direction: column;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+body {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  font-size: 120%;
+  letter-spacing: .1em;
+  background-color: #fff;
+  color: var(--black);
+  box-shadow: var(boxShadowInset);
+  padding: 0 3rem;
+}
+
+footer {
+  justify-self: flex-end;
+}
+
+footer.active > a {
+  color: var(--purple);
+}
+
+p {
+  text-align: justify;
+}
+
+p,
+q {
+  font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
+}
+
+a {
+  transition: color var(--transitionDuration) ease;
+}
+
+a:link,
+a:visited {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+main a:link,
+main a:visited {
+  color: var(--gray);
+}
+
+main a:hover,
+main a:focus,
+main a:active {
+  color: var(--purple);
+}
+
+svg {
+  transition: fill var(--transitionDuration) ease;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.block {
+  display: block;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.centering {
+  text-align: center;
+}
+
+.small {
+  font-size: .85rem;
+}
+
+.github-icon,
+.twitter-icon,
+.xing-icon,
+.linkedin-icon,
+.email-icon,
+.burger-menu-icon {
+  fill: var(--white);
+}
+
+.github-icon:hover{
+  fill: var(--gray);
+}
+
+.twitter-icon:hover {
+  fill: var(--twitterBlue);
+}
+
+.xing-icon:hover .xing-icon-left {
+  fill: var(--xingLightGreen);
+}
+
+.xing-icon:hover .xing-icon-right {
+  fill: var(--xingDarkGreen);
+}
+
+.linkedin-icon:hover {
+  fill: var(--linkedInBlue);
+}
+
+.email-icon:hover,
+.burger-menu-icon:hover {
+  fill: var(--purple);
+}
+
+.social-links > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links li:hover {
+  cursor: pointer;
+}
+
+.social-links svg {
+  width: 48px;
+  height: 48px;
+}
+
+.social-links svg:hover {
+  cursor: pointer;
+}
+
+.avatar {
+  align-self: center;
+}
+
+#header {
+  display: flex;
+}
+
+#header-social-wrapper {
+  display: flex;
+}
+
+#header-social-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#header-social-wrapper .social-links svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: center;
+}
+
+#header-social-wrapper .social-links li {
+  margin-right: 1rem;
+}
+
+#header-social-wrapper .avatar {
+  margin-left: 2rem;
+}
+
+#main-menu {
+  border-top: 1px dashed var(--gray);
+  margin-top: 1.5rem;
+}
+
+#main-menu li.active>a {
+  color: var(--purple);
+}
+
+#burger-menu-button {
+  margin-right: auto;
+}
+
+#burger-menu-button:hover {
+  cursor: pointer;
+}
+
+#burger-menu {
+  background-color: var(--black);
+  box-shadow: var(--boxShadow);
+}
+
+#profile {
+  display: none;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+#profile > * {
+  margin-bottom: 1rem;
+}
+
+#profile > *:last-child {
+  margin-bottom: 0;
+}
+
+#profile-tagline {
+  font-size: 1.2rem;
+}
+
+#profile-id {
+  font-size: 2rem;
+}
+
+#wrapper {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+#content-wrapper {
+  display: flex;
+  flex: 1 1 75%;
+  flex-direction: column;
+}
+
+#greeting {
+  margin-bottom: 0;
+}
+
+@media(min-width: 425px) {
+  main {
+    box-shadow: var(--boxShadowInsetMinusX);
+  }
+
+  #main-menu {
+    border-top: none;
+    margin-top: 0;
+  }
+
+  #burger-menu-button {
+    display: none;
+  }
+
+  #header-menu-wrapper {
+    margin-right: auto;
+  }
+
+  #header-social-wrapper {
+    display: none;
+  }
+
+  #profile {
+    display: flex;
+  }
+}
+
