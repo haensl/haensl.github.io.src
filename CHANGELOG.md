@@ -4,13 +4,13 @@
 * #14: Fix link hover state
 
 ### 1.2.1
-* Fix burger menu button styles.
+* #10: Fix burger menu button styles.
 
 ### 1.2.0
-* Add cv section.
+* #5: Add cv section.
 
 ### 1.1.1
-* Add noopener to external links.
+* #8: Add noopener to external links.
 
 ### 1.1.0
 * Publish ansible.tar.gz
