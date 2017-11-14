@@ -1,3 +1,9 @@
+### 1.3.0
+* #3: Add Google Analytics tracking.
+* Add robots file.
+* Add sitemap.
+* Add Google Webmasters verification file.
+
 ### 1.2.2
 * #16: Fill in missing cv links.
 * #15: Optimize styles for landscape mode.
