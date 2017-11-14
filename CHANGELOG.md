@@ -1,3 +1,8 @@
+### 1.2.2
+* #16: Fill in missing cv links.
+* #15: Optimize styles for landscape mode.
+* #14: Fix link hover state
+
 ### 1.2.1
 * Fix burger menu button styles.
 
