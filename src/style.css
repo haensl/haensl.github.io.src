@@ -8,6 +8,7 @@
   --xingLightGreen: #d4d600;
   --xingDarkGreen: #005a5f;
   --linkedInBlue: #0077b5;
+  --adobeRed: #f02023;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
   --boxShadowInset: inset 0 2px 3px 1px var(--gray);
@@ -49,7 +50,7 @@ main {
   background-color: #fff;
   color: var(--black);
   box-shadow: var(boxShadowInset);
-  padding: 0 3rem;
+  padding: 0 1rem;
 }
 
 footer {
@@ -61,7 +62,7 @@ footer.active > a {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
 }
 
 p,
@@ -101,17 +102,53 @@ svg {
   transition: fill var(--transitionDuration) ease;
 }
 
+h4 {
+  margin-bottom: 1rem;
+}
+
+h5 {
+  margin: 0 0 .5rem 0;
+}
+
 .caps {
   text-transform: uppercase;
   letter-spacing: .2em;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.p01 {
+  padding: 0 1rem;
 }
 
 .p1 {
   padding: 1rem;
 }
 
+.w30 {
+  flex: 0 0 30%;
+}
+
 .m0 {
   margin: 0;
+}
+
+.m0010 {
+  margin: 0 0 1rem 0;
+}
+
+.m1001 {
+  margin: 1rem 0 0 1rem;
+}
+
+.m0001 {
+  margin: 0 0 0 1rem;
+}
+
+.no-list {
+  list-style: none;
 }
 
 .block {
@@ -126,8 +163,28 @@ svg {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .small {
   font-size: .85rem;
+}
+
+.no-text {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+.text {
+  font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.pdf-download-link:hover {
+  color: var(--adobeRed);
 }
 
 .github-icon,
@@ -137,6 +194,17 @@ svg {
 .email-icon,
 .burger-menu-icon {
   fill: var(--white);
+}
+
+.pdf-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--black);
+}
+
+a:hover > .pdf-icon,
+.pdf-icon:hover {
+  fill: var(--adobeRed);
 }
 
 .github-icon:hover{
@@ -190,6 +258,50 @@ svg {
   align-self: center;
 }
 
+.cv-item.row {
+  flex-direction: row;
+}
+
+.cv-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.cv-item > h4 {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0;
+  flex-direction: column;
+}
+
+.cv-item > h4 > time {
+  flex: 0 0 20%;
+  font-weight: normal;
+  margin-bottom: .5rem;
+}
+
+.cv-item > h4 > span {
+  margin: 0 0 0 1rem;
+}
+
+.cv-item > ul {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cv-item > ul > li {
+  margin-bottom: 1rem;
+}
+
+.cv-item > ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.cv-item > ul > li > h5:first-child {
+  margin-top: 0;
+}
+
 #header {
   display: flex;
 }
@@ -211,10 +323,6 @@ svg {
 
 #header-social-wrapper .social-links li {
   margin-right: 1rem;
-}
-
-#header-social-wrapper .avatar {
-  margin-left: 2rem;
 }
 
 #main-menu {
@@ -276,9 +384,15 @@ svg {
   margin-bottom: 0;
 }
 
+
 @media(min-width: 425px) {
   main {
     box-shadow: var(--boxShadowInsetMinusX);
+    padding: 0 3rem;
+  }
+
+  p {
+    text-align: justify;
   }
 
   #main-menu {
@@ -300,6 +414,14 @@ svg {
 
   #profile {
     display: flex;
+  }
+
+  .cv-item > h4 {
+    flex-direction: row;
+  }
+
+  .cv-item > h4 > time {
+    margin-bottom: 0;
   }
 }
 
