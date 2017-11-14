@@ -14,6 +14,10 @@ const OPTS_HTMLMIN = {
   removeComments: true,
   minifyJS: true
 };
+const FILES_SEO = [
+  'sitemap.xml',
+  'robots.txt'
+];
 
 const folderExists = (folder) =>
   (fs.existsSync(folder)
@@ -29,8 +33,8 @@ gulp.task('ensureDistFolderExists', () =>
 gulp.task('ensureDistAssetsFolderExists', ['ensureDistFolderExists'], () =>
   createFolder(FOLDER_DIST_ASSETS));
 
-gulp.task('clean:dist', ['ensureDistFolderExists'], () =>
-  del([`${FOLDER_DIST}/*`], {
+gulp.task('clean:seofiles', ['ensureDistFolderExists'], () =>
+  del(FILES_SEO.map((file) => `${FOLDER_DIST}/${file}`), {
     force: true
   }));
 
@@ -49,6 +53,9 @@ gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
     force: true
   }));
 
+gulp.task('seofiles', ['clean:seofiles'], () => 
+  gulp.src(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`))
+    .pipe(gulp.dest(FOLDER_DIST)));
 
 gulp.task('css', ['clean:css'], () =>
   gulp.src(`${FOLDER_SRC}/*.css`)
@@ -61,7 +68,7 @@ gulp.task('css', ['clean:css'], () =>
     .pipe(gulp.dest(FOLDER_DIST)));
 
 gulp.task('html', ['clean:html', 'css'], () =>
-  gulp.src(`${FOLDER_SRC}/index.html`)
+  gulp.src(`${FOLDER_SRC}/*.html`)
     .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
     .pipe($.htmlmin(OPTS_HTMLMIN))
     .pipe(gulp.dest(FOLDER_DIST)));
@@ -75,11 +82,12 @@ gulp.task('assets', ['clean:assets'], () =>
   gulp.src(`${FOLDER_SRC}/assets/**/*`)
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
-gulp.task('default', ['compile', 'assets'], () => {
+gulp.task('default', ['compile', 'assets', 'seofiles'], () => {
   browserSync({
     server: FOLDER_DIST
   });
 
+  gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|html)`, ['compile']);
   gulp.watch(`${FOLDER_SRC}/assets/**/*`, ['assets']);
 });
