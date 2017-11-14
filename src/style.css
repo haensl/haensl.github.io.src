@@ -336,6 +336,10 @@ a:hover > .pdf-icon,
 
 #burger-menu-button {
   margin-right: auto;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 #burger-menu-button:hover {
