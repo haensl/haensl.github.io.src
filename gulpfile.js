@@ -70,6 +70,7 @@ gulp.task('css', ['clean:css'], () =>
 gulp.task('html', ['clean:html', 'css'], () =>
   gulp.src(`${FOLDER_SRC}/*.html`)
     .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
+    .pipe($.minifyInlineJson())
     .pipe($.htmlmin(OPTS_HTMLMIN))
     .pipe(gulp.dest(FOLDER_DIST)));
 
