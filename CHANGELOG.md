@@ -1,3 +1,6 @@
+### 1.3.1
+* [#7: Minify inline JSON.](https://github.com/haensl/haensl.github.io.src/issues/7)
+
 ### 1.3.0
 * [#3: Add Google Analytics tracking.](https://github.com/haensl/haensl.github.io.src/issues/3)
 * Add robots file.
