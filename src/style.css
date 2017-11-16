@@ -67,7 +67,8 @@ p {
 }
 
 p,
-q {
+q,
+article {
   font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
 }
 
@@ -410,8 +411,23 @@ a:hover > .pdf-icon,
   margin-bottom: 0;
 }
 
-#cv > h2 {
+#cv > #greeting,
+#publications > #greeting,
+#publications-list > li{
   margin-bottom: var(--defaultPadding);
+}
+
+#publications-list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+#publications-list > li {
+  display: flex;
+  align-items: flex-start;
+}
+
+#publications-list > li > time {
+  flex: 0 0 5rem;
 }
 
 @media(min-width: 425px) {
