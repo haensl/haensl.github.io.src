@@ -1,3 +1,6 @@
+### 1.4.1
+* Fix structured data errors.
+
 ### 1.4.0
 * [#6: Add publications section.](https://github.com/haensl/haensl.github.io.src/issues/6)
 * [#21: Pull SVGs from files.](https://github.com/haensl/haensl.github.io.src/issues/21)
