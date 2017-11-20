@@ -1,3 +1,6 @@
+### 1.4.2
+* Add Ask The Crowd pdf to sitemap.
+
 ### 1.4.1
 * Fix structured data errors.
 
