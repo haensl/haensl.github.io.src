@@ -1,3 +1,7 @@
+### 1.4.0
+* [#6: Add publications section.](https://github.com/haensl/haensl.github.io.src/issues/6)
+* [#21: Pull SVGs from files.](https://github.com/haensl/haensl.github.io.src/issues/21)
+
 ### 1.3.1
 * [#7: Minify inline JSON.](https://github.com/haensl/haensl.github.io.src/issues/7)
 
@@ -25,4 +29,4 @@
 * Publish ansible.tar.gz
 
 ### 1.0.0
-* Initial project release containg about page.
+* Initial project release containing about page.
