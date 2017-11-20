@@ -254,6 +254,11 @@ a:hover > .pdf-icon,
   height: 48px;
 }
 
+.social-icon-small {
+  width: 24px;
+  height: 24px;
+}
+
 .social-links svg:hover {
   cursor: pointer;
 }
@@ -280,7 +285,7 @@ a:hover > .pdf-icon,
 }
 
 .cv-item > h4 > time {
-  flex: 0 0 20%;
+  flex: 0 0 12rem;
   font-weight: normal;
   margin-bottom: .5rem;
 }
