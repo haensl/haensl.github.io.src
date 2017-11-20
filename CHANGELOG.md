@@ -1,3 +1,6 @@
+### 1.4.3
+* Revert profile positioning.
+
 ### 1.4.2
 * Add Ask The Crowd pdf to sitemap.
 
