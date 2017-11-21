@@ -157,20 +157,23 @@
         toolbar-target="header-menu-wrapper"
         id="main-menu">
         <ul>
-          <li [class]="appState.activeSection == 'about' ? 'active' : ''"
-          class="active"><a class="caps text-decoration-none block p1 inactive"
+          <li [class]="appState.activeSection == 'about' ? 'active m0' : 'm0'"
+          class="active m0"><a class="caps text-decoration-none block p1 inactive"
               title="About HP."
               id="about-link"
               on="tap:AMP.setState({ appState: { activeSection: 'about' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)">About</a></li>
-          <!--<li [class]="appState.activeSection == 'projects' ? 'active' : ''"><a class="caps text-decoration-none block p1"
+          <li [class]="appState.activeSection == 'projects' ? 'active m0' : 'm0'"
+            class="m0"><a class="caps text-decoration-none block p1"
                 href="/#projects"
                 title="Projects of HP"
-                on="tap:AMP.setState({ appState: { activeSection: 'projects' }})">Projects</a></li>-->
-          <li [class]="appState.activeSection == 'publications' ? 'active' : ''"><a class="caps text-decoration-none block p1"
+                on="tap:AMP.setState({ appState: { activeSection: 'projects' }})">Projects</a></li>
+          <li [class]="appState.activeSection == 'publications' ? 'active m0' : 'm0'"
+            class="m0"><a class="caps text-decoration-none block p1"
                 href="/#publications"
                 title="Publications by HP"
                 on="tap:AMP.setState({ appState: { activeSection: 'publications' }})">Publications</a></li>
-          <li [class]="appState.activeSection == 'cv' ? 'active' : ''"><a class="caps text-decoration-none block p1"
+          <li [class]="appState.activeSection == 'cv' ? 'active m0' : 'm0'"
+            class="m0"><a class="caps text-decoration-none block p1"
                 on="tap:AMP.setState({ appState: { activeSection: 'cv' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)"
                 id="cv-link"
                 title="View/Download HP's CV.">CV</a></li>
@@ -621,6 +624,60 @@
                   title="Ask The Crowd: Crowdsourcing Knowledge Generation"
                   class="pdf-download-link doc-link no-text"
                   data-vars-document="Ask The Crowd"><svg src="pdf-icon.svg" class="pdf-icon"></svg>Ask The Crowd: Crowdsourcing Knowledge Generation</a>, Ludwig-Maximilians-University, Munich</article>
+              </li>
+            </ol>
+          </section>
+          <section id="projects"
+            [class]="appState.activeSection == 'projects' ? 'p1' : 'hidden'"
+            class="hidden">
+            <h2 id="greeting">Projects</h2>
+            <ol class="p01 m0"
+              id="projects-list">
+              <li>
+                <script type="application/ld+json">
+                {
+                  "@context": "http://schema.org",
+                  "@type": "SoftwareApplication",
+                  "applicationCategory": "Utility",
+                  "applicationSubCategory": "Automation",
+                  "applicationSuite": "Gulp",
+                  "downloadUrl": "https://github.com/haensl/gulp-embed-svg/releases",
+                  "releaseNotes": "https://github.com/haensl/gulp-embed-svg/blob/master/CHANGELOG.md",
+                  "author": {
+                    "@id": "https://haensl.github.io"
+                  },
+                  "copyrightHolder": {
+                    "@id": "https://haensl.github.io"
+                  },
+                  "copyrightYear": 2017,
+                  "datePublished": 2017,
+                  "discussionUrl": "https://github.com/haensl/gulp-embed-svg/issues",
+                  "keywords": "gulp-plugins, gulpplugin, gulp, svg-source, svg, svg-images, svg-files, embed-svg-images, embed, embedding",
+                  "license": "https://github.com/haensl/gulp-embed-svg/blob/master/LICENSE",
+                  "description": "Gulp plugin to inline/embed SVG images into HTML files.",
+                  "name": "gulp-embed-svg",
+                  "url": "https://github.com/haensl/gulp-embed-svg",
+                  "sameAs": "https://www.npmjs.com/package/gulp-embed-svg"
+                }
+                </script>
+                <time datetime="2017-11">2017 - present</time>
+                <h2><a href="https://github.com/haensl/gulp-embed-svg"
+                  target="_blank"
+                  title="gulp-embed-svg"
+                  data-vars-project="gulp-embed-svg">gulp-embed-svg</a></h2>
+                <p>Gulp plugin to inline/embed SVG images into HTML files.</p>
+                <ul>
+                  <li><a href="https://github.com/haensl/gulp-embed-svg"
+                    target="_blank"
+                    class="project-link"
+                    title="Visit gulp-embed-svg on Github."
+                    data-vars-project="gulp-embed-svg"><svg src="github-icon.svg" class="social-icon-small"></svg></a></li>
+                  <li><a href="https://www.npmjs.com/package/gulp-embed-svg"
+                    target="_blank"
+                    class="project-link"
+                    title="Visit gulp-embed-svg on npm."
+                    data-vars-project="gulp-embed-svg"><svg src="npm-icon.svg" class="social-icon-small"></svg></a></li>
+                </ul>
               </li>
             </ol>
           </section>

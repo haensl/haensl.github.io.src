@@ -110,6 +110,20 @@ h5 {
   margin: 0 0 .5rem 0;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  margin-bottom: var(--defaultPadding);
+}
+
+li:last-of-type {
+  margin-bottom: 0;
+}
+
+
 .caps {
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -145,6 +159,10 @@ h5 {
 
 .m0001 {
   margin: 0 0 0 var(--defaultPadding);
+}
+
+.mb {
+  margin-bottom: var(--defaultPadding);
 }
 
 .no-list {
@@ -241,12 +259,16 @@ a:hover > .pdf-icon,
   justify-content: space-around;
 }
 
-.social-links a {
-  display: inline-block;
+.social-links li {
+  margin-bottom: 0;
 }
 
 .social-links li:hover {
   cursor: pointer;
+}
+
+.social-links a {
+  display: inline-block;
 }
 
 .social-icon {
@@ -297,14 +319,6 @@ a:hover > .pdf-icon,
 .cv-item > ul {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.cv-item > ul > li {
-  margin-bottom: var(--defaultPadding);
-}
-
-.cv-item > ul > li:last-of-type {
-  margin-bottom: 0;
 }
 
 .cv-item > ul > li > h5:first-child {
@@ -413,17 +427,7 @@ a:hover > .pdf-icon,
 }
 
 #greeting {
-  margin-bottom: 0;
-}
-
-#cv > #greeting,
-#publications > #greeting,
-#publications-list > li{
   margin-bottom: var(--defaultPadding);
-}
-
-#publications-list > li:last-of-type {
-  margin-bottom: 0;
 }
 
 #publications-list > li {
