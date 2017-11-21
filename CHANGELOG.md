@@ -1,3 +1,6 @@
+### 1.4.4
+* [#26: Fix TechArticle structured data.](https://github.com/haensl/haensl.github.io.src/issues/26)
+
 ### 1.4.3
 * Revert profile positioning.
 
