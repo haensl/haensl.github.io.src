@@ -10,6 +10,9 @@
   --xingDarkGreen: #005a5f;
   --linkedInBlue: #0077b5;
   --adobeRed: #f02023;
+  --npmRed: #ca3a3b;
+  --vagrantLightBlue: #127eff;
+  --vagrantDarkBlue: #1159cc;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
   --boxShadowInset: inset 0 2px 3px 1px var(--gray);
@@ -141,12 +144,20 @@ li:last-of-type {
   padding: var(--defaultPadding);
 }
 
+.p0001 {
+  padding: 0 0 0 var(-defaultPadding);
+}
+
 .w30 {
   flex: 0 0 30%;
 }
 
 .m0 {
   margin: 0;
+}
+
+.m0100 {
+  margin: 0 var(--defaultPadding) 0 0;
 }
 
 .m0010 {
@@ -161,6 +172,10 @@ li:last-of-type {
   margin: 0 0 0 var(--defaultPadding);
 }
 
+.m1000 {
+  margin: var(--defaultPadding) 0 0 0;
+}
+
 .mb {
   margin-bottom: var(--defaultPadding);
 }
@@ -171,6 +186,19 @@ li:last-of-type {
 
 .block {
   display: block;
+}
+
+.horizontal-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal-list > li {
+  margin-right: var(--defaultPadding);
+}
+
+.horizontal-list > li:last-of-type {
+  margin-right: none;
 }
 
 .text-decoration-none {
@@ -210,8 +238,18 @@ li:last-of-type {
 .xing-icon,
 .linkedin-icon,
 .email-icon,
-.burger-menu-icon {
+.burger-menu-icon,
+.vagrant-icon {
   fill: var(--white);
+}
+
+.vagrant-icon-stroked {
+  stroke: var(--black);
+  stroke-width: 5;
+}
+
+.github-icon-dark {
+  fill: var(--black);
 }
 
 .pdf-icon {
@@ -225,7 +263,17 @@ a:hover > .pdf-icon,
   fill: var(--adobeRed);
 }
 
-.github-icon:hover{
+.rovers-icon {
+  transition: filter var(--transitionDuration) ease;
+  filter: grayscale(100%);
+}
+
+.rovers-icon:hover {
+  filter: none;
+}
+
+.github-icon:hover,
+.github-icon-dark:hover {
   fill: var(--gray);
 }
 
@@ -241,6 +289,14 @@ a:hover > .pdf-icon,
   fill: var(--xingDarkGreen);
 }
 
+.vagrant-icon:hover .vagrant-icon-light {
+  fill: var(--vagrantLightBlue);
+}
+
+.vagrant-icon:hover .vagrant-icon-dark {
+  fill: var(--vagrantDarkBlue);
+}
+
 .linkedin-icon:hover {
   fill: var(--linkedInBlue);
 }
@@ -248,6 +304,10 @@ a:hover > .pdf-icon,
 .email-icon:hover,
 .burger-menu-icon:hover {
   fill: var(--purple);
+}
+
+.npm-icon:hover {
+  fill: var(--npmRed);
 }
 
 .social-links {
@@ -289,40 +349,39 @@ a:hover > .pdf-icon,
   align-self: center;
 }
 
-.cv-item.row {
-  flex-direction: row;
+.year {
+  flex: 0 0 5rem;
 }
 
-.cv-item {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-}
-
-.cv-item > h4 {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 0;
-  flex-direction: column;
-}
-
-.cv-item > h4 > time {
+.daterange {
   flex: 0 0 12rem;
   font-weight: normal;
   margin-bottom: .5rem;
 }
 
-.cv-item > h4 > span {
-  margin: 0 0 0 var(--defaultPadding);
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
-.cv-item > ul {
+.item > h4 {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.item > ul {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.cv-item > ul > li > h5:first-child {
+.item > ul > li > h5:first-child {
   margin-top: 0;
+}
+
+.row {
+  flex-direction: row;
 }
 
 #header {
@@ -430,15 +489,6 @@ a:hover > .pdf-icon,
   margin-bottom: var(--defaultPadding);
 }
 
-#publications-list > li {
-  display: flex;
-  align-items: flex-start;
-}
-
-#publications-list > li > time {
-  flex: 0 0 5rem;
-}
-
 @media(min-width: 425px) {
   main {
     box-shadow: var(--boxShadowInsetMinusX);
@@ -467,11 +517,11 @@ a:hover > .pdf-icon,
     flex: 1 1 35%;
   }
 
-  .cv-item > h4 {
+  .item > h4 {
     flex-direction: row;
   }
 
-  .cv-item > h4 > time {
+  .item > h4 > time {
     margin-bottom: 0;
   }
 }

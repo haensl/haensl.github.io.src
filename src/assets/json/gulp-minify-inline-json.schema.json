@@ -1,0 +1,24 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Automation",
+  "applicationSuite": "Gulp",
+  "downloadUrl": "https://github.com/haensl/gulp-minify-inline-json/releases",
+  "releaseNotes": "https://github.com/haensl/gulp-minify-inline-json/blob/master/CHANGELOG.md",
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "discussionUrl": "https://github.com/haensl/gulp-minify-inline-json/issues",
+  "keywords": "gulp-plugins, gulpplugin, gulp, json, html, minify, npm, inline, script",
+  "license": "https://github.com/haensl/gulp-minify-inline-json/blob/master/LICENSE",
+  "description": "Gulp plugin to minify inline script tags containing JSON data.",
+  "name": "gulp-minify-inline-json",
+  "url": "https://github.com/haensl/gulp-minify-inline-json",
+  "sameAs": "https://www.npmjs.com/package/gulp-minify-inline-json"
+}

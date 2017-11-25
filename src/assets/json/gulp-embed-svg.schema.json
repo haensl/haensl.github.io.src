@@ -1,0 +1,24 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Automation",
+  "applicationSuite": "Gulp",
+  "downloadUrl": "https://github.com/haensl/gulp-embed-svg/releases",
+  "releaseNotes": "https://github.com/haensl/gulp-embed-svg/blob/master/CHANGELOG.md",
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "discussionUrl": "https://github.com/haensl/gulp-embed-svg/issues",
+  "keywords": "gulp-plugins, gulpplugin, gulp, svg-source, svg, svg-images, svg-files, embed-svg-images, embed, embedding",
+  "license": "https://github.com/haensl/gulp-embed-svg/blob/master/LICENSE",
+  "description": "Gulp plugin to inline/embed SVG images into HTML files.",
+  "name": "gulp-embed-svg",
+  "url": "https://github.com/haensl/gulp-embed-svg",
+  "sameAs": "https://www.npmjs.com/package/gulp-embed-svg"
+}

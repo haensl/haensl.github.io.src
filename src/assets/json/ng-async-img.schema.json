@@ -1,0 +1,24 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "applicationCategory": "Component",
+  "applicationSubCategory": "Directive",
+  "applicationSuite": "Angular.js",
+  "downloadUrl": "https://github.com/haensl/ng-async-img/releases",
+  "releaseNotes": "https://github.com/haensl/ng-async-img/blob/master/CHANGELOG.md",
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "discussionUrl": "https://github.com/haensl/ng-async-img/issues",
+  "keywords": "asynchronous, images, image, css-animations, angularjs, angular.js, angular, directive, directives, markup, html",
+  "license": "https://github.com/haensl/ng-async-img/blob/master/LICENSE",
+  "description": "Angular.js 1.x directive for asynchronous, $animate-aware image tags.",
+  "name": "ng-async-img",
+  "url": "https://github.com/haensl/ng-async-img",
+  "sameAs": "https://www.npmjs.com/package/ng-async-img"
+}

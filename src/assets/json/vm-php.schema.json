@@ -1,0 +1,24 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Automation",
+  "applicationSuite": "Vagrant",
+  "downloadUrl": "https://github.com/haensl/vm-php/releases",
+  "releaseNotes": "https://github.com/haensl/vm-php/blob/master/CHANGELOG.md",
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "discussionUrl": "https://github.com/haensl/vm-php/issues",
+  "keywords": "vagrant, vagrant-boxes, mailhog, php7, php, mysql, qa-site, ansible, ansible-role, development-environment, development-tools, development-utility, vm-php, ansible-roles, exim",
+  "license": "https://github.com/haensl/vm-php/blob/master/LICENSE",
+  "description": "PHP7 project skeleton based on Vagrant and Ansible featuring development and QA sites as well as MailHog.",
+  "name": "vm-php",
+  "url": "https://github.com/haensl/vm-php",
+  "sameAs": "https://app.vagrantup.com/haensl/boxes/lamp7"
+}

@@ -102,6 +102,8 @@ gulp.task('default', ['compile', 'assets', 'seofiles', 'amp:validate'], () => {
 
   gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|html)`, ['compile']);
-  gulp.watch(`${FOLDER_SRC}/assets/**/*`, ['assets']);
+  gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
+  gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
+  gulp.watch(`${FOLDER_DIST}/index.html`, ['amp:validate']);
 });
 
