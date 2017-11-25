@@ -8,6 +8,7 @@ const browserSync = require('browser-sync');
 const FOLDER_DIST = 'dist';
 const FOLDER_DIST_ASSETS = `${FOLDER_DIST}/assets`;
 const FOLDER_SRC = 'src';
+const FOLDER_SRC_ASSETS = `${FOLDER_SRC}/assets`;
 const DIRECTIVE_CSS_INCLUDE = '<!-- INCLUDE_CSS -->';
 const OPTS_HTMLMIN = {
   collapseWhitespace: true,
@@ -70,7 +71,9 @@ gulp.task('css', ['clean:css'], () =>
 gulp.task('html', ['clean:html', 'css'], () =>
   gulp.src(`${FOLDER_SRC}/*.html`)
     .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
-    .pipe($.minifyInlineJson())
+    .pipe($.embedJson({
+      root: path.join(FOLDER_SRC_ASSETS, 'json')
+    }))
     .pipe($.embedSvg({
       root: path.join(__dirname, 'src/artwork')
     }))
@@ -83,7 +86,7 @@ gulp.task('compile', ['css', 'html'], () => {
 });
 
 gulp.task('assets', ['clean:assets'], () =>
-  gulp.src(`${FOLDER_SRC}/assets/**/*`)
+  gulp.src(`${FOLDER_SRC}/assets/+(img|docs)/*`)
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
 gulp.task('default', ['compile', 'assets', 'seofiles'], () => {

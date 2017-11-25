@@ -1,0 +1,23 @@
+{
+  "@context": "http://schema.org",
+  "@type": "TechArticle",
+  "proficiencyLevel": "Beginner",
+  "about": {
+    "name": "Implicit Authentication on Mobile Devices",
+    "url": "https://www.medien.ifi.lmu.de/pubdb/publications/pub/hausen2011ubicompHS/hausen2011ubicompHS.pdf"
+  },
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2014,
+  "datePublished": "2014",
+  "headline": "Implicit Authentication on Mobile Devices",
+  "keywords": "ubiquitous computing, authentication, mobile device, implicit",
+  "name": "Implicit Authentication on Mobile Devices",
+  "url": "https://www.medien.ifi.lmu.de/pubdb/publications/pub/hausen2011ubicompHS/hausen2011ubicompHS.pdf",
+  "fileFormat": "application/pdf",
+  "image": "https://previews.123rf.com/images/skdesign/skdesign1411/skdesign141103933/33967516-Close-up-Blue-UBIQUITOUS-COMPUTING-Text-at-the-Center-of-Word-Tag-Cloud-on-White-Background--Stock-Photo.jpg"
+}

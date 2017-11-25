@@ -1,0 +1,62 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "@id": "https://haensl.github.io",
+  "name": "Hans-Peter Dietz",
+  "familyName": "Dietz",
+  "givenName": "Hans-Peter",
+  "description": "Fullstack anything coder.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Munich",
+    "addressRegion": "Bavaria"
+  },
+  "alumniOf" : {
+    "@type": "EducationalOrganization",
+    "name": "Ludwig-Maximilans-University",
+    "url": "https://uni-muenchen.de",
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Munich",
+        "addressRegion": "Bavaria"
+      }
+    },
+    "department": {
+      "@type": "Organization",
+      "name": "Media Informatics",
+      "url": "http://www.medien.ifi.lmu.de"
+    }
+  },
+  "jobTitle": "Software Engineer",
+  "nationality": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "image": "https://haensl.github.io/assets/img/avatar_x2.png",
+  "mainEntityOfPage": "https://haensl.github.io",
+  "url": "https://haensl.github.io",
+  "sameAs": ["https://twitter.com/h_p_d"],
+  "affiliation": {
+    "@type": "MusicGroup",
+    "genre": "Post Rock",
+    "email": "marc@watersun.net",
+    "url": "http://www.watersun.net",
+    "sameAs": [
+      "https://twitter.com/watersun_band",
+      "https://www.facebook.com/pages/WATERSUN/156493289675",
+      "https://www.youtube.com/user/fozzy75"
+    ],
+    "name": "Watersun",
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Munich",
+        "addressRegion": "Bavaria"
+      }
+    },
+    "logo": "http://www.watersun.net/wp-content/uploads/2013/07/logo_hal_orig.png"
+  }
+}

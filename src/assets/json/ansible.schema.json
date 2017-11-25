@@ -1,0 +1,23 @@
+{
+  "@context": "http://schema.org",
+  "@type": "TechArticle",
+  "proficiencyLevel": "Beginner",
+  "about": {
+    "name": "Ansible",
+    "url": "https://www.ansible.com"
+  },
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2016,
+  "datePublished": "2016",
+  "headline": "Ansible.tar.gz",
+  "keywords": "ansible, configuration management, provisioning, virtual machines, automation",
+  "name": "Ansible.tar.gz",
+  "url": "https://haensl.github.io/assets/docs/ansible.tar.gz.pdf",
+  "fileFormat": "application/pdf",
+  "image": "https://blogs.missouristate.edu/cio/files/2016/06/ansible-logo.png"
+}
