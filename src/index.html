@@ -16,70 +16,7 @@
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "@id": "https://haensl.github.io",
-      "name": "Hans-Peter Dietz",
-      "familyName": "Dietz",
-      "givenName": "Hans-Peter",
-      "description": "Fullstack anything coder.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Munich",
-        "addressRegion": "Bavaria"
-      },
-      "alumniOf" : {
-        "@type": "EducationalOrganization",
-        "name": "Ludwig-Maximilans-University",
-        "url": "https://uni-muenchen.de",
-        "location": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Munich",
-            "addressRegion": "Bavaria"
-          }
-        },
-        "department": {
-          "@type": "Organization",
-          "name": "Media Informatics",
-          "url": "http://www.medien.ifi.lmu.de"
-        }
-      },
-      "jobTitle": "Software Engineer",
-      "nationality": {
-        "@type": "Country",
-        "name": "Germany"
-      },
-      "image": "https://haensl.github.io/assets/img/avatar_x2.png",
-      "mainEntityOfPage": "https://haensl.github.io",
-      "url": "https://haensl.github.io",
-      "sameAs": ["https://twitter.com/h_p_d"],
-      "affiliation": {
-        "@type": "MusicGroup",
-        "genre": "Post Rock",
-        "email": "marc@watersun.net",
-        "url": "http://www.watersun.net",
-        "sameAs": [
-          "https://twitter.com/watersun_band",
-          "https://www.facebook.com/pages/WATERSUN/156493289675",
-          "https://www.youtube.com/user/fozzy75"
-        ],
-        "name": "Watersun",
-        "location": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Munich",
-            "addressRegion": "Bavaria"
-          }
-        },
-        "logo": "http://www.watersun.net/wp-content/uploads/2013/07/logo_hal_orig.png"
-      }
-    }
-    </script>
+    <script type="application/ld+json" src="haensl.schema.json"></script>
 
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <!-- INCLUDE_CSS -->
@@ -91,56 +28,7 @@
       }</script>
     </amp-state>
     <amp-analytics type="googleanalytics">
-      <script type="application/json">{
-        "vars": {
-          "account": "UA-109682541-1"
-        },
-        "triggers": {
-          "trackPageView": {
-            "on": "visible",
-            "request": "pageview"
-          },
-          "trackAboutPage": {
-            "on": "click",
-            "selector": "#about-link",
-            "request": "event",
-            "vars": {
-              "eventCategory": "Pageview",
-              "eventAction": "view",
-              "eventLabel": "About"
-            }
-          },
-          "trackCVPage": {
-            "on": "click",
-            "selector": "#cv-link",
-            "request": "event",
-            "vars": {
-              "eventCategory": "Pageview",
-              "eventAction": "view",
-              "eventLabel": "CV"
-            }
-          },
-          "trackSocialView": {
-            "on": "click",
-            "selector": ".social-links a",
-            "request": "social",
-            "vars": {
-              "socialNetwork": "${network}",
-              "socialAction": "view"
-            }
-          },
-          "trackDocView": {
-            "on": "click",
-            "selector": ".doc-link",
-            "request": "event",
-            "vars": {
-              "eventCategory": "DocumentAccess",
-              "eventAction": "view",
-              "eventLabel": "${document}"
-            }
-          }
-        }
-      }</script>
+      <script type="application/json" src="analytics.config.json"></script>
     </amp-analytics>
     <amp-sidebar id="burger-menu"
       class="p1"
@@ -489,31 +377,7 @@
             <ol class="no-list m0 p01"
               id="publications-list">
               <li>
-                <script type="application/ld+json">
-                {
-                  "@context": "http://schema.org",
-                  "@type": "TechArticle",
-                  "proficiencyLevel": "Beginner",
-                  "about": {
-                    "name": "Ansible",
-                    "url": "https://www.ansible.com"
-                  },
-                  "author": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightHolder": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightYear": 2016,
-                  "datePublished": "2016",
-                  "headline": "Ansible.tar.gz",
-                  "keywords": "ansible, configuration management, provisioning, virtual machines, automation",
-                  "name": "Ansible.tar.gz",
-                  "url": "https://haensl.github.io/assets/docs/ansible.tar.gz.pdf",
-                  "fileFormat": "application/pdf",
-                  "image": "https://blogs.missouristate.edu/cio/files/2016/06/ansible-logo.png"
-                }
-                </script>
+                <script type="application/ld+json" src="ansible.schema.json"></script>
                 <time datetime="2016">2016</time>
                 <article class="m0 p0"><a href="/assets/docs/ansible.tar.gz.pdf"
                   data-vars-document="Ansible.tar.gz"
@@ -522,31 +386,7 @@
                   class="pdf-download-link doc-link no-text"><svg class="pdf-icon" src="pdf-icon.svg"></svg>Ansible.tar.gz</a>, Technical Report</article>
               </li>
               <li>
-                <script type="application/ld+json">
-                {
-                  "@context": "http://schema.org",
-                  "@type": "TechArticle",
-                  "proficiencyLevel": "Beginner",
-                  "about": {
-                    "name": "Qake",
-                    "url": "http://qake.jandh.org"
-                  },
-                  "author": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightHolder": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightYear": 2015,
-                  "datePublished": "2015",
-                  "headline": "Controlled Chaos: Randomization in Level Design",
-                  "keywords": "randomization, level design, game design, computer games, gaming, supply, cost function",
-                  "name": "Controlled Chaos: Randomization in Level Design",
-                  "url": "http://jandh.org/resources/blog/jandh_blog_2015-04-18_2_en.pdf",
-                  "fileFormat": "application/pdf",
-                  "image": "http://jandh.org/projects/apps/app_icons/Qake-app-icon-large.png"
-                }
-                </script>
+                <script type="application/ld+json" src="controlled-chaos.schema.json"></script>
                 <time datetime="2015">2015</time>
                 <article class="m0 p0"><a href="http://jandh.org/resources/blog/jandh_blog_2015-04-18_2_en.pdf"
                   data-vars-document="Controlled Chaos"
@@ -556,31 +396,7 @@
                   class="pdf-download-link doc-link no-text"><svg class="pdf-icon" src="pdf-icon.svg"></svg>Controlled Chaos: Randomization in Level Design</a>, J&amp;H</article>
               </li>
               <li>
-                <script type="application/ld+json">
-                {
-                  "@context": "http://schema.org",
-                  "@type": "TechArticle",
-                  "proficiencyLevel": "Beginner",
-                  "about": {
-                    "name": "Implicit Authentication on Mobile Devices",
-                    "url": "https://www.medien.ifi.lmu.de/pubdb/publications/pub/hausen2011ubicompHS/hausen2011ubicompHS.pdf"
-                  },
-                  "author": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightHolder": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightYear": 2014,
-                  "datePublished": "2014",
-                  "headline": "Implicit Authentication on Mobile Devices",
-                  "keywords": "ubiquitous computing, authentication, mobile device, implicit",
-                  "name": "Implicit Authentication on Mobile Devices",
-                  "url": "https://www.medien.ifi.lmu.de/pubdb/publications/pub/hausen2011ubicompHS/hausen2011ubicompHS.pdf",
-                  "fileFormat": "application/pdf",
-                  "image": "https://previews.123rf.com/images/skdesign/skdesign1411/skdesign141103933/33967516-Close-up-Blue-UBIQUITOUS-COMPUTING-Text-at-the-Center-of-Word-Tag-Cloud-on-White-Background--Stock-Photo.jpg"
-                }
-                </script>
+                <script type="application/ld+json" src="implicit-authentication.schema.json"></script>
                 <time datetime="2014">2014</time>
                 <article class="m0 p0"><a href="https://www.medien.ifi.lmu.de/pubdb/publications/pub/hausen2011ubicompHS/hausen2011ubicompHS.pdf"
                   target="_blank"
@@ -590,31 +406,7 @@
                   class="pdf-download-link doc-link no-text"><svg class="pdf-icon" src="pdf-icon.svg"></svg>Implicit Authentication on Mobile Devices</a>, Advanced Seminar: Ubiquitous Computing</article>
               </li>
               <li>
-                <script type="application/ld+json">
-                {
-                  "@context": "http://schema.org",
-                  "@type": "TechArticle",
-                  "proficiencyLevel": "Beginner",
-                  "about": {
-                    "name": "Ask The Crowd: Crowdsourcing Knowledge Generation",
-                    "url": "https://ask-the-crowd.com"
-                  },
-                  "author": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightHolder": {
-                    "@id": "https://haensl.github.io"
-                  },
-                  "copyrightYear": 2014,
-                  "datePublished": "2014",
-                  "headline": "Ask The Crowd: Crowdsourcing Knowledge Generation",
-                  "keywords": "crowdsourcing, knowlege generation, online, portal, platform, survey, visualization, information, data, charts, user generated content",
-                  "name": "Ask The Crowd: Crowdsourcing Knowledge Generation",
-                  "url": "https://haensl.github.io/assets/docs/ask-the-crowd.pdf",
-                  "fileFormat": "application/pdf",
-                  "image": "http://ask-the-crowd.com/img/workflow.png"
-                }
-                </script>
+                <script type="application/ld+json" src="ask-the-crowd.schema.json"></script>
                 <time datetime="2013">2013</time>
                 <article class="m0 p0"><a href="/assets/docs/ask-the-crowd.pdf"
                   target="_blank"

@@ -1,3 +1,6 @@
+### 1.5.0
+* [#29: Embed JSON data](https://github.com/haensl/haensl.github.io.src/issues/29)
+
 ### 1.4.4
 * [#26: Fix TechArticle structured data.](https://github.com/haensl/haensl.github.io.src/issues/26)
 

@@ -1,0 +1,50 @@
+{
+  "vars": {
+    "account": "UA-109682541-1"
+  },
+  "triggers": {
+    "trackPageView": {
+      "on": "visible",
+      "request": "pageview"
+    },
+    "trackAboutPage": {
+      "on": "click",
+      "selector": "#about-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Pageview",
+        "eventAction": "view",
+        "eventLabel": "About"
+      }
+    },
+    "trackCVPage": {
+      "on": "click",
+      "selector": "#cv-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Pageview",
+        "eventAction": "view",
+        "eventLabel": "CV"
+      }
+    },
+    "trackSocialView": {
+      "on": "click",
+      "selector": ".social-links a",
+      "request": "social",
+      "vars": {
+        "socialNetwork": "${network}",
+        "socialAction": "view"
+      }
+    },
+    "trackDocView": {
+      "on": "click",
+      "selector": ".doc-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "DocumentAccess",
+        "eventAction": "view",
+        "eventLabel": "${document}"
+      }
+    }
+  }
+}
