@@ -1,0 +1,23 @@
+{
+  "@context": "http://schema.org",
+  "@type": "TechArticle",
+  "proficiencyLevel": "Beginner",
+  "about": {
+    "name": "Qake",
+    "url": "http://qake.jandh.org"
+  },
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2015,
+  "datePublished": "2015",
+  "headline": "Controlled Chaos: Randomization in Level Design",
+  "keywords": "randomization, level design, game design, computer games, gaming, supply, cost function",
+  "name": "Controlled Chaos: Randomization in Level Design",
+  "url": "http://jandh.org/resources/blog/jandh_blog_2015-04-18_2_en.pdf",
+  "fileFormat": "application/pdf",
+  "image": "http://jandh.org/projects/apps/app_icons/Qake-app-icon-large.png"
+}
