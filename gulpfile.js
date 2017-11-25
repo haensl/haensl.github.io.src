@@ -86,7 +86,13 @@ gulp.task('assets', ['clean:assets'], () =>
   gulp.src(`${FOLDER_SRC}/assets/**/*`)
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
-gulp.task('default', ['compile', 'assets', 'seofiles'], () => {
+gulp.task('amp:validate', ['compile'], () =>
+  gulp.src(`${FOLDER_DIST}/index.html`)
+    .pipe($.amphtmlValidator.validate())
+    .pipe($.amphtmlValidator.format())
+    .pipe($.amphtmlValidator.failAfterError()));
+
+gulp.task('default', ['compile', 'assets', 'seofiles', 'amp:validate'], () => {
   browserSync({
     server: FOLDER_DIST
   });

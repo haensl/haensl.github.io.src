@@ -25,6 +25,7 @@
     "autoprefixer": "^7.1.6",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-amphtml-validator": "^1.0.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-embed-svg": "^1.0.0",
     "gulp-htmlmin": "^3.0.0",
