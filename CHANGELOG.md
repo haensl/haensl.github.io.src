@@ -1,3 +1,6 @@
+### 1.7.0
+* [#32: Track project views.](https://github.com/haensl/haensl.github.io.src/issues/32)
+
 ### 1.6.0
 * [#4: Add projects section.](https://github.com/haensl/haensl.github.io.src/issues/4)
 * [#24: Add section transitions.](https://github.com/haensl/haensl.github.io.src/issues/24)

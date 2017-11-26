@@ -7,24 +7,14 @@
       "on": "visible",
       "request": "pageview"
     },
-    "trackAboutPage": {
+    "trackSectionView": {
       "on": "click",
-      "selector": "#about-link",
+      "selector": "#main-menu a",
       "request": "event",
       "vars": {
         "eventCategory": "Pageview",
         "eventAction": "view",
-        "eventLabel": "About"
-      }
-    },
-    "trackCVPage": {
-      "on": "click",
-      "selector": "#cv-link",
-      "request": "event",
-      "vars": {
-        "eventCategory": "Pageview",
-        "eventAction": "view",
-        "eventLabel": "CV"
+        "eventLabel": "${section}"
       }
     },
     "trackSocialView": {
@@ -44,6 +34,16 @@
         "eventCategory": "DocumentAccess",
         "eventAction": "view",
         "eventLabel": "${document}"
+      }
+    },
+    "trackProject": {
+      "on": "click",
+      "selector": ".project-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Projectview",
+        "eventAction": "view",
+        "eventLabel": "${project}"
       }
     }
   }

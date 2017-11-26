@@ -47,23 +47,33 @@
         id="main-menu">
         <ul>
           <li [class]="appState.activeSection == 'about' ? 'active m0' : 'm0'"
-          class="active m0"><a class="caps text-decoration-none block p1 inactive"
+          class="active m0">
+            <a class="caps text-decoration-none block p1 inactive"
               title="About HP."
-              id="about-link"
-              on="tap:AMP.setState({ appState: { activeSection: 'about' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)">About</a></li>
+              data-vars-section="about"
+              on="tap:AMP.setState({ appState: { activeSection: 'about' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)">About</a>
+          </li>
           <li [class]="appState.activeSection == 'projects' ? 'active m0' : 'm0'"
-            class="m0"><a class="caps text-decoration-none block p1"
-                title="Projects of HP"
-                on="tap:AMP.setState({ appState: { activeSection: 'projects' }})">Projects</a></li>
+            class="m0">
+            <a class="caps text-decoration-none block p1"
+              data-vars-section="projects"
+              title="Projects of HP"
+              on="tap:AMP.setState({ appState: { activeSection: 'projects' }})">Projects</a>
+          </li>
           <li [class]="appState.activeSection == 'publications' ? 'active m0' : 'm0'"
-            class="m0"><a class="caps text-decoration-none block p1"
-                title="Publications by HP"
-                on="tap:AMP.setState({ appState: { activeSection: 'publications' }})">Publications</a></li>
+            class="m0">
+            <a class="caps text-decoration-none block p1"
+              title="Publications by HP"
+              data-vars-section="publications"
+              on="tap:AMP.setState({ appState: { activeSection: 'publications' }})">Publications</a>
+          </li>
           <li [class]="appState.activeSection == 'cv' ? 'active m0' : 'm0'"
-            class="m0"><a class="caps text-decoration-none block p1"
-                on="tap:AMP.setState({ appState: { activeSection: 'cv' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)"
-                id="cv-link"
-                title="View/Download HP's CV.">CV</a></li>
+            class="m0">
+            <a class="caps text-decoration-none block p1"
+              on="tap:AMP.setState({ appState: { activeSection: 'cv' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)"
+              data-vars-section="cv"
+              title="View/Download HP's CV.">CV</a>
+          </li>
         </ul>
       </nav>
     </amp-sidebar>
@@ -484,16 +494,23 @@
                   <li>
                     <script src="gulp-embed-json.src.schema.json" type="application/ld+json"></script>
                     <a href="https://github.com/haensl/gulp-embed-json"
-                    target="_blank"
-                    class="project-link"
-                    rel="noopener"
-                    title="Visit gulp-embed-json on Github."
-                    data-vars-project="gulp-embed-json"><svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg></a></li>
-                  <li><a href="https://www.npmjs.com/package/gulp-embed-json"
-                    target="_blank"
-                    class="project-link"
-                    title="Visit gulp-embed-json on npm."
-                    data-vars-project="gulp-embed-json"><svg src="npm-icon.svg" class="icon-small npm-icon"></svg></a></li>
+                      target="_blank"
+                      class="project-link"
+                      rel="noopener"
+                      title="Visit gulp-embed-json on Github."
+                      data-vars-project="gulp-embed-json">
+                      <svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.npmjs.com/package/gulp-embed-json"
+                      target="_blank"
+                      class="project-link"
+                      title="Visit gulp-embed-json on npm."
+                      data-vars-project="gulp-embed-json">
+                      <svg src="npm-icon.svg" class="icon-small npm-icon"></svg>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="item">
@@ -515,15 +532,22 @@
                   <li>
                     <script type="application/ld+json" src="gulp-embed-svg.src.schema.json"></script>
                     <a href="https://github.com/haensl/gulp-embed-svg"
-                    target="_blank"
-                    class="project-link"
-                    title="Visit gulp-embed-svg on Github."
-                    data-vars-project="gulp-embed-svg"><svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg></a></li>
-                  <li><a href="https://www.npmjs.com/package/gulp-embed-svg"
-                    target="_blank"
-                    class="project-link"
-                    title="Visit gulp-embed-svg on npm."
-                    data-vars-project="gulp-embed-svg"><svg src="npm-icon.svg" class="icon-small npm-icon"></svg></a></li>
+                      target="_blank"
+                      class="project-link"
+                      title="Visit gulp-embed-svg on Github."
+                      data-vars-project="gulp-embed-svg">
+                      <svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.npmjs.com/package/gulp-embed-svg"
+                      target="_blank"
+                      class="project-link"
+                      title="Visit gulp-embed-svg on npm."
+                      data-vars-project="gulp-embed-svg">
+                      <svg src="npm-icon.svg" class="icon-small npm-icon"></svg>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="item">
@@ -545,17 +569,24 @@
                   <li>
                     <script type="application/ld+json" src="gulp-minify-inline-json.src.schema.json"></script>
                     <a href="https://github.com/haensl/gulp-minify-inline-json"
-                    target="_blank"
-                    class="project-link"
-                    rel="noopener"
-                    title="Visit gulp-minify-inline-json on Github."
-                    data-vars-project="gulp-minify-inline-json"><svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg></a></li>
-                  <li><a href="https://www.npmjs.com/package/gulp-minify-inline-json"
-                    target="_blank"
-                    class="project-link"
-                    rel="noopener"
-                    title="Visit gulp-minify-inline-json on npm."
-                    data-vars-project="gulp-minify-inline-json"><svg src="npm-icon.svg" class="icon-small npm-icon"></svg></a></li>
+                      target="_blank"
+                      class="project-link"
+                      rel="noopener"
+                      title="Visit gulp-minify-inline-json on Github."
+                      data-vars-project="gulp-minify-inline-json">
+                      <svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.npmjs.com/package/gulp-minify-inline-json"
+                      target="_blank"
+                      class="project-link"
+                      rel="noopener"
+                      title="Visit gulp-minify-inline-json on npm."
+                      data-vars-project="gulp-minify-inline-json">
+                      <svg src="npm-icon.svg" class="icon-small npm-icon"></svg>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="item">
@@ -588,12 +619,19 @@
                       target="_blank"
                       class="project-link"
                       title="Visit vm-php on Github."
-                      data-vars-project="vm-php"><svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg></a></li>
-                  <li><a href="https://app.vagrantup.com/haensl/boxes/lamp7"
-                    target="_blank"
-                    class="project-link"
-                    title="Visit vm-php on Vagrant Cloud."
-                    data-vars-project="vm-php"><svg src="vagrant-icon.svg" class="icon-small vagrant-icon icon-light icon-stroked"></svg></a></li>
+                      data-vars-project="vm-php">
+                      <svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://app.vagrantup.com/haensl/boxes/lamp7"
+                      target="_blank"
+                      class="project-link"
+                      title="Visit vm-php on Vagrant Cloud."
+                      data-vars-project="vm-php">
+                      <svg src="vagrant-icon.svg" class="icon-small vagrant-icon icon-light icon-stroked"></svg>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="item">
@@ -608,17 +646,20 @@
                 </h4>
                   <p class="m0 p01">Design, implementation and maintenance of the band's website.</p>
                 <ul class="m1000 p01 horizontal-list">
-                  <li><a href="http://rovers.band"
-                    target="_blank"
-                    class="project-link"
-                    title="Visit the Rovers' website."
-                    data-vars-project="rovers">
-                    <amp-img srcset="/assets/img/rovers-icon_1x.png 24w, /assets/img/rovers-icon_2x.png 48w"
-                      layout="responsive"
-                      width="24"
-                      height="24"
-                      class="icon-small grayscale"
-                      alt="The Rovers"></amp-img></a></li>
+                  <li>
+                    <a href="http://rovers.band"
+                      target="_blank"
+                      class="project-link"
+                      title="Visit the Rovers' website."
+                      data-vars-project="rovers">
+                      <amp-img srcset="/assets/img/rovers-icon_1x.png 24w, /assets/img/rovers-icon_2x.png 48w"
+                        layout="responsive"
+                        width="24"
+                        height="24"
+                        class="icon-small grayscale"
+                        alt="The Rovers"></amp-img>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="item">
@@ -646,11 +687,15 @@
                       <svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg>
                     </a>
                   </li>
-                  <li><a href="https://www.npmjs.com/package/ng-async-img"
-                    target="_blank"
-                    class="project-link"
-                    title="Visit ng-async-img on npm."
-                    data-vars-project="ng-async-img"><svg src="npm-icon.svg" class="icon-small npm-icon"></svg></a></li>
+                  <li>
+                    <a href="https://www.npmjs.com/package/ng-async-img"
+                      target="_blank"
+                      class="project-link"
+                      title="Visit ng-async-img on npm."
+                      data-vars-project="ng-async-img">
+                      <svg src="npm-icon.svg" class="icon-small npm-icon"></svg>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="item">
@@ -682,10 +727,10 @@
                 <h4 class="row">
                   <time class="daterange" datetime="2016-04">2016 - present</time>
                   <a href="https://github.com/haensl/ngAnimatedScroll"
-                  target="_blank"
-                  title="ng-async-img"
-                  class="project-link"
-                  data-vars-project="ng-animated-scroll">ngAnimatedScroll</a>
+                    target="_blank"
+                    title="ng-async-img"
+                    class="project-link"
+                    data-vars-project="ng-animated-scroll">ngAnimatedScroll</a>
                 </h4>
                 <p class="m0 p01">Promise based <a href="https://angularjs.org/"
                   target="_blank"
@@ -702,11 +747,15 @@
                       <svg src="github-icon.svg" class="github-icon icon-small icon-dark"></svg>
                     </a>
                   </li>
-                  <li><a href="https://www.npmjs.com/package/ng-animated-scroll"
-                    target="_blank"
-                    class="project-link"
-                    title="Visit ngAnimatedScroll on npm."
-                    data-vars-project="ng-animated-scroll"><svg src="npm-icon.svg" class="icon-small npm-icon"></svg></a></li>
+                  <li>
+                    <a href="https://www.npmjs.com/package/ng-animated-scroll"
+                      target="_blank"
+                      class="project-link"
+                      title="Visit ngAnimatedScroll on npm."
+                      data-vars-project="ng-animated-scroll">
+                      <svg src="npm-icon.svg" class="icon-small npm-icon"></svg>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="item">
@@ -753,7 +802,7 @@
                     target="_blank"
                     title="Qake"
                     class="project-link"
-                  data-vars-project="qake">Qake</a>
+                    data-vars-project="qake">Qake</a>
                 </h4>
                 <p class="m0 p01">Design and implementation of the retro arcade game Qake for iOS.</p>
                 <ul class="m1000 p01 horizontal-list">
