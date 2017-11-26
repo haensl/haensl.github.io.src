@@ -16,7 +16,7 @@
         "eventAction": "view",
         "eventLabel": "${section}"
       }
-    }
+    },
     "trackSocialView": {
       "on": "click",
       "selector": ".social-links a",
