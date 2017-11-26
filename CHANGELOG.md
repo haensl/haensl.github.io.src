@@ -1,3 +1,6 @@
+### 1.7.1
+* [#34: Update cv pdf.](https://github.com/haensl/haensl.github.io.src/issues/34)
+
 ### 1.7.0
 * [#32: Track project views.](https://github.com/haensl/haensl.github.io.src/issues/32)
 
