@@ -1,11 +1,17 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/htmlelement.polyfills",
   "applicationCategory": "Utility",
   "applicationSubCategory": "Polyfills",
   "applicationSuite": "JavaScript",
   "downloadUrl": "https://github.com/haensl/htmlelement.polyfills/releases",
   "releaseNotes": "https://github.com/haensl/htmlelement.polyfills/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
   "author": {
     "@id": "https://haensl.github.io"
   },

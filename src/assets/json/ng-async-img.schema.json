@@ -1,11 +1,17 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/ng-async-img",
   "applicationCategory": "Component",
   "applicationSubCategory": "Directive",
   "applicationSuite": "Angular.js",
   "downloadUrl": "https://github.com/haensl/ng-async-img/releases",
   "releaseNotes": "https://github.com/haensl/ng-async-img/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
   "author": {
     "@id": "https://haensl.github.io"
   },

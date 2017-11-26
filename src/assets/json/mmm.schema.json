@@ -1,0 +1,8 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "category": "Prototype",
+  "description": "Arduino based rapid prototype for a metronome that reacts to external audio stimuli and provides visual cues of the beats.",
+  "url": "https://youtu.be/9nYjFxxmyPg",
+  "name": "MMM - The MultiModal Metronome"
+}

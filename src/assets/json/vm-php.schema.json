@@ -1,11 +1,17 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/vm-php",
   "applicationCategory": "Utility",
   "applicationSubCategory": "Automation",
   "applicationSuite": "Vagrant",
   "downloadUrl": "https://github.com/haensl/vm-php/releases",
   "releaseNotes": "https://github.com/haensl/vm-php/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
   "author": {
     "@id": "https://haensl.github.io"
   },

@@ -1,11 +1,17 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/ngAnimatedScroll",
   "applicationCategory": "Module",
   "applicationSubCategory": "Service",
   "applicationSuite": "Angular.js",
   "downloadUrl": "https://github.com/haensl/ngAnimatedScroll/releases",
   "releaseNotes": "https://github.com/haensl/ngAnimatedScroll/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
   "author": {
     "@id": "https://haensl.github.io"
   },

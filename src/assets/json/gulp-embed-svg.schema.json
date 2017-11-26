@@ -1,11 +1,17 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/gulp-embed-svg",
   "applicationCategory": "Utility",
   "applicationSubCategory": "Automation",
   "applicationSuite": "Gulp",
   "downloadUrl": "https://github.com/haensl/gulp-embed-svg/releases",
   "releaseNotes": "https://github.com/haensl/gulp-embed-svg/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
   "author": {
     "@id": "https://haensl.github.io"
   },

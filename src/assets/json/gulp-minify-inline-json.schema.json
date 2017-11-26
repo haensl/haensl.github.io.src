@@ -1,11 +1,17 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/gulp-minify-inline-json",
   "applicationCategory": "Utility",
   "applicationSubCategory": "Automation",
   "applicationSuite": "Gulp",
   "downloadUrl": "https://github.com/haensl/gulp-minify-inline-json/releases",
   "releaseNotes": "https://github.com/haensl/gulp-minify-inline-json/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
   "author": {
     "@id": "https://haensl.github.io"
   },

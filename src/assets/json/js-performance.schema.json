@@ -1,11 +1,17 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/js-performance",
   "applicationCategory": "Utility",
   "applicationSubCategory": "Profiling",
   "applicationSuite": "JavaScript",
   "downloadUrl": "https://github.com/haensl/js-performance/releases",
   "releaseNotes": "https://github.com/haensl/js-performance/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
   "author": {
     "@id": "https://haensl.github.io"
   },

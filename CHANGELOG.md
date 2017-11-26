@@ -1,5 +1,10 @@
+### 1.6.0
+* [#4: Add projects section.](https://github.com/haensl/haensl.github.io.src/issues/4)
+* [#24: Add section transitions.](https://github.com/haensl/haensl.github.io.src/issues/24)
+* [#23: Fix sidebar profile alignment.](https://github.com/haensl/haensl.github.io.src/issues/23)
+
 ### 1.5.0
-* [#29: Embed JSON data](https://github.com/haensl/haensl.github.io.src/issues/29)
+* [#29: Embed JSON data.](https://github.com/haensl/haensl.github.io.src/issues/29)
 
 ### 1.4.4
 * [#26: Fix TechArticle structured data.](https://github.com/haensl/haensl.github.io.src/issues/26)
