@@ -1,6 +1,7 @@
 {
   "@context": "http://schema.org",
-  "@type": "WebSite",
+  "@type": "WebApplication",
+  "@id": "https://github.com/haensl/haensl.github.io",
   "about": {
     "@id": "https://haensl.github.io"
   },
@@ -10,10 +11,19 @@
   "copyrightHolder": {
     "@id": "https://haensl.github.io"
   },
+  "applicationCategory": "WebPage",
+  "applicationSubCategory": "Personal Website",
+  "operatingSystem": [
+    "Linux",
+    "Windows",
+    "OSX",
+    "iOS",
+    "Android"
+  ],
   "copyrightYear": 2017,
   "datePublished": 2017,
   "keywords": "website, developer, software engineer, software, coding, projects, publications, cv, HP, HPD, HP Dietz, Hans-Peter Dietz, media informatics",
-  "description": "Homepage of HP Dietz",
+  "description": "Personal Github.io page of HP Dietz",
   "name": "HP Dietz",
   "url": "https://haensl.github.io",
   "image": "https://haensl.github.io/assets/img/avatar_8x.png"

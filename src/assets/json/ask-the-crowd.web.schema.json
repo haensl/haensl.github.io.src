@@ -14,6 +14,15 @@
   "copyrightHolder": {
     "@id": "https://haensl.github.io"
   },
+  "applicationCategory": "Online Portal",
+  "applicationSubCategory": "Surveys",
+  "operatingSystem": [
+    "Linux",
+    "Windows",
+    "OSX",
+    "iOS",
+    "Android"
+  ],
   "copyrightYear": 2017,
   "datePublished": 2013,
   "keywords": "website, knowledge discovery, crowdsourcing, survey, surveys",
