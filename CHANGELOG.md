@@ -1,3 +1,6 @@
+### 1.8.0
+* [#18: Add Open Graph metadata.](https://github.com/haensl/haensl.github.io.src/issues/18)
+
 ### 1.7.2
 * [#37: Fix CV mobile styles.](https://github.com/haensl/haensl.github.io.src/issues/37)
 * [#36: Fix typo.](https://github.com/haensl/haensl.github.io.src/issues/36)
