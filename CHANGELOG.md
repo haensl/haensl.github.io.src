@@ -1,3 +1,7 @@
+### 1.7.2
+* [#37: Fix CV mobile styles.](https://github.com/haensl/haensl.github.io.src/issues/37)
+* [#36: Fix typo.](https://github.com/haensl/haensl.github.io.src/issues/36)
+
 ### 1.7.1
 * [#34: Update cv pdf.](https://github.com/haensl/haensl.github.io.src/issues/34)
 
