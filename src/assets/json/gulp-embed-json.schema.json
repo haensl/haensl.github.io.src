@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/gulp-embed-json",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Automation",
+  "applicationSuite": "Gulp",
+  "downloadUrl": "https://github.com/haensl/gulp-embed-json/releases",
+  "releaseNotes": "https://github.com/haensl/gulp-embed-json/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "discussionUrl": "https://github.com/haensl/gulp-embed-json/issues",
+  "keywords": "gulp-plugins, gulpplugin, gulp, json, html, embed, embedding",
+  "license": "https://github.com/haensl/gulp-embed-json/blob/master/LICENSE",
+  "description": "Gulp plugin to inline/embed JSON data into HTML files.",
+  "name": "gulp-embed-json",
+  "url": "https://github.com/haensl/gulp-embed-json",
+  "sameAs": "https://www.npmjs.com/package/gulp-embed-json"
+}

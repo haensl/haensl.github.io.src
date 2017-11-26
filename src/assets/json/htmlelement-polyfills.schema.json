@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/htmlelement.polyfills",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Polyfills",
+  "applicationSuite": "JavaScript",
+  "downloadUrl": "https://github.com/haensl/htmlelement.polyfills/releases",
+  "releaseNotes": "https://github.com/haensl/htmlelement.polyfills/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2015,
+  "discussionUrl": "https://github.com/haensl/htmlelement.polyfills/issues",
+  "keywords": "javascript-polyfills, javascript, vanillajs, htmlelement-interface, html-element, html, polyfill, polyfills",
+  "license": "https://github.com/haensl/htmlelement.polyfills/blob/master/LICENSE",
+  "description": "Lightweight, vanilla JavaScript polyfills for most common operations on the HTMLElement interface.",
+  "name": "htmlelement.polyfills",
+  "url": "https://github.com/haensl/htmlelement.polyfills",
+  "sameAs": "https://www.npmjs.com/package/htmlelement.polyfills"
+}

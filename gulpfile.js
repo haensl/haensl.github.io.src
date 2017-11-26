@@ -89,13 +89,21 @@ gulp.task('assets', ['clean:assets'], () =>
   gulp.src(`${FOLDER_SRC}/assets/+(img|docs)/*`)
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
-gulp.task('default', ['compile', 'assets', 'seofiles'], () => {
+gulp.task('amp:validate', ['compile'], () =>
+  gulp.src(`${FOLDER_DIST}/index.html`)
+    .pipe($.amphtmlValidator.validate())
+    .pipe($.amphtmlValidator.format())
+    .pipe($.amphtmlValidator.failAfterError()));
+
+gulp.task('default', ['compile', 'assets', 'seofiles', 'amp:validate'], () => {
   browserSync({
     server: FOLDER_DIST
   });
 
   gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|html)`, ['compile']);
-  gulp.watch(`${FOLDER_SRC}/assets/**/*`, ['assets']);
+  gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
+  gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
+  gulp.watch(`${FOLDER_DIST}/index.html`, ['amp:validate']);
 });
 

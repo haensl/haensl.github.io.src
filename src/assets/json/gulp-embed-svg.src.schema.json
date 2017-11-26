@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/haensl/gulp-embed-svg",
+  "codeSampleType": "full",
+  "programmingLanguage": "JavaScript",
+  "runtimePlatform": "nodejs",
+  "targetProduct": {
+    "@id": "https://github.com/haensl/gulp-embed-svg"
+  }
+}

@@ -3,8 +3,7 @@
   "@type": "TechArticle",
   "proficiencyLevel": "Beginner",
   "about": {
-    "name": "Ask The Crowd: Crowdsourcing Knowledge Generation",
-    "url": "https://ask-the-crowd.com"
+    "@id": "http://ask-the-crowd.com"
   },
   "author": {
     "@id": "https://haensl.github.io"

@@ -1,0 +1,33 @@
+{
+  "@context": "http://schema.org",
+  "@type": "MobileApplication",
+  "@id": "https://play.google.com/store/apps/details?id=org.percom&hl=en",
+  "applicationCategory": "Information",
+  "applicationSubCategory": "Conference",
+  "applicationSuite": "Android",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "itemReviewed": {
+      "@id": "https://play.google.com/store/apps/details?id=org.percom&hl=en"
+    },
+    "ratingCount": 7,
+    "reviewCount": 7,
+    "bestRating": 5,
+    "ratingValue": 4.4,
+    "worstRating": 0
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=org.percom&hl=en",
+  "operatingSystem": "Android",
+  "author": {
+    "@id": "http://mimuc.de"
+  },
+  "copyrightHolder": {
+    "@id": "http://jandh.org"
+  },
+  "copyrightYear": 2017,
+  "datePublished": "2012-03-18",
+  "keywords": "conference, percom, ieee pervasive computing and communication, ieee, pervasive, communication, lugano, switzerland, 2012, app, android, google play, google, play, play store, google play store",
+  "description": "The official guide for the 2012 IEEE Pervasive Computing and Communication (PerCom) conference in Lugano, Switzerland",
+  "name": "PerCom App 2012",
+  "url": "https://play.google.com/store/apps/details?id=org.percom&hl=en"
+}

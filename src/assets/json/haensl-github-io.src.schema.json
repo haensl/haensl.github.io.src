@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/haensl/haensl.github.io.src",
+  "codeSampleType": "full",
+  "programmingLanguage": "AMP",
+  "runtimePlatform": "Browser",
+  "targetProduct": {
+    "@id": "https://github.com/haensl/haensl.github.io"
+  }
+}

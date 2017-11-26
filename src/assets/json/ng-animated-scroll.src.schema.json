@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/haensl/ngAnimatedScroll",
+  "codeSampleType": "full",
+  "programmingLanguage": "JavaScript",
+  "runtimePlatform": "angularjs",
+  "targetProduct": {
+    "@id": "https://github.com/haensl/ngAnimatedScroll"
+  }
+}

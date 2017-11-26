@@ -1,0 +1,29 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/js-performance",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Profiling",
+  "applicationSuite": "JavaScript",
+  "downloadUrl": "https://github.com/haensl/js-performance/releases",
+  "releaseNotes": "https://github.com/haensl/js-performance/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "discussionUrl": "https://github.com/haensl/js-performance/issues",
+  "keywords": "nodejs, performance-analysis, performance-testing, profiling, benchmark, benchmarks, javascript, ecma script, ecmascript, profiling-library",
+  "license": "https://github.com/haensl/js-performance/blob/master/LICENSE",
+  "description": "A collection of JavaScript profiling modules and benchmarks.",
+  "name": "JS Performance",
+  "url": "https://github.com/haensl/js-performance"
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "about": {
+    "@type": "MusicGroup",
+    "@id": "http://rovers.band",
+    "genre": "Irish Folk",
+    "email": "music@rovers.band",
+    "sameAs": [
+      "https://facebook.com/Rovers-1365861523432550/",
+      "https://www.youtube.com/channel/UCTPG1OQ4poVHHODsY2opDwA"
+    ],
+    "name": "The Rovers",
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bad Windsheim",
+        "addressRegion": "Bavaria"
+      }
+    },
+    "logo": "http://rovers.band/assets/img/logo.png",
+    "url": "http://rovers.band"
+  },
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "http://rovers.band"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "keywords": "band, website, irish, folk, pub, music, pub music, rovers, band site, bandsite",
+  "description": "Homepage of The Rovers Pub Music.",
+  "name": "The Rovers Pub Music",
+  "url": "http://rovers.band",
+  "image": "http://rovers.band/assets/img/logo.png"
+}

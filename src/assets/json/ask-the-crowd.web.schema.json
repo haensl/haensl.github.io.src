@@ -1,0 +1,33 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WebApplication",
+  "@id": "http://ask-the-crowd.com",
+  "about": {
+    "name": "Crowdsourcing Knowledge Generation",
+    "description": "Ask and answer surveys to generate and discover new knowledge",
+    "image": "http://ask-the-crowd.com/img/logo.png",
+    "url": "http://ask-the-crowd.com"
+  },
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "applicationCategory": "Online Portal",
+  "applicationSubCategory": "Surveys",
+  "operatingSystem": [
+    "Linux",
+    "Windows",
+    "OSX",
+    "iOS",
+    "Android"
+  ],
+  "copyrightYear": 2017,
+  "datePublished": 2013,
+  "keywords": "website, knowledge discovery, crowdsourcing, survey, surveys",
+  "description": "Ask The Crowd is your opportunity to ask the whole world what you have always wanted to know! Create and answer surveys and help to generate new knowledge! No registration required!",
+  "name": "Ask The Crowd",
+  "url": "http://ask-the-crowd.com",
+  "image": "http://ask-the-crowd.com/img/logo.png"
+}

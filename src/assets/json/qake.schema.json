@@ -1,0 +1,33 @@
+{
+  "@context": "http://schema.org",
+  "@type": "VideoGame",
+  "applicationCategory": "Game",
+  "applicationSubCategory": "Arcade",
+  "genre": "Arcade",
+  "applicationSuite": "iOS",
+  "downloadUrl": "https://itunes.apple.com/us/app/qake/id914563018?mt=8&ign-mpt=uo%3D4",
+  "trailer": {
+    "name": "Qake Gameplay Trailer/Preview",
+    "url": "https://youtu.be/vRUgu67tTDY",
+    "description": "Qake is a retro-design game inspired by arcade and cell phone classics Qix and Snake. The goal of each level is to secure a certain area of the court without being hit by enemy bombs and balls.",
+    "thumbnailUrl": "https://i.ytimg.com/vi/vRUgu67tTDY/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDy8Ry6NCHFIULph6dlddJCBDmOSQ",
+    "uploadDate": "2015-02-15"
+  },
+  "playMode": "single-player",
+  "operatingSystem": "iOS",
+  "gamePlatform": "iOS",
+  "author": {
+    "@id": "http://jandh.org"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": "2015-01-04",
+  "discussionUrl": "https://github.com/haensl/htmlelement.polyfills/issues",
+  "keywords": "retro, arcade, game, iOS, qix, snake, frogger, randomized level generator, infinite, random, randomized, random number generator, controlled chaos",
+  "description": "Retro-design arcade game for iOS featuring infinite, randomized, dynamic levels.",
+  "name": "Qake",
+  "url": "http://qake.jandh.org",
+  "sameAs": "https://www.facebook.com/QakeGame"
+}

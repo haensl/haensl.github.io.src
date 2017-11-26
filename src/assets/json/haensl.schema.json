@@ -25,6 +25,7 @@
     },
     "department": {
       "@type": "Organization",
+      "@id": "http://mimuc.de",
       "name": "Media Informatics",
       "url": "http://www.medien.ifi.lmu.de"
     }
