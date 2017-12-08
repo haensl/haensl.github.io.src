@@ -1,3 +1,6 @@
+### 1.8.1
+* [#40: Project-list title styles.](https://github.com/haensl/haensl.github.io.src/issues/40)
+
 ### 1.8.0
 * [#18: Add Open Graph metadata.](https://github.com/haensl/haensl.github.io.src/issues/18)
 
