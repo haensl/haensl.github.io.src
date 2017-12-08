@@ -409,6 +409,11 @@ a > .icon-small:hover {
   flex-direction: row;
 }
 
+.fixed-flex {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
 #header {
   display: flex;
   background-color: var(--black);
