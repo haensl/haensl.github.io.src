@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "The github.io page of HP Dietz.",
   "main": "index.html",
   "engines": {
@@ -19,8 +19,15 @@
     "amp-html",
     "accelerated mobile pages"
   ],
-  "author": "HP Dietz <h.p.dietz@gmail.com>",
+  "author": {
+    "name":"HP Dietz",
+    "email": "h.p.dietz@gmail.com",
+    "url": "https://haensl.github.io"
+  },
   "license": "GPL-3.0",
+  "bugs": "https://github.com/haensl/haensl.github.io.src/issues",
+  "homepage": "https://haensl.github.io",
+  "repository": "https://github.com/haensl/haensl.github.io.src/haensl.github.io.src.git",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "del": "^3.0.0",
