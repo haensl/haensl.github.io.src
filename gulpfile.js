@@ -4,12 +4,16 @@ const path = require('path');
 const $ = require('gulp-load-plugins')();
 const del = require('del');
 const browserSync = require('browser-sync');
+const readline = require('readline');
 
+const VERSION = require('./package').version;
 const FOLDER_DIST = 'dist';
 const FOLDER_DIST_ASSETS = `${FOLDER_DIST}/assets`;
 const FOLDER_SRC = 'src';
 const FOLDER_SRC_ASSETS = `${FOLDER_SRC}/assets`;
 const DIRECTIVE_CSS_INCLUDE = '<!-- INCLUDE_CSS -->';
+const DIRECTIVE_INCLUCE_VERSION = '<!-- INCLUDE_VERSION -->';
+const DIRECTIVE_INCLUDE_REVISED = '<!-- INCLUDE_REVISED -->';
 const OPTS_HTMLMIN = {
   collapseWhitespace: true,
   removeComments: true,
@@ -35,26 +39,24 @@ gulp.task('ensureDistAssetsFolderExists', ['ensureDistFolderExists'], () =>
   createFolder(FOLDER_DIST_ASSETS));
 
 gulp.task('clean:seofiles', ['ensureDistFolderExists'], () =>
-  del(FILES_SEO.map((file) => `${FOLDER_DIST}/${file}`), {
-    force: true
-  }));
+  del.sync(FILES_SEO.map((file) => `${FOLDER_DIST}/${file}`), { force: true }));
 
 gulp.task('clean:css', ['ensureDistFolderExists'], () =>
-  del([`${FOLDER_DIST}/*.css`], {
+  del.sync([`${FOLDER_DIST}/*.css`], {
     force: true
   }));
 
 gulp.task('clean:html', ['ensureDistFolderExists'], () =>
-  del([`${FOLDER_DIST}/*.html`], {
+  del.sync([`${FOLDER_DIST}/*.html`], {
     force: true
   }));
 
 gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
-  del([`${FOLDER_DIST}/assets/*`], {
+  del.sync([`${FOLDER_DIST}/assets/*`], {
     force: true
   }));
 
-gulp.task('seofiles', ['clean:seofiles'], () => 
+gulp.task('seofiles', ['clean:seofiles'], () =>
   gulp.src(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`))
     .pipe(gulp.dest(FOLDER_DIST)));
 
@@ -71,6 +73,13 @@ gulp.task('css', ['clean:css'], () =>
 gulp.task('html', ['clean:html', 'css'], () =>
   gulp.src(`${FOLDER_SRC}/*.html`)
     .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
+    .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
+    .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => {
+      const isoDate = (new Date()).toISOString();
+      let metaRevised = `<meta name="revised" content="${ isoDate }">`;
+      metaRevised = `${metaRevised}<meta name="date" content="${ isoDate }">`;
+      return metaRevised;
+    })))
     .pipe($.embedJson({
       root: path.join(FOLDER_SRC_ASSETS, 'json')
     }))
@@ -81,7 +90,7 @@ gulp.task('html', ['clean:html', 'css'], () =>
     .pipe(gulp.dest(FOLDER_DIST)));
 
 gulp.task('compile', ['css', 'html'], () => {
-  del(path.join(FOLDER_DIST, 'style.tmp.css'));
+  del.sync(path.join(FOLDER_DIST, 'style.tmp.css'));
   browserSync.reload();
 });
 
