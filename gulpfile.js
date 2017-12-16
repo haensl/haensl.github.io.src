@@ -7,7 +7,6 @@ const browserSync = require('browser-sync');
 const readline = require('readline');
 
 const VERSION = require('./package').version;
-const CHANGELOG = 'CHANGELOG.md';
 const FOLDER_DIST = 'dist';
 const FOLDER_DIST_ASSETS = `${FOLDER_DIST}/assets`;
 const FOLDER_SRC = 'src';
