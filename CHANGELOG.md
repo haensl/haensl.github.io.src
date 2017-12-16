@@ -1,3 +1,6 @@
+### 1.10.0
+* [#49: Add fade-in animation to sidebar.](https://github.com/haensl/haensl.github.io.src/issues/49)
+
 ### 1.9.0
 * [#47: Add version and revision date metadata](https://github.com/haensl/haensl.github.io.src/issues/47)
 * Fix gulp task orchestration.
