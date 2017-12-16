@@ -20,6 +20,11 @@
   --boxShadowInsetMinusX: inset -2px 2px 3px 1px var(--gray);
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 * {
   box-sizing: border-box;
   /**
@@ -580,6 +585,7 @@ a > .icon-small:hover {
   #sidebar {
     display: flex;
     flex: 1 1 17rem;
+    animation: fadeIn var(--transitionDuration);
   }
 }
 
