@@ -1,3 +1,6 @@
+### 1.8.3
+* [#44: Add workaround for issue with amp-sidebar and toolbar attribute](https://github.com/haensl/haensl.github.io.src/issues/44)
+
 ### 1.8.2
 * [#42: Add fixed-flex class to cv section dates](https://github.com/haensl/haensl.github.io.src/issues/42)
 * Refactor [package.json](package.json)
