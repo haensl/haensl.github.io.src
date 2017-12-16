@@ -39,7 +39,7 @@
     </amp-analytics>
     <amp-sidebar id="burger-menu"
       class="p1"
-      media="(max-width: 425px)"
+      media="(max-width: 625px)"
       layout="nodisplay">
       <amp-img srcset="/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w"
         width="48"
@@ -48,9 +48,7 @@
         alt="Avatar"></amp-img>
       <h1 class="centering m0 p1">HP Dietz</h1>
       <q class="centering small block">Fullstack anything coder.</q>
-      <nav toolbar="(min-width: 426px)"
-        toolbar-target="header-menu-wrapper"
-        id="main-menu">
+      <nav id="burger-menu">
         <ul>
           <li [class]="appState.activeSection == 'about' ? 'active m0' : 'm0'"
           class="active m0">
@@ -95,7 +93,40 @@
               height="24"
               src="burger-menu-icon.svg"></svg>
           </button>
-          <div id="header-menu-wrapper"></div>
+          <div id="header-menu-wrapper">
+            <nav id="main-menu">
+              <ul>
+                <li [class]="appState.activeSection == 'about' ? 'active m0' : 'm0'"
+                class="active m0">
+                  <a class="caps text-decoration-none block p1 inactive"
+                    title="About HP."
+                    data-vars-section="about"
+                    on="tap:AMP.setState({ appState: { activeSection: 'about' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)">About</a>
+                </li>
+                <li [class]="appState.activeSection == 'projects' ? 'active m0' : 'm0'"
+                  class="m0">
+                  <a class="caps text-decoration-none block p1"
+                    data-vars-section="projects"
+                    title="Projects of HP"
+                    on="tap:AMP.setState({ appState: { activeSection: 'projects' }})">Projects</a>
+                </li>
+                <li [class]="appState.activeSection == 'publications' ? 'active m0' : 'm0'"
+                  class="m0">
+                  <a class="caps text-decoration-none block p1"
+                    title="Publications by HP"
+                    data-vars-section="publications"
+                    on="tap:AMP.setState({ appState: { activeSection: 'publications' }})">Publications</a>
+                </li>
+                <li [class]="appState.activeSection == 'cv' ? 'active m0' : 'm0'"
+                  class="m0">
+                  <a class="caps text-decoration-none block p1"
+                    on="tap:AMP.setState({ appState: { activeSection: 'cv' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)"
+                    data-vars-section="cv"
+                    title="View/Download HP's CV.">CV</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div id="header-social-wrapper">
             <nav class="social-links">
               <ul>

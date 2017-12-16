@@ -447,13 +447,26 @@ a > .icon-small:hover {
   margin-right: var(--defaultPadding);
 }
 
+#burger-menu,
 #main-menu {
   border-top: 1px dashed var(--gray);
   margin-top: 1.5rem;
   padding-top: 1.5rem;
 }
 
-#main-menu li.active>a {
+#main-menu {
+  display: none;
+}
+
+#main-menu > ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+#burger-menu li.active > a,
+#main-menu li.active > a {
   color: var(--purple);
 }
 
@@ -500,7 +513,7 @@ a > .icon-small:hover {
 }
 
 #profile-tagline {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #profile-id {
@@ -527,27 +540,12 @@ a > .icon-small:hover {
     box-shadow: var(--boxShadowInsetMinusX);
   }
 
-  #main-menu {
-    border-top: none;
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  #burger-menu-button {
-    display: none;
+  .social-links > ul {
+    justify-content: flex-start;
   }
 
   #header-menu-wrapper {
     margin-right: auto;
-  }
-
-  #header-social-wrapper {
-    display: none;
-  }
-
-  #sidebar {
-    display: flex;
-    flex: 1 1 17rem;
   }
 
   .daterange {
@@ -563,6 +561,34 @@ a > .icon-small:hover {
   }
 }
 
+@media(min-width: 625px) {
+  #header-social-wrapper {
+    display: none;
+  }
+
+  #burger-menu-button {
+    display: none;
+  }
+
+  #main-menu {
+    display: flex;
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #sidebar {
+    display: flex;
+    flex: 1 1 17rem;
+  }
+}
+
+@media(max-width: 625px) {
+  #sidebar {
+    padding-top: 5rem;
+  }
+}
+
 /**
  * landscape mode
  */
@@ -574,10 +600,6 @@ a > .icon-small:hover {
   #profile-avatar-wrapper {
     width: 128px;
     height: 128px;
-  }
-
-  #profile-tagline {
-    font-size: 1rem;
   }
 
   .icon {
@@ -595,17 +617,21 @@ a > .icon-small:hover {
 }
 
 @media(min-width: 769px) {
-  :root {
-    --defaultPadding: 1rem;
-  }
-
   main {
     padding: 0 3rem;
+  }
+
+  #sidebar {
+    flex-basis: 23rem;
   }
 
   #profile-avatar-wrapper {
     width: 196px;
     height: 196px;
+  }
+
+  #profile-tagline {
+    font-size: 1.2rem;
   }
 
   #header {
@@ -627,6 +653,12 @@ a > .icon-small:hover {
 
   .item > h4.row {
     flex-wrap: nowrap;
+  }
+}
+
+@media(min-width: 850px) {
+  :root {
+    --defaultPadding: 1rem;
   }
 }
 
