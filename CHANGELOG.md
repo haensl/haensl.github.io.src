@@ -1,3 +1,7 @@
+### 1.9.0
+* [#47: Add version and revision date metadata](https://github.com/haensl/haensl.github.io.src/issues/47)
+* Fix gulp task orchestration.
+
 ### 1.8.3
 * [#44: Add workaround for issue with amp-sidebar and toolbar attribute](https://github.com/haensl/haensl.github.io.src/issues/44)
 
