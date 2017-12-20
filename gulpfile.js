@@ -11,9 +11,13 @@ const FOLDER_DIST = 'dist';
 const FOLDER_DIST_ASSETS = `${FOLDER_DIST}/assets`;
 const FOLDER_SRC = 'src';
 const FOLDER_SRC_ASSETS = `${FOLDER_SRC}/assets`;
+const FOLDER_TEMPLATES = `${FOLDER_SRC}/templates`;
+const FOLDER_PARTIALS = `${FOLDER_TEMPLATES}/partials`;
 const DIRECTIVE_CSS_INCLUDE = '<!-- INCLUDE_CSS -->';
 const DIRECTIVE_INCLUCE_VERSION = '<!-- INCLUDE_VERSION -->';
 const DIRECTIVE_INCLUDE_REVISED = '<!-- INCLUDE_REVISED -->';
+const TEMPLATE_VARS = require(`./${FOLDER_TEMPLATES}/vars`);
+const TEMPLATE_SITES = require(`./${FOLDER_TEMPLATES}/sites`);
 const OPTS_HTMLMIN = {
   collapseWhitespace: true,
   removeComments: true,
@@ -69,6 +73,44 @@ gulp.task('css', ['clean:css'], () =>
       return path;
     }))
     .pipe(gulp.dest(FOLDER_DIST)));
+
+gulp.task('clean:render', () =>
+  del.sync('render/*', {
+    force: true
+  }));
+
+gulp.task('templates', ['clean:render'], (done) =>
+  Promise.all(TEMPLATE_SITES.map((site) =>
+    new Promise((resolve, reject) => {
+      fs.readFile(`${FOLDER_PARTIALS}/${site.name}.mustache`, 'utf8', (err, partial) => {
+        if (err) {
+          return reject(err);
+        }
+
+        
+        const vars = Object.assign(
+          {},
+          TEMPLATE_VARS,
+          {
+            site: site.name
+          },
+          site.vars
+        );
+        gulp.src(`${FOLDER_PARTIALS}/base.mustache`)
+          .pipe($.mustache(vars, {}, {
+            view: partial
+          }))
+          .pipe($.rename((path) => {
+            path.basename = 'index';
+            path.extname = 'html';
+            return path;
+          }))
+          .pipe(gulp.dest(`render/${site.name}/`))
+          .on('end', resolve)
+          .on('error', reject);
+      });
+  })
+)));
 
 gulp.task('html', ['clean:html', 'css'], () =>
   gulp.src(`${FOLDER_SRC}/*.html`)
