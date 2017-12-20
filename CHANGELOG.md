@@ -1,3 +1,6 @@
+### 1.10.1
+* [#52: Fix burger-menu styles.](https://github.com/haensl/haensl.github.io.src/issues/52)
+
 ### 1.10.0
 * [#49: Add fade-in animation to sidebar.](https://github.com/haensl/haensl.github.io.src/issues/49)
 
