@@ -1,3 +1,6 @@
+### 1.10.2
+* [#54: Fix email links.](https://github.com/haensl/haensl.github.io.src/issues/54)
+
 ### 1.10.1
 * [#52: Fix burger-menu styles.](https://github.com/haensl/haensl.github.io.src/issues/52)
 
