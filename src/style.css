@@ -452,7 +452,7 @@ a > .icon-small:hover {
   margin-right: var(--defaultPadding);
 }
 
-#burger-menu,
+#burger-menu-nav,
 #main-menu {
   border-top: 1px dashed var(--gray);
   margin-top: 1.5rem;
