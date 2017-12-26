@@ -5,6 +5,7 @@
     <a class="caps text-decoration-none block p1 inactive"
       title="{{title}}"
       data-vars-section="{{name}}"
+      href="/{{name}}"
       on="tap:AMP.setState({ appState: { site: '{{name}}' }}),burger-menu.close(),greeting.scrollTo(position='bottom',duration=250)">{{name}}</a>
   </li>
 {{/menuItems}}

@@ -102,7 +102,7 @@ gulp.task('templates', ['clean:render'], (done) =>
           }))
           .pipe($.rename((path) => {
             path.basename = 'index';
-            path.extname = 'html';
+            path.extname = '.html';
             return path;
           }))
           .pipe(gulp.dest(`render/${site.name}/`))
@@ -156,5 +156,11 @@ gulp.task('default', ['compile', 'assets', 'seofiles', 'amp:validate'], () => {
   gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
   gulp.watch(`${FOLDER_DIST}/index.html`, ['amp:validate']);
+});
+
+gulp.task('serve:templates', ['templates'], () => {
+  browserSync({
+    server: 'render'
+  });
 });
 

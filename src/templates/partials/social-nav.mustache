@@ -5,8 +5,10 @@
       <a href="{{url}}"
         title="{{title}}"
         data-vars-network="{{name}}"
+        {{#external}}
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+        {{/external}}>
         <svg class="{{name}}-icon icon-light icon"
           width="48"
           height="48"

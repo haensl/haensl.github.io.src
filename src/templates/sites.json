@@ -6,6 +6,10 @@
   {
     "name": "cv",
     "vars": {}
+  },
+  {
+    "name": "projects",
+    "vars": {}
   }
 ]
 
