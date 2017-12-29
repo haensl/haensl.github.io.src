@@ -61,7 +61,7 @@ main {
   background-color: #fff;
   color: var(--black);
   box-shadow: var(--boxShadowInset);
-  padding: 0 var(--defaultPadding);
+  padding: 0 var(--defaultPadding) var(--defaultPadding) var(--defaultPadding);
 }
 
 main > section {
@@ -628,7 +628,7 @@ a > .icon-small:hover {
 
 @media(min-width: 769px) {
   main {
-    padding: 0 3rem;
+    padding: 0 3rem 3rem 3rem;
   }
 
   #sidebar {

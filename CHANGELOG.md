@@ -1,3 +1,6 @@
+### 2.0.4
+* [#60: Add padding bottom to main.](https://github.com/haensl/haensl.github.io.src/issues/60)
+
 ### 2.0.3
 * [#58: Remove class p1 from view wrapping sections.](https://github.com/haensl/haensl.github.io.src/issues/58)
 
