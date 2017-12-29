@@ -593,6 +593,10 @@ a > .icon-small:hover {
   #sidebar {
     padding-top: 5rem;
   }
+
+  .fixed-flex {
+    flex-grow: 1;
+  }
 }
 
 /**

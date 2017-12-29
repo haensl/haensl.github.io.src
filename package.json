@@ -1,8 +1,8 @@
 {
   "name": "haensl.github.io",
-  "version": "1.10.2",
+  "version": "2.0.0",
   "description": "The github.io page of HP Dietz.",
-  "main": "index.html",
+  "main": "dist/index.html",
   "engines": {
     "node": ">= 6.9.2"
   },
@@ -20,7 +20,7 @@
     "accelerated mobile pages"
   ],
   "author": {
-    "name":"HP Dietz",
+    "name": "HP Dietz",
     "email": "h.p.dietz@gmail.com",
     "url": "https://haensl.github.io"
   },
@@ -38,6 +38,7 @@
     "gulp-embed-svg": "^1.0.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-load-plugins": "^1.5.0",
+    "gulp-mustache": "^3.0.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1"

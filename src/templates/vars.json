@@ -1,0 +1,60 @@
+{
+  "me": {
+    "name": "HP Dietz",
+    "tagline": "Fullstack anything coder."
+  },
+  "menuItems": [
+    {
+      "name": "about",
+      "title": "About HP.",
+      "href": "/"
+    },
+    {
+      "name": "projects",
+      "title": "HP's projects.",
+      "href": "/projects"
+    },
+    {
+      "name": "publications",
+      "title": "Publications by HP.",
+      "href": "/publications"
+    },
+    {
+      "name": "cv",
+      "title": "HP's curriculum vitae.",
+      "href": "/cv"
+    }
+  ],
+  "socialChannels": [
+    {
+      "name": "github",
+      "url": "https://github.com/haensl",
+      "title": "Visit HP's GitHub profile.",
+      "external": true
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/h_p_d",
+      "title": "Follow HP on Twitter.",
+      "external": true
+    },
+    {
+      "name": "xing",
+      "url": "https://www.xing.com/profile/HansPeter_Dietz3",
+      "title": "Visit HP's Xing profile.",
+      "external": true
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/hans-peter-dietz-50ab10b8/",
+      "title": "Visit HP's LinkedIn profile.",
+      "external": true
+    },
+    {
+      "name": "email",
+      "url": "mailto:hp@jandh.org",
+      "title": "Write an e-mail to HP.",
+      "external": false
+    }
+  ]
+}
