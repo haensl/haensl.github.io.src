@@ -1,3 +1,7 @@
+### 2.0.1
+* Add google site verification file to seofiles.
+* Validate only amp sites.
+
 ### 2.0.0
 * [#51: Split into separate pages.](https://github.com/haensl/haensl.github.io.src/issues/51)
 

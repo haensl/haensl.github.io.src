@@ -25,7 +25,8 @@ const OPTS_HTMLMIN = {
 };
 const FILES_SEO = [
   'sitemap.xml',
-  'robots.txt'
+  'robots.txt',
+  'google606a8a6b7c2ee7a1.html'
 ];
 
 const folderExists = (folder) =>
@@ -140,7 +141,7 @@ gulp.task('assets', ['clean:assets'], () =>
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
 gulp.task('amp:validate', ['compile'], () =>
-  gulp.src(`${FOLDER_DIST}/**/*.html`)
+  gulp.src(`${FOLDER_DIST}/**/index.html`)
     .pipe($.amphtmlValidator.validate())
     .pipe($.amphtmlValidator.format())
     .pipe($.amphtmlValidator.failAfterError()));
