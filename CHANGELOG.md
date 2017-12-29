@@ -1,3 +1,6 @@
+### 2.0.0
+* [#51: Split into separate pages.](https://github.com/haensl/haensl.github.io.src/issues/51)
+
 ### 1.10.2
 * [#54: Fix email links.](https://github.com/haensl/haensl.github.io.src/issues/54)
 

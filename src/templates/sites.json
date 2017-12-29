@@ -10,6 +10,10 @@
   {
     "name": "projects",
     "vars": {}
+  },
+  {
+    "name": "publications",
+    "vars": {}
   }
 ]
 

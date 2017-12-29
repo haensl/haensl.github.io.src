@@ -6,19 +6,23 @@
   "menuItems": [
     {
       "name": "about",
-      "title": "About HP."
+      "title": "About HP.",
+      "href": "/"
     },
     {
       "name": "projects",
-      "title": "HP's projects."
+      "title": "HP's projects.",
+      "href": "/projects"
     },
     {
       "name": "publications",
-      "title": "Publications by HP."
+      "title": "Publications by HP.",
+      "href": "/publications"
     },
     {
       "name": "cv",
-      "title": "HP's curriculum vitae."
+      "title": "HP's curriculum vitae.",
+      "href": "/cv"
     }
   ],
   "socialChannels": [

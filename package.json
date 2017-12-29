@@ -1,8 +1,8 @@
 {
   "name": "haensl.github.io",
-  "version": "1.10.2",
+  "version": "2.0.0",
   "description": "The github.io page of HP Dietz.",
-  "main": "index.html",
+  "main": "dist/index.html",
   "engines": {
     "node": ">= 6.9.2"
   },
