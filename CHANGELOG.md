@@ -1,3 +1,6 @@
+### 2.0.3
+* [#58: Remove class p1 from view wrapping sections.](https://github.com/haensl/haensl.github.io.src/issues/58)
+
 ### 2.0.2
 * Remove obsolete section tracking.
 
