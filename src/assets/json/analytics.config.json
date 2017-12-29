@@ -7,16 +7,6 @@
       "on": "visible",
       "request": "pageview"
     },
-    "trackSectionView": {
-      "on": "click",
-      "selector": "#main-menu a",
-      "request": "event",
-      "vars": {
-        "eventCategory": "Pageview",
-        "eventAction": "view",
-        "eventLabel": "${section}"
-      }
-    },
     "trackSocialView": {
       "on": "click",
       "selector": ".social-links a",

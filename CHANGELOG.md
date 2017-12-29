@@ -1,3 +1,6 @@
+### 2.0.2
+* Remove obsolete section tracking.
+
 ### 2.0.1
 * Add google site verification file to seofiles.
 * Validate only amp sites.
