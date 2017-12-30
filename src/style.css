@@ -391,13 +391,13 @@ a > .icon-small:hover {
   margin-bottom: 1.5rem;
 }
 
-.item > h4 {
+.item > .row {
   display: flex;
   align-items: flex-start;
   margin-top: 0;
 }
 
-.item > h4.row {
+.item > .row {
   flex-wrap: wrap;
 }
 
@@ -412,6 +412,10 @@ a > .icon-small:hover {
 
 .row {
   flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
 }
 
 .fixed-flex {
@@ -557,12 +561,8 @@ a > .icon-small:hover {
     flex-basis: 12rem;
   }
 
-  .item > h4 {
+  .item > .row {
     flex-direction: row;
-  }
-
-  .item > h4 > time {
-    margin-bottom: 0;
   }
 }
 
@@ -661,7 +661,7 @@ a > .icon-small:hover {
     margin-left: 0;
   }
 
-  .item > h4.row {
+  .item > .row {
     flex-wrap: nowrap;
   }
 }
