@@ -1,3 +1,6 @@
+### 2.1.0
+* [#57: Add vocation icons.](https://github.com/haensl/haensl.github.io.src/issues/57)
+
 ### 2.0.4
 * [#60: Add padding bottom to main.](https://github.com/haensl/haensl.github.io.src/issues/60)
 

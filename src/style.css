@@ -121,6 +121,10 @@ svg {
   transition: fill var(--transitionDuration) ease;
 }
 
+section > h2 {
+  margin: 2rem 0 var(--defaultPadding) 0;
+}
+
 h4 {
   margin-bottom: var(--defaultPadding);
 }
@@ -380,9 +384,10 @@ a > .icon-small:hover {
 }
 
 .daterange {
-  flex: 1 0 7rem;
+  flex: 1 0 auto;
   font-weight: normal;
   margin-bottom: .5rem;
+  min-width: 9rem;
 }
 
 .item {
@@ -391,14 +396,17 @@ a > .icon-small:hover {
   margin-bottom: 1.5rem;
 }
 
-.item > .row {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 0;
+.item.m-column-d-row > .m-row-d-column {
+  margin-bottom: var(--defaultPadding);
+  align-items: center;
 }
 
-.item > .row {
-  flex-wrap: wrap;
+.item.m-column-d-row > .m-row-d-column .company-logo {
+  margin-left: 2rem;
+}
+
+.item.m-column-d-row > .column {
+  padding-left: var(--defaultPadding);
 }
 
 .item > ul {
@@ -410,8 +418,15 @@ a > .icon-small:hover {
   margin-top: 0;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .row {
   flex-direction: row;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0;
 }
 
 .column {
@@ -421,6 +436,16 @@ a > .icon-small:hover {
 .fixed-flex {
   flex-grow: 0;
   flex-shrink: 0;
+}
+
+.m-row-d-column {
+  flex-direction: row;
+  display: flex;
+}
+
+.m-column-d-row {
+  flex-direction: column;
+  display: flex;
 }
 
 #header {
@@ -544,6 +569,10 @@ a > .icon-small:hover {
   margin-bottom: var(--defaultPadding);
 }
 
+#projects-list .item > .row > .daterange {
+  flex-basis: 7rem;
+}
+
 @media(min-width: 425px) {
   main {
     box-shadow: var(--boxShadowInsetMinusX);
@@ -558,11 +587,7 @@ a > .icon-small:hover {
   }
 
   .daterange {
-    flex-basis: 12rem;
-  }
-
-  .item > .row {
-    flex-direction: row;
+    min-width: 12rem;
   }
 }
 
@@ -587,15 +612,12 @@ a > .icon-small:hover {
     flex: 1 1 17rem;
     animation: fadeIn var(--transitionDuration);
   }
+
 }
 
 @media(max-width: 625px) {
   #sidebar {
     padding-top: 5rem;
-  }
-
-  .fixed-flex {
-    flex-grow: 1;
   }
 }
 
@@ -627,6 +649,32 @@ a > .icon-small:hover {
 }
 
 @media(min-width: 769px) {
+  #projects-list .item > .row > .daterange {
+    flex-basis: auto;
+  }
+
+  .m-row-d-column {
+    flex-direction: column;
+  }
+
+  .item.m-column-d-row > .m-row-d-column {
+    margin-bottom: 0;
+    align-items: stretch;
+  }
+
+  
+  .item.m-column-d-row > .column {
+    padding-left: 0;
+  }
+
+  .item.m-column-d-row > .m-row-d-column .company-logo {
+    margin-left: 0;
+  }
+
+  .m-column-d-row {
+    flex-direction: row;
+  }
+
   main {
     padding: 0 3rem 3rem 3rem;
   }
@@ -659,10 +707,6 @@ a > .icon-small:hover {
 
   .social-links > ul > li:first-of-type {
     margin-left: 0;
-  }
-
-  .item > .row {
-    flex-wrap: nowrap;
   }
 }
 
