@@ -14,6 +14,11 @@
   --youtubeRed: #f00;
   --vagrantLightBlue: #127eff;
   --vagrantDarkBlue: #1159cc;
+  --tuxWhite: #eceff1;
+  --tuxGray: #212121;
+  --tuxYellow: #ffc107;
+  --tuxBrown: #634703;
+  --androidGreen: #aac148;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
   --boxShadowInset: inset 0 2px 3px 1px var(--gray);
@@ -233,6 +238,12 @@ li:last-of-type {
   text-align: center;
 }
 
+.flex-column-centering {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .left {
   text-align: left;
 }
@@ -316,6 +327,26 @@ a:hover > .pdf-icon,
 
 .vagrant-icon:hover .vagrant-icon-dark {
   fill: var(--vagrantDarkBlue);
+}
+
+.tux-icon .tux-icon-white {
+  fill: var(--tuxWhite);
+}
+
+.tux-icon .tux-icon-gray {
+  fill: var(--tuxGray);
+}
+
+.tux-icon .tux-icon-yellow {
+  fill: var(--tuxYellow);
+}
+
+.tux-icon .tux-icon-brown {
+  fill: var(--tuxBrown);
+}
+
+.android-icon .android-icon-green {
+  fill: var(--androidGreen);
 }
 
 .linkedin-icon:hover {
