@@ -156,7 +156,6 @@ gulp.task('assets', ['clean:assets'], () =>
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
 gulp.task('default', ['compile', 'assets', 'seofiles'], () => {
-  validateAMP();
   browserSync({
     server: FOLDER_DIST
   });
