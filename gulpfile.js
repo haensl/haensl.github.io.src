@@ -37,6 +37,12 @@ const createFolder = (folder) =>
   folderExists(folder)
     || fs.mkdirSync(folder);
 
+const validateAMP = () =>
+  gulp.src(`${FOLDER_DIST}/**/index.html`)
+    .pipe($.amphtmlValidator.validate())
+    .pipe($.amphtmlValidator.format())
+    .pipe($.amphtmlValidator.failAfterError());
+
 gulp.task('ensureDistFolderExists', () =>
   createFolder(FOLDER_DIST));
 
@@ -62,8 +68,11 @@ gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
   }));
 
 gulp.task('seofiles', ['clean:seofiles'], () =>
-  gulp.src(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`))
-    .pipe(gulp.dest(FOLDER_DIST)));
+  new Promise((resolve, reject) =>
+    gulp.src(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`))
+      .pipe(gulp.dest(FOLDER_DIST))
+      .on('end', resolve)
+      .on('error', reject)));
 
 gulp.task('css', ['clean:css'], () =>
   new Promise((resolve, reject) =>
@@ -115,40 +124,39 @@ gulp.task('templates', ['clean:html'], (done) =>
 )));
 
 gulp.task('html', ['templates', 'css'], () =>
-  gulp.src(`${FOLDER_DIST}/**/*.html`)
-    .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
-    .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
-    .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => {
-      const isoDate = (new Date()).toISOString();
-      let metaRevised = `<meta name="revised" content="${ isoDate }">`;
-      metaRevised = `${metaRevised}<meta name="date" content="${ isoDate }">`;
-      return metaRevised;
-    })))
-    .pipe($.embedJson({
-      root: path.join(FOLDER_SRC_ASSETS, 'json')
-    }))
-    .pipe($.embedSvg({
-      root: path.join(__dirname, 'src/artwork')
-    }))
-    .pipe($.htmlmin(OPTS_HTMLMIN))
-    .pipe(gulp.dest(FOLDER_DIST)));
+  new Promise((resolve, reject) =>
+    gulp.src(`${FOLDER_DIST}/**/*.html`)
+      .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
+      .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
+      .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => {
+        const isoDate = (new Date()).toISOString();
+        let metaRevised = `<meta name="revised" content="${ isoDate }">`;
+        metaRevised = `${metaRevised}<meta name="date" content="${ isoDate }">`;
+        return metaRevised;
+      })))
+      .pipe($.embedJson({
+        root: path.join(FOLDER_SRC_ASSETS, 'json')
+      }))
+      .pipe($.embedSvg({
+        root: path.join(__dirname, 'src/artwork')
+      }))
+      .pipe($.htmlmin(OPTS_HTMLMIN))
+      .pipe(gulp.dest(FOLDER_DIST))
+      .on('end', resolve)
+      .on('error', reject)));
 
 gulp.task('compile', ['html'], () => {
   del.sync(path.join(FOLDER_DIST, 'style.tmp.css'));
   browserSync.reload();
+  validateAMP();
 });
 
 gulp.task('assets', ['clean:assets'], () =>
   gulp.src(`${FOLDER_SRC}/assets/+(img|docs)/*`)
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
-gulp.task('amp:validate', ['compile'], () =>
-  gulp.src(`${FOLDER_DIST}/**/index.html`)
-    .pipe($.amphtmlValidator.validate())
-    .pipe($.amphtmlValidator.format())
-    .pipe($.amphtmlValidator.failAfterError()));
-
-gulp.task('default', ['compile', 'assets', 'seofiles', 'amp:validate'], () => {
+gulp.task('default', ['compile', 'assets', 'seofiles'], () => {
+  validateAMP();
   browserSync({
     server: FOLDER_DIST
   });
@@ -157,5 +165,4 @@ gulp.task('default', ['compile', 'assets', 'seofiles', 'amp:validate'], () => {
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|mustache)`, ['compile']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
-  gulp.watch(`${FOLDER_DIST}/**/*.html`, ['amp:validate']);
 });

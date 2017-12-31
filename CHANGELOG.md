@@ -1,3 +1,6 @@
+### 2.2.1
+* [#64: Fix gulp watch task(s).](https://github.com/haensl/haensl.github.io.src/issues/64)
+
 ### 2.2.0
 * [#63: Iconify operating systems.](https://github.com/haensl/haensl.github.io.src/issues/63)
 
