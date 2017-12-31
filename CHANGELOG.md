@@ -1,3 +1,6 @@
+### 2.2.0
+* [#63: Iconify operating systems.](https://github.com/haensl/haensl.github.io.src/issues/63)
+
 ### 2.1.0
 * [#57: Add vocation icons.](https://github.com/haensl/haensl.github.io.src/issues/57)
 
