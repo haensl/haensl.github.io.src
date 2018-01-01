@@ -19,6 +19,22 @@
   --tuxYellow: #ffc107;
   --tuxBrown: #634703;
   --androidGreen: #aac148;
+  --javaBlue: #477ed0;
+  --javaRed: #ec282c;
+  --golangBeige: #f6d2a2;
+  --golangBlue: #69d7e2;
+  --golangWhite: #fff;
+  --golangBlack: #231f20;
+  --cBlue: #03599c;
+  --cppDarkBlue: #00549d;
+  --cppLightBlue: #0086d4;
+  --cppMediumBlue: #0075c0;
+  --cppWhite: #fff;
+  --csharpGray: #3c3c3c;
+  --csharpWhite: #fff;
+  --csharpLightPurple: #9b4f96;
+  --csharpDarkPurple: #68217a;
+  --csharpMediumPurple: #813787;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
   --boxShadowInset: inset 0 2px 3px 1px var(--gray);
@@ -217,6 +233,10 @@ li:last-of-type {
   font-weight: bold;
 }
 
+.horizontal-space-between {
+  justify-content: space-between;
+}
+
 .horizontal-list {
   display: flex;
   flex-direction: row;
@@ -347,6 +367,100 @@ a:hover > .pdf-icon,
 
 .android-icon .android-icon-green {
   fill: var(--androidGreen);
+}
+
+.java-icon .java-icon-blue {
+  fill: var(--javaBlue);
+}
+
+.java-icon .java-icon-red {
+  fill: var(--javaRed);
+}
+
+.java-icon .java-icon-red,
+.java-icon .java-icon-blue {
+  fill-rule: evenodd;
+}
+
+.golang-icon .golang-icon-beige {
+  fill: var(--golangBeige);
+}
+
+.golang-icon .golang-icon-blue {
+  fill: var(--golangBlue);
+}
+
+.golang-icon .golang-icon-white {
+  fill: var(--golangWhite);
+}
+
+.golang-icon .golang-icon-black {
+  fill: var(--golangBlack);
+}
+
+.c-icon .c-icon-blue {
+  fill: var(--cBlue);
+}
+
+.csharp-icon .csharp-icon-hexagon-gray {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-opacity: 0.4;
+  stroke-width: 0.8;
+  stroke: var(--csharpGray);
+}
+
+.csharp-icon .csharp-icon-hexagon-white {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-width: 0.5;
+  stroke: var(--csharpWhite);
+}
+
+.csharp-icon .csharp-icon-area {
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.csharp-icon .csharp-icon-light-purple {
+  fill: var(--csharpLightPurple);
+}
+
+.csharp-icon .csharp-icon-dark-purple {
+  fill: var(--csharpDarkPurple);
+}
+
+.csharp-icon .csharp-icon-medium-purple {
+  fill: var(--csharpMediumPurple);
+}
+
+.csharp-icon .csharp-icon-white {
+  fill: var(--csharpWhite);
+  stroke-width: 1px;
+}
+
+.cpp-icon .cpp-icon-dark-blue,
+.cpp-icon .cpp-icon-light-blue,
+.cpp-icon .cpp-icon-medium-blue,
+.cpp-icon .cpp-icon-white {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.cpp-icon .cpp-icon-medium-blue {
+  fill: var(--cppMediumBlue);
+}
+
+.cpp-icon .cpp-icon-white {
+  fill: var(--cppWhite);
+}
+
+.cpp-icon .cpp-icon-light-blue {
+  fill: var(--cppLightBlue);
+}
+
+.cpp-icon .cpp-icon-dark-blue {
+  fil: var(--cppDarkBlue);
 }
 
 .linkedin-icon:hover {
