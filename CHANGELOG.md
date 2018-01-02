@@ -1,3 +1,6 @@
+### 2.4.0
+* [71: Add pygame to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/71)
+
 ### 2.3.0
 * [#69: Iconify web servers.](https://github.com/haensl/haensl.github.io.src/issues/69)
 * [#68: Iconify database systems.](https://github.com/haensl/haensl.github.io.src/issues/68)
