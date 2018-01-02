@@ -19,6 +19,44 @@
   --tuxYellow: #ffc107;
   --tuxBrown: #634703;
   --androidGreen: #aac148;
+  --javaBlue: #477ed0;
+  --javaRed: #ec282c;
+  --golangBeige: #f6d2a2;
+  --golangBlue: #69d7e2;
+  --golangWhite: #fff;
+  --golangBlack: #231f20;
+  --cBlue: #03599c;
+  --cppDarkBlue: #00549d;
+  --cppLightBlue: #0086d4;
+  --cppMediumBlue: #0075c0;
+  --cppWhite: #fff;
+  --csharpGray: #3c3c3c;
+  --csharpWhite: #fff;
+  --csharpLightPurple: #9b4f96;
+  --csharpDarkPurple: #68217a;
+  --csharpMediumPurple: #813787;
+  --nodejsGreen: #81cf08;
+  --reactBlue: #61dafb;
+  --riotRed: #ed1846;
+  --jqueryBlue: #0a69ad;
+  --phpBlue: #6181b6;
+  --xmlOrange: #f29c1f;
+  --xmlWhite: #fff;
+  --mongoDbBrown: #a6a385;
+  --mongoDbDarkGreen: #499d4a;
+  --mongoDbLightGreen: #58aa50;
+  --apacheOrange: #e97826;
+  --apacheMagenta: #9e2064;
+  --apacheMagenta2: #9f2064;
+  --apacheRed: #be202e;
+  --apacheRed2: #c92037;
+  --apacheRed3: #cd2335;
+  --apacheRed4: #cd2032;
+  --apachePurple: #282662;
+  --apacheLightPurple: #662e8d;
+  --nginxGreen: #0d9921;
+  --gulpRed: #d34a47;
+  --bambooBlue: #1f5182;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
   --boxShadowInset: inset 0 2px 3px 1px var(--gray);
@@ -136,6 +174,7 @@ h4 {
 
 h5 {
   margin: 0 0 .5rem 0;
+  font-size: .7rem;
 }
 
 ul,
@@ -217,13 +256,17 @@ li:last-of-type {
   font-weight: bold;
 }
 
+.horizontal-space-between {
+  justify-content: space-between;
+}
+
 .horizontal-list {
   display: flex;
   flex-direction: row;
 }
 
 .horizontal-list > li {
-  margin: 0 var(--defaultPadding) 0 0;
+  margin-right: var(--defaultPadding);
 }
 
 .horizontal-list > li:last-of-type {
@@ -252,12 +295,20 @@ li:last-of-type {
   font-size: .85rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .no-text {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 .text {
   font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
+}
+
+.w5 {
+  width: 5rem;
 }
 
 .hidden {
@@ -321,6 +372,14 @@ a:hover > .pdf-icon,
   fill: var(--xingDarkGreen);
 }
 
+.vagrant-icon-solid .vagrant-icon-light {
+  fill: var(--vagrantLightBlue);
+}
+
+.vagrant-icon-solid .vagrant-icon-dark {
+  fill: var(--vagrantDarkBlue);
+}
+
 .vagrant-icon:hover .vagrant-icon-light {
   fill: var(--vagrantLightBlue);
 }
@@ -347,6 +406,196 @@ a:hover > .pdf-icon,
 
 .android-icon .android-icon-green {
   fill: var(--androidGreen);
+}
+
+.java-icon .java-icon-blue {
+  fill: var(--javaBlue);
+}
+
+.java-icon .java-icon-red {
+  fill: var(--javaRed);
+}
+
+.java-icon .java-icon-red,
+.java-icon .java-icon-blue {
+  fill-rule: evenodd;
+}
+
+.golang-icon .golang-icon-beige {
+  fill: var(--golangBeige);
+}
+
+.golang-icon .golang-icon-blue {
+  fill: var(--golangBlue);
+}
+
+.golang-icon .golang-icon-white {
+  fill: var(--golangWhite);
+}
+
+.golang-icon .golang-icon-black {
+  fill: var(--golangBlack);
+}
+
+.c-icon .c-icon-blue {
+  fill: var(--cBlue);
+}
+
+.csharp-icon .csharp-icon-hexagon-gray {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-opacity: 0.4;
+  stroke-width: 0.8;
+  stroke: var(--csharpGray);
+}
+
+.csharp-icon .csharp-icon-hexagon-white {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-width: 0.5;
+  stroke: var(--csharpWhite);
+}
+
+.csharp-icon .csharp-icon-area {
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.csharp-icon .csharp-icon-light-purple {
+  fill: var(--csharpLightPurple);
+}
+
+.csharp-icon .csharp-icon-dark-purple {
+  fill: var(--csharpDarkPurple);
+}
+
+.csharp-icon .csharp-icon-medium-purple {
+  fill: var(--csharpMediumPurple);
+}
+
+.csharp-icon .csharp-icon-white {
+  fill: var(--csharpWhite);
+  stroke-width: 1px;
+}
+
+.cpp-icon .cpp-icon-dark-blue,
+.cpp-icon .cpp-icon-light-blue,
+.cpp-icon .cpp-icon-medium-blue,
+.cpp-icon .cpp-icon-white {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.cpp-icon .cpp-icon-medium-blue {
+  fill: var(--cppMediumBlue);
+}
+
+.cpp-icon .cpp-icon-white {
+  fill: var(--cppWhite);
+}
+
+.cpp-icon .cpp-icon-light-blue {
+  fill: var(--cppLightBlue);
+}
+
+.cpp-icon .cpp-icon-dark-blue {
+  fill: var(--cppDarkBlue);
+}
+
+.nodejs-icon .nodejs-icon-green {
+  fill: var(--nodejsGreen);
+}
+
+.react-icon .react-icon-blue {
+  fill: var(--reactBlue);
+}
+
+.riot-icon .riot-icon-red {
+  fill: var(--riotRed);
+}
+
+.jquery-icon .jquery-icon-blue {
+  fill: var(--jqueryBlue);
+}
+
+.php-icon .php-icon-blue {
+  fill: var(--phpBlue);
+}
+
+.xml-icon .xml-icon-orange {
+  fill: var(--xmlOrange);
+}
+
+.xml-icon .xml-icon-white {
+  fill: var(--xmlWhite);
+}
+
+.mongodb-icon .mongodb-icon-brown {
+  fill: var(--mongoDbBrown);
+}
+
+.mongodb-icon .mongodb-icon-light-green {
+  fill: var(--mongoDbLightGreen);
+}
+
+.mongodb-icon .mongodb-icon-dark-green {
+  fill: var(--mongoDbDarkGreen);
+}
+
+.apache-icon .apache-icon-stop-orange {
+  stop-color: var(--apacheOrange);
+}
+
+.apache-icon .apache-icon-stop-magenta {
+  stop-color: var(--apacheMagenta);
+}
+
+.apache-icon .apache-icon-stop-red {
+  stop-color: var(--apacheRed2);
+}
+
+.apache-icon .apache-icon-stop-red3 {
+  stop-color: var(--apacheRed3);
+}
+
+.apache-icon .apache-icon-stop-red4 {
+  stop-color: var(--apacheRed4);
+}
+
+.apache-icon .apache-icon-stop-purple {
+  stop-color: var(--apachePurple);
+}
+
+.apache-icon .apache-icon-stop-light-purple {
+  stop-color: var(--apacheLightPurple);
+}
+
+.apache-icon .apache-icon-stop-magenta2 {
+  stop-color: var(--apacheMagenta2);
+}
+
+.apache-icon .apache-icon-fill-red {
+  fill: var(--apacheRed);
+}
+
+.apache-icon .apache-icon-opacity4 {
+  opacity: .4;
+}
+
+.apache-icon .nofill {
+  fill: none;
+}
+
+.nginx-icon {
+  fill: var(--nginxGreen);
+}
+
+.gulp-icon .gulp-icon-red {
+  fill: var(--gulpRed);
+}
+
+.bamboo-icon .bamboo-icon-blue {
+  fill: var(--bambooBlue);
 }
 
 .linkedin-icon:hover {
@@ -425,6 +674,10 @@ a > .icon-small:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
+}
+
+.item.m0 {
+  margin-bottom: 0;
 }
 
 .item.m-column-d-row > .m-row-d-column {

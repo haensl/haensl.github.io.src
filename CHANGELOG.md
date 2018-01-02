@@ -1,3 +1,8 @@
+### 2.3.0
+* [#69: Iconify web servers.](https://github.com/haensl/haensl.github.io.src/issues/69)
+* [#68: Iconify database systems.](https://github.com/haensl/haensl.github.io.src/issues/68)
+* [#67: Iconify programming languages.](https://github.com/haensl/haensl.github.io.src/issues/67)
+
 ### 2.2.1
 * [#64: Fix gulp watch task(s).](https://github.com/haensl/haensl.github.io.src/issues/64)
 
