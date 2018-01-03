@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/haensl/goto",
+  "codeSampleType": "full",
+  "programmingLanguage": "Bash",
+  "runtimePlatform": "Linux",
+  "targetProduct": {
+    "@id": "https://github.com/haensl/goto"
+  }
+}

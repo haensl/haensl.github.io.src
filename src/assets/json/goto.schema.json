@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/goto",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Command line utility",
+  "applicationSuite": "Bash",
+  "downloadUrl": "https://github.com/haensl/goto/releases",
+  "releaseNotes": "https://github.com/haensl/goto/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2017,
+  "datePublished": 2017,
+  "discussionUrl": "https://github.com/haensl/goto/issues",
+  "keywords": "bash, bashcompletion, bash-script, bash-completion, autocomplete, autocompletion, goto",
+  "license": "https://github.com/haensl/goto/blob/master/LICENSE",
+  "description": "Bash completion for fast project navigation.",
+  "name": "goto",
+  "url": "https://github.com/haensl/goto"
+}
