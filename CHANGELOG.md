@@ -1,11 +1,14 @@
+### 2.7.0
+* [#78: Add goto to projects.](https://github.com/haensl/haensl.github.io.src/issues/78)
+
 ### 2.6.0
-* [76: Add language icons.](https://github.com/haensl/haensl.github.io.src/issues/76)
+* [#76: Add language icons.](https://github.com/haensl/haensl.github.io.src/issues/76)
 
 ### 2.5.0
-* [74: Add passport to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/74)
+* [#74: Add passport to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/74)
 
 ### 2.4.0
-* [71: Add pygame to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/71)
+* [#71: Add pygame to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/71)
 
 ### 2.3.0
 * [#69: Iconify web servers.](https://github.com/haensl/haensl.github.io.src/issues/69)
