@@ -1,3 +1,6 @@
+### 2.6.0
+* [76: Add language icons.](https://github.com/haensl/haensl.github.io.src/issues/76)
+
 ### 2.5.0
 * [74: Add passport to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/74)
 

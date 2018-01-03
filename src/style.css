@@ -281,6 +281,10 @@ li:last-of-type {
   text-align: center;
 }
 
+.row.vcentering {
+  align-items: center;
+}
+
 .flex-column-centering {
   display: flex;
   align-items: center;
