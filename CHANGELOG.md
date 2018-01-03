@@ -1,3 +1,6 @@
+### 2.5.0
+* [74: Add passport to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/74)
+
 ### 2.4.0
 * [71: Add pygame to programming languages and frameworks](https://github.com/haensl/haensl.github.io.src/issues/71)
 
