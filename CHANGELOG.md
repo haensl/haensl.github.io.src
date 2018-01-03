@@ -1,3 +1,6 @@
+### 2.7.1
+* [#80: Update copyright year.](https://github.com/haensl/haensl.github.io.src/issues/80)
+
 ### 2.7.0
 * [#78: Add goto to projects.](https://github.com/haensl/haensl.github.io.src/issues/78)
 
