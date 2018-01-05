@@ -1,3 +1,6 @@
+### 2.8.0
+* [#72: Order technology icons alphabetically.](https://github.com/haensl/haensl.github.io.src/issues/72)
+
 ### 2.7.1
 * [#80: Update copyright year.](https://github.com/haensl/haensl.github.io.src/issues/80)
 
