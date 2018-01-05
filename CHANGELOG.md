@@ -1,3 +1,6 @@
+### 2.8.1
+* [#85: Resize images in readme.](https://github.com/haensl/haensl.github.io.src/issues/85)
+
 ### 2.8.0
 * [#72: Order technology icons alphabetically.](https://github.com/haensl/haensl.github.io.src/issues/72)
 
