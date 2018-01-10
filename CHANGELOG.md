@@ -1,3 +1,6 @@
+### 2.10.0
+* [#83: Add ejs to programming languages and frameworks.](https://github.com/haensl/haensl.github.io.src/issues/83)
+
 ### 2.9.0
 * [#82: Add mustache to programming languages and frameworks.](https://github.com/haensl/haensl.github.io.src/issues/82)
 
