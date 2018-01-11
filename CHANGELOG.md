@@ -1,3 +1,6 @@
+### 2.11.0
+* [#91: Dockerize](https://github.com/haensl/haensl.github.io.src/issues/91)
+
 ### 2.10.0
 * [#83: Add ejs to programming languages and frameworks.](https://github.com/haensl/haensl.github.io.src/issues/83)
 

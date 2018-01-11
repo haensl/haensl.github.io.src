@@ -1,0 +1,11 @@
+{
+  "apps": [{
+      "name": "haensl.github.io",
+      "script": "app.js",
+      "instances": 1,
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 8081
+      }
+  }]
+}

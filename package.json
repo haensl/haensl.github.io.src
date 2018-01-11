@@ -1,14 +1,16 @@
 {
   "name": "haensl.github.io",
-  "version": "2.8.1",
+  "version": "2.11.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
     "node": ">= 6.9.2"
   },
   "scripts": {
-    "start": "[ \"${NODE_ENV}\" != 'production' ] && gulp || node app.js",
-    "build": "gulp build"
+    "start": "[ \"${NODE_ENV}\" != 'production' ] && gulp || pm2-runtime start app.js",
+    "build": "gulp build",
+    "build:docker": "docker build -t haensl.github.io .",
+    "qa": "docker save haensl.github.io | bzip2 | pv | ssh $VMSERVER_USER@$VMSERVER 'bunzip2 | docker load'; dvmserver run -d -p 8081:8081 --rm --name haensl.github.io --network=haensl-github-io haensl.github.io:latest"
   },
   "keywords": [
     "github.io",
@@ -47,6 +49,7 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "pm2": "^2.9.1"
   }
 }

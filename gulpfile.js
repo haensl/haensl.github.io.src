@@ -30,6 +30,7 @@ const FILES_SEO = [
 ];
 const FILES_SERVER = [
   'package.json',
+  'pm2.json',
   `${FOLDER_SRC}/app.js`
 ];
 
@@ -177,6 +178,7 @@ gulp.task('default', ['build'], () => {
   });
 
   gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
+  gulp.watch(FILES_SERVER, ['server']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|mustache)`, ['compile']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
