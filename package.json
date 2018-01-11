@@ -7,7 +7,8 @@
     "node": ">= 6.9.2"
   },
   "scripts": {
-    "start": "gulp"
+    "start": "[ \"${NODE_ENV}\" != 'production' ] && gulp || node app.js",
+    "build": "gulp build"
   },
   "keywords": [
     "github.io",
@@ -43,5 +44,9 @@
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1"
+  },
+  "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2"
   }
 }
