@@ -173,10 +173,6 @@ gulp.task('assets', ['clean:assets'], () =>
 gulp.task('build', ['compile', 'assets', 'seofiles', 'server']);
 
 gulp.task('default', ['build'], () => {
-  browserSync({
-    server: FOLDER_DIST
-  });
-
   gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
   gulp.watch(FILES_SERVER, ['server']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|mustache)`, ['compile']);

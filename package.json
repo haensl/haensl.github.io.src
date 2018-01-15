@@ -7,10 +7,14 @@
     "node": ">= 6.9.2"
   },
   "scripts": {
-    "start": "[ \"${NODE_ENV}\" != 'production' ] && gulp || pm2-runtime start app.js",
+    "watch:client": "gulp",
+    "watch:server": "pm2-runtime start dist/app.js --watch",
+    "start": "[ \"${NODE_ENV}\" != 'production' ] && run-p watch:* || pm2-runtime start app.js",
     "build": "gulp build",
     "build:docker": "docker build -t haensl.github.io .",
-    "qa": "docker save haensl.github.io | bzip2 | pv | ssh $VMSERVER_USER@$VMSERVER 'bunzip2 | docker load'; dvmserver run -d -p 8081:8081 --rm --name haensl.github.io --network=haensl-github-io haensl.github.io:latest"
+    "compile": "run-p build build:docker",
+    "deploy:qa": "docker save haensl.github.io | bzip2 | pv | ssh $VMSERVER_USER@$VMSERVER 'bunzip2 | docker load'; dvmserver run -d -p 8081:8081 --rm --name haensl.github.io --network=haensl-github-io haensl.github.io:latest",
+    "qa": "run-s compile deploy:qa"
   },
   "keywords": [
     "github.io",
@@ -45,7 +49,8 @@
     "gulp-mustache": "^3.0.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.6.1"
+    "gulp-replace": "^0.6.1",
+    "npm-run-all": "^4.1.2"
   },
   "dependencies": {
     "compression": "^1.7.1",
