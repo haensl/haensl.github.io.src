@@ -28,6 +28,11 @@ const FILES_SEO = [
   'robots.txt',
   'google606a8a6b7c2ee7a1.html'
 ];
+const FILES_SERVER = [
+  'package.json',
+  'pm2.json',
+  `${FOLDER_SRC}/app.js`
+];
 
 const folderExists = (folder) =>
   (fs.existsSync(folder)
@@ -50,7 +55,10 @@ gulp.task('ensureDistAssetsFolderExists', ['ensureDistFolderExists'], () =>
   createFolder(FOLDER_DIST_ASSETS));
 
 gulp.task('clean:seofiles', ['ensureDistFolderExists'], () =>
-  del.sync(FILES_SEO.map((file) => `${FOLDER_DIST}/${file}`), { force: true }));
+  del.sync(FILES_SEO.map((file) => `${FOLDER_DIST}/${path.basename(file)}`), { force: true }));
+
+gulp.task('clean:serverfiles', ['ensureDistFolderExists'], () =>
+  del.sync(FILES_SERVER.map((file) => `${FOLDER_DIST}/${file}`), { force: true}));
 
 gulp.task('clean:css', ['ensureDistFolderExists'], () =>
   del.sync([`${FOLDER_DIST}/*.css`], {
@@ -70,6 +78,13 @@ gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
 gulp.task('seofiles', ['clean:seofiles'], () =>
   new Promise((resolve, reject) =>
     gulp.src(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`))
+      .pipe(gulp.dest(FOLDER_DIST))
+      .on('end', resolve)
+      .on('error', reject)));
+
+gulp.task('server', ['clean:serverfiles'], () =>
+  new Promise((resolve, reject) =>
+    gulp.src(FILES_SERVER)
       .pipe(gulp.dest(FOLDER_DIST))
       .on('end', resolve)
       .on('error', reject)));
@@ -155,12 +170,11 @@ gulp.task('assets', ['clean:assets'], () =>
   gulp.src(`${FOLDER_SRC}/assets/+(img|docs)/*`)
     .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
 
-gulp.task('default', ['compile', 'assets', 'seofiles'], () => {
-  browserSync({
-    server: FOLDER_DIST
-  });
+gulp.task('build', ['compile', 'assets', 'seofiles', 'server']);
 
+gulp.task('default', ['build'], () => {
   gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
+  gulp.watch(FILES_SERVER, ['server']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|mustache)`, ['compile']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
