@@ -108,8 +108,8 @@ main {
 }
 
 main > section.p1 {
-    opacity: 1;
-    height: auto;
+  opacity: 1;
+  height: auto;
 }
 
 footer {
