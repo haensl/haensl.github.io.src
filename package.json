@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.11.1",
+  "version": "2.11.2",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
@@ -9,7 +9,7 @@
   "scripts": {
     "watch:client": "gulp",
     "watch:server": "pm2-runtime start dist/app.js --watch",
-    "start": "[ \"${NODE_ENV}\" != 'production' ] && run-p watch:* || pm2-runtime start app.js",
+    "start": "[ \"${NODE_ENV}\" != 'production' ] && (run-p watch:client watch:server) || pm2-runtime start app.js",
     "build": "gulp build",
     "build:docker": "docker build -t haensl.github.io .",
     "compile": "run-p build build:docker",

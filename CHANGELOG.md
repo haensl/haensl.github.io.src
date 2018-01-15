@@ -1,3 +1,6 @@
+### 2.11.2
+* [94: Remove section transitions.](https://github.com/haensl/haensl.github.io.src/issues/94)
+
 ### 2.11.1
 * [96: Update employed technologies in readme.](https://github.com/haensl/haensl.github.io.src/issues/96)
 
