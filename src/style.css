@@ -107,13 +107,9 @@ main {
   padding: 0 var(--defaultPadding) var(--defaultPadding) var(--defaultPadding);
 }
 
-main > section {
-  transition: opacity var(--transitionDuration) ease;
-}
-
 main > section.p1 {
-  opacity: 1;
-  height: auto;
+    opacity: 1;
+    height: auto;
 }
 
 footer {
