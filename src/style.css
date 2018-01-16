@@ -68,6 +68,15 @@
   to { opacity: 1; }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
 * {
   box-sizing: border-box;
   /**
@@ -372,22 +381,21 @@ a:hover > .pdf-icon,
   fill: var(--xingDarkGreen);
 }
 
-.not-found-icon {
-  fill: var(--black);
-  transform: rotate3d(1, 0, 0, -40deg);
+.not-found-icon::after {
+  content: '404';
+  transform: rotate3d(1, 0, 0, -40deg) translateZ(1px);
   animation: rotate 5s linear infinite;
-  filter: drop-shadow(9px 72px 10px rgba(0, 0, 0, .5));
+  display: inline-block;
+  font-size: 5rem;
+  font-family: 'Hack', 'Inconsolata', Courier, mono;
+}
+
+.not-found-icon {
+  margin: 7.5rem 0;
+  display: flex;
+  justify-content: center;
   perspective: 500px;
   perspective-origin: 25% 75%;
- }
-
-@keyframes rotate {
-  0% {
-    transform: rotate3d(0, 1, 0, 0deg);
-  }
-  100% {
-    transform: rotate3d(0, 1, 0, 360deg);
-  }
 }
 
 .vagrant-icon-solid .vagrant-icon-light {
