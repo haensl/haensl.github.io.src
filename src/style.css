@@ -372,6 +372,24 @@ a:hover > .pdf-icon,
   fill: var(--xingDarkGreen);
 }
 
+.not-found-icon {
+  fill: var(--black);
+  transform: rotate3d(1, 0, 0, -40deg);
+  animation: rotate 5s linear infinite;
+  filter: drop-shadow(9px 72px 10px rgba(0, 0, 0, .5));
+  perspective: 500px;
+  perspective-origin: 25% 75%;
+ }
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
 .vagrant-icon-solid .vagrant-icon-light {
   fill: var(--vagrantLightBlue);
 }

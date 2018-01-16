@@ -1,3 +1,6 @@
+### 2.12.0
+* [#92: Add custom 404 page.](https://github.com/haensl/haensl.github.io.src/issues/92)
+
 ### 2.11.2
 * [94: Remove section transitions.](https://github.com/haensl/haensl.github.io.src/issues/94)
 
