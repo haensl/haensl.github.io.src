@@ -1,19 +1,33 @@
 [
   {
     "name": "about",
-    "vars": {}
+    "vars": {
+      "description": "Get to know Hans-Peter Dietz. Full-Stack anything coder, unix guy, bass player and motorcyclist."
+    }
   },
   {
     "name": "cv",
-    "vars": {}
+    "vars": {
+      "description": "View Hans-Peter Dietz's curriculum vitae."
+    }
   },
   {
     "name": "projects",
-    "vars": {}
+    "vars": {
+      "description": "View projects of Hans-Peter Dietz. gulp-embed-json, gulp-embed-svg, gulp-minify-inline-json, the rovers, ng-async-img, js-performance, ngAnimatedScroll, htmlelement.polyfills, Qake, Ask The Crowd."
+    }
   },
   {
     "name": "publications",
-    "vars": {}
+    "vars": {
+      "description": "View publications by Hans-Peter Dietz. Ansible.tar.gz, Controlled Chaos: Randomization in Level Design, Ask The Crowd: Crowdsourcing Knowledge Generation, Implicit Authentication on Mobile Devices."
+    }
+  },
+  {
+    "name": "404",
+    "vars": {
+      "description": "404. Page not found."
+    }
   }
 ]
 

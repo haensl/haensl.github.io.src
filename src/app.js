@@ -7,6 +7,9 @@ const port = process.env.PORT || 8080;
 app.disable('x-powered-by');
 app.use(compression());
 app.use('/', express.static(`${__dirname}/`));
+app.use((req, res, next) => {
+  res.status(404).sendFile(`${__dirname}/404/index.html`);
+});
 
 app.listen(port, () => {
   console.info(`${package.name} v${package.version} listening on ${port}`);
