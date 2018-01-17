@@ -8,7 +8,10 @@ const readline = require('readline');
 
 const VERSION = require('./package').version;
 const FOLDER_DIST = 'dist';
-const FOLDER_DIST_ASSETS = `${FOLDER_DIST}/assets`;
+const FOLDER_DIST_GITHUB_IO = `${FOLDER_DIST}/haensl.github.io`;
+const FOLDER_DIST_STANDALONE = `${FOLDER_DIST}/standalone`;
+const FOLDER_ASSETS_GITHUB_IO = `${FOLDER_DIST_GITHUB_IO}/assets`;
+const FOLDER_ASSETS_STANDALONE = `${FOLDER_DIST_STANDALONE}/assets`;
 const FOLDER_SRC = 'src';
 const FOLDER_SRC_ASSETS = `${FOLDER_SRC}/assets`;
 const FOLDER_TEMPLATES = `${FOLDER_SRC}/templates`;
@@ -18,6 +21,7 @@ const DIRECTIVE_INCLUCE_VERSION = '<!-- INCLUDE_VERSION -->';
 const DIRECTIVE_INCLUDE_REVISED = '<!-- INCLUDE_REVISED -->';
 const TEMPLATE_VARS = require(`./${FOLDER_TEMPLATES}/vars`);
 const TEMPLATE_SITES = require(`./${FOLDER_TEMPLATES}/sites`);
+
 const OPTS_HTMLMIN = {
   collapseWhitespace: true,
   removeComments: true,
@@ -51,41 +55,57 @@ const validateAMP = () =>
 gulp.task('ensureDistFolderExists', () =>
   createFolder(FOLDER_DIST));
 
-gulp.task('ensureDistAssetsFolderExists', ['ensureDistFolderExists'], () =>
-  createFolder(FOLDER_DIST_ASSETS));
+gulp.task('ensureGithubIODistFolderExists', ['ensureDistFolderExists'], () =>
+  createFolder(FOLDER_DIST_GITHUB_IO));
 
-gulp.task('clean:seofiles', ['ensureDistFolderExists'], () =>
-  del.sync(FILES_SEO.map((file) => `${FOLDER_DIST}/${path.basename(file)}`), { force: true }));
+gulp.task('ensureStandaloneDistFolderExists', ['ensureDistFolderExists'], () =>
+  createFolder(FOLDER_DIST_STANDALONE));
 
-gulp.task('clean:serverfiles', ['ensureDistFolderExists'], () =>
-  del.sync(FILES_SERVER.map((file) => `${FOLDER_DIST}/${file}`), { force: true}));
+gulp.task('ensureGithubIOAssetsFolderExists', ['ensureGithubIODistFolderExists'], () =>
+  createFolder(FOLDER_ASSETS_GITHUB_IO));
 
-gulp.task('clean:css', ['ensureDistFolderExists'], () =>
-  del.sync([`${FOLDER_DIST}/*.css`], {
+gulp.task('ensureStandaloneAssetsFolderExists', ['ensureStandaloneDistFolderExists'], () =>
+  createFolder(FOLDER_ASSETS_STANDALONE));
+
+gulp.task('ensureDistAssetsFolderExists', ['ensureGithubIOAssetsFolderExists', 'ensureStandaloneAssetsFolderExists']);
+
+gulp.task('clean:seofiles', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
+  del.sync(FILES_SEO.map((file) => `${FOLDER_DIST}/**/${path.basename(file)}`), {
     force: true
   }));
 
-gulp.task('clean:html', ['ensureDistFolderExists'], () =>
+gulp.task('clean:serverfiles', ['ensureStandaloneDistFolderExists'], () =>
+  del.sync(FILES_SERVER.map((file) => `${FOLDER_DIST_STANDALONE}/${file}`), {
+    force: true
+  }));
+
+gulp.task('clean:css', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
+  del.sync([`${FOLDER_DIST}/**/*.css`], {
+    force: true
+  }));
+
+gulp.task('clean:html', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
   del.sync([`${FOLDER_DIST}/**/*.html`], {
     force: true
   }));
 
 gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
-  del.sync([`${FOLDER_DIST}/assets/*`], {
+  del.sync([`${FOLDER_ASSETS_GITHUB_IO}/*`, `${FOLDER_ASSETS_STANDALONE}/*`], {
     force: true
   }));
 
 gulp.task('seofiles', ['clean:seofiles'], () =>
   new Promise((resolve, reject) =>
     gulp.src(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`))
-      .pipe(gulp.dest(FOLDER_DIST))
+      .pipe(gulp.dest(FOLDER_DIST_STANDALONE))
+      .pipe(gulp.dest(FOLDER_DIST_GITHUB_IO))
       .on('end', resolve)
       .on('error', reject)));
 
 gulp.task('server', ['clean:serverfiles'], () =>
   new Promise((resolve, reject) =>
     gulp.src(FILES_SERVER)
-      .pipe(gulp.dest(FOLDER_DIST))
+      .pipe(gulp.dest(FOLDER_DIST_STANDALONE))
       .on('end', resolve)
       .on('error', reject)));
 
@@ -131,7 +151,8 @@ gulp.task('templates', ['clean:html'], (done) =>
             path.extname = '.html';
             return path;
           }))
-          .pipe(gulp.dest(`${FOLDER_DIST}/${site.name !== 'about' ? `${site.name}/` : ''}`))
+          .pipe(gulp.dest(`${FOLDER_DIST_STANDALONE}/${site.name !== 'about' ? `${site.name}/` : ''}`))
+          .pipe(gulp.dest(`${FOLDER_DIST_GITHUB_IO}/${site.name !== 'about' ? `${site.name}/` : ''}`))
           .on('end', resolve)
           .on('error', reject);
       });
@@ -139,28 +160,48 @@ gulp.task('templates', ['clean:html'], (done) =>
 )));
 
 gulp.task('html', ['templates', 'css'], () =>
-  new Promise((resolve, reject) =>
-    gulp.src(`${FOLDER_DIST}/**/*.html`)
-      .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
-      .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
-      .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => {
-        const isoDate = (new Date()).toISOString();
-        let metaRevised = `<meta name="revised" content="${ isoDate }">`;
-        metaRevised = `${metaRevised}<meta name="date" content="${ isoDate }">`;
-        return metaRevised;
-      })))
-      .pipe($.embedJson({
-        root: path.join(FOLDER_SRC_ASSETS, 'json')
-      }))
-      .pipe($.embedSvg({
-        root: path.join(__dirname, 'src/artwork')
-      }))
-      .pipe($.htmlmin(OPTS_HTMLMIN))
-      .pipe(gulp.dest(FOLDER_DIST))
-      .on('end', resolve)
-      .on('error', reject)));
+  Promise.all([
+    FOLDER_DIST_GITHUB_IO,
+    FOLDER_DIST_STANDALONE
+  ].map((distFolder) =>
+    new Promise((resolve, reject) =>
+      gulp.src(`${distFolder}/**/*.html`)
+        .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
+        .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
+        .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => {
+          const isoDate = (new Date()).toISOString();
+          let metaRevised = `<meta name="revised" content="${ isoDate }">`;
+          metaRevised = `${metaRevised}<meta name="date" content="${ isoDate }">`;
+          return metaRevised;
+        })))
+        .pipe($.embedJson({
+          root: path.join(FOLDER_SRC_ASSETS, 'json')
+        }))
+        .pipe($.embedSvg({
+          root: path.join(__dirname, 'src/artwork')
+        }))
+        .pipe($.htmlmin(OPTS_HTMLMIN))
+        .pipe(gulp.dest(FOLDER_DIST_GITHUB_IO))
+        .pipe(gulp.dest(FOLDER_DIST_STANDALONE))
+        .on('end', resolve)
+        .on('error', reject)))));
 
-gulp.task('compile', ['html'], () => {
+gulp.task('githubErrorPages:prependFrontMatter', ['html'], () =>
+  gulp.src(`${FOLDER_DIST_GITHUB_IO}/404/index.html`)
+    .pipe($.insert.prepend('---\npermalink: /404.html\n---\n'))
+    .pipe($.rename((path) => {
+      path.basename = '404';
+      return path;
+    }))
+    .pipe(gulp.dest(`${FOLDER_DIST_GITHUB_IO}`)));
+
+gulp.task('githubErrorPages', ['githubErrorPages:prependFrontMatter'], () => {
+  del.sync([`${FOLDER_DIST_GITHUB_IO}/404/index.html`, `${FOLDER_DIST_GITHUB_IO}/404`], {
+    force: true
+  });
+});
+
+gulp.task('compile', ['githubErrorPages'], () => {
   del.sync(path.join(FOLDER_DIST, 'style.tmp.css'));
   browserSync.reload();
   validateAMP();
@@ -168,14 +209,23 @@ gulp.task('compile', ['html'], () => {
 
 gulp.task('assets', ['clean:assets'], () =>
   gulp.src(`${FOLDER_SRC}/assets/+(img|docs)/*`)
-    .pipe(gulp.dest(FOLDER_DIST_ASSETS)));
+    .pipe(gulp.dest(FOLDER_ASSETS_GITHUB_IO))
+    .pipe(gulp.dest(FOLDER_ASSETS_STANDALONE)));
 
 gulp.task('build', ['compile', 'assets', 'seofiles', 'server']);
 
-gulp.task('default', ['build'], () => {
+gulp.task('watch', ['build'], () => {
   gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
   gulp.watch(FILES_SERVER, ['server']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|mustache)`, ['compile']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
+});
+
+gulp.task('default', ['watch'], () => {
+  browserSync.init({
+    server: {
+      baseDir: FOLDER_DIST_GITHUB_IO
+    }
+  });
 });

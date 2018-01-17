@@ -1,7 +1,7 @@
 FROM node:alpine
-COPY dist/ /var/www/
+COPY dist/standalone/ /var/www/
 RUN ls -la /var/www
-LABEL version="2.12.0"
+LABEL version="2.13.0"
 WORKDIR /var/www
 ENV NODE_ENV production
 ENV PORT 8081
