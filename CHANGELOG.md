@@ -1,3 +1,6 @@
+### 2.13.0
+* [#100: Split into github page and standalone app.](https://github.com/haensl/haensl.github.io.src/issues/100)
+
 ### 2.12.0
 * [#92: Add custom 404 page.](https://github.com/haensl/haensl.github.io.src/issues/92)
 

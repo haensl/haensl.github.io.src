@@ -1,20 +1,24 @@
 {
   "name": "haensl.github.io",
-  "version": "2.12.0",
+  "version": "2.13.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
     "node": ">= 6.9.2"
   },
   "scripts": {
-    "watch:client": "gulp",
-    "watch:server": "pm2-runtime start dist/app.js --watch",
-    "start": "[ \"${NODE_ENV}\" != 'production' ] && (run-p watch:client watch:server) || pm2-runtime start app.js",
-    "build": "gulp build",
+    "watch:client": "gulp watch",
+    "watch:server": "pm2-runtime start dist/standalone/app.js --watch",
+    "start": "[ $NODE_ENV == production ] && pm2-runtime start pm2.json || npm run dev:local",
+    "dev:local": "gulp",
+    "dev:standalone": "run-p watch:*",
+    "build:src": "gulp build",
     "build:docker": "docker build -t haensl.github.io .",
-    "compile": "run-p build build:docker",
-    "deploy:qa": "docker save haensl.github.io | bzip2 | pv | ssh $VMSERVER_USER@$VMSERVER 'bunzip2 | docker load'; dvmserver run -d -p 8081:8081 --rm --name haensl.github.io --network=haensl-github-io haensl.github.io:latest",
-    "qa": "run-s compile deploy:qa"
+    "build": "run-s build:src build:docker",
+    "deploy:qa": "docker save haensl.github.io | bzip2 | pv | ssh $VMSERVER_USER@$VMSERVER 'bunzip2 | docker load'; dvmserver run -d -p 8081:8081 --name haensl.github.io --network=haensl-github-io haensl.github.io:latest",
+    "deploy:hpdietz.com": "docker save haensl.github.io | bzip2 | pv | ssh $SERVER_USER@$SERVER 'bunzip2 | docker load'; dserver run -d -p 8081:8081 --name haensl.github.io --network=haensl-github-io haensl.github.io:latest",
+    "qa": "run-s build deploy:qa",
+    "publish": "run-s build deploy:hpdietz.com"
   },
   "keywords": [
     "github.io",
@@ -45,6 +49,7 @@
     "gulp-embed-json": "^1.2.0",
     "gulp-embed-svg": "^1.0.0",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-insert": "^0.5.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-mustache": "^3.0.0",
     "gulp-postcss": "^7.0.0",
