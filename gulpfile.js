@@ -28,7 +28,6 @@ const OPTS_HTMLMIN = {
   minifyJS: true
 };
 const FILES_SEO = [
-  'sitemap.xml',
   'robots.txt',
   'google606a8a6b7c2ee7a1.html'
 ];
@@ -71,6 +70,11 @@ gulp.task('ensureDistAssetsFolderExists', ['ensureGithubIOAssetsFolderExists', '
 
 gulp.task('clean:seofiles', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
   del.sync(FILES_SEO.map((file) => `${FOLDER_DIST}/**/${path.basename(file)}`), {
+    force: true
+  }));
+
+gulp.task('clean:sitemap', ['ensureStandaloneDistFolderExists', 'ensureGithubIOAssetsFolderExists'], () =>
+  del.sync(`${FOLDER_DIST}/**/sitemap.xml`, {
     force: true
   }));
 
@@ -122,7 +126,26 @@ gulp.task('css', ['clean:css'], () =>
       .on('end', resolve)
       .on('error', reject)));
 
-gulp.task('templates', ['clean:html'], (done) =>
+gulp.task('sitemap', ['clean:sitemap'], () =>
+  Promise.all([
+    FOLDER_DIST_STANDALONE,
+    FOLDER_DIST_GITHUB_IO
+  ].map((channel) => new Promise((resolve, reject) => {
+    const domain = channel.slice(5);
+    gulp.src(`${FOLDER_PARTIALS}/sitemap.mustache`)
+      .pipe($.mustache({
+        domain
+      }))
+      .pipe($.rename((path) => {
+        path.extname = '.xml';
+        return path;
+      }))
+      .pipe(gulp.dest(`${channel}/`))
+      .on('end', resolve)
+      .on('error', reject)
+    }))));
+
+gulp.task('templates', ['clean:html'], () =>
   Promise.all(TEMPLATE_SITES.map((site) =>
     new Promise((resolve, reject) => {
       fs.readFile(`${FOLDER_PARTIALS}/${site.name}.mustache`, 'utf8', (err, partial) => {
@@ -135,9 +158,7 @@ gulp.task('templates', ['clean:html'], (done) =>
           FOLDER_DIST_GITHUB_IO
         ].map((channel) =>
           new Promise((resolve, reject) => {
-            console.log(channel);
             const domain = channel.slice(5);
-            console.log(domain);
             const vars = Object.assign(
               {},
               JSON.parse(JSON.stringify(TEMPLATE_VARS)),
@@ -223,7 +244,7 @@ gulp.task('assets', ['clean:assets'], () =>
     .pipe(gulp.dest(FOLDER_ASSETS_GITHUB_IO))
     .pipe(gulp.dest(FOLDER_ASSETS_STANDALONE)));
 
-gulp.task('build', ['compile', 'assets', 'seofiles', 'server']);
+gulp.task('build', ['compile', 'assets', 'sitemap', 'seofiles', 'server']);
 
 gulp.task('watch', ['build'], () => {
   gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
