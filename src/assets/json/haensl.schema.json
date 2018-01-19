@@ -37,8 +37,11 @@
   },
   "image": "https://haensl.github.io/assets/img/avatar_x2.png",
   "mainEntityOfPage": "https://haensl.github.io",
-  "url": "https://haensl.github.io",
-  "sameAs": ["https://twitter.com/h_p_d"],
+  "url": "https://hpdietz.com",
+  "sameAs": [
+    "https://haensl.github.io",
+    "https://twitter.com/h_p_d"
+  ],
   "affiliation": {
     "@type": "MusicGroup",
     "genre": "Post Rock",

@@ -9,7 +9,7 @@ const readline = require('readline');
 const VERSION = require('./package').version;
 const FOLDER_DIST = 'dist';
 const FOLDER_DIST_GITHUB_IO = `${FOLDER_DIST}/haensl.github.io`;
-const FOLDER_DIST_STANDALONE = `${FOLDER_DIST}/standalone`;
+const FOLDER_DIST_STANDALONE = `${FOLDER_DIST}/hpdietz.com`;
 const FOLDER_ASSETS_GITHUB_IO = `${FOLDER_DIST_GITHUB_IO}/assets`;
 const FOLDER_ASSETS_STANDALONE = `${FOLDER_DIST_STANDALONE}/assets`;
 const FOLDER_SRC = 'src';
@@ -130,31 +130,42 @@ gulp.task('templates', ['clean:html'], (done) =>
           return reject(err);
         }
 
-        const vars = Object.assign(
-          {},
-          JSON.parse(JSON.stringify(TEMPLATE_VARS)),
-          {
-            site: site.name
-          },
-          site.vars
-        );
-        vars.menuItems.map((item) => {
-          item.active = item.name === site.name;
-          return item;
-        });
-        gulp.src(`${FOLDER_PARTIALS}/base.mustache`)
-          .pipe($.mustache(vars, {}, {
-            view: partial
-          }))
-          .pipe($.rename((path) => {
-            path.basename = 'index';
-            path.extname = '.html';
-            return path;
-          }))
-          .pipe(gulp.dest(`${FOLDER_DIST_STANDALONE}/${site.name !== 'about' ? `${site.name}/` : ''}`))
-          .pipe(gulp.dest(`${FOLDER_DIST_GITHUB_IO}/${site.name !== 'about' ? `${site.name}/` : ''}`))
-          .on('end', resolve)
-          .on('error', reject);
+        Promise.all([
+          FOLDER_DIST_STANDALONE,
+          FOLDER_DIST_GITHUB_IO
+        ].map((channel) =>
+          new Promise((resolve, reject) => {
+            console.log(channel);
+            const domain = channel.slice(5);
+            console.log(domain);
+            const vars = Object.assign(
+              {},
+              JSON.parse(JSON.stringify(TEMPLATE_VARS)),
+              {
+                site: site.name,
+                domain
+              },
+              site.vars
+            );
+            vars.menuItems.map((item) => {
+              item.active = item.name === site.name;
+              return item;
+            });
+            gulp.src(`${FOLDER_PARTIALS}/base.mustache`)
+              .pipe($.mustache(vars, {}, {
+                view: partial
+              }))
+              .pipe($.rename((path) => {
+                path.basename = 'index';
+                path.extname = '.html';
+                return path;
+              }))
+              .pipe(gulp.dest(`${channel}/${site.name !== 'about' ? `${site.name}/` : ''}`))
+              .on('end', resolve)
+              .on('error', reject);
+          })))
+          .then(resolve)
+          .catch(reject);
       });
   })
 )));

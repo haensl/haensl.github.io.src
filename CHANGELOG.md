@@ -1,3 +1,6 @@
+### 2.14.0
+* [#102: Add custom schema data for standalone app.](https://github.com/haensl/haensl.github.io.src/issues/102)
+
 ### 2.13.0
 * [#100: Split into github page and standalone app.](https://github.com/haensl/haensl.github.io.src/issues/100)
 

@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.13.0",
+  "version": "2.14.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "watch:client": "gulp watch",
-    "watch:server": "pm2-runtime start dist/standalone/app.js --watch",
+    "watch:server": "pm2-runtime start dist/hpdietz.com/app.js --watch",
     "start": "[ $NODE_ENV == production ] && pm2-runtime start pm2.json || npm run dev:local",
     "dev:local": "gulp",
     "dev:standalone": "run-p watch:*",

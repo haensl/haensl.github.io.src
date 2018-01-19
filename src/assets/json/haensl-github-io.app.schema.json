@@ -26,5 +26,6 @@
   "description": "Personal Github.io page of HP Dietz",
   "name": "HP Dietz",
   "url": "https://haensl.github.io",
-  "image": "https://haensl.github.io/assets/img/avatar_8x.png"
+  "image": "https://haensl.github.io/assets/img/avatar_8x.png",
+  "sameAs": "https://hpdietz.com"
 }
