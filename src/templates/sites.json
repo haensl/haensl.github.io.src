@@ -28,6 +28,12 @@
     "vars": {
       "description": "404. Page not found."
     }
+  },
+  {
+    "name": "500",
+    "vars": {
+      "description": "500. Internal server error."
+    }
   }
 ]
 
