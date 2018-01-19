@@ -1,3 +1,6 @@
+### 2.16.0
+* [#93: Add custom 500 page.](https://github.com/haensl/haensl.github.io.src/issues/93)
+
 ### 2.15.0
 * [#103: Add custom sitemaps.](https://github.com/haensl/haensl.github.io.src/issues/103)
 

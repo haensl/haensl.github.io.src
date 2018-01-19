@@ -10,6 +10,10 @@ app.use('/', express.static(`${__dirname}/`));
 app.use((req, res, next) => {
   res.status(404).sendFile(`${__dirname}/404/index.html`);
 });
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).sendFile(`${__dirname}/500/index.html`);
+});
 
 app.listen(port, () => {
   console.info(`${package.name} v${package.version} listening on ${port}`);

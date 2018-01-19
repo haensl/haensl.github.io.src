@@ -381,8 +381,7 @@ a:hover > .pdf-icon,
   fill: var(--xingDarkGreen);
 }
 
-.not-found-icon::after {
-  content: '404';
+.rotating-icon::after {
   transform: rotate3d(1, 0, 0, -40deg) translateZ(1px);
   animation: rotate 5s linear infinite;
   display: inline-block;
@@ -390,12 +389,20 @@ a:hover > .pdf-icon,
   font-family: 'Hack', 'Inconsolata', Courier, mono;
 }
 
-.not-found-icon {
+.rotating-icon {
   margin: 7.5rem 0;
   display: flex;
   justify-content: center;
   perspective: 500px;
   perspective-origin: 25% 75%;
+}
+
+.not-found-icon::after {
+  content: '404';
+}
+
+.internal-server-error-icon::after {
+  content: '500';
 }
 
 .vagrant-icon-solid .vagrant-icon-light {
