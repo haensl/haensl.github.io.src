@@ -1,3 +1,6 @@
+### 2.15.0
+* [#103: Add custom sitemaps.](https://github.com/haensl/haensl.github.io.src/issues/103)
+
 ### 2.14.0
 * [#102: Add custom schema data for standalone app.](https://github.com/haensl/haensl.github.io.src/issues/102)
 
