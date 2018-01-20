@@ -8,10 +8,10 @@
   },
   "scripts": {
     "watch:client": "gulp watch",
-    "watch:server": "pm2-runtime start dist/hpdietz.com/app.js --watch",
+    "start:server": "pm2-runtime start dist/hpdietz.com/app.js",
     "start": "[ $NODE_ENV == production ] && pm2-runtime start pm2.json || run-p dev:haensl.github.io dev:hpdietz.com",
     "dev:haensl.github.io": "gulp",
-    "dev:hpdietz.com": "run-p watch:*",
+    "dev:hpdietz.com": "run-p watch:client start:server",
     "build:src": "gulp build",
     "build:docker": "docker build -t haensl.github.io .",
     "build": "run-s build:src build:docker",

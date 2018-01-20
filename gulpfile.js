@@ -14,6 +14,7 @@ const FOLDER_ASSETS_GITHUB_IO = `${FOLDER_DIST_GITHUB_IO}/assets`;
 const FOLDER_ASSETS_STANDALONE = `${FOLDER_DIST_STANDALONE}/assets`;
 const FOLDER_SRC = 'src';
 const FOLDER_SRC_ASSETS = `${FOLDER_SRC}/assets`;
+const FOLDER_SRC_SEOFILES=`${FOLDER_SRC}/seofiles`;
 const FOLDER_TEMPLATES = `${FOLDER_SRC}/templates`;
 const FOLDER_PARTIALS = `${FOLDER_TEMPLATES}/partials`;
 const DIRECTIVE_CSS_INCLUDE = '<!-- INCLUDE_CSS -->';
@@ -27,10 +28,6 @@ const OPTS_HTMLMIN = {
   removeComments: true,
   minifyJS: true
 };
-const FILES_SEO = [
-  'robots.txt',
-  'google606a8a6b7c2ee7a1.html'
-];
 const FILES_SERVER = [
   'package.json',
   'pm2.json',
@@ -69,9 +66,9 @@ gulp.task('ensureStandaloneAssetsFolderExists', ['ensureStandaloneDistFolderExis
 gulp.task('ensureDistAssetsFolderExists', ['ensureGithubIOAssetsFolderExists', 'ensureStandaloneAssetsFolderExists']);
 
 gulp.task('clean:seofiles', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
-  del.sync(FILES_SEO.map((file) => `${FOLDER_DIST}/**/${path.basename(file)}`), {
+  del.sync([`${FOLDER_DIST}/**/google*+.html`, `${FOLDER_DIST}/**/robots.txt`]), {
     force: true
-  }));
+  });
 
 gulp.task('clean:sitemap', ['ensureStandaloneDistFolderExists', 'ensureGithubIOAssetsFolderExists'], () =>
   del.sync(`${FOLDER_DIST}/**/sitemap.xml`, {
@@ -99,12 +96,17 @@ gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
   }));
 
 gulp.task('seofiles', ['clean:seofiles'], () =>
-  new Promise((resolve, reject) =>
-    gulp.src(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`))
-      .pipe(gulp.dest(FOLDER_DIST_STANDALONE))
-      .pipe(gulp.dest(FOLDER_DIST_GITHUB_IO))
-      .on('end', resolve)
-      .on('error', reject)));
+  Promise.all([
+    FOLDER_DIST_STANDALONE,
+    FOLDER_DIST_GITHUB_IO
+  ].map((distFolder) =>
+    new Promise((resolve, reject) => {
+      const domain = distFolder.slice(5);
+      gulp.src(`${FOLDER_SRC_SEOFILES}/${domain}/*`)
+        .pipe(gulp.dest(distFolder))
+        .on('end', resolve)
+        .on('error', reject);
+    }))));
 
 gulp.task('server', ['clean:serverfiles'], () =>
   new Promise((resolve, reject) =>
@@ -245,7 +247,7 @@ gulp.task('assets', ['clean:assets'], () =>
 gulp.task('build', ['compile', 'assets', 'sitemap', 'seofiles', 'server']);
 
 gulp.task('watch', ['build'], () => {
-  gulp.watch(FILES_SEO.map((file) => `${FOLDER_SRC}/${file}`), ['seofiles']);
+  gulp.watch(`${FOLDER_SRC_SEOFILES}/**/*`, ['seofiles']);
   gulp.watch(FILES_SERVER, ['server']);
   gulp.watch(`${FOLDER_SRC}/**/*.+(css|mustache)`, ['compile']);
   gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);

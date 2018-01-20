@@ -1,0 +1,40 @@
+{
+  "vars": {
+    "account": "UA-109682541-2"
+  },
+  "triggers": {
+    "trackPageView": {
+      "on": "visible",
+      "request": "pageview"
+    },
+    "trackSocialView": {
+      "on": "click",
+      "selector": ".social-links a",
+      "request": "social",
+      "vars": {
+        "socialNetwork": "${network}",
+        "socialAction": "view"
+      }
+    },
+    "trackDocView": {
+      "on": "click",
+      "selector": ".doc-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "DocumentAccess",
+        "eventAction": "view",
+        "eventLabel": "${document}"
+      }
+    },
+    "trackProject": {
+      "on": "click",
+      "selector": ".project-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Projectview",
+        "eventAction": "view",
+        "eventLabel": "${project}"
+      }
+    }
+  }
+}
