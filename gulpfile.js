@@ -158,13 +158,12 @@ gulp.task('templates', ['clean:html'], () =>
           FOLDER_DIST_GITHUB_IO
         ].map((channel) =>
           new Promise((resolve, reject) => {
-            const domain = channel.slice(5);
-            const vars = Object.assign(
+            let vars = Object.assign(
               {},
               JSON.parse(JSON.stringify(TEMPLATE_VARS)),
               {
                 site: site.name,
-                domain
+                domain: channel.slice(5)
               },
               site.vars
             );
@@ -213,8 +212,7 @@ gulp.task('html', ['templates', 'css'], () =>
           root: path.join(__dirname, 'src/artwork')
         }))
         .pipe($.htmlmin(OPTS_HTMLMIN))
-        .pipe(gulp.dest(FOLDER_DIST_GITHUB_IO))
-        .pipe(gulp.dest(FOLDER_DIST_STANDALONE))
+        .pipe(gulp.dest(distFolder))
         .on('end', resolve)
         .on('error', reject)))));
 
