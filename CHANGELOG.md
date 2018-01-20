@@ -1,3 +1,6 @@
+### 2.17.0
+* [#109: Add separate Google Analytics property for hpdietz.com.](https://github.com/haensl/haensl.github.io.src/issues/109)
+
 ### 2.16.2
 * Add deployment script for hpdietz.com.
 * Adjust file ownership of web application in container.
