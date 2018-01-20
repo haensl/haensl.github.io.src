@@ -158,7 +158,7 @@ gulp.task('templates', ['clean:html'], () =>
           FOLDER_DIST_GITHUB_IO
         ].map((channel) =>
           new Promise((resolve, reject) => {
-            let vars = Object.assign(
+            const vars = Object.assign(
               {},
               JSON.parse(JSON.stringify(TEMPLATE_VARS)),
               {

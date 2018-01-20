@@ -1,5 +1,6 @@
 ### 2.16.1
 * [#107: Fix a bug that caused the domain not to be injected correctly at build time.](https://github.com/haensl/haensl.github.io.src/issues/107)
+* Fix src directory for Docker image.
 
 ### 2.16.0
 * [#93: Add custom 500 page.](https://github.com/haensl/haensl.github.io.src/issues/93)
