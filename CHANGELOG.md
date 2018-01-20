@@ -1,3 +1,7 @@
+### 2.16.2
+* Add deployment script for hpdietz.com.
+* Adjust file ownership of web application in container.
+
 ### 2.16.1
 * [#107: Fix a bug that caused the domain not to be injected correctly at build time.](https://github.com/haensl/haensl.github.io.src/issues/107)
 * Fix src directory for Docker image.

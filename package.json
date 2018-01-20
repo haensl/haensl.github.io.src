@@ -9,16 +9,15 @@
   "scripts": {
     "watch:client": "gulp watch",
     "watch:server": "pm2-runtime start dist/hpdietz.com/app.js --watch",
-    "start": "[ $NODE_ENV == production ] && pm2-runtime start pm2.json || npm run dev:local",
-    "dev:local": "gulp",
-    "dev:standalone": "run-p watch:*",
+    "start": "[ $NODE_ENV == production ] && pm2-runtime start pm2.json || run-p dev:haensl.github.io dev:hpdietz.com",
+    "dev:haensl.github.io": "gulp",
+    "dev:hpdietz.com": "run-p watch:*",
     "build:src": "gulp build",
     "build:docker": "docker build -t haensl.github.io .",
     "build": "run-s build:src build:docker",
     "deploy:qa": "docker save haensl.github.io | bzip2 | pv | ssh $VMSERVER_USER@$VMSERVER 'bunzip2 | docker load'; dvmserver run -d -p 8081:8081 --name haensl.github.io --network=haensl-github-io haensl.github.io:latest",
-    "deploy:hpdietz.com": "docker save haensl.github.io | bzip2 | pv | ssh $SERVER_USER@$SERVER 'bunzip2 | docker load'; dserver run -d -p 8081:8081 --name haensl.github.io --network=haensl-github-io haensl.github.io:latest",
     "qa": "run-s build deploy:qa",
-    "publish": "run-s build deploy:hpdietz.com"
+    "publish:hpdietz": "bash deploy-hpdietz.com"
   },
   "keywords": [
     "github.io",

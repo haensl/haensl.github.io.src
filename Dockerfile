@@ -1,6 +1,5 @@
 FROM node:alpine
-COPY dist/hpdietz.com/ /var/www/
-RUN ls -la /var/www
+COPY --chown=node:node dist/hpdietz.com/ /var/www/
 LABEL version="2.16.1"
 WORKDIR /var/www
 ENV NODE_ENV production
