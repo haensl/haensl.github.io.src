@@ -1,3 +1,6 @@
+### 2.18.0
+* [#113: Add node-amp-mustache-skeleton to projects.](https://github.com/haensl/haensl.github.io.src/issues/113)
+
 ### 2.17.2
 * [#116: Overhaul gulpfile](https://github.com/haensl/haensl.github.io.src/issues/116)
 * Fix package scripts.

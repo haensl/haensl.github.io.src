@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/node-amp-mustache-skeleton",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Automation",
+  "downloadUrl": "https://github.com/haensl/node-amp-mustache-skeleton/releases",
+  "releaseNotes": "https://github.com/haensl/node-amp-mustache-skeleton/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/node-amp-mustache-skeleton/issues",
+  "keywords": "nodejs, amp, amp-html, node, node-js, mustache, mustache-templates, mustache-templating, mustache-js",
+  "license": "https://github.com/haensl/node-amp-mustache-skeleton/blob/master/LICENSE",
+  "description": "AMP page skeleton served via node.js featuring mustache templating and gulp CI.",
+  "name": "node-amp-mustache-skeleton",
+  "url": "https://github.com/haensl/node-amp-mustache-skeleton"
+}
