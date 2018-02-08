@@ -1,3 +1,6 @@
+### 2.17.1
+* [#114: Set user to `node` in Dockerfile.](https://github.com/haensl/haensl.github.io.src/issues/114)
+
 ### 2.17.0
 * [#109: Add separate Google Analytics property for hpdietz.com.](https://github.com/haensl/haensl.github.io.src/issues/109)
 
