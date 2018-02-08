@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/haensl/node-amp-mustache-skeleton",
+  "codeSampleType": "full",
+  "programmingLanguage": "shell",
+  "runtimePlatform": "node.js",
+  "targetProduct": {
+    "@id": "https://github.com/haensl/node-amp-mustache-skeleton"
+  }
+}
