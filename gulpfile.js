@@ -4,106 +4,108 @@ const path = require('path');
 const $ = require('gulp-load-plugins')();
 const del = require('del');
 const browserSync = require('browser-sync');
-const readline = require('readline');
 
 const VERSION = require('./package').version;
-const FOLDER_DIST = 'dist';
-const FOLDER_DIST_GITHUB_IO = `${FOLDER_DIST}/haensl.github.io`;
-const FOLDER_DIST_STANDALONE = `${FOLDER_DIST}/hpdietz.com`;
-const FOLDER_ASSETS_GITHUB_IO = `${FOLDER_DIST_GITHUB_IO}/assets`;
-const FOLDER_ASSETS_STANDALONE = `${FOLDER_DIST_STANDALONE}/assets`;
-const FOLDER_SRC = 'src';
-const FOLDER_SRC_ASSETS = `${FOLDER_SRC}/assets`;
-const FOLDER_SRC_SEOFILES=`${FOLDER_SRC}/seofiles`;
-const FOLDER_TEMPLATES = `${FOLDER_SRC}/templates`;
-const FOLDER_PARTIALS = `${FOLDER_TEMPLATES}/partials`;
+const DIR_DIST = 'dist';
+const DIR_DIST_GITHUB_IO = `${DIR_DIST}/haensl.github.io`;
+const DIR_DIST_STANDALONE = `${DIR_DIST}/hpdietz.com`;
+const DIR_ASSETS_GITHUB_IO = `${DIR_DIST_GITHUB_IO}/assets`;
+const DIR_ASSETS_STANDALONE = `${DIR_DIST_STANDALONE}/assets`;
+const DIR_SRC = 'src';
+const DIR_SRC_ASSETS = `${DIR_SRC}/assets`;
+const DIR_SRC_SEOFILES=`${DIR_SRC}/seofiles`;
+const DIR_TEMPLATES = `${DIR_SRC}/templates`;
+const DIR_PARTIALS = `${DIR_TEMPLATES}/partials`;
 const DIRECTIVE_CSS_INCLUDE = '<!-- INCLUDE_CSS -->';
 const DIRECTIVE_INCLUCE_VERSION = '<!-- INCLUDE_VERSION -->';
 const DIRECTIVE_INCLUDE_REVISED = '<!-- INCLUDE_REVISED -->';
-const TEMPLATE_VARS = require(`./${FOLDER_TEMPLATES}/vars`);
-const TEMPLATE_SITES = require(`./${FOLDER_TEMPLATES}/sites`);
+const TEMPLATE_VARS = require(`./${DIR_TEMPLATES}/vars`);
+const TEMPLATE_SITES = require(`./${DIR_TEMPLATES}/sites`);
+const DATE_NOW_ISO = (new Date()).toISOString();
 
 const OPTS_HTMLMIN = {
   collapseWhitespace: true,
   removeComments: true,
   minifyJS: true
 };
+
 const FILES_SERVER = [
   'package.json',
   'pm2.json',
-  `${FOLDER_SRC}/app.js`
+  `${DIR_SRC}/app.js`
 ];
 
-const folderExists = (folder) =>
-  (fs.existsSync(folder)
-    && fs.statSync(folder).isDirectory());
 
-const createFolder = (folder) =>
-  folderExists(folder)
-    || fs.mkdirSync(folder);
+const dirExists = (dir) =>
+  (fs.existsSync(dir)
+    && fs.statSync(dir).isDirectory());
+
+const createDir = (dir) =>
+  dirExists(dir)
+    || fs.mkdirSync(dir);
 
 const validateAMP = () =>
-  gulp.src(`${FOLDER_DIST}/**/index.html`)
+  gulp.src(`${DIR_DIST}/**/index.html`)
     .pipe($.amphtmlValidator.validate())
     .pipe($.amphtmlValidator.format())
     .pipe($.amphtmlValidator.failAfterError());
 
-gulp.task('ensureDistFolderExists', () =>
-  createFolder(FOLDER_DIST));
+gulp.task('ensureDistDirExists', () =>
+  createDir(DIR_DIST));
 
-gulp.task('ensureGithubIODistFolderExists', ['ensureDistFolderExists'], () =>
-  createFolder(FOLDER_DIST_GITHUB_IO));
+gulp.task('ensureGithubIODistDirExists', ['ensureDistDirExists'], () =>
+  createDir(DIR_DIST_GITHUB_IO));
 
-gulp.task('ensureStandaloneDistFolderExists', ['ensureDistFolderExists'], () =>
-  createFolder(FOLDER_DIST_STANDALONE));
+gulp.task('ensureStandaloneDistDirExists', ['ensureDistDirExists'], () =>
+  createDir(DIR_DIST_STANDALONE));
 
-gulp.task('ensureGithubIOAssetsFolderExists', ['ensureGithubIODistFolderExists'], () =>
-  createFolder(FOLDER_ASSETS_GITHUB_IO));
+gulp.task('ensureGithubIOAssetsDirExists', ['ensureGithubIODistDirExists'], () =>
+  createDir(DIR_ASSETS_GITHUB_IO));
 
-gulp.task('ensureStandaloneAssetsFolderExists', ['ensureStandaloneDistFolderExists'], () =>
-  createFolder(FOLDER_ASSETS_STANDALONE));
+gulp.task('ensureStandaloneAssetsDirExists', ['ensureStandaloneDistDirExists'], () =>
+  createDir(DIR_ASSETS_STANDALONE));
 
-gulp.task('ensureDistAssetsFolderExists', ['ensureGithubIOAssetsFolderExists', 'ensureStandaloneAssetsFolderExists']);
+gulp.task('ensureDistAssetsDirExists', ['ensureGithubIOAssetsDirExists', 'ensureStandaloneAssetsDirExists']);
 
-gulp.task('clean:seofiles', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
-  del.sync([`${FOLDER_DIST}/**/google*+.html`, `${FOLDER_DIST}/**/robots.txt`]), {
+gulp.task('clean:seofiles', ['ensureStandaloneDistDirExists', 'ensureGithubIODistDirExists'], () =>
+  del.sync([`${DIR_DIST}/**/google*+.html`, `${DIR_DIST}/**/robots.txt`]), {
     force: true
   });
 
-gulp.task('clean:sitemap', ['ensureStandaloneDistFolderExists', 'ensureGithubIOAssetsFolderExists'], () =>
-  del.sync(`${FOLDER_DIST}/**/sitemap.xml`, {
+gulp.task('clean:sitemap', ['ensureStandaloneDistDirExists', 'ensureGithubIOAssetsDirExists'], () =>
+  del.sync(`${DIR_DIST}/**/sitemap.xml`, {
     force: true
   }));
 
-gulp.task('clean:serverfiles', ['ensureStandaloneDistFolderExists'], () =>
-  del.sync(FILES_SERVER.map((file) => `${FOLDER_DIST_STANDALONE}/${file}`), {
+gulp.task('clean:serverfiles', ['ensureStandaloneDistDirExists'], () =>
+  del.sync(FILES_SERVER.map((file) => `${DIR_DIST_STANDALONE}/${file}`), {
     force: true
   }));
 
-gulp.task('clean:css', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
-  del.sync([`${FOLDER_DIST}/**/*.css`], {
+gulp.task('clean:css', ['ensureStandaloneDistDirExists', 'ensureGithubIODistDirExists'], () =>
+  del.sync([`${DIR_DIST}/**/*.css`], {
     force: true
   }));
 
-gulp.task('clean:html', ['ensureStandaloneDistFolderExists', 'ensureGithubIODistFolderExists'], () =>
-  del.sync([`${FOLDER_DIST}/**/*.html`], {
+gulp.task('clean:html', ['ensureStandaloneDistDirExists', 'ensureGithubIODistDirExists'], () =>
+  del.sync([`${DIR_DIST}/**/*.html`], {
     force: true
   }));
 
-gulp.task('clean:assets', ['ensureDistAssetsFolderExists'], () =>
-  del.sync([`${FOLDER_ASSETS_GITHUB_IO}/*`, `${FOLDER_ASSETS_STANDALONE}/*`], {
+gulp.task('clean:assets', ['ensureDistAssetsDirExists'], () =>
+  del.sync([`${DIR_ASSETS_GITHUB_IO}/*`, `${DIR_ASSETS_STANDALONE}/*`], {
     force: true
   }));
 
 gulp.task('seofiles', ['clean:seofiles'], () =>
   Promise.all([
-    FOLDER_DIST_STANDALONE,
-    FOLDER_DIST_GITHUB_IO
-  ].map((distFolder) =>
+    DIR_DIST_STANDALONE,
+    DIR_DIST_GITHUB_IO
+  ].map((distDir) =>
     new Promise((resolve, reject) => {
-      const domain = distFolder.slice(5);
-      gulp.src(`${FOLDER_SRC_SEOFILES}/${domain}/*`)
-        .pipe(gulp.dest(distFolder))
+      const domain = distDir.slice(5);
+      gulp.src(`${DIR_SRC_SEOFILES}/${domain}/*`)
+        .pipe(gulp.dest(distDir))
         .on('end', resolve)
         .on('error', reject);
     }))));
@@ -111,30 +113,30 @@ gulp.task('seofiles', ['clean:seofiles'], () =>
 gulp.task('server', ['clean:serverfiles'], () =>
   new Promise((resolve, reject) =>
     gulp.src(FILES_SERVER)
-      .pipe(gulp.dest(FOLDER_DIST_STANDALONE))
+      .pipe(gulp.dest(DIR_DIST_STANDALONE))
       .on('end', resolve)
       .on('error', reject)));
 
 gulp.task('css', ['clean:css'], () =>
   new Promise((resolve, reject) =>
-    gulp.src(`${FOLDER_SRC}/*.css`)
+    gulp.src(`${DIR_SRC}/*.css`)
       .pipe($.postcss([require('autoprefixer')()]))
       .pipe($.cssmin())
       .pipe($.rename((path) => {
         path.basename = `${path.basename}.tmp`
         return path;
       }))
-      .pipe(gulp.dest(FOLDER_DIST))
+      .pipe(gulp.dest(DIR_DIST))
       .on('end', resolve)
       .on('error', reject)));
 
 gulp.task('sitemap', ['clean:sitemap'], () =>
   Promise.all([
-    FOLDER_DIST_STANDALONE,
-    FOLDER_DIST_GITHUB_IO
+    DIR_DIST_STANDALONE,
+    DIR_DIST_GITHUB_IO
   ].map((channel) => new Promise((resolve, reject) => {
     const domain = channel.slice(5);
-    gulp.src(`${FOLDER_PARTIALS}/sitemap.mustache`)
+    gulp.src(`${DIR_PARTIALS}/sitemap.mustache`)
       .pipe($.mustache({
         domain
       }))
@@ -145,19 +147,19 @@ gulp.task('sitemap', ['clean:sitemap'], () =>
       .pipe(gulp.dest(`${channel}/`))
       .on('end', resolve)
       .on('error', reject)
-    }))));
+  }))));
 
 gulp.task('templates', ['clean:html'], () =>
   Promise.all(TEMPLATE_SITES.map((site) =>
     new Promise((resolve, reject) => {
-      fs.readFile(`${FOLDER_PARTIALS}/${site.name}.mustache`, 'utf8', (err, partial) => {
+      fs.readFile(`${DIR_PARTIALS}/${site.name}.mustache`, 'utf8', (err, partial) => {
         if (err) {
           return reject(err);
         }
 
         Promise.all([
-          FOLDER_DIST_STANDALONE,
-          FOLDER_DIST_GITHUB_IO
+          DIR_DIST_STANDALONE,
+          DIR_DIST_GITHUB_IO
         ].map((channel) =>
           new Promise((resolve, reject) => {
             const vars = Object.assign(
@@ -173,7 +175,7 @@ gulp.task('templates', ['clean:html'], () =>
               item.active = item.name === site.name;
               return item;
             });
-            gulp.src(`${FOLDER_PARTIALS}/base.mustache`)
+            gulp.src(`${DIR_PARTIALS}/base.mustache`)
               .pipe($.mustache(vars, {}, {
                 view: partial
               }))
@@ -194,70 +196,77 @@ gulp.task('templates', ['clean:html'], () =>
 
 gulp.task('html', ['templates', 'css'], () =>
   Promise.all([
-    FOLDER_DIST_GITHUB_IO,
-    FOLDER_DIST_STANDALONE
-  ].map((distFolder) =>
+    DIR_DIST_GITHUB_IO,
+    DIR_DIST_STANDALONE
+  ].map((distDir) =>
     new Promise((resolve, reject) =>
-      gulp.src(`${distFolder}/**/*.html`)
-        .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(FOLDER_DIST, 'style.tmp.css'))}</style>`))
+      gulp.src(`${distDir}/**/*.html`)
+        .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(DIR_DIST, 'style.tmp.css'))}</style>`))
         .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
-        .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => {
-          const isoDate = (new Date()).toISOString();
-          let metaRevised = `<meta name="revised" content="${ isoDate }">`;
-          metaRevised = `${metaRevised}<meta name="date" content="${ isoDate }">`;
-          return metaRevised;
-        })))
+        .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => `<meta name="revised" content="${ DATE_NOW_ISO }"><meta name="date" content="${ DATE_NOW_ISO }">`)))
         .pipe($.embedJson({
-          root: path.join(FOLDER_SRC_ASSETS, 'json')
+          root: path.join(DIR_SRC_ASSETS, 'json')
         }))
         .pipe($.embedSvg({
           root: path.join(__dirname, 'src/artwork')
         }))
         .pipe($.htmlmin(OPTS_HTMLMIN))
-        .pipe(gulp.dest(distFolder))
+        .pipe(gulp.dest(distDir))
         .on('end', resolve)
         .on('error', reject)))));
 
 gulp.task('githubErrorPages:prependFrontMatter', ['html'], () =>
-  gulp.src(`${FOLDER_DIST_GITHUB_IO}/404/index.html`)
-    .pipe($.insert.prepend('---\npermalink: /404.html\n---\n'))
-    .pipe($.rename((path) => {
-      path.basename = '404';
-      return path;
-    }))
-    .pipe(gulp.dest(`${FOLDER_DIST_GITHUB_IO}`)));
+  new Promise((resolve, reject) =>
+    gulp.src(`${DIR_DIST_GITHUB_IO}/404/index.html`)
+      .pipe($.insert.prepend('---\npermalink: /404.html\n---\n'))
+      .pipe($.rename((path) => {
+        path.basename = '404';
+        return path;
+      }))
+      .pipe(gulp.dest(`${DIR_DIST_GITHUB_IO}`))
+      .on('end', resolve)
+      .on('error', reject)));
 
-gulp.task('githubErrorPages', ['githubErrorPages:prependFrontMatter'], () => {
-  del.sync([`${FOLDER_DIST_GITHUB_IO}/404/index.html`, `${FOLDER_DIST_GITHUB_IO}/404`], {
+gulp.task('githubErrorPages', ['githubErrorPages:prependFrontMatter'], () =>
+  del.sync([
+    `${DIR_DIST_GITHUB_IO}/404/index.html`,
+    `${DIR_DIST_GITHUB_IO}/404`
+  ], {
     force: true
-  });
-});
+  }));
 
 gulp.task('compile', ['githubErrorPages'], () => {
-  del.sync(path.join(FOLDER_DIST, 'style.tmp.css'));
+  del.sync(path.join(DIR_DIST, 'style.tmp.css'), {
+    force: true
+  });
   browserSync.reload();
   validateAMP();
 });
 
 gulp.task('assets', ['clean:assets'], () =>
-  gulp.src(`${FOLDER_SRC}/assets/+(img|docs)/*`)
-    .pipe(gulp.dest(FOLDER_ASSETS_GITHUB_IO))
-    .pipe(gulp.dest(FOLDER_ASSETS_STANDALONE)));
+  new Promise((resolve, reject) =>
+    gulp.src(`${DIR_SRC}/assets/+(img|docs)/*`)
+      .pipe(gulp.dest(DIR_ASSETS_GITHUB_IO))
+      .pipe(gulp.dest(DIR_ASSETS_STANDALONE))
+      .on('end', resolve)
+      .on('error', reject)));
 
 gulp.task('build', ['compile', 'assets', 'sitemap', 'seofiles', 'server']);
 
 gulp.task('watch', ['build'], () => {
-  gulp.watch(`${FOLDER_SRC_SEOFILES}/**/*`, ['seofiles']);
+  gulp.watch(`${DIR_SRC_SEOFILES}/**/*`, ['seofiles']);
   gulp.watch(FILES_SERVER, ['server']);
-  gulp.watch(`${FOLDER_SRC}/**/*.+(css|mustache)`, ['compile']);
-  gulp.watch(`${FOLDER_SRC_ASSETS}/*/*`, ['assets']);
-  gulp.watch(`${FOLDER_SRC_ASSETS}/json/*`, ['compile']);
+  gulp.watch(`${DIR_SRC}/**/*.+(css|mustache)`, ['compile']);
+  gulp.watch(`${DIR_SRC_ASSETS}/*/*`, ['assets']);
+  gulp.watch(`${DIR_SRC_ASSETS}/json/*`, ['compile']);
 });
 
-gulp.task('default', ['watch'], () => {
+gulp.task('serve', () => {
   browserSync.init({
     server: {
-      baseDir: FOLDER_DIST_GITHUB_IO
+      baseDir: DIR_DIST_GITHUB_IO
     }
   });
 });
+
+gulp.task('default', ['watch']);

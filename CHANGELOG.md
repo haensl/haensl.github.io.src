@@ -1,3 +1,7 @@
+### 2.17.2
+* [#116: Overhaul gulpfile](https://github.com/haensl/haensl.github.io.src/issues/116)
+* Fix package scripts.
+
 ### 2.17.1
 * [#114: Set user to `node` in Dockerfile.](https://github.com/haensl/haensl.github.io.src/issues/114)
 
