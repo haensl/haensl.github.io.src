@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.17.0",
+  "version": "2.18.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
@@ -8,10 +8,11 @@
   },
   "scripts": {
     "watch:client": "gulp watch",
-    "start:server": "pm2-runtime start dist/hpdietz.com/app.js",
-    "start": "[ $NODE_ENV == production ] && pm2-runtime start pm2.json || run-p dev:haensl.github.io dev:hpdietz.com",
-    "dev:haensl.github.io": "gulp",
+    "start:server": "cd dist/hpdietz.com && pm2-runtime start pm2.json",
+    "start": "[ \"$NODE_ENV\" == 'production' ] && pm2-runtime start pm2.json || run-s build:src dev",
+    "dev:haensl.github.io": "gulp serve",
     "dev:hpdietz.com": "run-p watch:client start:server",
+    "dev": "run-p dev:haensl.github.io dev:hpdietz.com",
     "build:src": "gulp build",
     "build:docker": "docker build -t haensl.github.io .",
     "build": "run-s build:src build:docker",
