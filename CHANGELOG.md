@@ -1,3 +1,6 @@
+### 2.19.0
+* Update CV PDF.
+
 ### 2.18.0
 * [#113: Add node-amp-mustache-skeleton to projects.](https://github.com/haensl/haensl.github.io.src/issues/113)
 
