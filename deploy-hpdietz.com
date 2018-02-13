@@ -21,7 +21,7 @@ else
   SHOULD_STOP_STR=no
 fi
 
-if [ $SHOUL_RM -eq 0 ]; then
+if [ $SHOULD_RM -eq 0 ]; then
   SHOULD_RM_STR=yes
 else
   SHOULD_RM_STR=no
