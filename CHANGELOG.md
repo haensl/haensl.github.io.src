@@ -1,3 +1,6 @@
+### 2.20.0
+* [#120: Add mov2gif to projects.](https://github.com/haensl/haensl.github.io.src/issues/120)
+
 ### 2.19.0
 * Update CV PDF.
 
