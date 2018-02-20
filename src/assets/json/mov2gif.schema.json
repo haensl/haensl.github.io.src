@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/mov2gif",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Command line utility",
+  "applicationSuite": "Bash",
+  "downloadUrl": "https://github.com/haensl/mov2gif/releases",
+  "releaseNotes": "https://github.com/haensl/mov2gif/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/mov2gif/issues",
+  "keywords": "bash, mov, gif, converter, ffmpeg, imagemagick, transcoder",
+  "license": "https://github.com/haensl/mov2gif/blob/master/LICENSE",
+  "description": "QuickTime video to GIF animation converter",
+  "name": "mov2gif",
+  "url": "https://github.com/haensl/mov2gif"
+}
