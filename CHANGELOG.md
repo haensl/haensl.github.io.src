@@ -1,3 +1,6 @@
+### 2.20.1
+* [#123: Rename js-performance to js-profiler.](https://github.com/haensl/haensl.github.io.src/issues/123)
+
 ### 2.20.0
 * [#120: Add mov2gif to projects.](https://github.com/haensl/haensl.github.io.src/issues/120)
 
