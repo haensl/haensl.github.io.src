@@ -1,12 +1,12 @@
 {
   "@context": "http://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://github.com/haensl/js-performance",
+  "@id": "https://github.com/haensl/js-profiler",
   "applicationCategory": "Utility",
   "applicationSubCategory": "Profiling",
   "applicationSuite": "JavaScript",
-  "downloadUrl": "https://github.com/haensl/js-performance/releases",
-  "releaseNotes": "https://github.com/haensl/js-performance/blob/master/CHANGELOG.md",
+  "downloadUrl": "https://github.com/haensl/js-profiler/releases",
+  "releaseNotes": "https://github.com/haensl/js-profiler/blob/master/CHANGELOG.md",
   "operatingSystem": [
     "Windows",
     "Linux",
@@ -20,10 +20,11 @@
   },
   "copyrightYear": 2017,
   "datePublished": 2017,
-  "discussionUrl": "https://github.com/haensl/js-performance/issues",
+  "discussionUrl": "https://github.com/haensl/js-profiler/issues",
   "keywords": "nodejs, performance-analysis, performance-testing, profiling, benchmark, benchmarks, javascript, ecma script, ecmascript, profiling-library",
-  "license": "https://github.com/haensl/js-performance/blob/master/LICENSE",
-  "description": "A collection of JavaScript profiling modules and benchmarks.",
-  "name": "JS Performance",
-  "url": "https://github.com/haensl/js-performance"
+  "license": "https://github.com/haensl/js-profiler/blob/master/LICENSE",
+  "description": "JavaScript profiling tool, library and benchmark collection.",
+  "name": "JS-Profiler",
+  "url": "https://github.com/haensl/js-profiler",
+  "sameAs": "https://www.npmjs.com/package/js-profiler"
 }

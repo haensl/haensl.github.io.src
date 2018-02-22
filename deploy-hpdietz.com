@@ -4,9 +4,9 @@
 source ${HOME}/.bashrc.local
 
 readonly CONTAINER_NAME=haensl.github.io
-readonly IMAGE_NAME=${CONTAINER_NAME}
+readonly IMAGE_NAME="${CONTAINER_NAME}:2.20.0"
 
-docker build --no-cache -t ${IMAGE_NAME} .
+docker build --no-cache -t "${IMAGE_NAME}" .
 docker save ${IMAGE_NAME} | bzip2 | pv | ssh $SERVER_USER@$SERVER 'bunzip2 | docker load'
 
 readonly CONTAINER_STATUS=$(dserver ps -a --filter "name=${CONTAINER_NAME}" --format "{{.Status}}")
