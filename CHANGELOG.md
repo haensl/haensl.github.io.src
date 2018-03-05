@@ -1,3 +1,6 @@
+### 2.21.0
+* [#125: Add jest to technical skills.](https://github.com/haensl/haensl.github.io.src/issues/125)
+
 ### 2.20.1
 * [#123: Rename js-performance to js-profiler.](https://github.com/haensl/haensl.github.io.src/issues/123)
 
