@@ -1,3 +1,6 @@
+### 2.22.0
+* [#126: Add koa to technical skills.](https://github.com/haensl/haensl.github.io.src/issues/126)
+
 ### 2.21.0
 * [#125: Add jest to technical skills.](https://github.com/haensl/haensl.github.io.src/issues/125)
 
