@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/openssl-certgen",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Command line utility",
+  "applicationSuite": "Bash",
+  "downloadUrl": "https://github.com/haensl/openssl-certgen/releases",
+  "releaseNotes": "https://github.com/haensl/openssl-certgen/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/openssl-certgen/issues",
+  "keywords": "openssl, ssl, ssl-certificates, openssl-certs, openssl-client-server, automation, self-signed-certificates, bash",
+  "license": "https://github.com/haensl/openssl-certgen/blob/master/LICENSE",
+  "description": "Automated self-signed certificate generation via openssl",
+  "name": "OpenSSL Certificate Generator",
+  "url": "https://github.com/haensl/openssl-certgen"
+}
