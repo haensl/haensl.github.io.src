@@ -1,3 +1,6 @@
+### 2.23.0
+* [#130: Add OpenSSL Certificate Generator to projects.](https://github.com/haensl/haensl.github.io.src/issues/130)
+
 ### 2.22.0
 * [#126: Add koa to technical skills.](https://github.com/haensl/haensl.github.io.src/issues/126)
 
