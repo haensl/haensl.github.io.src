@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/minify-inline-json",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Optimization",
+  "applicationSuite": "Node.js",
+  "downloadUrl": "https://github.com/haensl/minify-inline-json/releases",
+  "releaseNotes": "https://github.com/haensl/minify-inline-json/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/minify-inline-json/issues",
+  "keywords": "json, json-data, json-schema, json-ld, html, minify, inline, script, embedded",
+  "license": "https://github.com/haensl/minify-inline-json/blob/master/LICENSE",
+  "description": "Node.js module to minify inline script tags containing JSON data.",
+  "name": "minify-inline-json",
+  "url": "https://github.com/haensl/minify-inline-json",
+  "sameAs": "https://www.npmjs.com/package/minify-inline-json"
+}
