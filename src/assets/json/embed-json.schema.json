@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/embed-json",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Optimization",
+  "applicationSuite": "JavaScript",
+  "downloadUrl": "https://github.com/haensl/embed-json/releases",
+  "releaseNotes": "https://github.com/haensl/embed-json/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/embed-json/issues",
+  "keywords": "json, json-files, json-schema, inline, minify, html, embed, embedding, json-data, inline-json",
+  "license": "https://github.com/haensl/embed-json/blob/master/LICENSE",
+  "description": "Node.js module to inline/embed JSON data into files.",
+  "name": "embed-json",
+  "url": "https://github.com/haensl/embed-json",
+  "sameAs": "https://www.npmjs.com/package/embed-json"
+}
