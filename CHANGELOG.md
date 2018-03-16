@@ -1,3 +1,6 @@
+### 2.24.0
+* [#131: Add embed-json to projects.](https://github.com/haensl/haensl.github.io.src/issues/131)
+
 ### 2.23.0
 * [#130: Add OpenSSL Certificate Generator to projects.](https://github.com/haensl/haensl.github.io.src/issues/130)
 
