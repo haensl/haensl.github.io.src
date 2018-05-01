@@ -47,8 +47,8 @@ const createDir = (dir) =>
 const validateAMP = () =>
   gulp.src(`${DIR_DIST}/**/index.html`)
     .pipe($.amphtmlValidator.validate())
-    .pipe($.amphtmlValidator.format())
-    .pipe($.amphtmlValidator.failAfterError());
+    .pipe($.amphtmlValidator.format());
+    //.pipe($.amphtmlValidator.failAfterError());
 
 gulp.task('ensureDistDirExists', () =>
   createDir(DIR_DIST));
@@ -172,6 +172,10 @@ gulp.task('templates', ['clean:html'], () =>
               site.vars
             );
             vars.menuItems.map((item) => {
+              item.active = item.name === site.name;
+              return item;
+            });
+            vars.footerMenuItems.map((item) => {
               item.active = item.name === site.name;
               return item;
             });

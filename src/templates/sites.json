@@ -24,6 +24,12 @@
     }
   },
   {
+    "name": "impressum",
+    "vars": {
+      "description": "View the imprint of https://hpdietz.com."
+    }
+  },
+  {
     "name": "404",
     "vars": {
       "description": "404. Page not found."
