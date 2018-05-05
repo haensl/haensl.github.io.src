@@ -33,7 +33,7 @@
   <body>
     <amp-state id="appState">
       <script type="application/json">{
-        "site": "{{site}}"
+        "site": "{{ site }}"
       }</script>
     </amp-state>
     <amp-analytics type="googleanalytics">
@@ -48,10 +48,10 @@
         height="48"
         class="avatar"
         alt="Avatar"></amp-img>
-      <h1 class="centering m0 p1">{{me.name}}</h1>
+      <h1 class="centering m0 p1">{{ me.name }}</h1>
       <q class="centering small block">Fullstack anything coder.</q>
       <nav id="burger-menu-nav">
-        {{> menu}}
+        {{ > menu }}
       </nav>
     </amp-sidebar>
     <div id="wrapper">
@@ -72,7 +72,7 @@
             </nav>
           </div>
           <div id="header-social-wrapper">
-            {{> social-nav-small}}
+            {{> social-nav-small }}
             <amp-img srcset="/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w"
               width="32"
               height="32"
@@ -98,11 +98,16 @@
           <h1 id="profile-id"
               class="centering">{{me.name}}</h1>
           <q id="profile-tagline"
-             class="centering">{{me.tagline}}</q>
-          {{> social-nav}}
+             class="centering">{{ me.tagline }}</q>
+          {{> social-nav }}
         </div>
       </aside>
     </div>
-    <footer class="centering p1">&copy 2018 Hans-Peter Dietz</footer>
+    <footer class="centering p1 row hcentering vcentering fixed-flex">
+      <nav id="footer-menu">
+        {{> footer-menu }}
+      </nav>
+      <p class="small no-text">&copy; 2018 Hans-Peter Dietz</p>
+    </footer>
   </body>
 </html>

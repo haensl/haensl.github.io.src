@@ -123,6 +123,7 @@ main > section.p1 {
 
 footer {
   justify-self: flex-end;
+  flex: 1 0 auto;
 }
 
 footer.active > a {
@@ -194,7 +195,6 @@ li {
 li:last-of-type {
   margin-bottom: 0;
 }
-
 
 .caps {
   text-transform: uppercase;
@@ -290,6 +290,10 @@ li:last-of-type {
   align-items: center;
 }
 
+.row.hcentering {
+  justify-content: center;
+}
+
 .flex-column-centering {
   display: flex;
   align-items: center;
@@ -302,6 +306,11 @@ li:last-of-type {
 
 .small {
   font-size: .85rem;
+}
+
+ul.small > li {
+  font-weight: 100;
+  font-size: .7rem;
 }
 
 .italic {
@@ -821,7 +830,8 @@ a > .icon-small:hover {
 }
 
 #burger-menu li.active > a,
-#main-menu li.active > a {
+#main-menu li.active > a,
+#footer-menu li.active > a {
   color: var(--purple);
 }
 

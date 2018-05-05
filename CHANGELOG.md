@@ -1,3 +1,7 @@
+### 2.25.0
+* [#139: Add impressum.](https://github.com/haensl/haensl.github.io.src/issues/139)
+* [#138: Update dependencies.](https://github.com/haensl/haensl.github.io.src/issues/138)
+
 ### 2.24.0
 * [#131: Add embed-json to projects.](https://github.com/haensl/haensl.github.io.src/issues/131)
 

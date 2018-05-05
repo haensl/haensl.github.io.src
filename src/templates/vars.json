@@ -56,5 +56,12 @@
       "title": "Write an e-mail to HP.",
       "external": false
     }
+  ],
+  "footerMenuItems": [
+    {
+      "name": "impressum",
+      "title": "Imprint of https://hpdietz.com",
+      "href": "/impressum"
+    }
   ]
 }
