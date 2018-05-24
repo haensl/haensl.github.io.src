@@ -23,7 +23,6 @@
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script type="application/ld+json" src="haensl.schema.json"></script>
 
@@ -36,9 +35,6 @@
         "site": "{{ site }}"
       }</script>
     </amp-state>
-    <amp-analytics type="googleanalytics">
-      <script type="application/json" src="analytics.{{domain}}.config.json"></script>
-    </amp-analytics>
     <amp-sidebar id="burger-menu"
       class="p1"
       media="(max-width: 625px)"
