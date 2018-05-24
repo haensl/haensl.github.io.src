@@ -1,3 +1,8 @@
+### 2.26.0
+* [#149: Remove Google Analytics.](https://github.com/haensl/haensl.github.io.src/issues/149)
+* [#141: Update e-mail.](https://github.com/haensl/haensl.github.io.src/issues/141)
+* Add impressum to sitemap.
+
 ### 2.25.0
 * [#139: Add impressum.](https://github.com/haensl/haensl.github.io.src/issues/139)
 * [#138: Update dependencies.](https://github.com/haensl/haensl.github.io.src/issues/138)
