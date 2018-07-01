@@ -1,3 +1,7 @@
+### 2.27.0
+* [#150: Remove pm2.](https://github.com/haensl/haensl.github.io.src/issues/151)
+* Add docker-compose.
+
 ### 2.26.0
 * [#149: Remove Google Analytics.](https://github.com/haensl/haensl.github.io.src/issues/149)
 * [#141: Update e-mail.](https://github.com/haensl/haensl.github.io.src/issues/141)
