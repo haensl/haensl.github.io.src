@@ -1,0 +1,13 @@
+version: '2'
+services:
+  haensl.github.io:
+    build: .
+    image: haensl.github.io:2.27.0
+    labels:
+      version: '2.27.0'
+    container_name: haensl.github.io
+    networks:
+      - haensl-github-io
+
+networks:
+  haensl-github-io:

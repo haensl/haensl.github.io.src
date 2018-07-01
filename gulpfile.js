@@ -31,7 +31,7 @@ const OPTS_HTMLMIN = {
 
 const FILES_SERVER = [
   'package.json',
-  'pm2.json',
+  'package-lock.json',
   `${DIR_SRC}/app.js`
 ];
 
