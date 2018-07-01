@@ -225,6 +225,10 @@ li:last-of-type {
   margin: 0;
 }
 
+.m10 {
+  margin: var(--defaultPadding) 0;
+}
+
 .m0100 {
   margin: 0 var(--defaultPadding) 0 0;
 }
@@ -239,6 +243,10 @@ li:last-of-type {
 
 .m0001 {
   margin: 0 0 0 var(--defaultPadding);
+}
+
+.m0020 {
+  margin: 0 0 2em 0;
 }
 
 .m1000 {
@@ -735,10 +743,6 @@ a > .icon-small:hover {
   margin-left: 2rem;
 }
 
-.item.m-column-d-row > .column {
-  padding-left: var(--defaultPadding);
-}
-
 .item > ul {
   padding-top: 0;
   padding-bottom: 0;
@@ -993,7 +997,6 @@ a > .icon-small:hover {
     align-items: stretch;
   }
 
-  
   .item.m-column-d-row > .column {
     padding-left: 0;
   }

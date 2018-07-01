@@ -8,6 +8,8 @@ services:
     container_name: haensl.github.io
     networks:
       - haensl-github-io
+    restart: unless-stopped
 
 networks:
   haensl-github-io:
+    external: true

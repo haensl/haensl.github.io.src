@@ -16,8 +16,7 @@
     "build:src": "gulp build",
     "build:docker": "docker-compose build",
     "build": "run-s build:src build:docker",
-    "dist:github": "cd dist/haensl.github.io && git push origin master",
-    "dist:hpdietz.com": "docker-env hpdietz.com && docker-compose up -D"
+    "dist:github": "cd dist/haensl.github.io && git push origin master"
   },
   "keywords": [
     "github.io",
