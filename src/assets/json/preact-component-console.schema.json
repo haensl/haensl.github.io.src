@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/preact-component-console",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Component",
+  "applicationSuite": "Preact.js",
+  "downloadUrl": "https://github.com/haensl/preact-component-console/releases",
+  "releaseNotes": "https://github.com/haensl/preact-component-console/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/preact-component-console/issues",
+  "keywords": "preact, preact-component, component, console, terminal, emulator, typewriter",
+  "license": "https://github.com/haensl/preact-component-console/blob/master/LICENSE",
+  "description": "Console emulator preact component. Emulates realistic typing via dynamic char-typing delays.",
+  "name": "preact-component-console",
+  "url": "https://github.com/haensl/preact-component-console",
+  "sameAs": "https://www.npmjs.com/package/preact-component-console"
+}

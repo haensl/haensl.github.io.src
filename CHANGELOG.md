@@ -1,3 +1,8 @@
+### 2.29.0
+* [#154: Add preact-component-console to projects.](https://github.com/haensl/haensl.github.io.src/issues/154)
+* Remove paddings from list items.
+* Increase default padding.
+
 ### 2.28.0
 * Remove margin and padding from most lists.
 * Add Key-Skills setion.
