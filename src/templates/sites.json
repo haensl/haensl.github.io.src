@@ -2,7 +2,7 @@
   {
     "name": "about",
     "vars": {
-      "description": "know Hans-Peter Dietz. Full-Stack anything coder, unix guy, bass player and motorcyclist."
+      "description": "Hans-Peter Dietz. Full-Stack anything coder, unix guy, bass player and motorcyclist."
     }
   },
   {
@@ -32,7 +32,7 @@
   {
     "name": "impressum",
     "vars": {
-      "description": "Imprint.com."
+      "description": "Imprint."
     }
   },
   {
