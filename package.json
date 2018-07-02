@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.28.0",
+  "version": "2.29.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
@@ -17,7 +17,7 @@
     "build:docker": "docker-compose build",
     "build": "run-s build:src build:docker",
     "dist:github": "cd dist/haensl.github.io && git push origin master",
-    "dist:hpdietz.com": "docker save haensl.github.io:2.28.0 | bzip2 | pv | ssh $SERVER_USER@$SERVER 'bunzip2 | docker load' && docker-env hpdietz.com && docker-compose up -d"
+    "dist:hpdietz.com": "docker save haensl.github.io:2.29.0 | bzip2 | pv | ssh $SERVER_USER@$SERVER 'bunzip2 | docker load' && docker-env hpdietz.com && docker-compose up -d"
   },
   "keywords": [
     "github.io",
