@@ -2,12 +2,14 @@ version: '2'
 services:
   haensl.github.io:
     build: .
-    image: haensl.github.io:2.27.0
+    image: haensl.github.io:2.28.0
     labels:
-      version: '2.27.0'
+      version: '2.28.0'
     container_name: haensl.github.io
     networks:
       - haensl-github-io
+    restart: unless-stopped
 
 networks:
   haensl-github-io:
+    external: true

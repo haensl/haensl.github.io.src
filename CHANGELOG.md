@@ -1,3 +1,10 @@
+### 2.28.0
+* Remove margin and padding from most lists.
+* Add Key-Skills setion.
+  [#147: Add UX to skillset.](https://github.com/haensl/haensl.github.io.src/issues/147)
+* Add Preact, Traefik and HAProxy to technical skills.
+  [#145: Add HAProxy to technical skills](https://github.com/haensl/haensl.github.io.src/issues/145)
+
 ### 2.27.0
 * [#150: Remove pm2.](https://github.com/haensl/haensl.github.io.src/issues/151)
 * Add docker-compose.
