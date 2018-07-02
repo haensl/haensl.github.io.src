@@ -2,31 +2,37 @@
   {
     "name": "about",
     "vars": {
-      "description": "Get to know Hans-Peter Dietz. Full-Stack anything coder, unix guy, bass player and motorcyclist."
+      "description": "know Hans-Peter Dietz. Full-Stack anything coder, unix guy, bass player and motorcyclist."
     }
   },
   {
     "name": "cv",
     "vars": {
-      "description": "View Hans-Peter Dietz's curriculum vitae."
+      "description": "Hans-Peter Dietz's curriculum vitae."
     }
   },
   {
     "name": "projects",
     "vars": {
-      "description": "View projects of Hans-Peter Dietz. gulp-embed-json, gulp-embed-svg, gulp-minify-inline-json, the rovers, ng-async-img, js-performance, ngAnimatedScroll, htmlelement.polyfills, Qake, Ask The Crowd."
+      "description": "Projects of Hans-Peter Dietz. preact-component-console, minify-inline-json, embed-json, OpenSSL Certificate Generator, mov2gif, node-amp-mustache-skeleton, goto, haensl.github.io gulp-embed-json, gulp-embed-svg, gulp-minify-inline-json, The Rovers, ng-async-img, js-performance, ngAnimatedScroll, htmlelement.polyfills, Qake, Ask The Crowd."
     }
   },
   {
     "name": "publications",
     "vars": {
-      "description": "View publications by Hans-Peter Dietz. Ansible.tar.gz, Controlled Chaos: Randomization in Level Design, Ask The Crowd: Crowdsourcing Knowledge Generation, Implicit Authentication on Mobile Devices."
+      "description": "Publications by Hans-Peter Dietz. Ansible.tar.gz, Controlled Chaos: Randomization in Level Design, Ask The Crowd: Crowdsourcing Knowledge Generation, Implicit Authentication on Mobile Devices."
+    }
+  },
+  {
+    "name": "stack",
+    "vars": {
+      "description": "Tech-Stack, Setting & Technoligies Hans-Peter Dietz has worked with."
     }
   },
   {
     "name": "impressum",
     "vars": {
-      "description": "View the imprint of https://hpdietz.com."
+      "description": "Imprint.com."
     }
   },
   {

@@ -23,6 +23,11 @@
       "name": "cv",
       "title": "HP's curriculum vitae.",
       "href": "/cv"
+    },
+    {
+      "name": "stack",
+      "title": "HP's tech stack.",
+      "href": "/stack"
     }
   ],
   "socialChannels": [

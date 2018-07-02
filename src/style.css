@@ -175,7 +175,7 @@ section > h2 {
 }
 
 h4 {
-  margin-bottom: var(--defaultPadding);
+  margin: var(--defaultPadding) 0;
 }
 
 h5 {
@@ -243,10 +243,6 @@ li:last-of-type {
 
 .m0001 {
   margin: 0 0 0 var(--defaultPadding);
-}
-
-.m0020 {
-  margin: 0 0 2em 0;
 }
 
 .m1000 {
@@ -905,7 +901,12 @@ a > .icon-small:hover {
 }
 
 #projects-list .item > .row > .daterange {
-  flex-basis: 7rem;
+  flex-basis: 7.5rem;
+}
+
+#cv-techstack-link > svg {
+  width: 2em;
+  margin-right: var(--defaultPadding);
 }
 
 @media(min-width: 425px) {
