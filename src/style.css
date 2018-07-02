@@ -4,7 +4,7 @@
   --beige: #f7ede4;
   --white: #eee;
   --black: #000;
-  --defaultPadding: .5rem;
+  --defaultPadding: 1rem;
   --twitterBlue: #5ea9dd;
   --xingLightGreen: #d4d600;
   --xingDarkGreen: #005a5f;
@@ -720,14 +720,14 @@ a > .icon-small:hover {
 .daterange {
   flex: 1 0 auto;
   font-weight: normal;
-  margin-bottom: .5rem;
+  margin-bottom: var(--defaultPadding);
   min-width: 9rem;
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(2 * var(--defaultPadding));
 }
 
 .item.m0 {
@@ -986,6 +986,7 @@ a > .icon-small:hover {
 @media(min-width: 769px) {
   #projects-list .item > .row > .daterange {
     flex-basis: auto;
+    margin-bottom: 0;
   }
 
   .m-row-d-column {
@@ -1046,7 +1047,7 @@ a > .icon-small:hover {
 
 @media(min-width: 850px) {
   :root {
-    --defaultPadding: 1rem;
+    --defaultPadding: 1.5rem;
   }
 }
 
