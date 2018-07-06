@@ -12,7 +12,6 @@
 * Remove paddings from list items.
 * Increase default padding.
 
-
 ### 2.28.0
 * Remove margin and padding from most lists.
 * Add Key-Skills setion.
