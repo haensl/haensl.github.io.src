@@ -1,48 +1,56 @@
 [
   {
     "name": "about",
+    "partial": "about",
     "vars": {
       "description": "Hans-Peter Dietz. Full-Stack anything coder, unix guy, bass player and motorcyclist."
     }
   },
   {
     "name": "cv",
+    "partial": "cv",
     "vars": {
       "description": "Hans-Peter Dietz's curriculum vitae."
     }
   },
   {
     "name": "projects",
+    "partial": "projects",
     "vars": {
       "description": "Projects of Hans-Peter Dietz. preact-component-console, minify-inline-json, embed-json, OpenSSL Certificate Generator, mov2gif, node-amp-mustache-skeleton, goto, haensl.github.io gulp-embed-json, gulp-embed-svg, gulp-minify-inline-json, The Rovers, ng-async-img, js-performance, ngAnimatedScroll, htmlelement.polyfills, Qake, Ask The Crowd."
     }
   },
   {
-    "name": "publications",
+    "name": "publications & talks",
+    "partial": "publications",
     "vars": {
       "description": "Publications by Hans-Peter Dietz. Ansible.tar.gz, Controlled Chaos: Randomization in Level Design, Ask The Crowd: Crowdsourcing Knowledge Generation, Implicit Authentication on Mobile Devices."
     }
   },
   {
     "name": "stack",
+    "partial": "stack",
     "vars": {
       "description": "Tech-Stack, Setting & Technoligies Hans-Peter Dietz has worked with."
     }
   },
   {
     "name": "impressum",
+    "partial": "impressum",
     "vars": {
       "description": "Imprint."
     }
   },
   {
     "name": "404",
+    "partial": "404",
     "vars": {
       "description": "404. Page not found."
     }
   },
   {
     "name": "500",
+    "partial": "500",
     "vars": {
       "description": "500. Internal server error."
     }

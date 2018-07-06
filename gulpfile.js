@@ -152,7 +152,7 @@ gulp.task('sitemap', ['clean:sitemap'], () =>
 gulp.task('templates', ['clean:html'], () =>
   Promise.all(TEMPLATE_SITES.map((site) =>
     new Promise((resolve, reject) => {
-      fs.readFile(`${DIR_PARTIALS}/${site.name}.mustache`, 'utf8', (err, partial) => {
+      fs.readFile(`${DIR_PARTIALS}/${site.partial}.mustache`, 'utf8', (err, partial) => {
         if (err) {
           return reject(err);
         }
@@ -188,7 +188,7 @@ gulp.task('templates', ['clean:html'], () =>
                 path.extname = '.html';
                 return path;
               }))
-              .pipe(gulp.dest(`${channel}/${site.name !== 'about' ? `${site.name}/` : ''}`))
+              .pipe(gulp.dest(`${channel}/${site.name !== 'about' ? `${site.partial}/` : ''}`))
               .on('end', resolve)
               .on('error', reject);
           })))

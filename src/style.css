@@ -77,6 +77,33 @@
   }
 }
 
+@keyframes typing {
+  0% { width: 0; }
+  99.9% { border-right: .15em solid var(--purple); }
+  100% { border: none; }
+}
+
+@keyframes typing2 {
+  0% { width: 0; }
+  1% { opacity: 1; }
+  99.9% { border-right: .15em solid var(--purple); }
+  100% { opacity: 1; border: none; }
+}
+
+@keyframes typing3 {
+  0% { width: 0; }
+  1% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes hide {
+  from, to { opacity: 0; }
+}
+
 * {
   box-sizing: border-box;
   /**
@@ -138,6 +165,7 @@ p,
 q,
 article {
   font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
+  font-weight: 100;
 }
 
 a {
@@ -172,6 +200,14 @@ svg {
 
 section > h2 {
   margin: 2rem 0 var(--defaultPadding) 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 100;
 }
 
 h4 {
@@ -715,7 +751,7 @@ a > .icon-small:hover {
 
 .daterange {
   flex: 1 0 auto;
-  font-weight: normal;
+  font-weight: 100;
   margin-bottom: var(--defaultPadding);
   min-width: 9rem;
 }
@@ -778,6 +814,77 @@ a > .icon-small:hover {
   display: flex;
 }
 
+#about {
+  padding: var(--defaultPadding) 0 0 0;
+}
+
+#about .typewriter {
+  overflow: hidden;
+  border-right: .15em solid var(--purple);
+  white-space: nowrap;
+  margin: 0 auto .5em 0;
+  letter-spacing: .15em;
+  font-family: monospace;
+  line-height: 1.5em;
+  display: block;
+}
+
+#about .typewriter:nth-child(1) {
+  width: 23em;
+  animation: typing 3s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(2) {
+  width: 21em;
+  opacity: 0;
+  animation: typing2 2.7s steps(40, end) 3.2s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(3) {
+  width: 20em;
+  opacity: 0;
+  animation: typing2 2.6s steps(40, end) 6.1s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(4) {
+  width: 14em;
+  opacity: 0;
+  animation: typing2 2s steps(20, end) 8.9s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(5) {
+  width: 5em;
+  opacity: 0;
+  animation: typing2 1s steps(10, end) 11.1s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(6) {
+  width: 21em;
+  opacity: 0;
+  animation: typing2 2.7s steps(40, end) 12.5s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(7) {
+  width: 17em;
+  opacity: 0;
+  animation: typing2 2.3s steps(40, end) 15.4s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(8) {
+  width: 18em;
+  opacity: 0;
+  animation: typing3 2.3s steps(40, end) 17.9s,
+    blink .5s step-end infinite alternate 20.2s;
+  animation-fill-mode: forwards;
+}
+
 #header {
   display: flex;
   background-color: var(--black);
@@ -811,6 +918,11 @@ a > .icon-small:hover {
   margin-right: var(--defaultPadding);
 }
 
+#header-tagline {
+  flex: 1 0 auto;
+  display: none;
+}
+
 #burger-menu-nav,
 #main-menu {
   border-top: 1px dashed var(--gray);
@@ -828,6 +940,7 @@ a > .icon-small:hover {
   flex-wrap: wrap;
   overflow: auto;
 }
+
 
 #burger-menu li.active > a,
 #main-menu li.active > a,
@@ -879,6 +992,7 @@ a > .icon-small:hover {
 
 #profile-tagline {
   font-size: 1rem;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 #profile-id {
@@ -896,10 +1010,6 @@ a > .icon-small:hover {
   flex-direction: column;
 }
 
-#greeting {
-  margin-bottom: var(--defaultPadding);
-}
-
 #projects-list .item > .row > .daterange {
   flex-basis: 7.5rem;
 }
@@ -907,6 +1017,23 @@ a > .icon-small:hover {
 #cv-techstack-link > svg {
   width: 2em;
   margin-right: var(--defaultPadding);
+}
+
+#cv-techstack-link:hover > svg {
+  fill: var(--purple);
+}
+
+#technical-skills .item > p {
+  margin-bottom: calc(2 * var(--defaultPadding));
+  text-align: left;
+}
+
+#publications > ol > li {
+  line-height: 1.5em;
+}
+
+#publications > h2:last-of-type {
+  margin-top: calc(2 * var(--defaultPadding));
 }
 
 @media(min-width: 425px) {
@@ -927,7 +1054,13 @@ a > .icon-small:hover {
   }
 }
 
-@media(min-width: 625px) {
+@media(min-width: 700px) {
+  #header-tagline {
+    display: flex;
+  }
+}
+
+@media(min-width: 1070px) {
   #header-social-wrapper {
     display: none;
   }
@@ -941,6 +1074,10 @@ a > .icon-small:hover {
     border-top: none;
     margin-top: 0;
     padding-top: 0;
+  }
+
+  #main-menu li {
+    max-width: 13em;
   }
 
   #sidebar {
