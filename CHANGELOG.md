@@ -1,3 +1,12 @@
+### 2.30.0
+* [#157: Extract tech skills into separate view.](https://github.com/haensl/haensl.github.io.src/issues/157)
+* [#143: Update about page.](https://github.com/haensl/haensl.github.io.src/issues/143)
+* Update CV PDF.
+* Change font weights.
+* Add OSRAM EINSTONE to vocations.
+* Add header tagline.
+* Add talks.
+
 ### 2.29.0
 * [#154: Add preact-component-console to projects.](https://github.com/haensl/haensl.github.io.src/issues/154)
 * Remove paddings from list items.

@@ -45,7 +45,7 @@
         class="avatar"
         alt="Avatar"></amp-img>
       <h1 class="centering m0 p1">{{ me.name }}</h1>
-      <q class="centering small block">Fullstack anything coder.</q>
+      <q class="no-text centering small block">Fullstack anything coder.</q>
       <nav id="burger-menu-nav">
         {{ > menu }}
       </nav>
@@ -69,6 +69,8 @@
           </div>
           <div id="header-social-wrapper">
             {{> social-nav-small }}
+            <h4 class="p0 m0"
+              id="header-tagline">HP Dietz &mdash; &ldquo;Fullstack anything coder.&rdquo;</h4>
             <amp-img srcset="/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w"
               width="32"
               height="32"
