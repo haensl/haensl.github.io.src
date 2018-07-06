@@ -747,6 +747,7 @@ a > .icon-small:hover {
 
 .year {
   flex: 0 0 5rem;
+  font-weight: 100;
 }
 
 .daterange {
