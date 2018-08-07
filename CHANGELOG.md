@@ -1,3 +1,7 @@
+### 2.31.0
+* [#159: Move to new docker network.](https://github.com/haensl/haensl.github.io.src/issues/159)
+* Pin node version to LTS.
+
 ### 2.30.0
 * [#157: Extract tech skills into separate view.](https://github.com/haensl/haensl.github.io.src/issues/157)
 * [#143: Update about page.](https://github.com/haensl/haensl.github.io.src/issues/143)
