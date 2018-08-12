@@ -1,3 +1,6 @@
+### 2.35.0
+* [#165: Re-enable Google Analytics.](https://github.com/haensl/haensl.github.io.src/issues/165)
+
 ### 2.34.0
 * [#166: Add privcy policy.](https://github.com/haensl/haensl.github.io.src/issues/166)
 
