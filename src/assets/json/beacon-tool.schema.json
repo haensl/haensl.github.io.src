@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/beacon-tool",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Library",
+  "applicationSuite": "Node.js",
+  "downloadUrl": "https://github.com/haensl/beacon-tool/releases",
+  "releaseNotes": "https://github.com/haensl/beacon-tool/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/beacon-tool/issues",
+  "keywords": "beaconing, tools, bluetooth, beacon, altbeacon, ibeacon, eddystone, tool",
+  "license": "https://github.com/haensl/beacon-tool/blob/master/LICENSE",
+  "description": "Collection of bluetooth beacon signal utility functions.",
+  "name": "Beacon Tool",
+  "url": "https://github.com/haensl/beacon-tool",
+  "sameAs": "https://www.npmjs.com/package/beacon-tool"
+}

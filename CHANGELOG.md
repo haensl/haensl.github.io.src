@@ -1,3 +1,6 @@
+### 2.33.0
+* [#162: Add beacon-tool to projects.](https://github.com/haensl/haensl.github.io.src/issues/162)
+
 ### 2.32.0
 * [#161: Add js-profiler.com to projects.](https://github.com/haensl/haensl.github.io.src/issues/161)
 
