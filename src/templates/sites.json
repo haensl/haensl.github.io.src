@@ -42,6 +42,13 @@
     }
   },
   {
+    "name": "privacy",
+    "partial": "privacy",
+    "vars": {
+      "description": "Privacy Policy"
+    }
+  },
+  {
     "name": "404",
     "partial": "404",
     "vars": {
