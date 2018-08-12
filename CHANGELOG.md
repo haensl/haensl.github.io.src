@@ -1,3 +1,6 @@
+### 2.34.0
+* [#166: Add privcy policy.](https://github.com/haensl/haensl.github.io.src/issues/166)
+
 ### 2.33.0
 * [#162: Add beacon-tool to projects.](https://github.com/haensl/haensl.github.io.src/issues/162)
 
