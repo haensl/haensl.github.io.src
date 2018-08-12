@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.30.0",
+  "version": "2.31.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
@@ -9,14 +9,11 @@
   "scripts": {
     "watch:client": "gulp watch",
     "start:server": "cd dist/hpdietz.com && node app.js",
-    "start": "[ \"$NODE_ENV\" == 'production' ] && node app.js || run-s build:src dev",
+    "start": "[ \"$NODE_ENV\" == 'production' ] && node app.js || run-s build dev",
     "dev:haensl.github.io": "gulp serve",
     "dev:hpdietz.com": "run-p watch:client start:server",
     "dev": "run-p dev:haensl.github.io dev:hpdietz.com",
-    "build:src": "gulp build",
-    "build:docker": "docker-compose build",
-    "build": "run-s build:src build:docker",
-    "publish": "docker save haensl.github.io:2.30.0 | bzip2 | pv | ssh $SERVER_USER@$SERVER 'bunzip2 | docker load'"
+    "build": "gulp build"
   },
   "keywords": [
     "github.io",
@@ -39,7 +36,7 @@
   "repository": "https://github.com/haensl/haensl.github.io.src/haensl.github.io.src.git",
   "devDependencies": {
     "autoprefixer": "^7.2.6",
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.24.6",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-amphtml-validator": "^1.0.2",
@@ -51,12 +48,12 @@
     "gulp-load-plugins": "^1.5.0",
     "gulp-mustache": "^3.0.1",
     "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.3.0",
+    "gulp-rename": "^1.4.0",
     "gulp-replace": "^0.6.1",
     "npm-run-all": "^4.1.3"
   },
   "dependencies": {
-    "compression": "^1.7.2",
+    "compression": "^1.7.3",
     "express": "^4.16.3"
   }
 }
