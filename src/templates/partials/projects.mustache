@@ -2,6 +2,32 @@
   <h1 id="greeting">Projects</h1>
   <ol class="p0 m0" id="projects-list">
     <li class="item">
+      <script type="application/ld+json" src="js-profiler.schema.json"></script>
+      <h4 class="row">
+        <time class="daterange fixed-flex" datetime="2018-07">2018 - PRSNT</time>
+        <a class="project-link"
+          href="https://js-profiler.com"
+          target="_blank"
+          id="js-profiler.com"
+          rel="noopener"
+          title="js-profiler.com"
+          data-vars-project="js-profiler.com">JS Profiler (website)</a>
+      </h4>
+      <p class="m0">Collection of performance profiles, benchmarks and comparisons for various JavaScript built-ins. This site is essentially the <a href="#js-profiler-lib">JS Profiler Node.js library</a> brought to live.</p>
+      <ul class="m1000 p0 horizontal-list">
+        <li>
+          <a href="https://js-profiler.com"
+            target="_blank"
+            class="project-link fixed-flex"
+            rel="noopener"
+            title="Visit JS Profiler."
+            data-vars-project="js-profiler.com">
+            <svg src="js-profiler-icon.svg" class="js-profiler-icon icon-small icon-dark"></svg>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="item">
       <script type="application/ld+json" src="preact-component-console.schema.json"></script>
       <h4 class="row">
         <time class="daterange fixed-flex" datetime="2018-07">2018 - PRSNT</time>
@@ -184,7 +210,7 @@
         title="Visit AMP website.">AMP</a> project skeleton served via <a href="https://nodejs.org"
 target="_blank"
 rel="noopener"
-title="Visit node.js website.">node.js</a> featuring <a href="https://mustache.github.io"
+title="Visit Node.js website.">Node.js</a> featuring <a href="https://mustache.github.io"
 target="_blank"
 rel="noopener"
 title="Visit mustache website.">Mustache</a> templating and <a href="https://gulpjs.com"
@@ -501,11 +527,17 @@ title="Visit MailHog on Github.">MailHog</a>.</p>
         <time class="daterange fixed-flex" datetime="2017-02">2017 - PRSNT</time>
         <a class="project-link"
           href="https://github.com/haensl/js-profiler"
+          id="js-profiler-lib"
           target="_blank"
           title="JS-Profiler"
-          data-vars-project="js-profiler">JS-Profiler</a>
+          data-vars-project="js-profiler">JS-Profiler (Node.js Library and CLI)</a>
       </h4>
-      <p class="m0">JavaScript profiling tool, library and benchmark collection.</p>
+      <p class="m0">JavaScript profiling tool, benchmark collection and CLI for Node.js. Powers <a href="#js-profiler.com">JS Profiler</a> under the hood. Visit <a href="https://js-profiler.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Visit JS Profiler."
+        class="project-link"
+        data-vars-project="js-profiler.com">https://js-profiler.com</a> to see it in action.</p>
       <ul class="m1000 p0 horizontal-list">
         <li>
           <script type="application/ld+json" src="js-profiler.src.schema.json"></script>
@@ -524,6 +556,15 @@ title="Visit MailHog on Github.">MailHog</a>.</p>
             title="Visit JS-Profiler on npm."
             data-vars-project="js-profiler">
             <svg src="npm-icon.svg" class="icon-small npm-icon"></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://js-profiler.com"
+            target="_blank"
+            class="project-link fixed-flex"
+            title="Visit JS Profiler on the web."
+            data-vars-project="js-profiler.com">
+            <svg src="js-profiler-icon.svg" class="icon-small js-profiler-icon"></svg>
           </a>
         </li>
       </ul>
