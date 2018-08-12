@@ -1,15 +1,15 @@
-version: '2'
+version: '3'
 services:
   haensl.github.io:
     build: .
-    image: haensl.github.io:2.31.0
+    image: hpd/haensl.github.io:2.31.0
     labels:
-      version: '2.31.0'
-    container_name: haensl.github.io
+      - 'version=2.31.0'
+    container_name: 'haensl.github.io'
     networks:
-      - haensl.github.io
+      - io.github.haensl
     restart: unless-stopped
 
 networks:
-  haensl.github.io:
+  io.github.haensl:
     external: true

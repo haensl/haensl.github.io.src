@@ -13,7 +13,7 @@
     "dev:haensl.github.io": "gulp serve",
     "dev:hpdietz.com": "run-p watch:client start:server",
     "dev": "run-p dev:haensl.github.io dev:hpdietz.com",
-    "build": "gulp build",
+    "build": "gulp build"
   },
   "keywords": [
     "github.io",
