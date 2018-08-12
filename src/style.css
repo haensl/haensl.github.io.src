@@ -705,6 +705,22 @@ a:hover > .pdf-icon,
   fill: var(--youtubeRed);
 }
 
+.js-profiler-icon circle.js-profiler-green {
+  fill: var(--black);
+}
+
+.js-profiler-icon path.js-profiler-green {
+  stroke: var(--black);
+}
+
+.js-profiler-icon:hover circle.js-profiler-green {
+  fill: var(--nodejsGreen);
+}
+
+.js-profiler-icon:hover path.js-profiler-green {
+  stroke: var(--nodejsGreen);
+}
+
 .social-links {
   flex: 1 0 auto;
 }

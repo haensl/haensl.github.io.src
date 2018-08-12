@@ -1,3 +1,6 @@
+### 2.32.0
+* [#161: Add js-profiler.com to projects.](https://github.com/haensl/haensl.github.io.src/issues/161)
+
 ### 2.31.0
 * [#159: Move to new docker network.](https://github.com/haensl/haensl.github.io.src/issues/159)
 * Pin node version to LTS.

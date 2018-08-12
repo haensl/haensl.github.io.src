@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WebApplication",
+  "@id": "https://js-profiler.com",
+  "about": {
+    "@id": "https://github.com/haensl/js-profiler"
+  },
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "applicationCategory": "Comparison",
+  "applicationSubCategory": "Performance",
+  "operatingSystem": [
+    "Linux",
+    "Windows",
+    "OSX",
+    "iOS",
+    "Android"
+  ],
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "keywords": "nodejs, performance-analysis, performance-testing, profiling, benchmark, benchmarks, javascript, ecma script, ecmascript, profiling-library",
+    "description": "Collection of performance profiles, benchmarks and comparisons for various JavaScript built-ins.",
+  "name": "JS Profiler",
+  "image": "https://js-profiler.com/js-profiler-logo.png",
+  "url": "https://js-profiler.com"
+}
