@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.35.0",
+  "version": "2.36.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
@@ -36,7 +36,7 @@
   "repository": "https://github.com/haensl/haensl.github.io.src/haensl.github.io.src.git",
   "devDependencies": {
     "autoprefixer": "^7.2.6",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.24.7",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-amphtml-validator": "^1.0.2",

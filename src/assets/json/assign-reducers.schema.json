@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/assign-reducers",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Library",
+  "applicationSuite": "Node.js",
+  "downloadUrl": "https://github.com/haensl/assign-reducers/releases",
+  "releaseNotes": "https://github.com/haensl/assign-reducers/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/assign-reducers/issues",
+  "keywords": "Redux, Reducers, Reducer, Assign, Object, Object.assign",
+  "license": "https://github.com/haensl/assign-reducers/blob/master/LICENSE",
+  "description": "NPM module to combine Redux reducer functions analogous to Object.assign.",
+  "name": "assign-reducers",
+  "url": "https://github.com/haensl/assign-reducers",
+  "sameAs": "https://www.npmjs.com/package/assign-reducers"
+}

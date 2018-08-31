@@ -1,3 +1,6 @@
+### 2.36.0
+* [#169: Add assign-reducers to projects.](https://github.com/haensl/haensl.github.io.src/issues/169)
+
 ### 2.35.0
 * [#165: Re-enable Google Analytics.](https://github.com/haensl/haensl.github.io.src/issues/165)
 
