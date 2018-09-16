@@ -1,3 +1,6 @@
+### 2.37.0
+* [#171: Add travis ci to stack.](https://github.com/haensl/haensl.github.io.src/issues/171)
+
 ### 2.36.0
 * [#169: Add assign-reducers to projects.](https://github.com/haensl/haensl.github.io.src/issues/169)
 
