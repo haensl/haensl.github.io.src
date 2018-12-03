@@ -1,3 +1,6 @@
+### 2.44.2
+* [#196: Update CV.](https://github.com/haensl/haensl.github.io.src/issues/196)
+
 ### 2.44.1
 * Remove link and adjust title of J&H CV entry.
 
