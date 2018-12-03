@@ -1,3 +1,6 @@
+### 2.40.0
+* [#177: Add Vue.js to stack.](https://github.com/haensl/haensl.github.io.src/issues/177)
+
 ### 2.39.0
 * [#175: Add Pipelines to stack.](https://github.com/haensl/haensl.github.io.src/issues/175)
 * Migrate to Gulp v4.
