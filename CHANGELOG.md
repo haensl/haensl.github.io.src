@@ -1,3 +1,8 @@
+### 2.39.0
+* [#175: Add Pipelines to stack.](https://github.com/haensl/haensl.github.io.src/issues/175)
+* Migrate to Gulp v4.
+* Update dependencies.
+
 ### 2.38.0
 * [#173: Add CircleCI to stack.](https://github.com/haensl/haensl.github.io.src/issues/173)
 * Update packages.
