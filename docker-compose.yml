@@ -2,7 +2,7 @@ version: '3'
 services:
   haensl.github.io:
     build: .
-    image: registry.gitlab.com/hpd/haensl.github.io:$VERSION
+    image: registry.gitlab.com/hpd/haensl.github.io.src:$VERSION
     container_name: 'haensl.github.io'
     networks:
       - io.github.haensl
