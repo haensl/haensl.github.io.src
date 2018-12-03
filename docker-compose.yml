@@ -2,11 +2,14 @@ version: '3'
 services:
   haensl.github.io:
     build: .
-    image: hpd/haensl.github.io:2.42.3
+    image: registry.gitlab.com/hpd/haensl.github.io:$VERSION
     container_name: 'haensl.github.io'
     networks:
       - io.github.haensl
     restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 8081
 
 networks:
   io.github.haensl:

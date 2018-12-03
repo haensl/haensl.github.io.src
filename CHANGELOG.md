@@ -1,3 +1,6 @@
+### 2.43.0
+* [#181: Add Gitlab CI/CD.](https://github.com/haensl/haensl.github.io.src/issues/181)
+
 ### 2.42.3
 * [#182: Update CV.](https://github.com/haensl/haensl.github.io.src/issues/182)
 
