@@ -16,8 +16,8 @@
   "datePublished": "2015",
   "headline": "Controlled Chaos: Randomization in Level Design",
   "keywords": "randomization, level design, game design, computer games, gaming, supply, cost function",
+  "description": "An introduction to integrating randomness in games using the example of Qake",
   "name": "Controlled Chaos: Randomization in Level Design",
-  "url": "http://jandh.org/resources/blog/jandh_blog_2015-04-18_2_en.pdf",
-  "fileFormat": "application/pdf",
-  "image": "http://jandh.org/projects/apps/app_icons/Qake-app-icon-large.png"
+  "url": "https://hpdietz.com/assets/docs/controlled-chaos.pdf",
+  "fileFormat": "application/pdf"
 }

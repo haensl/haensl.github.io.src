@@ -1,3 +1,6 @@
+### 2.42.1
+* [#183: Fix link to controlled chaos.](https://github.com/haensl/haensl.github.io.src/issues/183)
+
 ### 2.42.0
 * [#180: Add mutt2calcurse to projects.](https://github.com/haensl/haensl.github.io.src/issues/180)
 
