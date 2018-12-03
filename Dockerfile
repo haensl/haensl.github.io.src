@@ -1,4 +1,4 @@
-FROM node:8.11.3-alpine
+FROM node:lts-alpine
 COPY --chown=node:node dist/hpdietz.com/ /var/www/
 USER node
 WORKDIR /var/www
