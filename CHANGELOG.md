@@ -1,3 +1,6 @@
+### 2.44.0
+* [#194: Add WebGL to stack.](https://github.com/haensl/haensl.github.io.src/issues/194)
+
 ### 2.43.0
 * [#181: Add Gitlab CI/CD.](https://github.com/haensl/haensl.github.io.src/issues/181)
 
