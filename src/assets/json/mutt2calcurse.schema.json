@@ -4,7 +4,7 @@
   "@id": "https://github.com/haensl/mutt2calcurse",
   "applicationCategory": "Utility",
   "applicationSubCategory": "Command line utility",
-  "applicationSuite": "Bash",
+  "applicationSuite": "mutt",
   "downloadUrl": "https://github.com/haensl/mutt2calcurse/releases",
   "releaseNotes": "https://github.com/haensl/mutt2calcurse/blob/master/CHANGELOG.md",
   "operatingSystem": [
