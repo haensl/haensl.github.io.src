@@ -1,3 +1,6 @@
+### 2.42.3
+* [#182: Update CV.](https://github.com/haensl/haensl.github.io.src/issues/182)
+
 ### 2.42.2
 * [#178: Fix gulp-minify-inline-json project tile.](https://github.com/haensl/haensl.github.io.src/issues/178)
 * Add link to hpdietz.com to haensl.github.io project.
