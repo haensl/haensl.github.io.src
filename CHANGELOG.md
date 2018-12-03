@@ -1,3 +1,6 @@
+### 2.41.0
+* [#179: Add bytes to projects.](https://github.com/haensl/haensl.github.io.src/issues/179)
+
 ### 2.40.0
 * [#177: Add Vue.js to stack.](https://github.com/haensl/haensl.github.io.src/issues/177)
 
