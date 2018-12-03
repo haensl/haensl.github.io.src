@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/bytes",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Command line utility",
+  "applicationSuite": "Bash",
+  "downloadUrl": "https://github.com/haensl/bytes/releases",
+  "releaseNotes": "https://github.com/haensl/bytes/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2016,
+  "datePublished": 2016,
+  "discussionUrl": "https://github.com/haensl/bytes/issues",
+  "keywords": "bytes, disk space, directory, file size, bash, bash-script",
+  "license": "https://github.com/haensl/bytes/blob/master/LICENSE",
+  "description": "Shell utility to retrieve disk space consumed by files within a directory",
+  "name": "bytes",
+  "url": "https://github.com/haensl/bytes"
+}
