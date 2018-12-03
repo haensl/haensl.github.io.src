@@ -1,0 +1,28 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/mutt2calcurse",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Command line utility",
+  "applicationSuite": "Bash",
+  "downloadUrl": "https://github.com/haensl/mutt2calcurse/releases",
+  "releaseNotes": "https://github.com/haensl/mutt2calcurse/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2016,
+  "datePublished": 2016,
+  "discussionUrl": "https://github.com/haensl/mutt2calcurse/issues",
+  "keywords": "mutt, calcurse, ical, event, export, import, bash, shell, script",
+  "license": "https://github.com/haensl/mutt2calcurse/blob/master/LICENSE",
+  "description": "Shell utility to export iCal events from mutt to calcurse.",
+  "name": "mutt2calcurse",
+  "url": "https://github.com/haensl/mutt2calcurse"
+}
