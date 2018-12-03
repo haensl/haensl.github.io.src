@@ -1,3 +1,6 @@
+### 2.42.0
+* [#180: Add mutt2calcurse to projects.](https://github.com/haensl/haensl.github.io.src/issues/180)
+
 ### 2.41.0
 * [#179: Add bytes to projects.](https://github.com/haensl/haensl.github.io.src/issues/179)
 
