@@ -1,5 +1,6 @@
 ### 2.42.2
 * [#178: Fix gulp-minify-inline-json project tile.](https://github.com/haensl/haensl.github.io.src/issues/178)
+* Add link to hpdietz.com to haensl.github.io project.
 
 ### 2.42.1
 * [#183: Fix link to controlled chaos.](https://github.com/haensl/haensl.github.io.src/issues/183)
