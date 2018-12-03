@@ -1,3 +1,6 @@
+### 2.44.1
+* Remove link and adjust title of J&H CV entry.
+
 ### 2.44.0
 * [#194: Add WebGL to stack.](https://github.com/haensl/haensl.github.io.src/issues/194)
 
