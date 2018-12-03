@@ -265,6 +265,10 @@ li:last-of-type {
   margin: var(--defaultPadding) 0;
 }
 
+.m01 {
+  margin: 0 var(--defaultPadding);
+}
+
 .m0100 {
   margin: 0 var(--defaultPadding) 0 0;
 }
