@@ -390,7 +390,7 @@ gulp.task('assets',
   gulp.series(
     'clean:assets',
     () => new Promise((resolve, reject) =>
-      gulp.src(`${DIR_SRC}/assets/+(img|docs)/*`)
+      gulp.src(`${DIR_SRC}/assets/+(img|docs|poe)/*`)
         .pipe(gulp.dest(DIR_ASSETS_GITHUB_IO))
         .pipe(gulp.dest(DIR_ASSETS_STANDALONE))
         .on('end', resolve)
