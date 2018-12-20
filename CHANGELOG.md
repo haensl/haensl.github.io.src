@@ -1,3 +1,6 @@
+### 2.45.0
+* Add Path of Exile assets.
+
 ### 2.44.2
 * [#196: Update CV.](https://github.com/haensl/haensl.github.io.src/issues/196)
 
