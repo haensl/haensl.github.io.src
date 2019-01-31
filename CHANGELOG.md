@@ -1,3 +1,6 @@
+### 2.45.1
+* [#199: Remove dead links from Qake and Ask The Crowd.](https://github.com/haensl/haensl.github.io.src/issues/199)
+
 ### 2.45.0
 * Add Path of Exile assets.
 
