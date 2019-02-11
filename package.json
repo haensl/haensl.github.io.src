@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.45.1",
+  "version": "2.46.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/index.html",
   "engines": {
@@ -28,7 +28,7 @@
   "author": {
     "name": "HP Dietz",
     "email": "h.p.dietz@gmail.com",
-    "url": "https://haensl.github.io"
+    "url": "https://hpdietz.com"
   },
   "license": "GPL-3.0",
   "bugs": "https://github.com/haensl/haensl.github.io.src/issues",

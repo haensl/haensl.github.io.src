@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/subset-sum",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Library",
+  "applicationSuite": "Node.js",
+  "downloadUrl": "https://github.com/haensl/subset-sum/releases",
+  "releaseNotes": "https://github.com/haensl/subset-sum/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2019,
+  "datePublished": 2019,
+  "discussionUrl": "https://github.com/haensl/subset-sum/issues",
+  "keywords": "subset sum, sum, subset, coin changing problem",
+  "license": "https://github.com/haensl/subset-sum/blob/master/LICENSE",
+  "description": "Node.js module to compute solutions to the coin changing problem",
+  "name": "subset-sum",
+  "url": "https://github.com/haensl/subset-sum",
+  "sameAs": "https://www.npmjs.com/package/@haensl/subset-sum"
+}
