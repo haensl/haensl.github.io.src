@@ -1,3 +1,8 @@
+### 2.46.0
+* [#191: Add NPM patches.](https://github.com/haensl/haensl.github.io.src/issues/191)
+* Add subset-sum to projects.
+* Add log to projects.
+
 ### 2.45.1
 * [#199: Remove dead links from Qake and Ask The Crowd.](https://github.com/haensl/haensl.github.io.src/issues/199)
 
