@@ -1035,6 +1035,20 @@ a > .icon-small:hover {
   flex-basis: 7.5rem;
 }
 
+#projects-list .item .m-column-d-row {
+  flex-direction: column-reverse;
+  margin: 0;
+}
+
+#projects-list .item .m-column-d-row .daterange {
+  margin-top: .5em;
+  font-size: 80%;
+}
+
+#projects-list .item > p {
+  max-width: 90vmin;
+}
+
 #cv-techstack-link > svg {
   width: 2em;
   margin-right: var(--defaultPadding);
@@ -1078,6 +1092,21 @@ a > .icon-small:hover {
 @media(min-width: 700px) {
   #header-tagline {
     display: flex;
+  }
+
+  #projects-list .item .m-column-d-row {
+    flex-direction: initial;
+    align-items: flex-start;
+  }
+
+  #projects-list .item .m-column-d-row .daterange {
+    margin-top: initial;
+    font-size: 100%;
+    flex-basis: auto;
+  }
+
+  #projects-list .item > p {
+    max-width: auto;
   }
 }
 

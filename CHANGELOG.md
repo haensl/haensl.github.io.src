@@ -1,3 +1,6 @@
+### 2.46.1
+* [#176: Fix project styles on mobile.](https://github.com/haensl/haensl.github.io.src/issues/176)
+
 ### 2.46.0
 * [#191: Add NPM patches.](https://github.com/haensl/haensl.github.io.src/issues/191)
 * Add subset-sum to projects.
