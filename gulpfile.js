@@ -332,7 +332,8 @@ gulp.task('html',
             root: path.join(DIR_SRC_ASSETS, 'json')
           }))
           .pipe($.embedSvg({
-            root: path.join(__dirname, 'src/artwork')
+            root: path.join(__dirname, 'src/artwork'),
+            createSpritesheet: true
           }))
           .pipe($.htmlmin(OPTS_HTMLMIN))
           .pipe(gulp.dest(distDir))

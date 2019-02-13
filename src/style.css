@@ -14,32 +14,9 @@
   --youtubeRed: #f00;
   --vagrantLightBlue: #127eff;
   --vagrantDarkBlue: #1159cc;
-  --tuxWhite: #eceff1;
-  --tuxGray: #212121;
-  --tuxYellow: #ffc107;
-  --tuxBrown: #634703;
-  --androidGreen: #aac148;
-  --javaBlue: #477ed0;
-  --javaRed: #ec282c;
-  --golangBeige: #f6d2a2;
-  --golangBlue: #69d7e2;
-  --golangWhite: #fff;
-  --golangBlack: #231f20;
-  --cBlue: #03599c;
-  --cppDarkBlue: #00549d;
-  --cppLightBlue: #0086d4;
-  --cppMediumBlue: #0075c0;
-  --cppWhite: #fff;
-  --csharpGray: #3c3c3c;
-  --csharpWhite: #fff;
-  --csharpLightPurple: #9b4f96;
-  --csharpDarkPurple: #68217a;
-  --csharpMediumPurple: #813787;
   --nodejsGreen: #81cf08;
   --reactBlue: #61dafb;
   --riotRed: #ed1846;
-  --jqueryBlue: #0a69ad;
-  --phpBlue: #6181b6;
   --xmlOrange: #f29c1f;
   --xmlWhite: #fff;
   --mongoDbBrown: #a6a385;
@@ -195,7 +172,7 @@ a:active {
 }
 
 svg {
-  transition: fill var(--transitionDuration) ease;
+  transition: all var(--transitionDuration) ease;
 }
 
 section > h2 {
@@ -352,6 +329,14 @@ li:last-of-type {
   font-size: .85rem;
 }
 
+.svg-sprites {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 ul.small > li {
   font-weight: 100;
   font-size: .7rem;
@@ -426,12 +411,9 @@ a:hover > .pdf-icon,
   fill: var(--twitterBlue);
 }
 
-.xing-icon:hover .xing-icon-left {
-  fill: var(--xingLightGreen);
-}
-
-.xing-icon:hover .xing-icon-right {
+.xing-icon:hover {
   fill: var(--xingDarkGreen);
+  color: var(--xingLightGreen);
 }
 
 .rotating-icon::after {
@@ -474,138 +456,12 @@ a:hover > .pdf-icon,
   fill: var(--vagrantDarkBlue);
 }
 
-.tux-icon .tux-icon-white {
-  fill: var(--tuxWhite);
-}
-
-.tux-icon .tux-icon-gray {
-  fill: var(--tuxGray);
-}
-
-.tux-icon .tux-icon-yellow {
-  fill: var(--tuxYellow);
-}
-
-.tux-icon .tux-icon-brown {
-  fill: var(--tuxBrown);
-}
-
-.android-icon .android-icon-green {
-  fill: var(--androidGreen);
-}
-
-.java-icon .java-icon-blue {
-  fill: var(--javaBlue);
-}
-
-.java-icon .java-icon-red {
-  fill: var(--javaRed);
-}
-
-.java-icon .java-icon-red,
-.java-icon .java-icon-blue {
-  fill-rule: evenodd;
-}
-
-.golang-icon .golang-icon-beige {
-  fill: var(--golangBeige);
-}
-
-.golang-icon .golang-icon-blue {
-  fill: var(--golangBlue);
-}
-
-.golang-icon .golang-icon-white {
-  fill: var(--golangWhite);
-}
-
-.golang-icon .golang-icon-black {
-  fill: var(--golangBlack);
-}
-
-.c-icon .c-icon-blue {
-  fill: var(--cBlue);
-}
-
-.csharp-icon .csharp-icon-hexagon-gray {
-  fill: none;
-  stroke-linejoin: round;
-  stroke-opacity: 0.4;
-  stroke-width: 0.8;
-  stroke: var(--csharpGray);
-}
-
-.csharp-icon .csharp-icon-hexagon-white {
-  fill: none;
-  stroke-linejoin: round;
-  stroke-width: 0.5;
-  stroke: var(--csharpWhite);
-}
-
-.csharp-icon .csharp-icon-area {
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.csharp-icon .csharp-icon-light-purple {
-  fill: var(--csharpLightPurple);
-}
-
-.csharp-icon .csharp-icon-dark-purple {
-  fill: var(--csharpDarkPurple);
-}
-
-.csharp-icon .csharp-icon-medium-purple {
-  fill: var(--csharpMediumPurple);
-}
-
-.csharp-icon .csharp-icon-white {
-  fill: var(--csharpWhite);
-  stroke-width: 1px;
-}
-
-.cpp-icon .cpp-icon-dark-blue,
-.cpp-icon .cpp-icon-light-blue,
-.cpp-icon .cpp-icon-medium-blue,
-.cpp-icon .cpp-icon-white {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-}
-
-.cpp-icon .cpp-icon-medium-blue {
-  fill: var(--cppMediumBlue);
-}
-
-.cpp-icon .cpp-icon-white {
-  fill: var(--cppWhite);
-}
-
-.cpp-icon .cpp-icon-light-blue {
-  fill: var(--cppLightBlue);
-}
-
-.cpp-icon .cpp-icon-dark-blue {
-  fill: var(--cppDarkBlue);
-}
-
-.nodejs-icon .nodejs-icon-green {
-  fill: var(--nodejsGreen);
-}
-
 .react-icon .react-icon-blue {
   fill: var(--reactBlue);
 }
 
 .riot-icon .riot-icon-red {
   fill: var(--riotRed);
-}
-
-.jquery-icon .jquery-icon-blue {
-  fill: var(--jqueryBlue);
-}
-
-.php-icon .php-icon-blue {
-  fill: var(--phpBlue);
 }
 
 .xml-icon .xml-icon-orange {
@@ -682,10 +538,6 @@ a:hover > .pdf-icon,
 
 .bamboo-icon .bamboo-icon-blue {
   fill: var(--bambooBlue);
-}
-
-.passport-icon path {
-  stroke: var(--black);
 }
 
 .linkedin-icon:hover {
