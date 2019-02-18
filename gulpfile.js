@@ -16,6 +16,7 @@ const DIR_SRC_ASSETS = `${DIR_SRC}/assets`;
 const DIR_SRC_SEOFILES=`${DIR_SRC}/seofiles`;
 const DIR_TEMPLATES = `${DIR_SRC}/templates`;
 const DIR_PARTIALS = `${DIR_TEMPLATES}/partials`;
+const DIR_ARTWORK = `${DIR_SRC}/artwork`;
 const DIRECTIVE_CSS_INCLUDE = '<!-- INCLUDE_CSS -->';
 const DIRECTIVE_INCLUCE_VERSION = '<!-- INCLUDE_VERSION -->';
 const DIRECTIVE_INCLUDE_REVISED = '<!-- INCLUDE_REVISED -->';
@@ -332,7 +333,8 @@ gulp.task('html',
             root: path.join(DIR_SRC_ASSETS, 'json')
           }))
           .pipe($.embedSvg({
-            root: path.join(__dirname, 'src/artwork')
+            root: path.join(__dirname, 'src/artwork'),
+            createSpritesheet: true
           }))
           .pipe($.htmlmin(OPTS_HTMLMIN))
           .pipe(gulp.dest(distDir))
@@ -418,6 +420,7 @@ gulp.task('watch',
       gulp.watch(`${DIR_SRC}/**/*.+(css|mustache)`, gulp.series('compile'));
       gulp.watch(`${DIR_SRC_ASSETS}/*/*`, gulp.series('assets'));
       gulp.watch(`${DIR_SRC_ASSETS}/json/*`, gulp.series('compile'));
+      gulp.watch(`${DIR_ARTWORK}/*.svg`, gulp.series('html'));
       done();
     }
   )
