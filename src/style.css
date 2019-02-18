@@ -15,25 +15,6 @@
   --vagrantLightBlue: #127eff;
   --vagrantDarkBlue: #1159cc;
   --nodejsGreen: #81cf08;
-  --reactBlue: #61dafb;
-  --riotRed: #ed1846;
-  --xmlOrange: #f29c1f;
-  --xmlWhite: #fff;
-  --mongoDbBrown: #a6a385;
-  --mongoDbDarkGreen: #499d4a;
-  --mongoDbLightGreen: #58aa50;
-  --apacheOrange: #e97826;
-  --apacheMagenta: #9e2064;
-  --apacheMagenta2: #9f2064;
-  --apacheRed: #be202e;
-  --apacheRed2: #c92037;
-  --apacheRed3: #cd2335;
-  --apacheRed4: #cd2032;
-  --apachePurple: #282662;
-  --apacheLightPurple: #662e8d;
-  --nginxGreen: #0d9921;
-  --gulpRed: #d34a47;
-  --bambooBlue: #1f5182;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
   --boxShadowInset: inset 0 2px 3px 1px var(--gray);
@@ -440,104 +421,19 @@ a:hover > .pdf-icon,
   content: '500';
 }
 
-.vagrant-icon-solid .vagrant-icon-light {
+.vagrant-icon-solid {
   fill: var(--vagrantLightBlue);
+  color: var(--vagrantDarkBlue);
 }
 
-.vagrant-icon-solid .vagrant-icon-dark {
-  fill: var(--vagrantDarkBlue);
+.vagrant-icon {
+  color: var(--gray);
+  fill: var(--white);
 }
 
-.vagrant-icon:hover .vagrant-icon-light {
+.vagrant-icon:hover {
   fill: var(--vagrantLightBlue);
-}
-
-.vagrant-icon:hover .vagrant-icon-dark {
-  fill: var(--vagrantDarkBlue);
-}
-
-.react-icon .react-icon-blue {
-  fill: var(--reactBlue);
-}
-
-.riot-icon .riot-icon-red {
-  fill: var(--riotRed);
-}
-
-.xml-icon .xml-icon-orange {
-  fill: var(--xmlOrange);
-}
-
-.xml-icon .xml-icon-white {
-  fill: var(--xmlWhite);
-}
-
-.mongodb-icon .mongodb-icon-brown {
-  fill: var(--mongoDbBrown);
-}
-
-.mongodb-icon .mongodb-icon-light-green {
-  fill: var(--mongoDbLightGreen);
-}
-
-.mongodb-icon .mongodb-icon-dark-green {
-  fill: var(--mongoDbDarkGreen);
-}
-
-.apache-icon .apache-icon-stop-orange {
-  stop-color: var(--apacheOrange);
-}
-
-.apache-icon .apache-icon-stop-magenta {
-  stop-color: var(--apacheMagenta);
-}
-
-.apache-icon .apache-icon-stop-red {
-  stop-color: var(--apacheRed2);
-}
-
-.apache-icon .apache-icon-stop-red3 {
-  stop-color: var(--apacheRed3);
-}
-
-.apache-icon .apache-icon-stop-red4 {
-  stop-color: var(--apacheRed4);
-}
-
-.apache-icon .apache-icon-stop-purple {
-  stop-color: var(--apachePurple);
-}
-
-.apache-icon .apache-icon-stop-light-purple {
-  stop-color: var(--apacheLightPurple);
-}
-
-.apache-icon .apache-icon-stop-magenta2 {
-  stop-color: var(--apacheMagenta2);
-}
-
-.apache-icon .apache-icon-fill-red {
-  fill: var(--apacheRed);
-}
-
-.apache-icon .apache-icon-opacity4 {
-  opacity: .4;
-}
-
-.apache-icon .nofill {
-  fill: none;
-}
-
-.nginx-icon {
-  fill: var(--nginxGreen);
-}
-
-.gulp-icon .gulp-icon-red {
-  fill: var(--gulpRed);
-}
-
-.bamboo-icon .bamboo-icon-blue {
-  fill: var(--bambooBlue);
+  color: var(--vagrantDarkBlue);
 }
 
 .linkedin-icon:hover {

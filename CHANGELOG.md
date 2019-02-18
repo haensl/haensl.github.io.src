@@ -1,3 +1,6 @@
+### 2.47.0
+* [#137: Add SVG spritesheet.](https://github.com/haensl/haensl.github.io.src/issues/137)
+
 ### 2.46.1
 * [#176: Fix project styles on mobile.](https://github.com/haensl/haensl.github.io.src/issues/176)
 
