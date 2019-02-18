@@ -42,7 +42,7 @@
     "gulp-amphtml-validator": "^1.0.2",
     "gulp-cssmin": "^0.2.0",
     "gulp-embed-json": "^1.4.0",
-    "gulp-embed-svg": "^1.1.0",
+    "gulp-embed-svg": "^1.1.1",
     "gulp-htmlmin": "^3.0.0",
     "gulp-insert": "^0.5.0",
     "gulp-load-plugins": "^1.5.0",
