@@ -453,8 +453,12 @@ a:hover > .pdf-icon,
   fill: var(--white);
 }
 
-.youtube-icon:hover .youtube-icon-ellipsis {
-  fill: var(--youtubeRed);
+.youtube-icon {
+  color: var(--black);
+}
+
+.youtube-icon:hover {
+  color: var(--youtubeRed);
 }
 
 .js-profiler-icon circle.js-profiler-green {
