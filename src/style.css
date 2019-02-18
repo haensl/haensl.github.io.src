@@ -542,6 +542,8 @@ a > .icon-small:hover {
 
 .item.m-column-d-row > .m-row-d-column .company-logo {
   margin-left: 2rem;
+  max-width: 10rem;
+  display: flex;
 }
 
 .item > ul {
