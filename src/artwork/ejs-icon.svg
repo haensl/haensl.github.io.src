@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text font-family="'Montserrat', sans-serif" font-weight="bold"><tspan x="20" dy="2rem">&lt;%=</tspan><tspan x="30" dy="2rem">EJS</tspan><tspan x="50" dy="2rem">%&gt;</tspan></text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" ><text font-family="'Montserrat', sans-serif" font-weight="bold" y="50"><tspan x="20" dy="0">&lt;%=</tspan><tspan x="30" dy="24">EJS</tspan><tspan x="50" dy="24">%&gt;</tspan></text></svg>
