@@ -461,20 +461,14 @@ a:hover > .pdf-icon,
   color: var(--youtubeRed);
 }
 
-.js-profiler-icon circle.js-profiler-green {
+.js-profiler-icon {
   fill: var(--black);
+  color: var(--black);
 }
 
-.js-profiler-icon path.js-profiler-green {
-  stroke: var(--black);
-}
-
-.js-profiler-icon:hover circle.js-profiler-green {
+.js-profiler-icon:hover {
   fill: var(--nodejsGreen);
-}
-
-.js-profiler-icon:hover path.js-profiler-green {
-  stroke: var(--nodejsGreen);
+  color: var(--nodejsGreen);
 }
 
 .social-links {
