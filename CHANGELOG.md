@@ -1,3 +1,6 @@
+### 2.47.1
+* [#204: Fix SVG sprites in Firefox.](https://github.com/haensl/haensl.github.io.src/issues/204)
+
 ### 2.47.0
 * [#137: Add SVG spritesheet.](https://github.com/haensl/haensl.github.io.src/issues/137)
 
