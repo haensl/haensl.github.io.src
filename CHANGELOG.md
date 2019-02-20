@@ -1,3 +1,6 @@
+### 2.47.3
+* Fix typo on about page.
+
 ### 2.47.2
 * [#206: Fix amp-sidebar.](https://github.com/haensl/haensl.github.io.src/issues/206)
 
