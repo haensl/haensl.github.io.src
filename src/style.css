@@ -109,6 +109,7 @@ main > section.p1 {
 footer {
   justify-self: flex-end;
   flex: 1 0 auto;
+  flex-wrap: wrap;
 }
 
 footer.active > a {
