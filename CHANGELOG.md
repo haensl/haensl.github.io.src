@@ -1,3 +1,6 @@
+### 2.47.2
+* [#206: Fix amp-sidebar.](https://github.com/haensl/haensl.github.io.src/issues/206)
+
 ### 2.47.1
 * [#204: Fix SVG sprites in Firefox.](https://github.com/haensl/haensl.github.io.src/issues/204)
 
