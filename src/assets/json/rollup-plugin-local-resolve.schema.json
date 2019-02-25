@@ -3,8 +3,8 @@
   "@type": "SoftwareApplication",
   "@id": "https://github.com/haensl/rollup-plugin-local-resolve",
   "applicationCategory": "Module",
-  "applicationSubCategory": "Library",
-  "applicationSuite": "Node.js",
+  "applicationSubCategory": "Plugin",
+  "applicationSuite": "Rollup",
   "downloadUrl": "https://github.com/haensl/rollup-plugin-local-resolve/releases",
   "releaseNotes": "https://github.com/haensl/rollup-plugin-local-resolve/blob/master/CHANGELOG.md",
   "operatingSystem": [
