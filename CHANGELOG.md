@@ -1,3 +1,6 @@
+### 2.51.0
+* [#211: Add Babel to stack.](https://github.com/haensl/haensl.github.io.src/issues/211)
+
 ### 2.50.0
 * [#210: Add rollup to stack.](https://github.com/haensl/haensl.github.io.src/issues/210)
 
