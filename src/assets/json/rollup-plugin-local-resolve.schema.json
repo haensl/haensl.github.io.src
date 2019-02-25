@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/rollup-plugin-local-resolve",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Plugin",
+  "applicationSuite": "Rollup",
+  "downloadUrl": "https://github.com/haensl/rollup-plugin-local-resolve/releases",
+  "releaseNotes": "https://github.com/haensl/rollup-plugin-local-resolve/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2019,
+  "datePublished": 2019,
+  "discussionUrl": "https://github.com/haensl/rollup-plugin-local-resolve/issues",
+  "keywords": "rollup, plugin, rollup-plugin, resolve, local, index.js, index.jsx, js, jsx, relative, import",
+  "license": "https://github.com/haensl/subset-sum/blob/master/LICENSE",
+  "description": "Rollup plugin to resolve relative folder imports without explicitly stating the file.",
+  "name": "rollup-plugin-local-resolve",
+  "url": "https://github.com/haensl/rollup-plugin-local-resolve",
+  "sameAs": "https://www.npmjs.com/package/@haensl/rollup-plugin-local-resolve"
+}

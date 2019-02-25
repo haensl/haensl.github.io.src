@@ -1,3 +1,6 @@
+### 2.48.0
+* [#208: Add rollup-plugin-local-resolve to projects.](https://github.com/haensl/haensl.github.io.src/issues/208)
+
 ### 2.47.3
 * Fix typo on about page.
 

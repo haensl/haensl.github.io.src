@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/haensl/rollup-plugin-local-resolve",
+  "codeSampleType": "full",
+  "programmingLanguage": "JavaScript",
+  "runtimePlatform": "Node.js",
+  "targetProduct": {
+    "@id": "https://github.com/haensl/rollup-plugin-local-resolve"
+  }
+}
