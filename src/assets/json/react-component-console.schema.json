@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/react-component-console",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Component",
+  "applicationSuite": "React.js",
+  "downloadUrl": "https://github.com/haensl/react-component-console/releases",
+  "releaseNotes": "https://github.com/haensl/react-component-console/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2019,
+  "datePublished": 2019,
+  "discussionUrl": "https://github.com/haensl/react-component-console/issues",
+  "keywords": "react, react-component, component, console, terminal, emulator, typewriter",
+  "license": "https://github.com/haensl/react-component-console/blob/master/LICENSE",
+  "description": "Console emulator react component. Emulates realistic typing via dynamic char-typing delays.",
+  "name": "react-component-console",
+  "url": "https://github.com/haensl/react-component-console",
+  "sameAs": "https://www.npmjs.com/package/react-component-console"
+}

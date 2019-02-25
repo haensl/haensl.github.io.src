@@ -1,3 +1,6 @@
+### 2.49.0
+* [#209: Add react-component-console to projects.](https://github.com/haensl/haensl.github.io.src/issues/209)
+
 ### 2.48.0
 * [#208: Add rollup-plugin-local-resolve to projects.](https://github.com/haensl/haensl.github.io.src/issues/208)
 
