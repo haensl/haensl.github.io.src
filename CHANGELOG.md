@@ -1,3 +1,6 @@
+### 2.52.0
+* Update CV.
+
 ### 2.51.0
 * [#211: Add Babel to stack.](https://github.com/haensl/haensl.github.io.src/issues/211)
 
