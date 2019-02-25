@@ -1,3 +1,6 @@
+### 2.50.0
+* [#210: Add rollup to stack.](https://github.com/haensl/haensl.github.io.src/issues/210)
+
 ### 2.49.0
 * [#209: Add react-component-console to projects.](https://github.com/haensl/haensl.github.io.src/issues/209)
 
