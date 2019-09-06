@@ -1,3 +1,7 @@
+### 2.52.1
+* [#216: Change email to gmail.](https://github.com/haensl/haensl.github.io.src/issues/216)
+* Update dependencies.
+
 ### 2.52.0
 * Update CV.
 
