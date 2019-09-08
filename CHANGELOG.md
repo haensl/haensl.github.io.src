@@ -1,3 +1,6 @@
+### 2.53.1
+* [#221: Mobile style fixes.](https://github.com/haensl/haensl.github.io.src/issues/221)
+
 ### 2.53.0
 * [#142: Migrate to koa.](https://github.com/haensl/haensl.github.io.src/issues/142)
 
