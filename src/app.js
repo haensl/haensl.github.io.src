@@ -18,11 +18,6 @@ const statuscodes = {
 const publicDir = process.env.PUBLIC_DIR ||
   path.resolve(__dirname, './public/');
 
-const errorPages = {
-  500: path.join(publicDir, '/500/index.html'),
-  404: path.join(publicDir, '/400/index.html')
-};
-
 const start = async (port) => {
   try {
     const server = new Koa();
@@ -39,7 +34,7 @@ const start = async (port) => {
           let errorPage;
           switch (ctx.status) {
             case 404:
-              log.debug('404:', ctx.request);
+              log.debug('404: Not Found', ctx.request);
               ctx.redirect('/404');
               break;
             default:
