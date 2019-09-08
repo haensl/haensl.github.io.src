@@ -1,3 +1,6 @@
+### 2.53.0
+* [#142: Migrate to koa.](https://github.com/haensl/haensl.github.io.src/issues/142)
+
 ### 2.52.2
 * [#218: Fix mobile burger menu.](https://github.com/haensl/haensl.github.io.src/issues/218)
 

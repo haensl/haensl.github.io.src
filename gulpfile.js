@@ -4,13 +4,15 @@ const path = require('path');
 const $ = require('gulp-load-plugins')();
 const del = require('del');
 const browserSync = require('browser-sync');
+const log = require('@haensl/log');
 
 const VERSION = require('./package').version;
 const DIR_DIST = 'dist';
 const DIR_DIST_GITHUB_IO = `${DIR_DIST}/haensl.github.io`;
 const DIR_DIST_STANDALONE = `${DIR_DIST}/hpdietz.com`;
+const DIR_DIST_STANDALONE_PUBLIC = `${DIR_DIST_STANDALONE}/public`;
 const DIR_ASSETS_GITHUB_IO = `${DIR_DIST_GITHUB_IO}/assets`;
-const DIR_ASSETS_STANDALONE = `${DIR_DIST_STANDALONE}/assets`;
+const DIR_ASSETS_STANDALONE = `${DIR_DIST_STANDALONE_PUBLIC}/assets`;
 const DIR_SRC = 'src';
 const DIR_SRC_ASSETS = `${DIR_SRC}/assets`;
 const DIR_SRC_SEOFILES=`${DIR_SRC}/seofiles`;
@@ -35,7 +37,6 @@ const FILES_SERVER = [
   'package-lock.json',
   `${DIR_SRC}/app.js`
 ];
-
 
 const dirExists = (dir) =>
   (fs.existsSync(dir)
@@ -76,6 +77,16 @@ gulp.task('ensureStandaloneDistDirExists',
   )
 );
 
+gulp.task('ensureStandaloneDistPublicDirExists',
+  gulp.series(
+    'ensureStandaloneDistDirExists',
+    (done) => {
+      createDir(DIR_DIST_STANDALONE_PUBLIC);
+      done();
+    }
+  )
+);
+
 gulp.task('ensureGithubIOAssetsDirExists',
   gulp.series(
     'ensureGithubIODistDirExists',
@@ -88,7 +99,7 @@ gulp.task('ensureGithubIOAssetsDirExists',
 
 gulp.task('ensureStandaloneAssetsDirExists',
   gulp.series(
-    'ensureStandaloneDistDirExists',
+    'ensureStandaloneDistPublicDirExists',
     (done) => {
       createDir(DIR_ASSETS_STANDALONE);
       done();
@@ -187,7 +198,7 @@ gulp.task('seofiles',
     () =>
       Promise.all(
         [
-          DIR_DIST_STANDALONE,
+          DIR_DIST_STANDALONE_PUBLIC,
           DIR_DIST_GITHUB_IO
         ].map((distDir) => new Promise((resolve, reject) => {
             const domain = distDir.slice(5);
@@ -216,16 +227,16 @@ gulp.task('css',
   gulp.series(
     'clean:css',
     () => new Promise((resolve, reject) =>
-      gulp.src(`${DIR_SRC}/*.css`)
-        .pipe($.postcss([require('autoprefixer')()]))
-        .pipe($.cssmin())
-        .pipe($.rename((path) => {
-          path.basename = `${path.basename}.tmp`
-          return path;
-        }))
-        .pipe(gulp.dest(DIR_DIST))
-        .on('end', resolve)
-        .on('error', reject)
+        gulp.src(`${DIR_SRC}/*.css`)
+          .pipe($.postcss([require('autoprefixer')()]))
+          .pipe($.cssmin())
+          .pipe($.rename((path) => {
+            path.basename = `${path.basename}.tmp`
+            return path;
+          }))
+          .pipe(gulp.dest(DIR_DIST))
+          .on('end', resolve)
+          .on('error', reject)
     )
   )
 );
@@ -235,7 +246,7 @@ gulp.task('sitemap',
     'clean:sitemap',
     () => Promise.all(
       [
-        DIR_DIST_STANDALONE,
+        DIR_DIST_STANDALONE_PUBLIC,
         DIR_DIST_GITHUB_IO
       ].map((channel) => new Promise((resolve, reject) => {
         const domain = channel.slice(5);
@@ -270,8 +281,14 @@ gulp.task('templates',
               }
 
               Promise.all([
-                DIR_DIST_STANDALONE,
-                DIR_DIST_GITHUB_IO
+                {
+                  publicDir: DIR_DIST_STANDALONE_PUBLIC,
+                  domain: 'hpdietz.com'
+                },
+                {
+                  publicDir: DIR_DIST_GITHUB_IO,
+                  domain: 'haensl.github.io'
+                }
               ].map((channel) =>
                 new Promise((resolve, reject) => {
                   const vars = Object.assign(
@@ -279,7 +296,7 @@ gulp.task('templates',
                     JSON.parse(JSON.stringify(TEMPLATE_VARS)),
                     {
                       site: site.name,
-                      domain: channel.slice(5)
+                      domain: channel.domain
                     },
                     site.vars
                   );
@@ -300,7 +317,7 @@ gulp.task('templates',
                       path.extname = '.html';
                       return path;
                     }))
-                    .pipe(gulp.dest(`${channel}/${site.name !== 'about' ? `${site.partial}/` : ''}`))
+                    .pipe(gulp.dest(`${channel.publicDir}/${site.name !== 'about' ? `${site.partial}/` : ''}`))
                     .on('end', resolve)
                     .on('error', reject);
                 })))
@@ -323,7 +340,7 @@ gulp.task('html',
     () => Promise.all(
       [
         DIR_DIST_GITHUB_IO,
-        DIR_DIST_STANDALONE
+        DIR_DIST_STANDALONE_PUBLIC
       ].map((distDir) => new Promise((resolve, reject) =>
         gulp.src(`${distDir}/**/*.html`)
           .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ fs.readFileSync(path.join(DIR_DIST, 'style.tmp.css'))}</style>`))
@@ -433,6 +450,8 @@ gulp.task('serve', (done) => {
     }
   });
   done();
+  log.info('Production server listening on http://localhost:8080');
+  log.info('Browser sync server listening on http://localhost:3000');
 });
 
 gulp.task('default', gulp.series('watch'));
