@@ -841,6 +841,11 @@ a > .icon-small:hover {
   .daterange {
     min-width: 12rem;
   }
+
+  .icon-small {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media(min-width: 700px) {
