@@ -778,6 +778,7 @@ a > .icon-small:hover {
   display: flex;
   flex: 1 1 75%;
   flex-direction: column;
+  max-width: 100vw;
 }
 
 #projects-list .item > .row > .daterange {
@@ -796,6 +797,10 @@ a > .icon-small:hover {
 
 #projects-list .item > p {
   max-width: 90vmin;
+}
+
+#cv .column {
+  max-width: 99vw;
 }
 
 #cv-techstack-link > svg {
@@ -884,12 +889,29 @@ a > .icon-small:hover {
     flex: 1 1 17rem;
     animation: fadeIn var(--transitionDuration);
   }
+}
 
+@media(max-width: 320px) {
+  #about .typewriter {
+    font-size: small;
+  }
+
+  #cv {
+    font-size: 100%;
+  }
 }
 
 @media(max-width: 625px) {
   #sidebar {
     padding-top: 5rem;
+  }
+
+  #cv .column {
+    font-size: 90%;
+  }
+
+  .item.m-column-d-row > .m-row-d-column .company-logo {
+    max-width: 6rem;
   }
 }
 
