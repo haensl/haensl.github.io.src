@@ -1,3 +1,6 @@
+### 2.52.2
+* [#218: Fix mobile burger menu.](https://github.com/haensl/haensl.github.io.src/issues/218)
+
 ### 2.52.1
 * [#216: Change email to gmail.](https://github.com/haensl/haensl.github.io.src/issues/216)
 * Update dependencies.
