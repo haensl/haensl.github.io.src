@@ -1,3 +1,7 @@
+### 2.53.2
+* [#223: Update copyright year.](https://github.com/haensl/haensl.github.io.src/issues/223)
+* Update dependencies.
+
 ### 2.53.1
 * [#221: Mobile style fixes.](https://github.com/haensl/haensl.github.io.src/issues/221)
 
