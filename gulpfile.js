@@ -229,7 +229,7 @@ gulp.task('css',
     () => new Promise((resolve, reject) =>
         gulp.src(`${DIR_SRC}/*.css`)
           .pipe($.postcss([require('autoprefixer')()]))
-          .pipe($.cssmin())
+          .pipe($.cleanCss())
           .pipe($.rename((path) => {
             path.basename = `${path.basename}.tmp`
             return path;
