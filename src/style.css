@@ -650,8 +650,15 @@ a > .icon-small:hover {
 #about .typewriter:nth-child(8) {
   width: 18em;
   opacity: 0;
-  animation: typing3 2.3s steps(40, end) 17.9s,
-    blink .5s step-end infinite alternate 20.2s;
+  animation: typing2 2.3s steps(40, end) 17.9s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(9) {
+  width: 16em;
+  opacity: 0;
+  animation: typing3 2s steps(40, end) 21s,
+    blink .5s step-end infinite alternate 22.2s;
   animation-fill-mode: forwards;
 }
 

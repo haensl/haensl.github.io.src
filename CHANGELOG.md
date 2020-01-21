@@ -1,3 +1,6 @@
+### 2.54.0
+* [#225: Add link to projects to about page text.](https://github.com/haensl/haensl.github.io.src/issues/225)
+
 ### 2.53.2
 * [#223: Update copyright year.](https://github.com/haensl/haensl.github.io.src/issues/223)
 * Update dependencies.
