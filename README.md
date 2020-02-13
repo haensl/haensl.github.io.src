@@ -2,6 +2,8 @@
 
 Source for [https://haensl.github.io](https://haensl.github.io)
 
+![build status](https://gitlab.com/hpd/haensl.github.io.src/badges/master/pipeline.svg)
+
 ## Quick Start
 
 ```

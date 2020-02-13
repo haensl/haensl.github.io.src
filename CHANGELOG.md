@@ -1,3 +1,6 @@
+### 2.57.0
+* [#235: Add build badge.](https://github.com/haensl/haensl.github.io.src/issues/235)
+
 ### 2.56.1
 * [#229: Update used technologies in readme.](https://github.com/haensl/haensl.github.io.src/issues/229)
 
