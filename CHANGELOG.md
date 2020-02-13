@@ -1,3 +1,6 @@
+### 2.56.1
+* [#229: Update used technologies in readme.](https://github.com/haensl/haensl.github.io.src/issues/229)
+
 ### 2.56.0
 * [#231: Add pfs to projects.](https://github.com/haensl/haensl.github.io.src/issues/231)
 
