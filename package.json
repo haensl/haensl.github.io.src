@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "2.55.1",
+  "version": "2.56.0",
   "description": "The github.io page of HP Dietz.",
   "main": "dist/hpdietz.com/app.js",
   "engines": {

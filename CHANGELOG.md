@@ -1,3 +1,6 @@
+### 2.56.0
+* [#231: Add pfs to projects.](https://github.com/haensl/haensl.github.io.src/issues/231)
+
 ### 2.55.1
 * [#230: react-component-console: Replace Travis badge with CircleCI badge.](https://github.com/haensl/haensl.github.io.src/issues/230)
 * Update dependencies.
