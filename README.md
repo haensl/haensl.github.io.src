@@ -13,11 +13,10 @@ npm start
 
 - [AMP](https://www.ampproject.org)
 - [Docker](https://www.docker.com/)
-- [Express](https://expressjs.com/)
+- [Koa](https://koajs.com/)
 - [Gulp](https://gulpjs.com/)
 - [Mustache](https://mustache.github.io/)
 - [Node.js](https://nodejs.org)
-- [PM2](https://github.com/Unitech/pm2)
 
 ### [CHANGELOG](CHANGELOG.md)
 
