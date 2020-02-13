@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/pfs",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Polyfill",
+  "applicationSuite": "Node.js",
+  "downloadUrl": "https://github.com/haensl/pfs/releases",
+  "releaseNotes": "https://github.com/haensl/pfs/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/pfs/issues",
+  "keywords": "filesystem, fs, promise, wrapper",
+  "license": "https://github.com/haensl/pfs/blob/master/LICENSE",
+  "description": "Lightweight, depedency-free, promise-wrapper around Node.js' fs.",
+  "name": "pfs",
+  "url": "https://github.com/haensl/pfs",
+  "sameAs": "https://www.npmjs.com/package/@haensl/pfs"
+}
