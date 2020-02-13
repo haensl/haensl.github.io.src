@@ -1,3 +1,7 @@
+### 2.55.1
+* [#230: react-component-console: Replace Travis badge with CircleCI badge.](https://github.com/haensl/haensl.github.io.src/issues/230)
+* Update dependencies.
+
 ### 2.55.0
 * [#227: Add google-optimize-service to projects.](https://github.com/haensl/haensl.github.io.src/issues/227)
 
