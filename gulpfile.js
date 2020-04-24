@@ -48,8 +48,8 @@ const createDir = (dir) =>
 
 const validateAMP = () =>
   gulp.src(`${DIR_DIST}/**/index.html`)
-    .pipe($.amphtmlValidator.validate())
-    .pipe($.amphtmlValidator.format());
+    .pipe($.amphtmlValidator.validate());
+    //.pipe($.amphtmlValidator.format());
     //.pipe($.amphtmlValidator.failAfterError());
 
 gulp.task('ensureDistDirExists', (done) => {
