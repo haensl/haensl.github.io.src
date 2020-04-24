@@ -1,3 +1,7 @@
+### 2.58.0
+* [#238: Add experteer to CV.](https://github.com/haensl/haensl.github.io.src/issues/238)
+* Update dependencies.
+
 ### 2.57.0
 * [#235: Add build badge.](https://github.com/haensl/haensl.github.io.src/issues/235)
 
