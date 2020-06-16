@@ -1,3 +1,6 @@
+### 2.59.0
+* [#241: Add @haensl/hooks to projects.](https://github.com/haensl/haensl.github.io.src/issues/241)
+
 ### 2.58.0
 * [#238: Add experteer to CV.](https://github.com/haensl/haensl.github.io.src/issues/238)
 * Update dependencies.

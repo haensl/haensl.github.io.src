@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/hooks",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Hook",
+  "applicationSuite": "React",
+  "downloadUrl": "https://github.com/haensl/hooks",
+  "releaseNotes": "https://github.com/haensl/hooks/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2020,
+  "datePublished": 2020,
+  "discussionUrl": "https://github.com/haensl/hooks/issues",
+  "keywords": "react, hooks, useDebounce, debounce",
+  "license": "https://github.com/haensl/hooks/blob/master/LICENSE",
+  "description": "Assorted React hooks.",
+  "name": "@haensl/hooks",
+  "url": "https://github.com/haensl/hooks",
+  "sameAs": "https://www.npmjs.com/package/@haensl/hooks"
+}
