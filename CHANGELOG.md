@@ -1,9 +1,7 @@
 ### 2.60.0
 * [#244: Add @haensl/services to projects.](https://github.com/haensl/haensl.github.io.src/issues/244)
-* Fix `@haensl/rollup-plugin-local-resolve` build badge.
-* Fix `subset-sum` build badge.
-* Fix `js-profiler` build badge.
-* Fix `embed-json` build badge.
+* Remove build badges.
+* Increase project name font-size.
 * Update dependencies.
 
 ### 2.59.0

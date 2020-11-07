@@ -788,17 +788,21 @@ a > .icon-small:hover {
   max-width: 100vw;
 }
 
+#projects-list .project-link {
+  font-size: 140%;
+}
+
 #projects-list .item > .row > .daterange {
   flex-basis: 7.5rem;
 }
 
 #projects-list .item .m-column-d-row {
   flex-direction: column-reverse;
-  margin: 0;
+  margin: 0 0 1 0;
 }
 
 #projects-list .item .m-column-d-row .daterange {
-  margin-top: .5em;
+  margin: .5em 0 0;
   font-size: 80%;
 }
 
@@ -862,7 +866,7 @@ a > .icon-small:hover {
 
   #projects-list .item .m-column-d-row {
     flex-direction: initial;
-    align-items: flex-start;
+    align-items: baseline;
   }
 
   #projects-list .item .m-column-d-row .daterange {
