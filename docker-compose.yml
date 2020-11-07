@@ -3,7 +3,7 @@ services:
   haensl.github.io:
     build: .
     image: registry.gitlab.com/hpd/haensl.github.io.src:$VERSION
-    container_name: 'haensl.github.io'
+    container_name: 'io.github.haensl'
     networks:
       - io.github.haensl
     restart: unless-stopped

@@ -1,3 +1,7 @@
+### 2.61.1
+* [#248: Invert container name.](https://github.com/haensl/haensl.github.io.src/issues/248)
+* Use `npm ci` command for container.
+
 ### 2.61.0
 * [#245: Remove stack.](https://github.com/haensl/haensl.github.io.src/issues/245)
 * Replace publications & talks with resources.
