@@ -10,24 +10,19 @@
       "href": "/"
     },
     {
-      "name": "projects",
-      "title": "HP's projects.",
-      "href": "/projects"
+      "name": "software",
+      "title": "HP's software projects.",
+      "href": "/software"
     },
     {
-      "name": "publications & talks",
-      "title": "Publications by HP.",
-      "href": "/publications"
+      "name": "resources",
+      "title": "Resources provided by HP.",
+      "href": "/resources"
     },
     {
       "name": "cv",
       "title": "HP's curriculum vitae.",
       "href": "/cv"
-    },
-    {
-      "name": "stack",
-      "title": "HP's tech stack.",
-      "href": "/stack"
     }
   ],
   "socialChannels": [
