@@ -1,3 +1,9 @@
+### 2.60.0
+* [#244: Add @haensl/services to projects.](https://github.com/haensl/haensl.github.io.src/issues/244)
+* Remove build badges.
+* Increase project name font-size.
+* Update dependencies.
+
 ### 2.59.0
 * [#241: Add @haensl/hooks to projects.](https://github.com/haensl/haensl.github.io.src/issues/241)
 

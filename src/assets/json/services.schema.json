@@ -1,0 +1,29 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/services",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Service",
+  "downloadUrl": "https://github.com/haensl/services",
+  "releaseNotes": "https://github.com/haensl/services/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightHolder": {
+    "@id": "https://haensl.github.io"
+  },
+  "copyrightYear": 2020,
+  "datePublished": 2020,
+  "discussionUrl": "https://github.com/haensl/services/issues",
+  "keywords": "javascript, services, service, platform, throttle, component",
+  "license": "https://github.com/haensl/services/blob/master/LICENSE",
+  "description": "Assorted JavaScript services.",
+  "name": "@haensl/services",
+  "url": "https://github.com/haensl/services",
+  "sameAs": "https://www.npmjs.com/package/@haensl/services"
+}
