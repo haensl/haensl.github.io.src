@@ -14,24 +14,17 @@
     }
   },
   {
-    "name": "projects",
-    "partial": "projects",
+    "name": "software",
+    "partial": "software",
     "vars": {
-      "description": "Projects of Hans-Peter Dietz. preact-component-console, minify-inline-json, embed-json, OpenSSL Certificate Generator, mov2gif, node-amp-mustache-skeleton, goto, haensl.github.io gulp-embed-json, gulp-embed-svg, gulp-minify-inline-json, The Rovers, ng-async-img, js-performance, ngAnimatedScroll, htmlelement.polyfills, Qake, Ask The Crowd."
+      "description": "Software projects of Hans-Peter Dietz."
     }
   },
   {
-    "name": "publications & talks",
-    "partial": "publications",
+    "name": "resources",
+    "partial": "resources",
     "vars": {
-      "description": "Publications by Hans-Peter Dietz. Ansible.tar.gz, Controlled Chaos: Randomization in Level Design, Ask The Crowd: Crowdsourcing Knowledge Generation, Implicit Authentication on Mobile Devices."
-    }
-  },
-  {
-    "name": "stack",
-    "partial": "stack",
-    "vars": {
-      "description": "Tech-Stack, Setting & Technoligies Hans-Peter Dietz has worked with."
+      "description": "Resources provided by Hans-Peter Dietz."
     }
   },
   {

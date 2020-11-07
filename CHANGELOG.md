@@ -1,3 +1,9 @@
+### 2.61.0
+* [#245: Remove stack.](https://github.com/haensl/haensl.github.io.src/issues/245)
+* Replace publications & talks with resources.
+* Rename projects to software.
+* Add teaching to resources.
+
 ### 2.60.0
 * [#244: Add @haensl/services to projects.](https://github.com/haensl/haensl.github.io.src/issues/244)
 * Remove build badges.
