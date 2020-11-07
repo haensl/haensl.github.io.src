@@ -1,3 +1,11 @@
+### 2.60.0
+* [#244: Add @haensl/services to projects.](https://github.com/haensl/haensl.github.io.src/issues/244)
+* Fix `@haensl/rollup-plugin-local-resolve` build badge.
+* Fix `subset-sum` build badge.
+* Fix `js-profiler` build badge.
+* Fix `embed-json` build badge.
+* Update dependencies.
+
 ### 2.59.0
 * [#241: Add @haensl/hooks to projects.](https://github.com/haensl/haensl.github.io.src/issues/241)
 
