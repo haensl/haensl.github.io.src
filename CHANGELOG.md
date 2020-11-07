@@ -1,3 +1,6 @@
+### 2.61.2
+* [#250: Remove obsolete pull when building Docker image.](https://github.com/haensl/haensl.github.io.src/issues/250)
+
 ### 2.61.1
 * [#248: Invert container name.](https://github.com/haensl/haensl.github.io.src/issues/248)
 * Use `npm ci` command for container.
