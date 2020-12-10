@@ -7,17 +7,17 @@
     "url": "https://www.ansible.com"
   },
   "author": {
-    "@id": "https://haensl.github.io"
+    "@id": "https://hpdietz.com"
   },
   "copyrightHolder": {
-    "@id": "https://haensl.github.io"
+    "@id": "https://hpdietz.com"
   },
   "copyrightYear": 2016,
   "datePublished": "2016",
   "headline": "Ansible.tar.gz",
   "keywords": "ansible, configuration management, provisioning, virtual machines, automation",
   "name": "Ansible.tar.gz",
-  "url": "https://haensl.github.io/assets/docs/ansible.tar.gz.pdf",
+  "url": "https://hpdietz.com/assets/docs/ansible.tar.gz.pdf",
   "fileFormat": "application/pdf",
   "image": "https://blogs.missouristate.edu/cio/files/2016/06/ansible-logo.png"
 }

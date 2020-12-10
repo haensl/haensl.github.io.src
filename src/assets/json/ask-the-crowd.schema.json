@@ -6,17 +6,17 @@
     "@id": "http://ask-the-crowd.com"
   },
   "author": {
-    "@id": "https://haensl.github.io"
+    "@id": "https://hpdietz.com"
   },
   "copyrightHolder": {
-    "@id": "https://haensl.github.io"
+    "@id": "https://hpdietz.com"
   },
   "copyrightYear": 2014,
   "datePublished": "2014",
   "headline": "Ask The Crowd: Crowdsourcing Knowledge Generation",
   "keywords": "crowdsourcing, knowlege generation, online, portal, platform, survey, visualization, information, data, charts, user generated content",
   "name": "Ask The Crowd: Crowdsourcing Knowledge Generation",
-  "url": "https://haensl.github.io/assets/docs/ask-the-crowd.pdf",
+  "url": "https://hpdietz.com/assets/docs/ask-the-crowd.pdf",
   "fileFormat": "application/pdf",
   "image": "http://ask-the-crowd.com/img/workflow.png"
 }

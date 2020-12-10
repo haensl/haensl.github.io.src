@@ -1,11 +1,12 @@
 {
   "@context": "http://schema.org",
   "@type": "Person",
-  "@id": "https://haensl.github.io",
+  "@id": "https://hpdietz.com",
+  "sameAs": "https://haensl.github.io",
   "name": "Hans-Peter Dietz",
   "familyName": "Dietz",
   "givenName": "Hans-Peter",
-  "description": "Fullstack anything coder.",
+  "description": "Architect, Coder, Coach.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Munich",
@@ -30,13 +31,13 @@
       "url": "http://www.medien.ifi.lmu.de"
     }
   },
-  "jobTitle": "Software Engineer",
+  "jobTitle": "Senior Software Architect",
   "nationality": {
     "@type": "Country",
     "name": "Germany"
   },
   "image": "https://haensl.github.io/assets/img/avatar_x2.png",
-  "mainEntityOfPage": "https://haensl.github.io",
+  "mainEntityOfPage": "https://hpdietz.com",
   "url": "https://hpdietz.com",
   "sameAs": [
     "https://haensl.github.io",

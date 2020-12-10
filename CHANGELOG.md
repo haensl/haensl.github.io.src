@@ -1,3 +1,9 @@
+### 2.62.0
+* [#252: Add "hire me" feature.](https://github.com/haensl/haensl.github.io.src/issues/252)
+* Add services page.
+* Add `@haensl/json-transform-stream` to projects.
+* Change author `@id` to `https://hpdietz.com`.
+
 ### 2.61.2
 * [#250: Remove obsolete pull when building Docker image.](https://github.com/haensl/haensl.github.io.src/issues/250)
 
