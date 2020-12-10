@@ -28,6 +28,13 @@
     }
   },
   {
+    "name": "services",
+    "partial": "services",
+    "vars": {
+      "description": "Hire Hans-Peter Dietz to develop your project."
+    }
+  },
+  {
     "name": "impressum",
     "partial": "impressum",
     "vars": {

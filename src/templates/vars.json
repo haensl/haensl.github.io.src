@@ -1,13 +1,18 @@
 {
   "me": {
     "name": "HP Dietz",
-    "tagline": "Fullstack anything coder."
+    "tagline": "Architect, Coder, Coach."
   },
   "menuItems": [
     {
       "name": "about",
       "title": "About HP.",
       "href": "/"
+    },
+    {
+      "name": "services",
+      "title": "Work with HP.",
+      "href": "/services"
     },
     {
       "name": "software",

@@ -1,0 +1,29 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/json-transform-stream",
+  "applicationCategory": "Module",
+  "applicationSubCategory": "Stream",
+  "downloadUrl": "https://github.com/haensl/json-transform-stream",
+  "releaseNotes": "https://github.com/haensl/json-transform-stream/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://hpdietz.com"
+  },
+  "copyrightHolder": {
+    "@id": "https://hpdietz.com"
+  },
+  "copyrightYear": 2020,
+  "datePublished": 2020,
+  "discussionUrl": "https://github.com/haensl/json-transform-stream/issues",
+  "keywords": "javascript, nodejs, stream, node.js, json",
+  "license": "https://github.com/haensl/json-transform-stream/blob/master/LICENSE",
+  "description": "A Node.js Transform Stream implementation that makes wrapping JSON data easy.",
+  "name": "@haensl/json-transform-stream",
+  "url": "https://github.com/haensl/json-transform-stream",
+  "sameAs": "https://www.npmjs.com/package/@haensl/json-transform-stream"
+}

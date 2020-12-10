@@ -15,6 +15,9 @@
   --vagrantLightBlue: #127eff;
   --vagrantDarkBlue: #1159cc;
   --nodejsGreen: #81cf08;
+  --fontFamily: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  --fontWeight: 100;
+  --lineHeight: 1.63;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
   --boxShadowInset: inset 0 2px 3px 1px var(--gray);
@@ -79,7 +82,8 @@ body, html {
 }
 
 body {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: var(--fontFamily);
+  line-height: var(--lineHeight);
   position: relative;
 }
 
@@ -124,12 +128,13 @@ p,
 q,
 article {
   font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
-  font-weight: 100;
-  line-height: 1.63;
+  font-weight: var(--fontWeight);
+  line-height: var(--lineHeight);
 }
 
 a {
   transition: color var(--transitionDuration) ease;
+  line-height: var(--lineHeight);
 }
 
 a:link,
@@ -167,7 +172,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 100;
+  font-weight: var(--fontWeight);
 }
 
 h4 {
@@ -267,7 +272,7 @@ li:last-of-type {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: var(--fontWeightLatoBlack);
 }
 
 .horizontal-space-between {
@@ -326,7 +331,7 @@ li:last-of-type {
 }
 
 ul.small > li {
-  font-weight: 100;
+  font-weight: var(--fontWeight);
   font-size: .7rem;
 }
 
@@ -335,7 +340,7 @@ ul.small > li {
 }
 
 .no-text {
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: var(--fontFamily)
 }
 
 .text {
@@ -519,12 +524,12 @@ a > .icon-small:hover {
 }
 
 .year {
-  font-weight: 100;
+  font-weight: var(--fontWeight);
 }
 
 .daterange {
   flex: 1 0 auto;
-  font-weight: 100;
+  font-weight: var(--fontWeight);
   margin-bottom: var(--defaultPadding);
   min-width: 9rem;
 }
@@ -625,45 +630,52 @@ a > .icon-small:hover {
 }
 
 #about .typewriter:nth-child(4) {
-  width: 14em;
+  width: 5em;
   opacity: 0;
-  animation: typing2 2s steps(20, end) 8.9s;
+  animation: typing2 1s steps(10, end) 9.4s;
   animation-fill-mode: forwards;
 }
 
 #about .typewriter:nth-child(5) {
   width: 5em;
   opacity: 0;
-  animation: typing2 1s steps(10, end) 11.1s;
+  animation: typing2 1s steps(10, end) 10.6s;
   animation-fill-mode: forwards;
 }
 
 #about .typewriter:nth-child(6) {
   width: 21em;
   opacity: 0;
-  animation: typing2 2.7s steps(40, end) 12.5s;
+  animation: typing2 3.2s steps(50, end) 11.9s;
   animation-fill-mode: forwards;
 }
 
 #about .typewriter:nth-child(7) {
-  width: 17em;
+  width: 18em;
   opacity: 0;
-  animation: typing2 2.3s steps(40, end) 15.4s;
+  animation: typing2 2.3s steps(40, end) 15.2s;
   animation-fill-mode: forwards;
 }
 
 #about .typewriter:nth-child(8) {
   width: 18em;
   opacity: 0;
-  animation: typing2 2.3s steps(40, end) 17.9s;
+  animation: typing2 2.3s steps(30, end) 17.7s;
   animation-fill-mode: forwards;
 }
 
 #about .typewriter:nth-child(9) {
+  width: 12em;
+  opacity: 0;
+  animation: typing2 2s steps(30, end) 20.2s;
+  animation-fill-mode: forwards;
+}
+
+#about .typewriter:nth-child(10) {
   width: 16em;
   opacity: 0;
-  animation: typing3 2s steps(40, end) 21s,
-    blink .5s step-end infinite alternate 22.2s;
+  animation: typing3 2s steps(35, end) 22.4s,
+    blink .5s step-end infinite alternate 24.2s;
   animation-fill-mode: forwards;
 }
 
@@ -749,6 +761,12 @@ a > .icon-small:hover {
   flex-direction: column;
 }
 
+#burger-menu #cta {
+  font-size: 1.5rem;
+  margin-top: auto;
+  justify-self: flex-end;
+}
+
 #sidebar {
   position: relative;
   display: none;
@@ -772,9 +790,14 @@ a > .icon-small:hover {
   margin-bottom: 0;
 }
 
+#cta {
+  font-size: 2rem;
+  font-family: var(--fontFamily);
+}
+
 #profile-tagline {
   font-size: 1rem;
-  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: var(--fontFamily);
 }
 
 #profile-id {
@@ -795,6 +818,19 @@ a > .icon-small:hover {
 
 #projects-list {
   margin-top: 1em;
+}
+
+#services li {
+  font-weight: var(--fontWeight);
+}
+
+#services .social-links .email-icon:not(:hover),
+#services .social-links .linkedin-icon:not(:hover),
+#services .social-links .xing-icon:not(:hover),
+#services .social-links .twitter-icon:not(:hover),
+#services .social-links .github-icon:not(:hover) {
+  fill: var(--black);
+  color: var(--black);
 }
 
 .project-link {
