@@ -1,0 +1,125 @@
+{
+  "pdf": {
+    "href": "/assets/docs/cv-hpdietz.pdf",
+    "text": "View/Download my CV as PDF."
+  },
+  "skills": {
+    "heading": "Key Skills",
+    "items": [
+      {
+        "title": "Architecture",
+        "description": "Designing (and implementing) distributed systems is one of my favorite tasks. Be it RESTful microservices with the occasionally interspersed SPA or IoT systems."
+      },
+      {
+        "title": "Software Engineering",
+        "description": "I am passionate about high quality software development. In process, operations and code."
+      },
+      {
+        "title": "UX",
+        "description": "Well implemented user experience design separates excellent from good software. I am knowledgable in human computer interaction. By education and vocational experience."
+      },
+      {
+        "title": "JavaScript",
+        "description": "&mdash;&nbsp;&ldquo;If you cannot avoid it, you might as well embrace it.&rdquo;<br><br>JavaScript is my bread and butter. No matter where &ndash; frontend, backend, jobs, tools, you name it. It is my personal default langauge to get things done. I code quite a lot. Not only at work, see my projects."
+      }
+    ]
+  },
+  "vocations": {
+    "heading": "Vocations",
+    "experteer": {
+      "date": {
+        "iso": "2019-07",
+        "text": "2019&nbsp&ndash; PRSNT"
+      },
+      "href": "https://experteer.com",
+      "logo": {
+        "height": 60,
+        "src": "experteer-logo.svg"
+      },
+      "title": "Senior Software Architect",
+      "name": "Experteer",
+      "location": "Munich",
+      "description": "Software Architect and interim Frontend Team Lead in the Engineering Team. Creating system designs, implementing web services and single page applications for new products as well as transitioning the leacy system to a state-of-the-art web service architecture, cloud infrastructure and frontend technology stack."
+    },
+    "osram": {
+      "date": {
+        "iso": "2018-04",
+        "text": "2018&nbsp&ndash; 2019"
+      },
+      "href": "https://osram.com/einstone",
+      "logo": {
+        "height": 60,
+        "src": "OSRAM-EINSTONE-Logo.svg"
+      },
+      "title": "Application Architect &amp; UX Responsible in R&amp;D",
+      "name": "OSRAM",
+      "location": "Munich",
+      "description": "Application Software Architect, UX Responsible and fullstack JavaScript engineer in the Smart Positioning Solutions research and development team. Design and implementation of location based services and IoT applications for OSRAM EINSTONE."
+    },
+    "check24": {
+      "date": {
+        "iso": "2015-10",
+        "text": "2015&nbsp;&ndash; 2018"
+      },
+      "href": "https://check24.de",
+      "logo": {
+        "height": 48,
+        "width": 120,
+        "src": "/assets/img/check24-logo_1x.jpg 1x, /assets/img/check24-logo_2x.jpg 2x"
+      },
+      "title": "Software Engineer",
+      "name": "CHECK24",
+      "location": "Munich",
+      "description": "Fullstack JavaScript developer and DevOps in the animal insurance team."
+    },
+    "jandh": {
+      "date": {
+        "iso": "2014-06-01",
+        "text": "2014&nbsp;&ndash; 2016"
+      },
+      "href": "http://jandh.org",
+      "logo": {
+        "height": 48,
+        "width": 96,
+        "src": "/assets/img/jandh-logo_1x.jpg 1x, /assets/img/jandh-logo_2x.jpg 2x"
+      },
+      "title": "Co-Founder &amp; CTO, J&amp;H, Freising",
+      "name": "J&amp;H",
+      "location": "Freising",
+      "description": "Commisional web and native mobile development, as well as UX consulting."
+    },
+    "lmu": {
+      "date": {
+        "iso": "2011-10-01",
+        "text": "2011&nbsp;&ndash; 2014"
+      },
+      "href": "http://www.medien.ifi.lmu.de",
+      "logo": {
+        "height": 48,
+        "width": 101,
+        "src": "/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
+      },
+      "title": "Student assistant",
+      "name": "LFE Media Informatics, Ludwig-Maximilans-University",
+      "location": "Munich",
+      "description": "Held weekly tutorials accompanying the following lectures:",
+      "lectures": [
+        {
+          "href": "http://www.medien.ifi.lmu.de/lehre/ws1112/dm/",
+          "name": "Digital Multimedia",
+          "description": "Fundamental concepts of digital multimedia."
+        },
+        {
+          "href": "http://www.medien.ifi.lmu.de/lehre/ss12/mmp/",
+          "name": "Multimedia Programming",
+          "description": "Developing multimedia applications and games using Python and JavaFX."
+        },
+        {
+          "href": "http://www.medien.ifi.lmu.de/lehre/ws1213/mmn/",
+          "name": "Online Multimedia",
+          "description": "Technical concepts and implementation of websites and webservices using PHP, JavaScript, JQuery, Prototype and JBoss/JSF/JSP."
+        }
+      ]
+    },
+  }
+}
