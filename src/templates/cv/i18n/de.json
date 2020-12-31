@@ -1,35 +1,35 @@
 {
   "pdf": {
     "href": "/assets/docs/cv-hpdietz.pdf",
-    "text": "View/Download my CV as PDF."
+    "text": "Meinen CV als PDF ansehen oder herunterladen."
   },
   "skills": {
-    "heading": "Key Skills",
+    "heading": "Schl&uuml;sself&auml;higkeiten",
     "items": [
       {
-        "title": "Architecture",
-        "description": "Planning and designing distributed systems is my primary focus. Regardless of whether you are starting, extending or migrating - a good concept saves time and effort."
+        "title": "Architektur",
+        "description": "Planung und Design verteilter Systeme stehen in meinen Fokus. Ob Entstehung, Erweiterung oder Migration - ein gutes Konzept spart Zeit und Aufwand."
       },
       {
         "title": "Software Engineering",
-        "description": "I am passionate about high quality software development. In process, operations and code. I love to share my knowledge and coach teams."
+        "description": "Ich habe eine Leidenschaft f&uuml;r hochqualitative Softwareentwicklung. Sowohl im Prozess, operativen Betrieb als auch im Code. Ich teile gerne mein Wissen und coache teams."
       },
       {
         "title": "User Experience",
-        "description": "Well implemented user experience design separates excellent from good software. I am knowledgeable in human computer interaction. By education and vocational experience."
+        "description": "Gute umgesetzte user experience ist was exzellente von guter Software unterscheidet. Ich bin bewandert in Mensch-Maschine Interaktion. Sowohl von Ausbildungswegen als auch Berufserfahrung."
       },
       {
         "title": "Code",
-        "description": "I code. Quite a bit. Mostly JavaScript."
+        "description": "Ich programmiere. Nicht direkt wenig. Haupts&auml;chlich JavaScript."
       }
     ]
   },
   "vocations": {
-    "heading": "Vocations",
+    "heading": "Berufserfahrung",
     "experteer": {
       "date": {
         "iso": "2019-07",
-        "text": "2019&nbsp&ndash; PRSNT"
+        "text": "2019&nbsp&ndash; HEUTE"
       },
       "href": "https://experteer.com",
       "logo": {
@@ -38,8 +38,8 @@
       },
       "title": "Senior Software Architect",
       "name": "Experteer",
-      "location": "Munich",
-      "description": "Software Architect and interim Frontend Team Lead in the Engineering Team. Creating system designs, implementing web services and single page applications for new products as well as transitioning the leacy system to a state-of-the-art web service architecture, cloud infrastructure and frontend technology stack."
+      "location": "M&uuml;nchen",
+      "description": "Software Architekt und interim Frontend Team Lead im Engineering Team. Coaching des Frontend Teams. Erstellung von System Designs und Implementierung von Web Services und Single Page Applications f&uuml;r neue Produkte sowie &Uuml;berf&uuml;hrung von legacy Systemen zu State-of-the-Art Web Service Architekturen, Cloud Infrastruktur and Frontend Technologie Stack."
     },
     "osram": {
       "date": {
@@ -51,10 +51,10 @@
         "height": 60,
         "src": "OSRAM-EINSTONE-Logo.svg"
       },
-      "title": "Application Architect &amp; UX Responsible",
+      "title": "Application Architect &amp; UX Verantwortlicher",
       "name": "OSRAM",
-      "location": "Munich",
-      "description": "Application Software Architect, UX Responsible and fullstack JavaScript engineer in the Smart Positioning Solutions research and development team. Design and implementation of location based services and IoT applications for OSRAM EINSTONE."
+      "location": "M&uuml;nchen",
+      "description": "Anwendungs-Software Architect, UX Verantwortlicher and Fullstack JavaScript Engineer im Smart Positioning Solutions Research &amp; Development Team. Design und Implementierung von Location-based Services und IoT Anwendungen f&uuml;r OSRAM EINSTONE."
     },
     "check24": {
       "date": {
@@ -69,8 +69,8 @@
       },
       "title": "Software Engineer",
       "name": "CHECK24",
-      "location": "Munich",
-      "description": "Fullstack JavaScript developer and DevOps in the animal insurance team."
+      "location": "M&uuml;nchen",
+      "description": "Fullstack JavaScript Entwickler and DevOps im Tierversicherungen-Team."
     },
     "jandh": {
       "date": {
@@ -83,10 +83,10 @@
         "width": 96,
         "src": "/assets/img/jandh-logo_1x.jpg 1x, /assets/img/jandh-logo_2x.jpg 2x"
       },
-      "title": "Co-Founder &amp; CTO, J&amp;H, Freising",
+      "title": "Mitgründer &amp; CTO, J&amp;H, Freising",
       "name": "J&amp;H",
       "location": "Freising",
-      "description": "Commisional web and native mobile development, as well as UX consulting."
+      "description": "Projektbasierte Web und native mobile Entwicklung, sowie UX Consulting."
     },
     "lmu": {
       "date": {
@@ -99,25 +99,25 @@
         "width": 101,
         "src": "/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
       },
-      "title": "Student assistant",
-      "name": "LFE Media Informatics, Ludwig-Maximilans-University",
-      "location": "Munich",
-      "description": "Held weekly tutorials accompanying the following lectures:",
+      "title": "Studentische Hilfskraft",
+      "name": "LFE Medieninformatik, Ludwig-Maximilans-Universit&auml;t",
+      "location": "M&uuml;nchen",
+      "description": "Abhalten w&ouml;chentlicher, vorlesungsbegleitender, praktischer &Uuml;bungen:",
       "lectures": [
         {
           "href": "http://www.medien.ifi.lmu.de/lehre/ws1112/dm/",
-          "name": "Digital Multimedia",
-          "description": "Fundamental concepts of digital multimedia."
+          "name": "Digitale Medien",
+          "description": "Grundlegende Konzepte digitaler Medien."
         },
         {
           "href": "http://www.medien.ifi.lmu.de/lehre/ss12/mmp/",
-          "name": "Multimedia Programming",
-          "description": "Developing multimedia applications and games using Python and JavaFX."
+          "name": "Multimedia Programmierung",
+          "description": "Entwicklung von Multimedia Anwendungen und Spielen in Python und JavaFX."
         },
         {
           "href": "http://www.medien.ifi.lmu.de/lehre/ws1213/mmn/",
-          "name": "Online Multimedia",
-          "description": "Technical concepts and implementation of websites and webservices using PHP, JavaScript, JQuery, Prototype and JBoss/JSF/JSP."
+          "name": "Multimedia im Netz",
+          "description": "Technische Konzepte und Implementierung von Webseiten und -services mit PHP, JavaScript, JQuery, Prototype und JBoss/JSF/JSP."
         }
       ]
     },
@@ -132,10 +132,10 @@
         "width": 78,
         "src": "/assets/img/efdis-logo_1x.jpg 1x, /assets/img/efdis-logo_2x.jpg 2x"
       },
-      "title": "Working student",
+      "title": "Werkstudent",
       "name": "Efidis AG",
       "location": "Freising",
-      "description": "Working student in software development."
+      "description": "Werkstudent in der Software Entwicklung."
     },
     "bmw": {
       "date": {
@@ -148,10 +148,10 @@
         "width": 96,
         "src": "/assets/img/bmw-group-logo_1x.jpg 1x, /assets/img/bmw-group-logo_2x.jpg 2x"
       },
-      "title": "Working student",
+      "title": "Werkstudent",
       "name": "BMW Group",
-      "location": "Munich",
-      "description": "Working student in taxes/national."
+      "location": "M&uuml;nchen",
+      "description": "Werkstudent in Steuern/national."
     }
   },
   "certifications": {
@@ -168,12 +168,12 @@
           "width": 48,
           "src": "/assets/img/itsm-iso20000-logo_1x.jpg 1x, /assets/img/itsm-iso20000-logo_2x.jpg 2x"
         },
-        "name": "Foundation Certificate in IT Service Management according to ISO/IEC 20000"
+        "name": "Foundation Certificate in IT Service Management nach ISO/IEC 20000"
       }
     ]
   },
   "education": {
-    "heading": "Education",
+    "heading": "Studium und Ausbildung",
     "masters": {
       "date": {
         "iso": "2010-10-01",
@@ -186,12 +186,12 @@
         "src": "/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
       },
       "title": "Master of Science",
-      "name": "Media Informatics, Ludwig-Maximilians-University",
-      "location": "Munich",
+      "name": "Medieninformatik, Ludwig-Maximilians-Universit&auml;t",
+      "location": "M&uuml;nchen",
       "details": [
         {
-          "heading": "Focus areas:",
-          "description": "User experience, security, distributed computing, web and mobile applications."
+          "heading": "Schwerpunkte:",
+          "description": "User Experience, Security, verteilte Systeme, Web und Mobile Anwendungen."
         },
         {
           "heading": "Master Thesis:",
@@ -212,16 +212,16 @@
         "src": "/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
       },
       "title": "Bachelor of Science",
-      "name": "Media Informatics, Ludwig-Maximilians-University",
-      "location": "Munich",
+      "name": "Medieninformatik, Ludwig-Maximilians-Universit&auml;t",
+      "location": "M&uuml;nchen",
       "details": [
         {
-          "heading": "Focus areas:",
-          "description": "Human computer interaction, multimedia, software development."
+          "heading": "Schwerpunkte:",
+          "description": "Mensch-Maschine Interaktion, Multimedia, Software Entwicklung."
         },
         {
-          "heading": "Secondary subject:",
-          "description": "Media business studies."
+          "heading": "Nebenfach:",
+          "description": "Medienwirtschaft."
         },
         {
           "heading": "Bachelor Thesis:",
@@ -241,8 +241,8 @@
         "src": "/assets/img/tum-logo_1x.jpg 1x, /assets/img/tum-logo_2x.jpg 2x"
       },
       "title": "Student",
-      "name": "Horticultural Science, Technical University",
-      "location": "Munich/Weihenstephan"
+      "name": "Gartenbauwissenschaften, Technische Universit&auml;t",
+      "location": "Muuml;nchen/Weihenstephan"
     },
     "alevel": {
       "date": {
@@ -255,13 +255,13 @@
         "width": 51,
         "src": "/assets/img/gwsg-logo_1x.jpg 1x, /assets/img/gwsg-logo_2x.jpg 2x"
       },
-      "title": "A-Levels",
+      "title": "Abitur",
       "name": "Georg-Wilhelm-Steller-Gymnasium",
       "location": "Bad Windsheim"
     }
   },
   "languages": {
-    "heading": "<i>(Spoken)</i> Languages",
+    "heading": "<i>(Gesprochene)</i> Sprachen",
     "items": [
       {
         "logo": {
@@ -269,8 +269,8 @@
           "width": 48,
           "height": 48
         },
-        "name": "German",
-        "level": "Mothertongue"
+        "name": "Deutsch",
+        "level": "Muttersprache"
       },
       {
         "logo": {
@@ -278,8 +278,8 @@
           "width": 48,
           "height": 48
         },
-        "name": "English",
-        "level": "Fluent"
+        "name": "Englisch",
+        "level": "Flie&szlig;end"
       },
       {
         "logo": {
@@ -287,7 +287,7 @@
           "width": 48,
           "height": 48
         },
-        "name": "French",
+        "name": "Franz&ouml;sisch",
         "level": "Basics"
       }
     ]

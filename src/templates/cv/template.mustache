@@ -111,169 +111,155 @@
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="2008-10-01">2008&nbsp;&ndash; 2010</time>
-        <a href="http://efdis.de"
+        <time class="daterange fixed-flex" datetime="{{vocations.efdis.date.iso}}">{{vocations.efdis.date.text}}</time>
+        <a href="{{vocations.efdis.href}}"
           target="_blank"
           rel="noopener">
-          <amp-img srcset="/assets/img/efdis-logo_1x.jpg 1x, /assets/img/efdis-logo_2x.jpg 2x"
+          <amp-img srcset="{{vocations.efdis.logo.src}}"
             class="company-logo"
-            height="48"
-            width="78"></amp-img>
+            height="{{vocations.efdis.logo.height}}"
+            width="{{vocations.efdis.logo.width}}"></amp-img>
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">Working student, <a href="http://efdis.de" target="_blank" rel="noopener">Efidis AG</a>, Freising</h4>
-        <p class="p0 m0 left">Working student in software development.</p>
+        <h4 class="m0010">{{vocations.efdis.title}}, <a href="{{vocations.efdis.href}}" target="_blank" rel="noopener">{{vocations.efdis.name}}</a>, {{vocations.efdis.location}}</h4>
+        <p class="p0 m0 left">{{vocations.efdis.description}}</p>
       </div>
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
-        <time datetime="2007-10-01" class="daterange fixed-flex">2007</time>
-        <a href="https://www.bmwgroup.com"
+        <time datetime="{{vocations.bmw.date.iso}}" class="daterange fixed-flex">{{vocations.bmw.date.text}}</time>
+        <a href="{{vocations.bmw.href}}"
           target="_blank"
           rel="noopener">
-          <amp-img srcset="/assets/img/bmw-group-logo_1x.jpg 1x, /assets/img/bmw-group-logo_2x.jpg 2x"
+          <amp-img srcset="{{vocations.bmw.logo.src}}"
             class="company-logo"
-            height="48"
-            width="96"></amp-img>
+            height="{{vocations.bmw.logo.height}}"
+            width="{{vocations.bmw.logo.width}}"></amp-img>
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">Working student, <a href="https://www.bmwgroup.com" target="_blank" rel="noopener">BMW Group</a>, Munich</h4>
-        <p class="p0 m0 left">Working student in taxes/national.</p>
+        <h4 class="m0010">{{vocations.bmw.title}}, <a href="{{vocations.bmw.href}}" target="_blank" rel="noopener">{{vocations.bmw.name}}</a>, {{vocations.bmw.location}}</h4>
+        <p class="p0 m0 left">{{vocations.bmw.description}}</p>
       </div>
     </section>
   </section>
   <section id="certifications">
-    <h2>Certifications</h2>
-    <section class="item m-column-d-row">
-      <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="2009-10-01">2009</time>
-        <a href="https://www.tuev-sued.de/management-systeme/it-dienstleistungen/iso-20000"
-          target="_blank"
-          rel="noopener">
-          <amp-img srcset="/assets/img/itsm-iso20000-logo_1x.jpg 1x, /assets/img/itsm-iso20000-logo_2x.jpg 2x"
-            class="company-logo"
-            width="48"
-            height="48"></amp-img>
-        </a>
-      </div>
-      <div class="column">
-        <h4 class="m0010"><a href="https://www.tuev-sued.de/management-systeme/it-dienstleistungen/iso-20000" target="_blank" rel="noopener">Foundation Certificate in IT Service Management according to ISO/IEC 20000</a></h4>
-      </div>
-    </section>
+    <h2>{{certifications.heading}}</h2>
+    {#certifications}
+      <section class="item m-column-d-row">
+        <div class="m-row-d-column">
+          <time class="daterange fixed-flex" datetime="date.iso">{{date.text}}</time>
+          <a href="{{href}}"
+            target="_blank"
+            rel="noopener">
+            <amp-img srcset="{{logo.src}}"
+              class="company-logo"
+              width="{{logo.width}}"
+              height="{{logo.height}}"></amp-img>
+          </a>
+        </div>
+        <div class="column">
+          <h4 class="m0010"><a href="{{href}}" target="_blank" rel="noopener">{{name}}</a></h4>
+        </div>
+      </section>
+    {/certifications}
   </section>
   <section id="education">
-    <h2>Education</h2>
+    <h2>{{education.heading}}</h2>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="2010-10-01">2010&nbsp;&ndash; 2014</time>
-        <a href="http://www.medien.ifi.lmu.de"
+        <time class="daterange fixed-flex" datetime="{{education.masters.date.iso}}">{{education.masters.date.text}}</time>
+        <a href="{{education.masters.href}}"
           target="_blank"
           rel="noopener">
-          <amp-img srcset="/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
+          <amp-img srcset="{{education.masters.logo.src}}"
             class="company-logo"
-            width="101"
-            height="48"></amp-img>
+            width="{{education.masters.logo.width}}"
+            height="{{education.masters.logo.height}}"></amp-img>
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">Master of Science, <a href="http://www.medien.ifi.lmu.de" target="_blank" rel="noopener">Media Informatics, Ludwig-Maximilians-University</a>, Munich</h4>
+        <h4 class="m0010">{{education.masters.title}}, <a href="{{education.masters.href}}" target="_blank" rel="noopener">{{education.masters.name}}</a>, {{education.masters.location}}</h4>
         <section class="m0">
-          <h5>Focus areas:</h5>
-          <p class="m0 left">User experience, security, distributed computing, web and mobile applications.</p>
-          <h5 class="m10">Master Thesis:</h5>
-          <p class="m0 left">Ask The Crowd: Crowdsourcing Knowledge Generation.</p>
+          {#education.masters.details}
+            <h5>{{heading}}</h5>
+            <p class="m0 left">{{description}}</p>
+          {/education.masters.details}
         </section>
       </div>
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="2007-10-01">2007&nbsp;&ndash; 2010</time>
-        <a href="http://www.medien.ifi.lmu.de"
+        <time class="daterange fixed-flex" datetime="{{education.bachelors.date.iso}}">{{education.bachelors.date.text}}</time>
+        <a href="{{education.bachelors.href}}"
           target="_blank"
           rel="noopener">
-          <amp-img srcset="/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
+          <amp-img srcset="{{education.bachelors.logo.src}}"
             class="company-logo"
-            width="101"
-            height="48"></amp-img>
+            width="{{education.bachelors.logo.width}}"
+            height="{{education.bachelors.logo.height}}"></amp-img>
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">Bachelor of Science, <a href="http://www.medien.ifi.lmu.de" target="_blank" rel="noopener">Media Informatics, Ludwig-Maximilians-University</a>, Munich</h4>
+        <h4 class="m0010">{{education.bachelors.title}}, <a href="{{education.bachelors.href}}" target="_blank" rel="noopener">{{education.bachelors.name}}</a>, {{education.bachelors.location}}</h4>
         <section class="m0">
-          <h5>Focus areas:</h5>
-          <p class="m0010 left">Human computer interaction, multimedia, software development.</p>
-          <h5>Secondary subject:</h5>
-          <p class="m0010 left">Media business studies.</p>
-          <h5>Bachelor Thesis:</h5>
-          <p class="m0010 left"> Supporting association, reminiscing and social discovery in a music player.</p>
+          {#education.bachelors.details}
+            <h5>{{heading}}</h5>
+            <p class="m0010 left">{{description}}</p>
+          {/education.bachelors.details}
         </section>
       </div>
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="2006-09-01">2006&nbsp;&ndash; 2007</time>
-        <a href="http://www.agrar.wzw.tum.de/"
+        <time class="daterange fixed-flex" datetime="{{education.horti.date.iso}}">{{education.horti.date.text}}</time>
+        <a href="{{education.horti.href}}"
           target="_blank"
           rel="noopener">
-          <amp-img srcset="/assets/img/tum-logo_1x.jpg 1x, /assets/img/tum-logo_2x.jpg 2x"
+          <amp-img srcset="{{education.horti.logo.src}}"
             class="company-logo"
-            width="91"
-            height="48"></amp-img>
+            width="{{education.horti.logo.width}}"
+            height="{{education.horti.logo.height}}"></amp-img>
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">Student of <a href="http://www.agrar.wzw.tum.de/" rel="noopener" target="_blank">Horticultural Science, Technical University</a>, Munich</h4>
+        <h4 class="m0010">{{education.horti.title}}, <a href="{{education.horti.href}}" rel="noopener" target="_blank">{{education.horti.name}}</a>, {{education.horti.location}}</h4>
       </div>
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="1997-06-01">1997&nbsp;&ndash; 2006</time>
-        <a href="http://www.gwsg.net/"
+        <time class="daterange fixed-flex" datetime="{{education.alevel.date.iso}}">{{education.alevel.date.text}}</time>
+        <a href="{{education.alevel.href}}"
           target="_blank"
           rel="noopener">
-          <amp-img srcset="/assets/img/gwsg-logo_1x.jpg 1x, /assets/img/gwsg-logo_2x.jpg 2x"
+          <amp-img srcset="{{education.alevel.logo.src}}"
             class="company-logo"
-            width="51"
-            height="48"></amp-img>
+            width="{{education.alevel.logo.width}}"
+            height="{{education.alevel.logo.height}}"></amp-img>
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">A-Levels, <a href="http://www.gwsg.net/" target="_blank" rel="noopener">Georg-Wilhelm-Steller-Gymnasium</a>, Bad Windsheim</h4>
+        <h4 class="m0010">{{education.alevel.title}}, <a href="{{education.alevel.href}}" target="_blank" rel="noopener">{{education.alevel.name}}</a>, {{education.alevel.location}}</h4>
       </div>
     </section>
   </section>
   <section id="languages">
-    <h2><i>(Spoken)</i> Languages</h2>
-    <section class="item p0 row vcentering">
-      <svg src="flag-german.svg"
+    <h2>{{languages.heading}}</h2>
+    {#languages.items}
+      <section class="item p0 row vcentering">
+        <svg src="{{logo.src}}"
         class="icon m0"
-        width="48"
-        height="48"></svg>
-      <h4 class="m0001">German</h4>
-      <span class="text m0001">Mothertongue</span>
-    </section>
-    <section class="item p0 row vcentering">
-      <svg src="flag-us.svg"
-        class="icon m0"
-        width="48"
-        height="48"></svg>
-      <h4 class="m0001">English</h4>
-      <span class="text m0001">Fluent</span>
-    </section>
-    <section class="item p0 row vcentering">
-      <svg src="flag-french.svg"
-        class="icon m0"
-        width="48"
-        height="48"></svg>
-      <h4 class="m0001">French</h4>
-      <span class="text m0001">Basics</span>
-    </section>
+        width="{{logo.width}}"
+        height="{{logo.height}}"></svg>
+        <h4 class="m0001">{{name}}</h4>
+        <span class="text m0001">{{level}}</span>
+      </section>
+    {/languages.items}
   </section>
-  <a href="/assets/docs/cv-hpdietz.pdf"
+  <a href="{{pdf.href}}"
     class="block pdf-download-link small doc-link"
     data-vars-document="CV"
     target="_blank"
-    rel="noopener"><svg class="pdf-icon" src="pdf-icon.svg"></svg>View/Download my CV as PDF.</a>
+    rel="noopener"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{pdf.text}}</a>
 </section>
