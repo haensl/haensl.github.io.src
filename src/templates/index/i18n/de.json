@@ -1,0 +1,80 @@
+{
+  "year": "2020",
+  "me": {
+    "name": "HP Dietz",
+    "tagline": "Architekt, Coder, Coach.",
+    "mail": "h.p.dietz@gmail.com",
+    "fullname": "Hans-Peter Dietz"
+  },
+  "menuItems": [
+    {
+      "name": "&uuml;ber",
+      "title": "&Uuml; HP.",
+      "href": "/"
+    },
+    {
+      "name": "services",
+      "title": "Arbeite mit HP.",
+      "href": "/services"
+    },
+    {
+      "name": "software",
+      "title": "HP's Software Projekte.",
+      "href": "/software"
+    },
+    {
+      "name": "resourcen",
+      "title": "Resourcen die HP bereitstellt.",
+      "href": "/resources"
+    },
+    {
+      "name": "cv",
+      "title": "HP's Curriculum Vitae.",
+      "href": "/cv"
+    }
+  ],
+  "socialChannels": [
+    {
+      "name": "github",
+      "url": "https://github.com/haensl",
+      "title": "Besuche HP's GitHub Profil.",
+      "external": true
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/h_p_d",
+      "title": "Folge HP auf Twitter.",
+      "external": true
+    },
+    {
+      "name": "xing",
+      "url": "https://www.xing.com/profile/HansPeter_Dietz3",
+      "title": "Besuche HP's Xing Profil.",
+      "external": true
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/hans-peter-dietz-50ab10b8/",
+      "title": "Besuche HP's LinkedIn Profil.",
+      "external": true
+    },
+    {
+      "name": "email",
+      "url": "mailto:h.p.dietz@gmail.com",
+      "title": "Schreibe HP eine E-Mail.",
+      "external": false
+    }
+  ],
+  "footerMenuItems": [
+    {
+      "name": "impressum",
+      "title": "Impressum f&uuml;r https://hpdietz.com",
+      "href": "/impressum"
+    },
+    {
+      "name": "privacy",
+      "title": "Datenschutz auf https://hpdietz.com",
+      "href": "/privacy"
+    }
+  ]
+}

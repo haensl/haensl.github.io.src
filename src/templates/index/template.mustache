@@ -50,7 +50,7 @@
         class="avatar"
         alt="Avatar"></amp-img>
       <h1 class="centering m0 p1">{{ me.name }}</h1>
-      <q class="no-text centering small block">Architect, Coder, Coach.</q>
+      <q class="no-text centering small block">{{ me.tagline }}</q>
       <nav id="burger-menu-nav">
         {{ > menu }}
       </nav>
@@ -79,7 +79,7 @@
           <div id="header-social-wrapper">
             {{> social-nav-small }}
             <h4 class="p0 m0"
-              id="header-tagline">HP Dietz &mdash; &ldquo;Architect, Coder, Coach.&rdquo;</h4>
+              id="header-tagline">{{me.name}} &mdash; &ldquo;{{me.tagline}}&rdquo;</h4>
             <amp-img srcset="/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w"
               width="32"
               height="32"
@@ -119,7 +119,7 @@
       <nav id="footer-menu">
         {{> footer-menu }}
       </nav>
-      <p class="m0001 small no-text p1">&copy; 2020 Hans-Peter Dietz</p>
+      <p class="m0001 small no-text p1">&copy; {{year}} {{me.fullname}}</p>
     </footer>
   </body>
 </html>
