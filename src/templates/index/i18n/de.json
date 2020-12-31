@@ -5,17 +5,5 @@
     "tagline": "Architekt, Coder, Coach.",
     "mail": "h.p.dietz@gmail.com",
     "fullname": "Hans-Peter Dietz"
-  },
-  "footerMenuItems": [
-    {
-      "name": "impressum",
-      "title": "Impressum f&uuml;r https://hpdietz.com",
-      "href": "/impressum"
-    },
-    {
-      "name": "privacy",
-      "title": "Datenschutz auf https://hpdietz.com",
-      "href": "/privacy"
-    }
-  ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "footerMenuItems": [
+    {
+      "name": "impressum",
+      "title": "Impressum f&uuml;r https://hpdietz.com",
+      "href": "/impressum"
+    },
+    {
+      "name": "privacy",
+      "title": "Datenschutz auf https://hpdietz.com",
+      "href": "/privacy"
+    }
+  ]
+}
