@@ -1,0 +1,29 @@
+{
+  "menuItems": [
+    {
+      "name": "about",
+      "title": "About HP.",
+      "href": "/"
+    },
+    {
+      "name": "services",
+      "title": "Work with HP.",
+      "href": "/services"
+    },
+    {
+      "name": "software",
+      "title": "HP's software projects.",
+      "href": "/software"
+    },
+    {
+      "name": "resources",
+      "title": "Resources provided by HP.",
+      "href": "/resources"
+    },
+    {
+      "name": "cv",
+      "title": "HP's curriculum vitae.",
+      "href": "/cv"
+    }
+  ]
+}

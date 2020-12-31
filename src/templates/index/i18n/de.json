@@ -6,33 +6,6 @@
     "mail": "h.p.dietz@gmail.com",
     "fullname": "Hans-Peter Dietz"
   },
-  "menuItems": [
-    {
-      "name": "&uuml;ber",
-      "title": "&Uuml; HP.",
-      "href": "/"
-    },
-    {
-      "name": "services",
-      "title": "Arbeite mit HP.",
-      "href": "/services"
-    },
-    {
-      "name": "software",
-      "title": "HP's Software Projekte.",
-      "href": "/software"
-    },
-    {
-      "name": "resourcen",
-      "title": "Resourcen die HP bereitstellt.",
-      "href": "/resources"
-    },
-    {
-      "name": "cv",
-      "title": "HP's Curriculum Vitae.",
-      "href": "/cv"
-    }
-  ],
   "socialChannels": [
     {
       "name": "github",
