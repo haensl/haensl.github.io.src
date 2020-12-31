@@ -1,0 +1,1098 @@
+{
+  "greeting": "Software",
+  "items": [
+    {
+      "schema": "json-transform-stream.schema.json",
+      "date": {
+        "iso": "2020-11",
+        "text": "2020 - PRSNT"
+      },
+      "href": "https://github.com/haensl/json-transform-stream",
+      "hint": "Besuche @haensl/json-transform-stream auf Github",
+      "project": "@haensl/json-tranform-stream",
+      "title": "transform-stream",
+      "description": "Node.js Transform Stream Implementierung die das Wrapping von JSON Daten erleichtert.",
+      "links": [
+        {
+          "schema": "json-transform-stream.src.schema.json",
+          "href": "https://github.com/haensl/json-transform-stream",
+          "hint": "Besuche @haensl/json-transform-stream auf Github.",
+          "project": "@haensl/json-transform-stream",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "schema": "json-transform-stream.src.schema.json",
+          "href": "https://www.npmjs.com/package/@haensl/json-transform-stream",
+          "hint": "Besuche @haensl/json-transform-stream auf npm.",
+          "project": "@haensl/json-transform-stream",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "services.schema.json",
+      "date": {
+        "iso": "2020-06",
+        "text": "2020 - PRSNT"
+      },
+      "href": "https://github.com/haensl/services",
+      "hint": "Besuche @haensl/services auf Github",
+      "project": "@haensl/services",
+      "title": "services",
+      "description": "Ausgew&auml;hlte JavaScript Services die das Arbeiten in modernen JavaScript Umgebungen erleichtern.",
+      "links": [
+        {
+          "schema": "services.src.schema.json",
+          "href": "https://github.com/haensl/services",
+          "hint": "Besuche @haensl/services auf Github.",
+          "project": "@haensl/services",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/@haensl/services",
+          "hint": "Besuche @haensl/services auf npm.",
+          "project": "@haensl/services",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "hooks.schema.json",
+      "date": {
+        "iso": "2020-06",
+        "text": "2020 - PRSNT"
+      },
+      "href": "https://github.com/haensl/hooks",
+      "hint": "Besuche @haensl/hooks auf Github",
+      "project": "@haensl/hooks",
+      "title": "hooks",
+      "description": "Ausgew&auml;hlte React Hooks.",
+      "links": [
+        {
+          "schema": "hooks.src.schema.json",
+          "href": "https://github.com/haensl/hooks",
+          "hint": "Besuche @haensl/hooks auf Github.",
+          "project": "@haensl/hooks",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/@haensl/hooks",
+          "hint": "Besuche @haensl/hooks auf npm.",
+          "project": "@haensl/hooks",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "google-optimize-service.schema.json",
+      "date": {
+        "iso": "2020-02",
+        "text": "2020 - PRSNT"
+      },
+      "href": "https://github.com/haensl/google-optimize-service",
+      "hint": "Besuche google-optimize-service auf Github",
+      "project": "google-optimize-service",
+      "title": "google-optimize-service",
+      "description": "Hoch anpassbare, universelle Service Abstraktion um Google Optimize.",
+      "links": [
+        {
+          "schema": "google-optimize-service.src.schema.json",
+          "href": "https://github.com/haensl/google-optimize-service",
+          "hint": "Besuche google-optimize-service auf Github.",
+          "project": "google-optimize-service",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/google-optimize-service",
+          "hint": "Besuche google-optimize-service auf npm.",
+          "project": "google-optimize-service",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "react-component-console.schema.json",
+      "date": {
+        "iso": "2019-02",
+        "text": "2019 - PRSNT"
+      },
+      "href": "https://github.com/haensl/react-component-console",
+      "hint": "Besuche react-component-console auf Github",
+      "project": "react-component-console",
+      "title": "react-component-console",
+      "description": "React Component der ein Konsole Terminal emuliert. Die Komponente zeichnet sich durch Menschen-&auml;hnliches Tipp-Verhalten via dynamische Verz&ouml;gerungszeiten, sowie  Callbacks und anpassbare CSS Klassen aus.",
+      "links": [
+        {
+          "schema": "react-component-console.src.schema.json",
+          "href": "https://github.com/haensl/react-component-console",
+          "hint": "Besuche react-component-console auf Github.",
+          "project": "react-component-console",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/react-component-console",
+          "hint": "Besuche react-component-console auf npm.",
+          "project": "react-component-console",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "rollup-plugin-local-resolve.schema.json",
+      "date": {
+        "iso": "2019-02",
+        "text": "2019 - PRSNT"
+      },
+      "href": "https://github.com/haensl/rollup-plugin-local-resolve",
+      "hint": "Besuche rollup-plugin-local-resolve auf Github.",
+      "project": "rollup-plugin-local-resolve",
+      "title": "rollup-plugin-local-resolve",
+      "description": "Rollup-Plugin um relative Imports via Index-Dateien aufzul&ouml;sen.",
+      "links": [
+        {
+          "schema": "rollup-plugin-local-resolve.src.schema.json",
+          "href": "https://github.com/haensl/rollup-plugin-local-resolve",
+          "hint": "Besuche rollup-plugin-local-resolve auf Github.",
+          "project": "rollup-plugin-local-resolve",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/@haensl/rollup-plugin-local-resolve",
+          "hint": "Besuche rollup-plugin-local-resolve auf npm.",
+          "project": "rollup-plugin-local-resolve",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "subset-sum.schema.json",
+      "date": {
+        "iso": "2019-01",
+        "text": "2019 - PRSNT"
+      },
+      "href": "https://github.com/haensl/subset-sum",
+      "hint": "Besuche subset-sum auf Github.",
+      "project": "subset-sum",
+      "title": "subset-sum",
+      "description": "Node.js Modul zur Berechnung von L&ouml;sungen des Wechselgeld-Problems. Das Modul findet Kombinationen aus einer Menge von Zahlen die zu einer gew&uuml;nschten Summe addieren.",
+      "links": [
+        {
+          "schema": "subset-sum.src.schema.json",
+          "href": "https://github.com/haensl/subset-sum",
+          "hint": "Besuche subset-sum auf Github.",
+          "project": "subset-sum",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/@haensl/subset-sum",
+          "hint": "Besuche subset-sum auf npm.",
+          "project": "subset-sum",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "log.schema.json",
+      "date": {
+        "iso": "2018-08",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/log",
+      "hint": "Besuche log auf Github.",
+      "project": "log",
+      "title": "log",
+      "description": "Minimaler Node.js Log Service.",
+      "links": [
+        {
+          "schema": "log.src.schema.json",
+          "href": "https://github.com/haensl/log",
+          "hint": "Besuche log auf Github.",
+          "project": "log",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/@haensl/log",
+          "hint": "Besuche log auf npm.",
+          "project": "log",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "assign-reducers.schema.json",
+      "date": {
+        "iso": "2018-08",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/assign-reducers",
+      "hint": "Besuche assign-reducers auf Github.",
+      "project": "assign-reducers",
+      "title": "assign-reducers",
+      "description": "Node.js Modul das Redux Reducer analog zu <code>Object.assign()</code> kombiniert.",
+      "links": [
+        {
+          "schema": "assign-reducers.src.schema.json",
+          "href": "https://github.com/haensl/assign-reducers",
+          "hint": "Besuche assign-reducers auf Github.",
+          "project": "assign-reducers",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/assign-reducers",
+          "hint": "Besuche assign-reducers auf npm.",
+          "project": "assign-reducers",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "js-profiler.schema.json",
+      "date": {
+        "iso": "2018-08",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://js-profiler.com",
+      "hint": "Besuche JS-Profiler.",
+      "project": "js-profiler.com",
+      "title": "JS-Profiler | https://js-profiler.com",
+      "description": "Sammlung von Performanz Profilen, Benchmarks und Vergleichen von verschiedenen JavaScript Built-Ins. Diese Webseite ist die zum Leben erweckte <a href=\"#js-profiler-lib\">JS Profiler Node.js library</a>.",
+      "links": [
+        {
+          "href": "https://js-profiler.com",
+          "hint": "Besuche JS-Profiler.",
+          "project": "js-profiler.com",
+          "svg": {
+            "src": "js-profiler-icon.svg",
+            "class": "js-profiler-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "beacon-tool-cli.schema.json",
+      "date": {
+        "iso": "2018-07",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/beacon-tool-cli",
+      "hint": "Besuche beacon-tool-cli auf Github.",
+      "project": "beacon-tool-cli",
+      "title": "beacon-tool-cli",
+      "description": "CLI f&uuml;r <a href=\"#beacon-tool\">Beacon Tool</a>.",
+      "links": [
+        {
+          "schema": "beacon-tool-cli.src.schema.json",
+          "href": "https://github.com/haensl/beacon-tool-cli",
+          "hint": "Besuche beacon-tool-cli auf Github.",
+          "project": "beacon-tool-cli",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/beacon-tool-cli",
+          "hint": "Besuche beacon-tool-cli auf npm.",
+          "project": "beacon-tool-cli",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "beacon-tool.schema.json",
+      "date": {
+        "iso": "2018-07",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/beacon-tool",
+      "hint": "Besuche beacon-tool auf Github.",
+      "project": "beacon-tool",
+      "title": "beacon-tool",
+      "description": "Node.js Library f&uuml;r Bluetooth Beacon Signale.",
+      "links": [
+        {
+          "schema": "beacon-tool.src.schema.json",
+          "href": "https://github.com/haensl/beacon-tool",
+          "hint": "Besuche beacon-tool auf Github.",
+          "project": "beacon-tool",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/beacon-tool",
+          "hint": "Besuche beacon-tool auf npm.",
+          "project": "beacon-tool",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "preact-component-console.schema.json",
+      "date": {
+        "iso": "2018-07",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/preact-component-console",
+      "hint": "Besuche preact-component-console auf Github.",
+      "project": "preact-component-console",
+      "title": "preact-component-console",
+      "description": "Konsole/Terminal/Schreibmaschinen Emulator Preact Component, die sich durch Menschen-&auml;hnliches Tipp-Verhalten via dynamischer Zeitverz&ouml;gerungen auszeichnet.",
+      "links": [
+        {
+          "schema": "preact-component-console.src.schema.json",
+          "href": "https://github.com/haensl/preact-component-console",
+          "hint": "Besuche preact-component-console auf Github.",
+          "project": "preact-component-console",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/preact-component-console",
+          "hint": "Besuche preact-component-console auf npm.",
+          "project": "preact-component-console",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "pfs.schema.json",
+      "date": {
+        "iso": "2018-03",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/pfs",
+      "hint": "Besuche pfs auf Github.",
+      "project": "pfs",
+      "title": "pfs",
+      "description": "Leichtgewichtiger, Abhängigkeits-freier Promise-Wrapper um Node.js' <code>fs</code>.",
+      "links": [
+        {
+          "schema": "pfs.src.schema.json",
+          "href": "https://github.com/haensl/pfs",
+          "hint": "Besuche pfs auf Github.",
+          "project": "pfs",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/@haensl/pfs",
+          "hint": "Besuche pfs auf npm.",
+          "project": "pfs",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "minify-inline-json.schema.json",
+      "date": {
+        "iso": "2018-03",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/minify-inline-json",
+      "hint": "Besuche minify-inline-json auf Github.",
+      "project": "minify-inline-json",
+      "title": "minify-inline-json",
+      "description": "Node.js Modul zum Minimieren von inline/eingebetteten JSON Daten in <code>script</code> Tags.",
+      "links": [
+        {
+          "schema": "minify-inline-json.src.schema.json",
+          "href": "https://github.com/haensl/minify-inline-json",
+          "hint": "Besuche minify-inline-json auf Github.",
+          "project": "minify-inline-json",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/minify-inline-json",
+          "hint": "Besuche minify-inline-json auf npm.",
+          "project": "minify-inline-json",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "embed-json.schema.json",
+      "date": {
+        "iso": "2018-03",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/embed-json",
+      "hint": "Besuche embed-json auf Github.",
+      "project": "embed-json",
+      "title": "embed-json",
+      "description": "Node.js Modul zum Einbetten von JSON Daten in Dateien.",
+      "links": [
+        {
+          "schema": "embed-json.src.schema.json",
+          "href": "https://github.com/haensl/embed-json",
+          "hint": "Besuche embed-json auf Github.",
+          "project": "embed-json",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/embed-json",
+          "hint": "Besuche embed-json auf npm.",
+          "project": "embed-json",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "openssl-certgen.schema.json",
+      "date": {
+        "iso": "2018-03",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/openssl-certgen",
+      "hint": "Besuche OpenSSL Certificate Generator auf Github.",
+      "project": "openssl-generate-certificates",
+      "title": "OpenSSL Certificate Generator",
+      "description": "Automatisch erzeugte, selbst-signierte Zertifikate via OpenSSL.",
+      "links": [
+        {
+          "schema": "openssl-certgen.src.schema.json",
+          "href": "https://github.com/haensl/openssl-certgen",
+          "hint": "Besuche OpenSSL Certificate Generator auf Github.",
+          "project": "openssl-generate-certificates",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "mov2gif.schema.json",
+      "date": {
+        "iso": "2018-02",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/mov2gif",
+      "hint": "Besuche mov2gif auf Github.",
+      "project": "mov2gif",
+      "title": "mov2gif",
+      "description": "QuickTime Video Zu GIF Animation Konverter.",
+      "links": [
+        {
+          "schema": "mov2gif.src.schema.json",
+          "href": "https://github.com/haensl/mov2gif",
+          "hint": "Besuche mov2gif auf Github.",
+          "project": "mov2gif",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "node-amp-mustache-skeleton.schema.json",
+      "date": {
+        "iso": "2018-02",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/node-amp-mustache-skeleton",
+      "hint": "Besuche node-amp-mustache-skeleton auf Github.",
+      "project": "node-amp-mustache-skeleton",
+      "title": "node-amp-mustache-skeleton",
+      "description": "AMP (Accelerated Mobile Pages) Projekt Skelett das via Node.js ausgeliefert wird und sich durch Mustache Templating und Gulp-basierte CI auszeichnet.",
+      "links": [
+        {
+          "schema": "node-amp-mustache-skeleton.src.schema.json",
+          "href": "https://github.com/haensl/node-amp-mustache-skeleton",
+          "hint": "Besuche node-amp-mustache-skeleton auf Github.",
+          "project": "node-amp-mustache-skeleton",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "goto.schema.json",
+      "date": {
+        "iso": "2017-11",
+        "text": "2017 - PRSNT"
+      },
+      "href": "https://github.com/haensl/goto",
+      "hint": "Besuche goto auf Github.",
+      "project": "goto",
+      "title": "goto",
+      "description": "Bash Autokomplettierung f&uuml;r schnelle Projekt Navigation.",
+      "links": [
+        {
+          "schema": "goto.src.schema.json",
+          "href": "https://github.com/haensl/goto",
+          "hint": "Besuche goto auf Github.",
+          "project": "goto",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "hpdietz-com.app.schema.json",
+      "date": {
+        "iso": "2017-11",
+        "text": "2017 - PRSNT"
+      },
+      "href": "https://hpdietz.com",
+      "hint": "Besuche hpdietz.com.",
+      "project": "hpdietz.com",
+      "title": "hpdietz.com",
+      "description": "Design und Implementierung dieser Webseite.",
+      "links": [
+        {
+          "href": "https://hpdietz.com",
+          "hint": "Besuche hpdietz.com.",
+          "project": "hpdietz.com",
+          "img": {
+            "src": "/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w",
+            "alt": "https://hpdietz.com"
+          }
+        },
+        {
+          "schema": "haensl-github-io.app.schema.json",
+          "href": "https://haensl.github.io",
+          "hint": "Besuche haensl.github.io",
+          "project": "haensl.github.io",
+          "img": {
+            "src": "/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w",
+            "alt": "https://haensl.github.io"
+          }
+        },
+        {
+          "schema": "haensl-github-io.src.schema.json",
+          "href": "https://github.com/haensl/haensl.github.io.src",
+          "hint": "Besuche haensl.github.io auf Github.",
+          "project": "haensl.github.io",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "gulp-embed-json.schema.json",
+      "date": {
+        "iso": "2017-11",
+        "text": "2017 - PRSNT"
+      },
+      "href": "https://github.com/haensl/gulp-embed-json",
+      "hint": "Besuche gulp-embed-json auf Github.",
+      "project": "gulp-embed-json",
+      "title": "gulp-embed-json",
+      "description": "Gulp-Plugin zum Einbetten von JSON Daten in HTML Dateien.",
+      "links": [
+        {
+          "schema": "gulp-embed-json.src.schema.json",
+          "href": "https://github.com/haensl/gulp-embed-json",
+          "hint": "Besuche gulp-embed-json auf Github.",
+          "project": "gulp-embed-json",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/gulp-embed-json",
+          "hint": "Besuche gulp-embed-json auf npm.",
+          "project": "gulp-embed-json",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "gulp-embed-svg.schema.json",
+      "date": {
+        "iso": "2017-11",
+        "text": "2017 - PRSNT"
+      },
+      "href": "https://github.com/haensl/gulp-embed-svg",
+      "hint": "Besuche gulp-embed-svg auf Github.",
+      "project": "gulp-embed-svg",
+      "title": "gulp-embed-svg",
+      "description": "Gulp-Plugin zum Einbetten von SVG Grafiken in HTML Dateien.",
+      "links": [
+        {
+          "schema": "gulp-embed-svg.src.schema.json",
+          "href": "https://github.com/haensl/gulp-embed-svg",
+          "hint": "Besuche gulp-embed-svg auf Github.",
+          "project": "gulp-embed-svg",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/gulp-embed-svg",
+          "hint": "Besuche gulp-embed-svg auf npm.",
+          "project": "gulp-embed-svg",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "gulp-minify-inline-json.schema.json",
+      "date": {
+        "iso": "2017-11",
+        "text": "2017 - PRSNT"
+      },
+      "href": "https://github.com/haensl/gulp-minify-inline-json",
+      "hint": "Besuche gulp-minify-inline-json auf Github.",
+      "project": "gulp-minify-inline-json",
+      "title": "gulp-minify-inline-json",
+      "description": "Gulp-Plugin zum Minimieren von JSON Daten in inline <code>script</code> Tags.",
+      "links": [
+        {
+          "schema": "gulp-minify-inline-json.src.schema.json",
+          "href": "https://github.com/haensl/gulp-minify-inline-json",
+          "hint": "Besuche gulp-minify-inline-json auf Github.",
+          "project": "gulp-minify-inline-json",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/gulp-minify-inline-json",
+          "hint": "Besuche gulp-minify-inline-json auf npm.",
+          "project": "gulp-minify-inline-json",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "vm-php.schema.json",
+      "date": {
+        "iso": "2017-10",
+        "text": "2017 - PRSNT"
+      },
+      "href": "https://github.com/haensl/vm-php",
+      "hint": "Besuche vm-php auf Github.",
+      "project": "vm-php",
+      "title": "vm-php",
+      "description": "PHP7 Projekt Skelett basierend auf Vagrant und Ansible. Das Projektger&uuml;st umfasst sowohl Entwicklungs- und QA Umgebung als auch MailHog Integration.",
+      "links": [
+        {
+          "schema": "vm-php.src.schema.json",
+          "href": "https://github.com/haensl/vm-php",
+          "hint": "Besuche vm-php auf Github.",
+          "project": "vm-php",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://app.vagrantup.com/haensl/boxes/lamp7",
+          "hint": "Besuche vm-php auf Vagrant Cloud.",
+          "project": "vm-php",
+          "svg": {
+            "src": "vagrant-icon.svg",
+            "class": "icon-small vagrant-icon icon-light icon-stroked"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "rovers.schema.json",
+      "date": {
+        "iso": "2017-07",
+        "text": "2017 - PRSNT"
+      },
+      "href": "http://rovers.band",
+      "hint": "Besuche The Rovers | Pub Music.",
+      "project": "rovers",
+      "title": "The Rovers | Pub Music - https://rovers.band",
+      "description": "Design, Implementierung und Wartung der Band Website.",
+      "links": [
+        {
+          "href": "http://rovers.band",
+          "hint": "Besuche die Rovers Website.",
+          "project": "rovers",
+          "img": {
+            "src": "/assets/img/rovers-icon_1x.png 24w, /assets/img/rovers-icon_2x.png 48w",
+            "alt": "https://rovers.band"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "ng-async-img.schema.json",
+      "date": {
+        "iso": "2017-04",
+        "text": "2017 - 2019"
+      },
+      "href": "https://github.com/haensl/ng-async-img",
+      "hint": "Besuche ng-async-img auf Github.",
+      "project": "ng-async-img",
+      "title": "ng-async-img",
+      "description": "Angular.js 1.x Direktive f&uuml;r asynchrone, <code>$animate</code>-f&auml;hige <code>&lt;img&gt;</code> Tags.",
+      "links": [
+        {
+          "schema": "ng-async-img.src.schema.json",
+          "href": "https://github.com/haensl/ng-async-img",
+          "hint": "Besuche ng-async-img auf Github.",
+          "project": "ng-async-img",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/ng-async-img",
+          "hint": "Besuche ng-async-img auf npm.",
+          "project": "ng-async-img",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "js-profiler.schema.json",
+      "date": {
+        "iso": "2017-02",
+        "text": "2017 - PRSNT"
+      },
+      "href": "https://github.com/haensl/js-profiler",
+      "hint": "Besuche JS-Profiler auf Github.",
+      "project": "js-profiler-lib",
+      "title": "JS-Profiler",
+      "description": "JavaScript Profiling Werkzeug, Benchmark Sammlung and CLI f&uuml;r Node.js.  Powert <a href=\"#js-profiler.com\">https://js-profiler.com</a> unter der Haube.",
+      "links": [
+        {
+          "schema": "js-profiler.src.schema.json",
+          "href": "https://github.com/haensl/js-profiler",
+          "hint": "Besuche JS-Profiler auf Github.",
+          "project": "js-profiler-lib",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/js-profiler",
+          "hint": "Besuche JS-Profiler auf npm.",
+          "project": "js-profiler-lib",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        },
+        {
+          "href": "https://js-profiler.com",
+          "hint": "Besuche JS-Profiler website.",
+          "project": "js-profiler.com",
+          "svg": {
+            "src": "js-profiler-icon.svg",
+            "class": "icon-small js-profiler-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "mutt2calcurse.schema.json",
+      "date": {
+        "iso": "2016-05",
+        "text": "2016 - PRSNT"
+      },
+      "href": "https://github.com/haensl/mutt2calcurse",
+      "hint": "Besuche mutt2calcurse auf Github.",
+      "project": "mutt2calcurse",
+      "title": "mutt2calcurse",
+      "description": "Shell Helfer um iCal Events von mutt zu calcurse zu exportieren.",
+      "links": [
+        {
+          "schema": "mutt2calcurse.src.schema.json",
+          "href": "https://github.com/haensl/mutt2calcurse",
+          "hint": "Besuche mutt2calcurse auf Github.",
+          "project": "mutt2calcurse",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "ng-animated-scroll.schema.json",
+      "date": {
+        "iso": "2016-04",
+        "text": "2016 - 2019"
+      },
+      "href": "https://github.com/haensl/ngAnimatedScroll",
+      "hint": "Besuche mutt2calcurse auf Github.",
+      "project": "ng-animated-scroll",
+      "title": "ngAnimatedScroll",
+      "description": "Promise basierter Angular.js 1.x Service um animiertes Scrollen zu erleichtern.",
+      "links": [
+        {
+          "schema": "ng-animated-scroll.src.schema.json",
+          "href": "https://github.com/haensl/ngAnimatedScroll",
+          "hint": "Besuche ngAnimatedScroll auf Github.",
+          "project": "ng-animated-scroll",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/ng-animated-scroll",
+          "hint": "Besuche ngAnimatedScroll auf npm.",
+          "project": "ng-animated-scroll",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "bytes.schema.json",
+      "date": {
+        "iso": "2016-02",
+        "text": "2016 - PRSNT"
+      },
+      "href": "https://github.com/haensl/bytes",
+      "hint": "Besuche bytes auf Github.",
+      "project": "bytes",
+      "title": "bytes",
+      "description": "Shell Helfer um Speicherplatz von Dateien &uuml;ber Verzeichnisse hinweg zu berechnen.",
+      "links": [
+        {
+          "schema": "bytes.src.schema.json",
+          "href": "https://github.com/haensl/bytes",
+          "hint": "Besuche bytes auf Github.",
+          "project": "bytes",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "htmlelement-polyfills.schema.json",
+      "date": {
+        "iso": "2015-11",
+        "text": "2015 - PRSNT"
+      },
+      "href": "https://github.com/haensl/htmlelement.polyfills",
+      "hint": "Besuche htmlelement.polyfills auf Github.",
+      "project": "htmlelement.polyfills",
+      "title": "htmlelement.polyfills",
+      "description": "Leichtgewichtige, vanilla JavaScript Polyfills f&uuml;r h&auml;ufig gebrauchte Operationen auf dem <code>HTMLElement</code> Interface.",
+      "links": [
+        {
+          "schema": "htmlelement-polyfills.src.schema.json",
+          "href": "https://github.com/haensl/htmlelement.polyfills",
+          "hint": "Besuche htmlelement.polyfills auf Github.",
+          "project": "htmlelement.polyfills",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/htmlelement.polyfills",
+          "hint": "Besuche htmlelement.polyfills auf npm.",
+          "project": "htmlelement.polyfills",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "qake.schema.json",
+      "date": {
+        "iso": "2014",
+        "text": "2014 - 2016"
+      },
+      "title": "Qake",
+      "description": "Design und Implementierung des retro Arcade Spiels Qake f&uuml;r iOS."
+    },
+    {
+      "date": {
+        "iso": "2014",
+        "text": "2014"
+      },
+      "title": "Spiegel TV Wissen: Wissenswelten",
+      "description": "Komplettierung des Frontend f&uuml;r Spiegel TV Wissen: Wissenswelten im Auftrag von heinrich+gretchen."
+    },
+    {
+      "date": {
+        "iso": "2014",
+        "text": "2014"
+      },
+      "title": "Spiegel TV Geschichte: Geschichte entdecken",
+      "description": "Komplettierung des Frontend f&uuml;r Spiegel TV Geschichte: Geschichte entdecken im Auftrag von heinrich+gretchen."
+    },
+    {
+      "schema": "ask-the-crowd.web.schema.json",
+      "date": {
+        "iso": "2013-03-18",
+        "text": "2013 - 2015"
+      },
+      "title": "Ask The Crowd",
+      "description": "Design, Implementierung und Auswertung des Crowdsourcing online Portals Ask The Crowd, dass es Nutzern erm&ouml;glicht Fragen zu stellen und zu beantworten, wobei Ergebnisse via Echtzeit-Visualisierungen dargestellt werden.",
+      "links": [
+        {
+          "href": "https://twitter.com/Ask_The_Crowd",
+          "hint": "Besuche the Twitter profile of Ask The Crowd.",
+          "project": "ask-the-crowd",
+          "svg": {
+            "src": "twitter-icon.svg",
+            "class": "twitter-icon icon-dark icon-small"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "percom12.schema.json",
+      "date": {
+        "iso": "2012-03",
+        "text": "2012"
+      },
+      "href": "https://play.google.com/store/apps/details?id=org.percom&hl=en",
+      "hint": "Besuche die PerCom App 2012 auf Google Play.",
+      "title": "PerCom App 2012",
+      "project": "percom12",
+      "description": "Mitentwickler der offiziellen Android App der 2012 IEEE Pervasive Computing and Communication (PerCom) Konferenz in Lugano, Schweiz.",
+      "links": [
+        {
+          "href": "https://play.google.com/store/apps/details?id=org.percom&hl=en",
+          "hint": "Besuche the PerCom App 2012 auf Google Play.",
+          "project": "percom12",
+          "img": {
+            "src": "/assets/img/percom12-icon_1x.png 24w, /assets/img/percom12-icon_2x.png 48w",
+            "alt": "PerCom App 2012"
+          }
+        }
+      ]
+    },
+    {
+      "schema": "mmm.schema.json",
+      "date": {
+        "iso": "2011",
+        "text": "2011"
+      },
+      "href": "https://youtu.be/9nYjFxxmyPg",
+      "hint": "Schau den MMM Trailer auf YouTube.",
+      "title": "MMM - The MultiModal Metronome",
+      "project": "mmm",
+      "description": "Design und Implementierung des Arduino-basierten Rapid Prototypes eines Metronoms, dass auf extere Audio-Stimuli zur Beat-Eingabe zur&uuml;ckgreift und zus&auml;tzliches, visuelles Feedback eines Beats bietet.",
+      "links": [
+        {
+          "href": "https://youtu.be/9nYjFxxmyPg",
+          "hint": "Schau den MMM Trailer auf YouTube.",
+          "project": "mmm",
+          "svg": {
+            "src": "youtube-icon.svg",
+            "class": "icon-small youtube-icon icon-dark"
+          }
+        }
+      ]
+    }
+  ]
+}
