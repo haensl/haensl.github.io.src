@@ -1,0 +1,4 @@
+{
+  "greeting": "Sorry, die Seite die Du suchst existiert nicht.",
+  "description": "Bitte &uuml;berpr&uuml;fe die URL und versuche es erneut oder kehre zur <a title=\"Gehe zu https://{{domain}}\" href=\"/\">Home Page</a> zur&uuml;k."
+}
