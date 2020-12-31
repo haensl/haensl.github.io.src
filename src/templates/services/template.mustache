@@ -1,0 +1,14 @@
+<section id="services">
+  <h2
+    class="m2000"
+    id="greeting">{{greeting}}</h2>
+  <p>{{description}}</p>
+  <p class="no-text">{{services.intro}}</p>
+  <ul>
+    {#services}
+    <li>{{.}}</li>
+    {/services}
+  </ul>
+  <p class="no-text">{{cta}}</p>
+  {{> social-nav}}
+</section>

@@ -1,0 +1,18 @@
+{
+  "greeting": "Work with me",
+  "description": "If you are looking for someone to help you realize your idea, you have found the right guy!",
+  "services": {
+    "intro": "I can help you...",
+    "items": [
+      "...dissect your idea into an actionable plan.",
+      "...select technologies to realize your idea.",
+      "...lay out a system design of required components and services.",
+      "...move to the cloud.",
+      "...coach your developers.",
+      "...fine-tune your process.",
+      "...improve your user experience.",
+      "...implement your idea."
+    ]
+  },
+  "cta": "Get in touch:"
+}
