@@ -2,12 +2,12 @@
   <h2
     class="m2000"
     id="greeting">{{greeting}}</h2>
-  <p>{{description}}</p>
+  <p>{{content}}</p>
   <p class="no-text">{{services.intro}}</p>
   <ul>
-    {#services}
+    {{#services.items}}
     <li>{{.}}</li>
-    {/services}
+    {{/services.items}}
   </ul>
   <p class="no-text">{{cta}}</p>
   {{> social-nav}}

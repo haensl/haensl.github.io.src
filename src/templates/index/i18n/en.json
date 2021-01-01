@@ -5,5 +5,10 @@
     "tagline": "Architect, Coder, Coach.",
     "mail": "h.p.dietz@gmail.com",
     "fullname": "Hans-Peter Dietz"
+  },
+  "cta": {
+    "hint": "Work with HP.",
+    "href": "/services",
+    "text": "Work with me."
   }
 }

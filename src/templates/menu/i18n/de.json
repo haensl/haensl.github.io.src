@@ -1,29 +1,34 @@
 {
   "menuItems": [
     {
+      "id": "about",
       "name": "&uuml;ber",
       "title": "&Uuml; HP.",
-      "href": "/"
+      "href": "/de/"
     },
     {
+      "id": "services",
       "name": "services",
       "title": "Arbeite mit HP.",
-      "href": "/services"
+      "href": "/de/services"
     },
     {
+      "id": "software",
       "name": "software",
       "title": "HP's Software Projekte.",
-      "href": "/software"
+      "href": "/de/software"
     },
     {
+      "id": "resources",
       "name": "resourcen",
       "title": "Resourcen die HP bereitstellt.",
-      "href": "/resources"
+      "href": "/de/resources"
     },
     {
+      "id": "cv",
       "name": "cv",
       "title": "HP's Curriculum Vitae.",
-      "href": "/cv"
+      "href": "/de/cv"
     }
   ]
 }

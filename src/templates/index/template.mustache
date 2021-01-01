@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ⚡>
+<html lang="{{lang}}" ⚡>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -57,7 +57,8 @@
       <a
         class="centering"
         id="cta"
-        href="/services">work with me</a>
+        title="{{cta.hint}}"
+        href="{{{cta.href}}}">{{cta.text}}</a>
     </amp-sidebar>
     <div id="wrapper">
       <div id="content-wrapper">
@@ -109,9 +110,10 @@
           {{> social-nav }}
           <a
             class="centering"
-            href="/services"
+            href="{{{cta.href}}}"
+            title="{{cta.hint}}"
             id="cta"
-          >work with me</a>
+          >{{cta.text}}</a>
         </div>
       </aside>
     </div>

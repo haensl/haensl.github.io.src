@@ -1,5 +1,6 @@
 {
   "greeting": "Software",
+  "description": "Software projects HP Dietz works on.",
   "items": [
     {
       "schema": "json-transform-stream.schema.json",

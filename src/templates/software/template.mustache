@@ -4,7 +4,7 @@
     id="greeting"
     >{{heading}}</h2>
   <ol class="p0 m0" id="projects-list">
-    {#items}
+    {{#items}}
       <li class="item">
         <script type="application/ld+json" src="{{schema}}"></script>
         <h4 class="m-column-d-row">
@@ -20,10 +20,10 @@
         {{/href}}
         {{^href}}
           {{title}}
-        {{/^href}}
+        {{/href}}
         </h4>
         <p class="m0">{{description}}</p>
-      <ul class="m1000 p0 horizontal-list">
+      <ul class="m1000 p0 vcentering horizontal-list">
         {{#links}}
           <li>
             {{#schema}}
@@ -54,5 +54,6 @@
         {{/links}}
       </ul>
     </li>
+  {{/items}}
   </ol>
 </section>

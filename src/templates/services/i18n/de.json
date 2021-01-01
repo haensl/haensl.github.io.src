@@ -1,12 +1,13 @@
 {
   "greeting": "Arbeite mit mir",
-  "description": "Wenn Du auf der Suche nach jemandem bist um Deine Idee umzusetzen, hast Du den Richtigen gefunden!",
+  "description": "Arbeite mit mir. Software Entwicklung. Architektur. Programmierung. Coaching.",
+  "content": "Wenn Du auf der Suche nach jemandem bist um Deine Idee umzusetzen, hast Du den Richtigen gefunden!",
   "services": {
     "intro": "Ich kann Dir helfen...",
     "items": [
       "...Deine Idee in einen umsetzbaren Plan zu verwandeln.",
       "...Technologien f&uuml;r die Realisierung Deiner Idee auszuw&auml;hlen.",
-      "...ein System Design aus ben&ouml;tigten Komponenten und services zu entwerfen.",
+      "...ein System Design aus ben&ouml;tigten Komponenten und Services zu entwerfen.",
       "...in die Cloud zu ziehen.",
       "...Entwickler zu coachen.",
       "...Deinen Prozess fein zu stimmen.",

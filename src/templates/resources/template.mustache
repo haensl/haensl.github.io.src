@@ -4,13 +4,13 @@
     id="greeting"
     >{{teaching.heading}}</h2>
   <ol class="no-list m0 p0">
-    {#teaching.items}
+    {{#teaching.items}}
       <li class="item">
         <h4 class="m-column-d-row">
           <time class="year" datetime="{{date.iso}}">{{date.text}}</time>
           <a
             class="no-text project-link"
-            href="{{href}}"
+            href="{{{href}}}"
             target="_blank"
             rel="noopener"
             title="{{hint}}"
@@ -19,7 +19,7 @@
         </h4>
         <article class="m0 p0">{{description}}</article>
       </li>
-    {/teaching.items}
+    {{/teaching.items}}
   </ol>
   <h2 class="m2000">{{publications.heading}}</h2>
   <ol class="no-list m0 p0"
@@ -29,7 +29,7 @@
         <h4 class="m-column-d-row">
           <time class="year" datetime="{{publications.ansible.date.iso}}">{{publications.ansible.date.text}}</time>
           <a
-            href="{{publications.ansible.href}}"
+            href="{{{publications.ansible.href}}}"
             data-vars-document="{{publications.ansible.document}}"
             target="_blank"
             title="{{publications.ansible.hint}}"
@@ -37,7 +37,7 @@
             ><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.ansible.title}}</a>
         </h4>
         <article class="m0 p0">{{publications.ansible.description}}<a
-                 href="{{publications.ansible.descriptionLink.href}}"
+                 href="{{{publications.ansible.descriptionLink.href}}}"
         rel="noopener, nofollow"
         target="_blank"
         >{{publications.ansible.descriptionLink.text}}</a>.</article>
@@ -46,7 +46,7 @@
       <script type="application/ld+json" src="{{publications.chaos.schema}}"></script>
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{publications.chaos.date.iso}}">{{publications.chaos.date.text}}</time>
-        <a href="{{publications.chaos.href}}"
+        <a href="{{{publications.chaos.href}}}"
            data-vars-document="{{publications.chaos.document}}"
           rel="noopener"
           target="_blank"
@@ -59,7 +59,7 @@
       <script type="application/ld+json" src="{{publications.askTheCrowd.schema}}"></script>
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{publications.askTheCrowd.date.iso}}">{{publications.askTheCrowd.date.text}}</time>
-        <a href="{{publications.askTheCrowd.href}}"
+        <a href="{{{publications.askTheCrowd.href}}}"
           target="_blank"
           title="{{publications.askTheCrowd.hint}}"
           class="pdf-download-link doc-link no-text project-link"
@@ -71,7 +71,7 @@
       <script type="application/ld+json" src="{{publications.implicitAuth.schema}}"></script>
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{publications.implicitAuth.date.iso}}">{{publications.implicitAuth.date.text}}</time>
-        <a href="{{publications.implicitAuth.href}}"
+        <a href="{{{publications.implicitAuth.href}}}"
           target="_blank"
           rel="noopener"
           title="{{publications.implicitAuth.hint}}"
@@ -95,12 +95,12 @@
         <time class="year" datetime="{{talks.amp.date.iso}}">{{talks.amp.date.text}}</time>
         <span class="no-text project-link">{{talks.amp.title}}</span>
       </h4>
-      <article class="m0 p0">{{talks.amp.description}} <a href="{{talks.amp.descriptionLink.href}}" target="_blank" rel="noopener">{{talks.amp.descriptionLink.text}}</a>. {{talks.amp.location}}.</article>
+      <article class="m0 p0">{{talks.amp.description}} <a href="{{{talks.amp.descriptionLink.href}}}" title="{{talks.amp.descriptionLink.hint}}" target="_blank" rel="noopener">{{talks.amp.descriptionLink.text}}</a>. {{talks.amp.location}}.</article>
     </li>
     <li class="item">
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{talks.bash.date.iso}}">{{talks.bash.date.text}}</time>
-        <a href="{{talks.bash.href}}"
+        <a href="{{{talks.bash.href}}}"
           target="_blank"
           rel="noopener"
           title="{{talks.bash.hint}}"

@@ -15,6 +15,60 @@ const statuscodes = {
   INTERNAL_SERVER_ERROR: 500
 };
 
+const headers = {
+  lang: 'Accept-Language'
+};
+
+const languages = {
+  de: 'de',
+  en: 'en'
+};
+
+const hasLanguage = (path) =>
+  path.startsWith(`/${languages.de}`)
+    || path.startsWith(`/${languages.en}`);
+
+const detectLang = (header = '') => {
+  const locales = header.split(',');
+  return locales
+    .map((locale) => {
+      const data = locale.split(';');
+      if (!(data && data.length && Object.values(languages).includes(data[0]))) {
+        return {
+          lang: languages.en,
+          q: 0.0
+        };
+      }
+        
+      if (data.length > 1) {
+        const weighingRegex = /q=([0-9\.]+)/;
+        const weighing = weighingRegex.exec(data[1]);
+        if (weighing && weighing.length > 1) {
+          return {
+            lang: data[0],
+            q: parseFloat(weighing[1])
+          };
+        }
+      }
+
+      return {
+        lang: data[0],
+        q: 0.0
+      };
+    })
+    .sort((a, b) => {
+      if (a.q > b.q) {
+        return -1;
+      } else if (a.q === b.q) {
+        return 0;
+      }
+
+      return 1;
+    })
+    .shift()
+    .lang;
+};
+
 const publicDir = process.env.PUBLIC_DIR ||
   path.resolve(__dirname, './public/');
 
@@ -50,6 +104,14 @@ const start = async (port) => {
       }))
       .use(conditional())
       .use(etag())
+      .use(async (ctx, next) => {
+        if (!hasLanguage(ctx.request.path)) {
+          const lang = detectLang(ctx.request.get(headers.lang));
+          ctx.redirect(`/${lang}${ctx.request.path}`);
+        } else {
+          await next();
+        }
+      })
       .use(serve(publicDir, {
         maxage: process.env.PUBLIC_CACHE_MAXAGE || 0
       }));

@@ -1,6 +1,7 @@
 {
   "greeting": "Work with me",
-  "description": "If you are looking for someone to help you realize your idea, you have found the right guy!",
+  "description": "Work with me. Software Development. Architecture. Coding. Coaching.",
+  "content": "If you are looking for someone to help you realize your idea, you have found the right guy!",
   "services": {
     "intro": "I can help you...",
     "items": [

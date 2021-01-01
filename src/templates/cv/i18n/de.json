@@ -1,22 +1,24 @@
 {
+  "description": "HP Dietz curriculum vitae.",
   "pdf": {
     "href": "/assets/docs/cv-hpdietz.pdf",
-    "text": "Meinen CV als PDF ansehen oder herunterladen."
+    "text": "Meinen CV als PDF ansehen oder herunterladen.",
+    "hint": "HP's CV als PDF ansehen oder herunterladen."
   },
   "skills": {
     "heading": "Schl&uuml;sself&auml;higkeiten",
     "items": [
       {
         "title": "Architektur",
-        "description": "Planung und Design verteilter Systeme stehen in meinen Fokus. Ob Entstehung, Erweiterung oder Migration - ein gutes Konzept spart Zeit und Aufwand."
+        "description": "Planung und Design verteilter Systeme stehen in meinen Fokus. Ob Entstehung, Erweiterung oder Migration Ihres Projekts - ein gutes Konzept spart Zeit und Aufwand."
       },
       {
         "title": "Software Engineering",
-        "description": "Ich habe eine Leidenschaft f&uuml;r hochqualitative Softwareentwicklung. Sowohl im Prozess, operativen Betrieb als auch im Code. Ich teile gerne mein Wissen und coache teams."
+        "description": "Ich habe eine Leidenschaft f&uuml;r hochqualitative Softwareentwicklung. Sowohl im Prozess, operativen Betrieb als auch im Code. Ich teile mein Wissen und coache Teams."
       },
       {
         "title": "User Experience",
-        "description": "Gute umgesetzte user experience ist was exzellente von guter Software unterscheidet. Ich bin bewandert in Mensch-Maschine Interaktion. Sowohl von Ausbildungswegen als auch Berufserfahrung."
+        "description": "Gut umgesetzte User Experience ist was exzellente von guter Software unterscheidet. Ich bin bewandert in Mensch-Maschine Interaktion. In Theorie und Praxis."
       },
       {
         "title": "Code",

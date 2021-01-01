@@ -1,5 +1,6 @@
 {
   "greeting": "Software",
+  "description": "Software Projekte an denen HP Dietz arbeitet.",
   "items": [
     {
       "schema": "json-transform-stream.schema.json",
@@ -144,7 +145,7 @@
       "hint": "Besuche react-component-console auf Github",
       "project": "react-component-console",
       "title": "react-component-console",
-      "description": "React Component der ein Konsole Terminal emuliert. Die Komponente zeichnet sich durch Menschen-&auml;hnliches Tipp-Verhalten via dynamische Verz&ouml;gerungszeiten, sowie  Callbacks und anpassbare CSS Klassen aus.",
+      "description": "React Component das ein Konsole Terminal emuliert. Die Komponente zeichnet sich durch Menschen-&auml;hnliches Tipp-Verhalten via dynamischer Verz&ouml;gerungszeiten, sowie  Callbacks und anpassbaren CSS Klassen aus.",
       "links": [
         {
           "schema": "react-component-console.src.schema.json",
@@ -210,7 +211,7 @@
       "hint": "Besuche subset-sum auf Github.",
       "project": "subset-sum",
       "title": "subset-sum",
-      "description": "Node.js Modul zur Berechnung von L&ouml;sungen des Wechselgeld-Problems. Das Modul findet Kombinationen aus einer Menge von Zahlen die zu einer gew&uuml;nschten Summe addieren.",
+      "description": "Node.js Modul zur Berechnung von L&ouml;sungen des Wechselgeld-Problems. Das Modul findet Kombinationen aus einer Menge von Zahlen, die zu einer gew&uuml;nschten Summe addieren.",
       "links": [
         {
           "schema": "subset-sum.src.schema.json",
@@ -309,7 +310,7 @@
       "hint": "Besuche JS-Profiler.",
       "project": "js-profiler.com",
       "title": "JS-Profiler | https://js-profiler.com",
-      "description": "Sammlung von Performanz Profilen, Benchmarks und Vergleichen von verschiedenen JavaScript Built-Ins. Diese Webseite ist die zum Leben erweckte <a href=\"#js-profiler-lib\">JS Profiler Node.js library</a>.",
+      "description": "Sammlung von Performanz Profilen, Benchmarks und Vergleichen von verschiedenen JavaScript Built-Ins. Unter der Haube dieser Website arbeitet die <a href=\"#js-profiler-lib\">JS Profiler Node.js Bibliothek</a>.",
       "links": [
         {
           "href": "https://js-profiler.com",
@@ -398,7 +399,7 @@
       "hint": "Besuche preact-component-console auf Github.",
       "project": "preact-component-console",
       "title": "preact-component-console",
-      "description": "Konsole/Terminal/Schreibmaschinen Emulator Preact Component, die sich durch Menschen-&auml;hnliches Tipp-Verhalten via dynamischer Zeitverz&ouml;gerungen auszeichnet.",
+      "description": "Konsole/Terminal/Schreibmaschinen Emulator Preact Component, das sich durch Menschen-&auml;hnliches Tipp-Verhalten via dynamischer Zeitverz&ouml;gerungen auszeichnet.",
       "links": [
         {
           "schema": "preact-component-console.src.schema.json",
@@ -431,7 +432,7 @@
       "hint": "Besuche pfs auf Github.",
       "project": "pfs",
       "title": "pfs",
-      "description": "Leichtgewichtiger, Abhängigkeits-freier Promise-Wrapper um Node.js' <code>fs</code>.",
+      "description": "Leichtgewichtiger, abh&auml;ngigkeits-freier Promise-Wrapper um Node.js' <code>fs</code>.",
       "links": [
         {
           "schema": "pfs.src.schema.json",

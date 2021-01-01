@@ -1,7 +1,8 @@
 <section id="cv">
   <h1 id="greeting">Curriculum Vitae</h1>
-  <a href="{{pdf.href}}"
+  <a href="{{{pdf.href}}}"
     data-vars-document="CV"
+    title="{{pdf.hint}}"
     class="block pdf-download-link small doc-link"
     target="_blank"
     rel="noopener"><svg src="pdf-icon.svg" class="pdf-icon"></svg>{{pdf.text}}</a>
@@ -12,14 +13,15 @@
       <h4 class="m0010">{{title}}</h4>
       <p class="m0 p0">{{description}}</p>
     </section>
+    {{/skills.items}}
   </section>
   <section id="vocations">
     <h2>{{vocations.heading}}</h2>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
         <time class="daterange fixed-flex"
-              datetime="{{vocations.experteer.date.iso}}">vocations.experteer.date.text</time>
-        <a href="{{vocations.experteer.href}}"
+              datetime="{{vocations.experteer.date.iso}}">{{vocations.experteer.date.text}}</time>
+        <a href="{{{vocations.experteer.href}}}"
           target="_blank"
           rel="noopener noreferrer">
           <svg src="{{vocations.experteer.logo.src}}"
@@ -28,7 +30,7 @@
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">{{vocations.experteer.title}}, <a href="{{vocations.experteer.href}}" target="_blank" rel="noopener noreferrer">{{vocations.experteer.name}}</a>, {{vocations.experteer.location}}</h4>
+        <h4 class="m0010">{{vocations.experteer.title}}, <a href="{{{vocations.experteer.href}}}" target="_blank" rel="noopener noreferrer">{{vocations.experteer.name}}</a>, {{vocations.experteer.location}}</h4>
         <p class="p0 m0 left">{{vocations.experteer.description}}</p>
       </div>
     </section>
@@ -36,7 +38,7 @@
       <div class="m-row-d-column">
         <time class="daterange fixed-flex"
               datetime="{{vocations.osram.date.iso}}">{{vocations.osram.date.text}}</time>
-        <a href="{{vocations.osram.href}}"
+        <a href="{{{vocations.osram.href}}}"
           target="_blank"
           rel="noopener">
           <svg src="{{vocations.osram.logo.src}}"
@@ -45,7 +47,7 @@
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">{{vocations.osram.title}}, <a href="{{vocations.osram.href}}" target="_blank" rel="noopener noreferrer">{{vocations.osram.name}}</a>, {{vocations.osram.location}}</h4>
+        <h4 class="m0010">{{vocations.osram.title}}, <a href="{{{vocations.osram.href}}}" target="_blank" rel="noopener noreferrer">{{vocations.osram.name}}</a>, {{vocations.osram.location}}</h4>
         <p class="p0 m0 left">{{vocations.osram.description}}</p>
       </div>
     </section>
@@ -53,7 +55,7 @@
       <div class="m-row-d-column">
         <time class="daterange fixed-flex"
               datetime="{{vocations.check24.date.iso}}">{{vocations.check24.date.text}}</time>
-        <a href="{{vocations.check24.href}}"
+        <a href="{{{vocations.check24.href}}}"
           target="_blank"
           rel="noopener">
           <amp-img srcset="{{vocations.check24.logo.src}}"
@@ -63,14 +65,14 @@
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">{{vocations.check24.title}}, <a href="{{vocations.check24.href}}" target="_blank" rel="noopener">{{vocations.check24.name}}</a>, {{vocations.check24.location}}</h4>
+        <h4 class="m0010">{{vocations.check24.title}}, <a href="{{{vocations.check24.href}}}" target="_blank" rel="noopener">{{vocations.check24.name}}</a>, {{vocations.check24.location}}</h4>
         <p class="p0 m0 left">{{vocations.check24.description}}</p>
       </div>
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
         <time class="daterange fixed-flex" datetime="{{vocations.jandh.date.iso}}">{{vocations.jandh.date.text}}</time>
-        <a href="{{vocations.jandh.href}}"
+        <a href="{{{vocations.jandh.href}}}"
           target="_blank"
           rel="noopener">
           <amp-img srcset="{{vocations.jandh.logo.src}}"
@@ -80,14 +82,14 @@
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">{{vocations.jandh.title}}, <a href="{{vocations.jandh.href}}" target="_blank" rel="noopener">{{vocations.jandh.name}}</a>, {{vocations.jandh.location}}</h4>
+        <h4 class="m0010">{{vocations.jandh.title}}, <a href="{{{vocations.jandh.href}}}" target="_blank" rel="noopener">{{vocations.jandh.name}}</a>, {{vocations.jandh.location}}</h4>
         <p class="p0 m0 left">{{vocations.jandh.description}}</p>
       </div>
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
         <time class="daterange fixed-flex" datetime="{{vocations.lmu.date.iso}}">{{vocations.lmu.date.text}}</time>
-        <a href="{{vocations.lmu.href}}"
+        <a href="{{{vocations.lmu.href}}}"
           target="_blank"
           rel="noopener">
           <amp-img srcset="{{vocations.lmu.logo.src}}"
@@ -97,12 +99,12 @@
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">{{vocations.lmu.title}}, <a href="{{vocations.lmu.href}}" target="_blank" rel="noopener">{{vocations.lmu.name}}</a>, {{vocations.lmu.location}}</h4>
+        <h4 class="m0010">{{vocations.lmu.title}}, <a href="{{{vocations.lmu.href}}}" target="_blank" rel="noopener">{{vocations.lmu.name}}</a>, {{vocations.lmu.location}}</h4>
         <p class="p0 m0 left">{{vocations.lmu.description}}</p>
         <ul class="m1000 p0 no-list" id="cv-lectures-list">
           {{#vocations.lmu.lectures}}
           <li>
-            <h5><a href="{{href}}" target="_blank" rel="noopener">{{name}}</a></h5>
+            <h5><a href="{{{href}}}" target="_blank" rel="noopener">{{name}}</a></h5>
             <p class="p0 m0 small left">{{description}}</p>
           </li>
           {{/vocations.lmu.lectures}}
@@ -112,7 +114,7 @@
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
         <time class="daterange fixed-flex" datetime="{{vocations.efdis.date.iso}}">{{vocations.efdis.date.text}}</time>
-        <a href="{{vocations.efdis.href}}"
+        <a href="{{{vocations.efdis.href}}}"
           target="_blank"
           rel="noopener">
           <amp-img srcset="{{vocations.efdis.logo.src}}"
@@ -122,14 +124,14 @@
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">{{vocations.efdis.title}}, <a href="{{vocations.efdis.href}}" target="_blank" rel="noopener">{{vocations.efdis.name}}</a>, {{vocations.efdis.location}}</h4>
+        <h4 class="m0010">{{vocations.efdis.title}}, <a href="{{{vocations.efdis.href}}}" target="_blank" rel="noopener">{{vocations.efdis.name}}</a>, {{vocations.efdis.location}}</h4>
         <p class="p0 m0 left">{{vocations.efdis.description}}</p>
       </div>
     </section>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
         <time datetime="{{vocations.bmw.date.iso}}" class="daterange fixed-flex">{{vocations.bmw.date.text}}</time>
-        <a href="{{vocations.bmw.href}}"
+        <a href="{{{vocations.bmw.href}}}"
           target="_blank"
           rel="noopener">
           <amp-img srcset="{{vocations.bmw.logo.src}}"
@@ -139,18 +141,18 @@
         </a>
       </div>
       <div class="column">
-        <h4 class="m0010">{{vocations.bmw.title}}, <a href="{{vocations.bmw.href}}" target="_blank" rel="noopener">{{vocations.bmw.name}}</a>, {{vocations.bmw.location}}</h4>
+        <h4 class="m0010">{{vocations.bmw.title}}, <a href="{{{vocations.bmw.href}}}" target="_blank" rel="noopener">{{vocations.bmw.name}}</a>, {{vocations.bmw.location}}</h4>
         <p class="p0 m0 left">{{vocations.bmw.description}}</p>
       </div>
     </section>
   </section>
   <section id="certifications">
     <h2>{{certifications.heading}}</h2>
-    {#certifications}
+    {{#certifications.items}}
       <section class="item m-column-d-row">
         <div class="m-row-d-column">
           <time class="daterange fixed-flex" datetime="date.iso">{{date.text}}</time>
-          <a href="{{href}}"
+          <a href="{{{href}}}"
             target="_blank"
             rel="noopener">
             <amp-img srcset="{{logo.src}}"
@@ -160,106 +162,107 @@
           </a>
         </div>
         <div class="column">
-          <h4 class="m0010"><a href="{{href}}" target="_blank" rel="noopener">{{name}}</a></h4>
+          <h4 class="m0010"><a href="{{{href}}}" target="_blank" rel="noopener">{{name}}</a></h4>
         </div>
       </section>
-    {/certifications}
-  </section>
-  <section id="education">
-    <h2>{{education.heading}}</h2>
-    <section class="item m-column-d-row">
-      <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="{{education.masters.date.iso}}">{{education.masters.date.text}}</time>
-        <a href="{{education.masters.href}}"
-          target="_blank"
-          rel="noopener">
-          <amp-img srcset="{{education.masters.logo.src}}"
-            class="company-logo"
-            width="{{education.masters.logo.width}}"
-            height="{{education.masters.logo.height}}"></amp-img>
-        </a>
-      </div>
-      <div class="column">
-        <h4 class="m0010">{{education.masters.title}}, <a href="{{education.masters.href}}" target="_blank" rel="noopener">{{education.masters.name}}</a>, {{education.masters.location}}</h4>
-        <section class="m0">
-          {#education.masters.details}
-            <h5>{{heading}}</h5>
-            <p class="m0 left">{{description}}</p>
-          {/education.masters.details}
-        </section>
-      </div>
+      {{/certifications.items}}
     </section>
-    <section class="item m-column-d-row">
-      <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="{{education.bachelors.date.iso}}">{{education.bachelors.date.text}}</time>
-        <a href="{{education.bachelors.href}}"
-          target="_blank"
-          rel="noopener">
-          <amp-img srcset="{{education.bachelors.logo.src}}"
-            class="company-logo"
-            width="{{education.bachelors.logo.width}}"
-            height="{{education.bachelors.logo.height}}"></amp-img>
-        </a>
-      </div>
-      <div class="column">
-        <h4 class="m0010">{{education.bachelors.title}}, <a href="{{education.bachelors.href}}" target="_blank" rel="noopener">{{education.bachelors.name}}</a>, {{education.bachelors.location}}</h4>
-        <section class="m0">
-          {#education.bachelors.details}
-            <h5>{{heading}}</h5>
-            <p class="m0010 left">{{description}}</p>
-          {/education.bachelors.details}
-        </section>
-      </div>
-    </section>
-    <section class="item m-column-d-row">
-      <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="{{education.horti.date.iso}}">{{education.horti.date.text}}</time>
-        <a href="{{education.horti.href}}"
-          target="_blank"
-          rel="noopener">
-          <amp-img srcset="{{education.horti.logo.src}}"
-            class="company-logo"
-            width="{{education.horti.logo.width}}"
-            height="{{education.horti.logo.height}}"></amp-img>
-        </a>
-      </div>
-      <div class="column">
-        <h4 class="m0010">{{education.horti.title}}, <a href="{{education.horti.href}}" rel="noopener" target="_blank">{{education.horti.name}}</a>, {{education.horti.location}}</h4>
-      </div>
-    </section>
-    <section class="item m-column-d-row">
-      <div class="m-row-d-column">
-        <time class="daterange fixed-flex" datetime="{{education.alevel.date.iso}}">{{education.alevel.date.text}}</time>
-        <a href="{{education.alevel.href}}"
-          target="_blank"
-          rel="noopener">
-          <amp-img srcset="{{education.alevel.logo.src}}"
-            class="company-logo"
-            width="{{education.alevel.logo.width}}"
-            height="{{education.alevel.logo.height}}"></amp-img>
-        </a>
-      </div>
-      <div class="column">
-        <h4 class="m0010">{{education.alevel.title}}, <a href="{{education.alevel.href}}" target="_blank" rel="noopener">{{education.alevel.name}}</a>, {{education.alevel.location}}</h4>
-      </div>
-    </section>
-  </section>
-  <section id="languages">
-    <h2>{{languages.heading}}</h2>
-    {#languages.items}
-      <section class="item p0 row vcentering">
-        <svg src="{{logo.src}}"
-        class="icon m0"
-        width="{{logo.width}}"
-        height="{{logo.height}}"></svg>
-        <h4 class="m0001">{{name}}</h4>
-        <span class="text m0001">{{level}}</span>
+    <section id="education">
+      <h2>{{education.heading}}</h2>
+      <section class="item m-column-d-row">
+        <div class="m-row-d-column">
+          <time class="daterange fixed-flex" datetime="{{education.masters.date.iso}}">{{education.masters.date.text}}</time>
+          <a href="{{{education.masters.href}}}"
+            target="_blank"
+            rel="noopener">
+            <amp-img srcset="{{education.masters.logo.src}}"
+              class="company-logo"
+              width="{{education.masters.logo.width}}"
+              height="{{education.masters.logo.height}}"></amp-img>
+          </a>
+        </div>
+        <div class="column">
+          <h4 class="m0010">{{education.masters.title}}, <a href="{{{education.masters.href}}}" target="_blank" rel="noopener">{{education.masters.name}}</a>, {{education.masters.location}}</h4>
+          <section class="m0">
+            {{#education.masters.details}}
+              <h5>{{heading}}</h5>
+              <p class="m0 left">{{description}}</p>
+            {{/education.masters.details}}
+          </section>
+        </div>
       </section>
-    {/languages.items}
+      <section class="item m-column-d-row">
+        <div class="m-row-d-column">
+          <time class="daterange fixed-flex" datetime="{{education.bachelors.date.iso}}">{{education.bachelors.date.text}}</time>
+          <a href="{{{education.bachelors.href}}}"
+            target="_blank"
+            rel="noopener">
+            <amp-img srcset="{{education.bachelors.logo.src}}"
+              class="company-logo"
+              width="{{education.bachelors.logo.width}}"
+              height="{{education.bachelors.logo.height}}"></amp-img>
+          </a>
+        </div>
+        <div class="column">
+          <h4 class="m0010">{{education.bachelors.title}}, <a href="{{{education.bachelors.href}}}" target="_blank" rel="noopener">{{education.bachelors.name}}</a>, {{education.bachelors.location}}</h4>
+          <section class="m0">
+            {{#education.bachelors.details}}
+              <h5>{{heading}}</h5>
+              <p class="m0010 left">{{description}}</p>
+            {{/education.bachelors.details}}
+          </section>
+        </div>
+      </section>
+      <section class="item m-column-d-row">
+        <div class="m-row-d-column">
+          <time class="daterange fixed-flex" datetime="{{education.horti.date.iso}}">{{education.horti.date.text}}</time>
+          <a href="{{{education.horti.href}}}"
+            target="_blank"
+            rel="noopener">
+            <amp-img srcset="{{education.horti.logo.src}}"
+              class="company-logo"
+              width="{{education.horti.logo.width}}"
+              height="{{education.horti.logo.height}}"></amp-img>
+          </a>
+        </div>
+        <div class="column">
+          <h4 class="m0010">{{education.horti.title}}, <a href="{{{education.horti.href}}}" rel="noopener" target="_blank">{{education.horti.name}}</a>, {{education.horti.location}}</h4>
+        </div>
+      </section>
+      <section class="item m-column-d-row">
+        <div class="m-row-d-column">
+          <time class="daterange fixed-flex" datetime="{{education.alevel.date.iso}}">{{education.alevel.date.text}}</time>
+          <a href="{{{education.alevel.href}}}"
+            target="_blank"
+            rel="noopener">
+            <amp-img srcset="{{education.alevel.logo.src}}"
+              class="company-logo"
+              width="{{education.alevel.logo.width}}"
+              height="{{education.alevel.logo.height}}"></amp-img>
+          </a>
+        </div>
+        <div class="column">
+          <h4 class="m0010">{{education.alevel.title}}, <a href="{{{education.alevel.href}}}" target="_blank" rel="noopener">{{education.alevel.name}}</a>, {{education.alevel.location}}</h4>
+        </div>
+      </section>
+    </section>
+    <section id="languages">
+      <h2>{{languages.heading}}</h2>
+      {{#languages.items}}
+        <section class="item p0 row vcentering">
+          <svg src="{{logo.src}}"
+          class="icon m0"
+          width="{{logo.width}}"
+          height="{{logo.height}}"></svg>
+          <h4 class="m0001">{{name}}</h4>
+          <span class="text m0001">{{level}}</span>
+        </section>
+      {{/languages.items}}
+    </section>
+    <a href="{{{pdf.href}}}"
+      class="block pdf-download-link small doc-link"
+      data-vars-document="CV"
+      target="_blank"
+      title="{{pdf.hint}}"
+      rel="noopener"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{pdf.text}}</a>
   </section>
-  <a href="{{pdf.href}}"
-    class="block pdf-download-link small doc-link"
-    data-vars-document="CV"
-    target="_blank"
-    rel="noopener"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{pdf.text}}</a>
-</section>

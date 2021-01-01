@@ -1,14 +1,16 @@
 {
+  "description": "HP Dietz curriculum vitae.",
   "pdf": {
     "href": "/assets/docs/cv-hpdietz.pdf",
-    "text": "View/Download my CV as PDF."
+    "text": "View/Download my CV as PDF.",
+    "hint": "View/Download HP's CV as PDF."
   },
   "skills": {
     "heading": "Key Skills",
     "items": [
       {
         "title": "Architecture",
-        "description": "Planning and designing distributed systems is my primary focus. Regardless of whether you are starting, extending or migrating - a good concept saves time and effort."
+        "description": "Planning and designing distributed systems is my primary focus. Regardless of whether you are starting, extending or migrating your project - a good concept saves time and effort."
       },
       {
         "title": "Software Engineering",

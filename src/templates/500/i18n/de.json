@@ -1,4 +1,5 @@
 {
   "greeting": "Sorry, etwas ist schief gegangen.",
-  "description": "Du kannst versuchen die Seite neu zu laden oder zur <a title=\"Gehe zu https://{{domain}}\" href=\"/\">Home Page</a> gehen. Sollte der Fehler weiterhin bestehen kannst Du mir gerne <a href=\"mailto:{{me.mail}}\" title=\"Schreibe eine E-Mail an HP.\">eine Nachricht zukommen lassen</a>."
+  "description": "500: Fail",
+  "content": "Du kannst versuchen die Seite neu zu laden oder zur <a title=\"Gehe zu https://{{domain}}\" href=\"/\">Home Page</a> gehen. Sollte der Fehler weiterhin bestehen kannst Du mir gerne <a href=\"mailto:{{me.mail}}\" title=\"Schreibe eine E-Mail an HP.\">eine Nachricht zukommen lassen</a>."
 }

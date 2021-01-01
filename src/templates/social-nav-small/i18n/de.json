@@ -1,0 +1,34 @@
+{
+  "socialChannels": [
+    {
+      "name": "github",
+      "url": "https://github.com/haensl",
+      "title": "Besuche HP's GitHub Profil.",
+      "external": true
+    },
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/h_p_d",
+      "title": "Folge HP auf Twitter.",
+      "external": true
+    },
+    {
+      "name": "xing",
+      "url": "https://www.xing.com/profile/HansPeter_Dietz3",
+      "title": "Besuche HP's Xing Profil.",
+      "external": true
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/hans-peter-dietz-50ab10b8/",
+      "title": "Besuche HP's LinkedIn Profil.",
+      "external": true
+    },
+    {
+      "name": "email",
+      "url": "mailto:h.p.dietz@gmail.com",
+      "title": "Schreibe HP eine E-Mail.",
+      "external": false
+    }
+  ]
+}
