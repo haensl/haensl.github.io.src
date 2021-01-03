@@ -4,31 +4,31 @@
       "id": "about",
       "name": "about",
       "title": "About HP.",
-      "href": "/en/"
+      "href": "/"
     },
     {
       "id": "services",
       "name": "services",
       "title": "Work with HP.",
-      "href": "/en/services"
+      "href": "/services"
     },
     {
       "id": "software",
       "name": "software",
       "title": "HP's software projects.",
-      "href": "/en/software"
+      "href": "/software"
     },
     {
       "id": "resources",
       "name": "resources",
       "title": "Resources provided by HP.",
-      "href": "/en/resources"
+      "href": "/resources"
     },
     {
       "id": "cv",
       "name": "cv",
       "title": "HP's curriculum vitae.",
-      "href": "/en/cv"
+      "href": "/cv"
     }
   ]
 }

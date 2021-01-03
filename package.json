@@ -3,8 +3,24 @@
   "version": "3.0.0",
   "description": "The github.io page of HP Dietz.",
   "domains": [
-    "haensl.github.io",
-    "hpdietz.com"
+    {
+      "domain": "haensl.github.io",
+      "includeServer": false,
+      "isGithub": true,
+      "lang": "en"
+    },
+    {
+      "domain": "hpdietz.com",
+      "includeServer": true,
+      "isGithub": false,
+      "lang": "en"
+    },
+    {
+      "domain": "hpdietz.de",
+      "includeServer": true,
+      "isGithub": false,
+      "lang": "de"
+    }
   ],
   "langs": [
     "de",
@@ -65,6 +81,7 @@
   },
   "dependencies": {
     "@haensl/log": "^1.2.2",
+    "http-graceful-shutdown": "^2.3.2",
     "koa": "^2.13.0",
     "koa-compress": "^5.0.1",
     "koa-conditional-get": "^3.0.0",

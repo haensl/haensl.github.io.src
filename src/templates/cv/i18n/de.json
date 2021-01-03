@@ -10,19 +10,19 @@
     "items": [
       {
         "title": "Architektur",
-        "description": "Planung und Design verteilter Systeme stehen in meinen Fokus. Ob Entstehung, Erweiterung oder Migration Ihres Projekts - ein gutes Konzept spart Zeit und Aufwand."
+        "description": "Planung und Design verteilter Systeme stehen in meinem Fokus. Ob Entstehung, Erweiterung oder Migration eines Projekts - ein gutes Konzept spart Zeit und Aufwand."
       },
       {
         "title": "Software Engineering",
-        "description": "Ich habe eine Leidenschaft f&uuml;r hochqualitative Softwareentwicklung. Sowohl im Prozess, operativen Betrieb als auch im Code. Ich teile mein Wissen und coache Teams."
-      },
-      {
-        "title": "User Experience",
-        "description": "Gut umgesetzte User Experience ist was exzellente von guter Software unterscheidet. Ich bin bewandert in Mensch-Maschine Interaktion. In Theorie und Praxis."
+        "description": "Ich habe eine Leidenschaft f&uuml;r hochqualitative Softwareentwicklung. Sowohl im Prozess, im operativen Betrieb, als auch im Code. Ich teile mein Wissen und coache Teams."
       },
       {
         "title": "Code",
-        "description": "Ich programmiere. Nicht direkt wenig. Haupts&auml;chlich JavaScript."
+        "description": "Ich programmiere. Nicht gerade wenig. Haupts&auml;chlich JavaScript."
+      },
+      {
+        "title": "User Experience",
+        "description": "Gut umgesetzte User Experience ist es, was exzellente von guter Software unterscheidet. Ich bin versiert in Mensch-Maschine Interaktion. In Theorie und Praxis."
       }
     ]
   },
@@ -41,7 +41,7 @@
       "title": "Senior Software Architect",
       "name": "Experteer",
       "location": "M&uuml;nchen",
-      "description": "Software Architekt und interim Frontend Team Lead im Engineering Team. Coaching des Frontend Teams. Erstellung von System Designs und Implementierung von Web Services und Single Page Applications f&uuml;r neue Produkte sowie &Uuml;berf&uuml;hrung von legacy Systemen zu State-of-the-Art Web Service Architekturen, Cloud Infrastruktur and Frontend Technologie Stack."
+      "description": "Software Architekt und interim Frontend Team Lead im Engineering Team. Coaching des Frontend Teams. Erstellung von System Designs und Implementierung von Web Services und Single Page Applications f&uuml;r neue Produkte sowie &Uuml;berf&uuml;hrung von legacy Systemen zu State-of-the-Art Web Service Architekturen, Cloud Infrastruktur und Frontend Technologie Stack."
     },
     "osram": {
       "date": {
@@ -56,7 +56,7 @@
       "title": "Application Architect &amp; UX Verantwortlicher",
       "name": "OSRAM",
       "location": "M&uuml;nchen",
-      "description": "Anwendungs-Software Architect, UX Verantwortlicher and Fullstack JavaScript Engineer im Smart Positioning Solutions Research &amp; Development Team. Design und Implementierung von Location-based Services und IoT Anwendungen f&uuml;r OSRAM EINSTONE."
+      "description": "Anwendungs-Software Architekt, UX Verantwortlicher and Fullstack JavaScript Engineer im Smart Positioning Solutions Research &amp; Development Team. Design und Implementierung von Location-based Services und IoT Anwendungen f&uuml;r OSRAM EINSTONE."
     },
     "check24": {
       "date": {
@@ -72,7 +72,7 @@
       "title": "Software Engineer",
       "name": "CHECK24",
       "location": "M&uuml;nchen",
-      "description": "Fullstack JavaScript Entwickler and DevOps im Tierversicherungen-Team."
+      "description": "Fullstack JavaScript Entwickler und DevOps im Tierversicherungen-Team."
     },
     "jandh": {
       "date": {
@@ -157,7 +157,7 @@
     }
   },
   "certifications": {
-    "heading": "Certifications",
+    "heading": "Zertifikate",
     "items": [
       {
         "date": {
@@ -244,7 +244,7 @@
       },
       "title": "Student",
       "name": "Gartenbauwissenschaften, Technische Universit&auml;t",
-      "location": "Muuml;nchen/Weihenstephan"
+      "location": "M&uuml;nchen/Weihenstephan"
     },
     "alevel": {
       "date": {

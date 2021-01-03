@@ -1,12 +1,12 @@
 {
   "greeting": "Work with me",
   "description": "Work with me. Software Development. Architecture. Coding. Coaching.",
-  "content": "If you are looking for someone to help you realize your idea, you have found the right guy!",
+  "content": "If you are looking for someone to realize your idea, you have found the right guy!",
   "services": {
-    "intro": "I can help you...",
+    "intro": "Regardless of Web-App, native mobile client or IoT system, I help you...",
     "items": [
       "...dissect your idea into an actionable plan.",
-      "...select technologies to realize your idea.",
+      "...select the right technologies to realize your idea.",
       "...lay out a system design of required components and services.",
       "...move to the cloud.",
       "...coach your developers.",
@@ -15,5 +15,5 @@
       "...implement your idea."
     ]
   },
-  "cta": "Get in touch:"
+  "contactCTA": "Get in touch:"
 }

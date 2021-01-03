@@ -9,6 +9,9 @@
   "author": {
     "@id": "https://hpdietz.com"
   },
+  "publisher": {
+    "@id": "https://hpdietz.com"
+  },
   "copyrightHolder": {
     "@id": "https://hpdietz.com"
   },

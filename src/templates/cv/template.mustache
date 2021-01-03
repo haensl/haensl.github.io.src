@@ -7,7 +7,7 @@
     target="_blank"
     rel="noopener"><svg src="pdf-icon.svg" class="pdf-icon"></svg>{{pdf.text}}</a>
   <section id="key-skills">
-    <h2>{{skills.heading}}</h2>
+    <h2 class="m2010">{{skills.heading}}</h2>
     {{#skills.items}}
     <section class="item p0 column">
       <h4 class="m0010">{{title}}</h4>
@@ -16,7 +16,7 @@
     {{/skills.items}}
   </section>
   <section id="vocations">
-    <h2>{{vocations.heading}}</h2>
+    <h2 class="m2010">{{vocations.heading}}</h2>
     <section class="item m-column-d-row">
       <div class="m-row-d-column">
         <time class="daterange fixed-flex"
@@ -147,7 +147,7 @@
     </section>
   </section>
   <section id="certifications">
-    <h2>{{certifications.heading}}</h2>
+    <h2 class="m2010">{{certifications.heading}}</h2>
     {{#certifications.items}}
       <section class="item m-column-d-row">
         <div class="m-row-d-column">
@@ -168,7 +168,7 @@
       {{/certifications.items}}
     </section>
     <section id="education">
-      <h2>{{education.heading}}</h2>
+      <h2 class="m2010">{{education.heading}}</h2>
       <section class="item m-column-d-row">
         <div class="m-row-d-column">
           <time class="daterange fixed-flex" datetime="{{education.masters.date.iso}}">{{education.masters.date.text}}</time>
@@ -186,7 +186,7 @@
           <section class="m0">
             {{#education.masters.details}}
               <h5>{{heading}}</h5>
-              <p class="m0 left">{{description}}</p>
+              <p class="m0010 left">{{description}}</p>
             {{/education.masters.details}}
           </section>
         </div>
@@ -247,7 +247,7 @@
       </section>
     </section>
     <section id="languages">
-      <h2>{{languages.heading}}</h2>
+      <h2 class="m2010">{{languages.heading}}</h2>
       {{#languages.items}}
         <section class="item p0 row vcentering">
           <svg src="{{logo.src}}"

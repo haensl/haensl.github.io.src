@@ -1,22 +1,25 @@
 <section id="projects">
-  <h2
-    class="m2000"
-    id="greeting"
-    >{{heading}}</h2>
+  <h2 id="greeting">{{greeting}}</h2>
+  <p class="m0020">{{intro}}</p>
   <ol class="p0 m0" id="projects-list">
     {{#items}}
       <li class="item">
-        <script type="application/ld+json" src="{{schema}}"></script>
+        {{#schema}}
+          <script type="application/ld+json" src="{{schema}}"></script>
+        {{/schema}}
         <h4 class="m-column-d-row">
-          <time class="daterange fixed-flex" datetime="{{date.iso}}">{{date.text}}</time>
+          <time
+            class="daterange fixed-flex"
+            datetime="{{date.iso}}">{{ date.text }}</time>
         {{#href}}
-        <a class="project-link"
-          href="{{href}}"
-          target="_blank"
-          id="hooks"
-          rel="noopener"
-          title="{{hint}}"
-          data-vars-project="{{project}}">{{title}}</a>
+          <a
+            class="project-link"
+            href="{{{href}}}"
+            target="_blank"
+            id="hooks"
+            rel="noopener"
+            title="{{hint}}"
+            data-vars-project="{{project}}">{{title}}</a>
         {{/href}}
         {{^href}}
           {{title}}
@@ -29,7 +32,8 @@
             {{#schema}}
               <script src="{{schema}}" type="application/ld+json"></script>
             {{/schema}}
-            <a href="{{href}}"
+            <a
+              href="{{{href}}}"
               target="_blank"
               class="project-link fixed-flex"
               rel="noopener"
@@ -37,12 +41,12 @@
               data-vars-project="{{project}}">
               {{#svg}}
                 <svg
-                  src="{{svg.src}}"
+                  src="{{{svg.src}}}"
                   class="{{svg.class}}">
                 </svg>
               {{/svg}}
               {{#img}}
-                <amp-img srcset="{{img.src}}"
+                <amp-img srcset="{{{img.src}}}"
                   width="24"
                   height="24"
                   layout="responsive"

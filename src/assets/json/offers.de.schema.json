@@ -1,18 +1,18 @@
 {
   "@context": "https://schema.org/",
   "@type": "Service",
-  "serviceType": "Software development",
+  "serviceType": "Software Entwicklung",
   "provider": {
     "@type": "Person",
     "@id": "https://hpdietz.com"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Consulting services",
+    "name": "Consulting Services",
     "itemListElement": [
       {
         "@type": "OfferCatalog",
-        "name": "Software development",
+        "name": "Software Entwicklung",
         "itemListElement": [
           {
             "@type": "Offer",
@@ -25,28 +25,49 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Software Architecture"
+              "name": "Software Architektur"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Front End Architecture"
+              "name": "Front End Architektur"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Service Architecture"
+              "name": "Service Architektur"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Implementation"
+              "name": "Implementierung"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Programmierung"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Webentwicklung"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mobile iOS und Android Entwicklung"
             }
           },
           {
@@ -60,28 +81,28 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Process optimization"
+              "name": "Process Optimierung"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Cloud migration"
+              "name": "Cloud Migration"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Technology selection"
+              "name": "Technologie Auswahl"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "User experience design"
+              "name": "User Experience Design"
             }
           }
         ]

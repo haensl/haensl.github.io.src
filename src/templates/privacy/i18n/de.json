@@ -1,5 +1,6 @@
 {
   "greeting": "Datenschutzerkl&auml;rung",
+  "description": "Datenschutz",
   "sections": [
     {
       "heading": "Datenschutz",
@@ -44,6 +45,13 @@
         "hint": "Google Analytics Datenschutzbestimmungen",
         "text": "https://www.google.com/analytics/terms/de.html"
       }
+    },
+    {
+      "heading": "Google Fonts",
+      "paragraphs": [
+        "Auf unserer Website verwenden wir Google Fonts. Das sind die “Google-Schriften” der Firma Google Inc. Für den europäischen Raum ist das Unternehmen Google Ireland Limited (Gordon House, Barrow Street Dublin 4, Irland) für alle Google-Dienste verantwortlich.",
+        "Für die Verwendung von Google-Schriftarten müssen Sie sich nicht anmelden bzw. ein Passwort hinterlegen. Weiters werden auch keine Cookies in Ihrem Browser gespeichert. Die Dateien (CSS, Schriftarten/Fonts) werden über die Google-Domains fonts.googleapis.com und fonts.gstatic.com angefordert. Laut Google sind die Anfragen nach CSS und Schriften vollkommen getrennt von allen anderen Google-Diensten. Wenn Sie ein Google-Konto haben, brauchen Sie keine Sorge haben, dass Ihre Google-Kontodaten, während der Verwendung von Google Fonts, an Google übermittelt werden. Google erfasst die Nutzung von CSS (Cascading Style Sheets) und der verwendeten Schriftarten und speichert diese Daten sicher."
+      ]
     },
     {
       "heading": "Zwecke der Verarbeitung",

@@ -17,12 +17,12 @@
         "description": "I am passionate about high quality software development. In process, operations and code. I love to share my knowledge and coach teams."
       },
       {
-        "title": "User Experience",
-        "description": "Well implemented user experience design separates excellent from good software. I am knowledgeable in human computer interaction. By education and vocational experience."
-      },
-      {
         "title": "Code",
         "description": "I code. Quite a bit. Mostly JavaScript."
+      },
+      {
+        "title": "User Experience",
+        "description": "Well implemented user experience design separates excellent from good software. I am knowledgeable in human computer interaction. By education and vocational experience."
       }
     ]
   },

@@ -14,7 +14,7 @@ bundle:
     paths:
       - dist/
 
-docker image:
+docker image en:
   image: docker:stable
   stage: build
   variables:
@@ -28,9 +28,35 @@ docker image:
     - export CI_REGISTRY_AUTH_TOKEN=$(echo -n "gitlab-ci-token:${CI_JOB_TOKEN}" | base64)
   script:
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
-    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from $CI_REGISTRY_IMAGE:latest --tag $CI_REGISTRY_IMAGE:$VERSION --tag $CI_REGISTRY_IMAGE:latest .
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from $CI_REGISTRY_IMAGE:latest --tag $CI_REGISTRY_IMAGE:$VERSION --tag $CI_REGISTRY_IMAGE:latest --tag $CI_REGISTRY_IMAGE:$VERSION-en --tag $CI_REGISTRY_IMAGE:latest-en .
     - docker push $CI_REGISTRY_IMAGE:$VERSION
     - docker push $CI_REGISTRY_IMAGE:latest
+    - docker push $CI_REGISTRY_IMAGE:$VERSION-en
+    - docker push $CI_REGISTRY_IMAGE:latest-en
+    - docker logout $CI_REGISTRY
+  dependencies:
+    - bundle
+  only:
+    refs:
+     - master
+
+docker image de:
+  image: docker:stable
+  stage: build
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_DRIVER: overlay2
+    DOCKER_BUILDKIT: 1
+  services:
+    - docker:dind
+  before_script:
+    - export VERSION=$(head -n1 CHANGELOG.md | grep -o '\([0-9]\+\.\)\{2\}[0-9]\+')
+    - export CI_REGISTRY_AUTH_TOKEN=$(echo -n "gitlab-ci-token:${CI_JOB_TOKEN}" | base64)
+  script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from $CI_REGISTRY_IMAGE:latest --tag $CI_REGISTRY_IMAGE:$VERSION-de --tag $CI_REGISTRY_IMAGE:latest-de .
+    - docker push $CI_REGISTRY_IMAGE:$VERSION-de
+    - docker push $CI_REGISTRY_IMAGE:latest-de
     - docker logout $CI_REGISTRY
   dependencies:
     - bundle

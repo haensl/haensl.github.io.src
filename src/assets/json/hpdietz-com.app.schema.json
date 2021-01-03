@@ -22,10 +22,11 @@
   ],
   "copyrightYear": 2017,
   "datePublished": 2017,
-  "keywords": "website, developer, software engineer, software, coding, projects, publications, cv, HP, HPD, HP Dietz, Hans-Peter Dietz, media informatics",
+  "keywords": "website, developer, engineer, architect, consulting, freelance, software, coding, projects, publications, cv, haensl, HP, HPD, HP Dietz, Hans-Peter Dietz, media informatics",
   "description": "Personal homepage page of HP Dietz",
   "name": "HP Dietz",
   "sameAs": "https://haensl.github.io",
+  "sameAs": "https://hpdietz.de",
   "image": "https://haensl.github.io/assets/img/avatar_8x.png",
   "url": "https://hpdietz.com"
 }

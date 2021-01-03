@@ -1,6 +1,7 @@
 {
   "greeting": "Software",
   "description": "Software Projekte an denen HP Dietz arbeitet.",
+  "intro": "Dies ist eine Zusammenstellung von Open- und Closed-Source Software-Projekten, an denen ich arbeite.",
   "items": [
     {
       "schema": "json-transform-stream.schema.json",
@@ -12,7 +13,7 @@
       "hint": "Besuche @haensl/json-transform-stream auf Github",
       "project": "@haensl/json-tranform-stream",
       "title": "transform-stream",
-      "description": "Node.js Transform Stream Implementierung die das Wrapping von JSON Daten erleichtert.",
+      "description": "Node.js Transform Stream Implementierung, die das Wrapping von JSON Daten erleichtert.",
       "links": [
         {
           "schema": "json-transform-stream.src.schema.json",
@@ -46,7 +47,7 @@
       "hint": "Besuche @haensl/services auf Github",
       "project": "@haensl/services",
       "title": "services",
-      "description": "Ausgew&auml;hlte JavaScript Services die das Arbeiten in modernen JavaScript Umgebungen erleichtern.",
+      "description": "Ausgew&auml;hlte JavaScript Services, die das Arbeiten in modernen JavaScript Umgebungen erleichtern.",
       "links": [
         {
           "schema": "services.src.schema.json",
@@ -145,7 +146,7 @@
       "hint": "Besuche react-component-console auf Github",
       "project": "react-component-console",
       "title": "react-component-console",
-      "description": "React Component das ein Konsole Terminal emuliert. Die Komponente zeichnet sich durch Menschen-&auml;hnliches Tipp-Verhalten via dynamischer Verz&ouml;gerungszeiten, sowie  Callbacks und anpassbaren CSS Klassen aus.",
+      "description": "React Component, das ein Konsole-Terminal emuliert. Die Komponente zeichnet sich durch Menschen-&auml;hnliches Tippverhalten via dynamischer Verz&ouml;gerungszeiten, sowie  Callbacks und anpassbaren CSS Klassen aus.",
       "links": [
         {
           "schema": "react-component-console.src.schema.json",
@@ -178,7 +179,7 @@
       "hint": "Besuche rollup-plugin-local-resolve auf Github.",
       "project": "rollup-plugin-local-resolve",
       "title": "rollup-plugin-local-resolve",
-      "description": "Rollup-Plugin um relative Imports via Index-Dateien aufzul&ouml;sen.",
+      "description": "Rollup-Plugin, um relative Importe via Index-Dateien aufzul&ouml;sen.",
       "links": [
         {
           "schema": "rollup-plugin-local-resolve.src.schema.json",
@@ -277,7 +278,7 @@
       "hint": "Besuche assign-reducers auf Github.",
       "project": "assign-reducers",
       "title": "assign-reducers",
-      "description": "Node.js Modul das Redux Reducer analog zu <code>Object.assign()</code> kombiniert.",
+      "description": "Node.js Modul, das Redux Reducer analog zu <code>Object.assign()</code> kombiniert.",
       "links": [
         {
           "schema": "assign-reducers.src.schema.json",
@@ -309,8 +310,8 @@
       "href": "https://js-profiler.com",
       "hint": "Besuche JS-Profiler.",
       "project": "js-profiler.com",
-      "title": "JS-Profiler | https://js-profiler.com",
-      "description": "Sammlung von Performanz Profilen, Benchmarks und Vergleichen von verschiedenen JavaScript Built-Ins. Unter der Haube dieser Website arbeitet die <a href=\"#js-profiler-lib\">JS Profiler Node.js Bibliothek</a>.",
+      "title": "JS-Profiler<br>https://js-profiler.com",
+      "description": "Sammlung von Performance-Profilen, Benchmarks und Vergleichen von verschiedenen JavaScript Built-Ins. Unter der Haube dieser Website arbeitet die <a href=\"#js-profiler-lib\">JS Profiler Node.js Bibliothek</a>.",
       "links": [
         {
           "href": "https://js-profiler.com",
@@ -432,7 +433,7 @@
       "hint": "Besuche pfs auf Github.",
       "project": "pfs",
       "title": "pfs",
-      "description": "Leichtgewichtiger, abh&auml;ngigkeits-freier Promise-Wrapper um Node.js' <code>fs</code>.",
+      "description": "Leichtgewichtiger Promise-Wrapper ohne Abh&auml;ngigkeiten um Node.js' <code>fs</code>.",
       "links": [
         {
           "schema": "pfs.src.schema.json",
@@ -555,7 +556,7 @@
       "hint": "Besuche mov2gif auf Github.",
       "project": "mov2gif",
       "title": "mov2gif",
-      "description": "QuickTime Video Zu GIF Animation Konverter.",
+      "description": "QuickTime-zu-GIF (Video zu Animation) Konverter.",
       "links": [
         {
           "schema": "mov2gif.src.schema.json",
@@ -579,7 +580,7 @@
       "hint": "Besuche node-amp-mustache-skeleton auf Github.",
       "project": "node-amp-mustache-skeleton",
       "title": "node-amp-mustache-skeleton",
-      "description": "AMP (Accelerated Mobile Pages) Projekt Skelett das via Node.js ausgeliefert wird und sich durch Mustache Templating und Gulp-basierte CI auszeichnet.",
+      "description": "AMP (Accelerated Mobile Pages) Projekt Skelett, das via Node.js ausgeliefert wird und sich durch Mustache Templating und Gulp-basierte CI auszeichnet.",
       "links": [
         {
           "schema": "node-amp-mustache-skeleton.src.schema.json",
@@ -603,7 +604,7 @@
       "hint": "Besuche goto auf Github.",
       "project": "goto",
       "title": "goto",
-      "description": "Bash Autokomplettierung f&uuml;r schnelle Projekt Navigation.",
+      "description": "Bash-Autokomplettierung f&uuml;r schnelle Projektnavigation.",
       "links": [
         {
           "schema": "goto.src.schema.json",
@@ -623,15 +624,24 @@
         "iso": "2017-11",
         "text": "2017 - PRSNT"
       },
-      "href": "https://hpdietz.com",
-      "hint": "Besuche hpdietz.com.",
-      "project": "hpdietz.com",
-      "title": "hpdietz.com",
-      "description": "Design und Implementierung dieser Webseite.",
+      "href": "https://hpdietz.de",
+      "hint": "Besuche hpdietz.de.",
+      "project": "hpdietz.de",
+      "title": "HP Dietz<br>https://hpdietz.de<br>https://hpdietz.com<br>https://haensl.github.io",
+      "description": "Design, Lokaliserung und Implementierung dieser Webseite.",
       "links": [
         {
+          "href": "https://hpdietz.de",
+          "hint": "Besuche hpdietz.de. Deutsche Version dieser Seite.",
+          "project": "hpdietz.de",
+          "img": {
+            "src": "/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w",
+            "alt": "https://hpdietz.de"
+          }
+        },
+        {
           "href": "https://hpdietz.com",
-          "hint": "Besuche hpdietz.com.",
+          "hint": "Besuche hpdietz.com. Englische Version dieser Seite.",
           "project": "hpdietz.com",
           "img": {
             "src": "/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w",
@@ -769,7 +779,7 @@
       "hint": "Besuche vm-php auf Github.",
       "project": "vm-php",
       "title": "vm-php",
-      "description": "PHP7 Projekt Skelett basierend auf Vagrant und Ansible. Das Projektger&uuml;st umfasst sowohl Entwicklungs- und QA Umgebung als auch MailHog Integration.",
+      "description": "PHP7 Projekt Skelett basierend auf Vagrant und Ansible. Das Projektger&uuml;st umfasst sowohl Entwicklungs- und QA-Umgebungen als auch eine MailHog Integration.",
       "links": [
         {
           "schema": "vm-php.src.schema.json",
@@ -801,8 +811,8 @@
       "href": "http://rovers.band",
       "hint": "Besuche The Rovers | Pub Music.",
       "project": "rovers",
-      "title": "The Rovers | Pub Music - https://rovers.band",
-      "description": "Design, Implementierung und Wartung der Band Website.",
+      "title": "The Rovers | Pub Music<br>https://rovers.band",
+      "description": "Design, Implementierung und Wartung der Band-Webseite.",
       "links": [
         {
           "href": "http://rovers.band",
@@ -900,7 +910,7 @@
       "hint": "Besuche mutt2calcurse auf Github.",
       "project": "mutt2calcurse",
       "title": "mutt2calcurse",
-      "description": "Shell Helfer um iCal Events von mutt zu calcurse zu exportieren.",
+      "description": "Shell Helfer, um iCal Events von mutt zu calcurse zu exportieren.",
       "links": [
         {
           "schema": "mutt2calcurse.src.schema.json",
@@ -924,7 +934,7 @@
       "hint": "Besuche mutt2calcurse auf Github.",
       "project": "ng-animated-scroll",
       "title": "ngAnimatedScroll",
-      "description": "Promise basierter Angular.js 1.x Service um animiertes Scrollen zu erleichtern.",
+      "description": "Promise-basierter Angular.js 1.x Service, um animiertes Scrollen zu erleichtern.",
       "links": [
         {
           "schema": "ng-animated-scroll.src.schema.json",
@@ -957,7 +967,7 @@
       "hint": "Besuche bytes auf Github.",
       "project": "bytes",
       "title": "bytes",
-      "description": "Shell Helfer um Speicherplatz von Dateien &uuml;ber Verzeichnisse hinweg zu berechnen.",
+      "description": "Shell Helfer, um Speicherplatz von Dateien &uuml;ber Verzeichnisse hinweg zu berechnen.",
       "links": [
         {
           "schema": "bytes.src.schema.json",
@@ -1011,7 +1021,7 @@
         "text": "2014 - 2016"
       },
       "title": "Qake",
-      "description": "Design und Implementierung des retro Arcade Spiels Qake f&uuml;r iOS."
+      "description": "Design und Implementierung des retro Arcade-Spiels Qake f&uuml;r iOS."
     },
     {
       "date": {
@@ -1036,7 +1046,7 @@
         "text": "2013 - 2015"
       },
       "title": "Ask The Crowd",
-      "description": "Design, Implementierung und Auswertung des Crowdsourcing online Portals Ask The Crowd, dass es Nutzern erm&ouml;glicht Fragen zu stellen und zu beantworten, wobei Ergebnisse via Echtzeit-Visualisierungen dargestellt werden.",
+      "description": "Design, Implementierung und Auswertung des Crowdsourcing Online-Portals Ask The Crowd, das es Nutzern erm&ouml;glicht Fragen zu stellen und zu beantworten, wobei Ergebnisse via Echtzeit-Visualisierungen dargestellt werden.",
       "links": [
         {
           "href": "https://twitter.com/Ask_The_Crowd",
@@ -1082,7 +1092,7 @@
       "hint": "Schau den MMM Trailer auf YouTube.",
       "title": "MMM - The MultiModal Metronome",
       "project": "mmm",
-      "description": "Design und Implementierung des Arduino-basierten Rapid Prototypes eines Metronoms, dass auf extere Audio-Stimuli zur Beat-Eingabe zur&uuml;ckgreift und zus&auml;tzliches, visuelles Feedback eines Beats bietet.",
+      "description": "Design und Implementierung des Arduino-basierten Rapid Prototypes eines Metronoms, das auf externe Audio-Stimuli zur Beat-Eingabe zur&uuml;ckgreift und zus&auml;tzliches, visuelles Feedback eines Beats bietet.",
       "links": [
         {
           "href": "https://youtu.be/9nYjFxxmyPg",

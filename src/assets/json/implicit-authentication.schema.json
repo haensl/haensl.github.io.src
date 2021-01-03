@@ -9,6 +9,11 @@
   "author": {
     "@id": "https://hpdietz.com"
   },
+  "publisher": {
+    "@id": "https://www.medien.ifi.lmu.de",
+    "url": "https://www.medien.ifi.lmu.de"
+
+  },
   "copyrightHolder": {
     "@id": "https://hpdietz.com"
   },

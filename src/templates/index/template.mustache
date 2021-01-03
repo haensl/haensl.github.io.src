@@ -9,31 +9,33 @@
     <!-- INCLUDE_VERSION -->
     <!-- INCLUDE_REVISED -->
 
-    <meta property="og:title" content="{{me.name}} | {{site}}" />
+    <meta property="og:title" content="{{me.name}} | {{description}}" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://{{domain}}/assets/img/avatar_8x.png" />
     <meta property="og:url" content="https://{{domain}}" />
-    <meta property="og:description" name="description" content="{{ description }}" />
+    <meta property="og:description" name="description" content="{{description}}" />
 
-    <title>{{me.name}} | {{site}}</title>
+    <title>{{me.name}} | {{description}}</title>
 
     <link rel="canonical" href="https://{{domain}}">
     <link rel="shortcut icon" href="https://{{domain}}/assets/img/avatar_2x.png">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-    <script type="application/ld+json" src="haensl.schema.json"></script>
-    <script type="application/ld+json" src="offers.schema.json"></script>
+    <script type="application/ld+json" src="haensl.{{lang}}.schema.json"></script>
+    <script type="application/ld+json" src="offers.{{lang}}.schema.json"></script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <!-- INCLUDE_CSS -->
   </head>
   <body>
     <amp-state id="appState">
       <script type="application/json">{
-        "site": "{{ site }}"
+        "site": "{{site}}"
       }</script>
     </amp-state>
     <amp-analytics type="googleanalytics">
@@ -52,7 +54,7 @@
       <h1 class="centering m0 p1">{{ me.name }}</h1>
       <q class="no-text centering small block">{{ me.tagline }}</q>
       <nav id="burger-menu-nav">
-        {{ > menu }}
+        {{> menu }}
       </nav>
       <a
         class="centering"
@@ -73,7 +75,7 @@
               src="burger-menu-icon.svg"></svg>
           </button>
           <div id="header-menu-wrapper">
-            <nav id="main-menu">
+            <nav id="main-menu" class="bold">
               {{> menu }}
             </nav>
           </div>
@@ -106,7 +108,7 @@
           <h1 id="profile-id"
               class="centering">{{me.name}}</h1>
           <q id="profile-tagline"
-             class="centering">{{ me.tagline }}</q>
+             class="centering">{{me.tagline}}</q>
           {{> social-nav }}
           <a
             class="centering"

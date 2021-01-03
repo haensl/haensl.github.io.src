@@ -32,7 +32,7 @@
         },
         "href": "https://github.com/haensl/nodejs1",
         "hint": "Beispiel Code der in Node.js Coaching Sessions entsteht.",
-        "description": "Einsteiger Node.js Coaching.",
+        "description": "Node.js Coaching f&uuml;r Einsteiger.",
         "title": "node.js sessions",
         "document": "nodejs1"
       },
@@ -43,7 +43,7 @@
         },
         "href": "https://github.com/haensl/react-redux-session",
         "hint": "Beispiel Code der in Redux Coaching Sessions entsteht.",
-        "description": "Einsteiger Redux Coaching.",
+        "description": "Redux Coaching f&uuml;r Einsteiger.",
         "title": "redux sessions",
         "document": "react-redux-session"
       }
@@ -61,10 +61,10 @@
       "document": "Ansible.tar.gz",
       "hint": "Tech-Report: Ansible.tar.gz",
       "title": "Ansible.tar.gz",
-      "description": "Technischer Report &uuml;ber Konfigurations Management mit Fokus auf die ",
+      "description": "Technischer Report &uuml;ber Konfigurations-Management mit Fokus auf der ",
       "descriptionLink": {
         "href": "https://ansible.com",
-        "text": "Ansible Automatisierungs-Platform"
+        "text": "Ansible Automatisierungs-Plattform"
       }
     },
     "chaos": {
@@ -101,7 +101,7 @@
       "document": "Implicit Authentication",
       "hint": "Implicit Authentication on Mobile Devices",
       "title": "Implicit Authentication on Mobile Devices",
-      "description": "&Uuml;berblick &uuml;ber und Analyse von Mechanismen zur implizieten Authentifizierung auf mobilen Endger&auml;ten. Ludwig-Maximilians-Universit&auml;t, M&uuml;nchen."
+      "description": "&Uuml;berblick &uuml;ber und Analyse von Mechanismen zur impliziten Authentifizierung auf mobilen Endger&auml;ten. Ludwig-Maximilians-Universit&auml;t, M&uuml;nchen."
     }
   },
   "talks": {

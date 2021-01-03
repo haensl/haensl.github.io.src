@@ -1,0 +1,43 @@
+{
+  "vars": {
+    "gtag_id": "G-WXK2WMD3Y1",
+    "config": {
+      "G-WXK2WMD3Y1": { "groups": "default" }
+    }
+  },
+  "triggers": {
+    "trackPageView": {
+      "on": "visible",
+      "request": "pageview"
+    },
+    "trackSocialView": {
+      "on": "click",
+      "selector": ".social-links a",
+      "request": "social",
+      "vars": {
+        "socialNetwork": "${network}",
+        "socialAction": "view"
+      }
+    },
+    "trackDocView": {
+      "on": "click",
+      "selector": ".doc-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "DocumentAccess",
+        "eventAction": "view",
+        "eventLabel": "${document}"
+      }
+    },
+    "trackProject": {
+      "on": "click",
+      "selector": ".project-link",
+      "request": "event",
+      "vars": {
+        "eventCategory": "Projectview",
+        "eventAction": "view",
+        "eventLabel": "${project}"
+      }
+    }
+  }
+}

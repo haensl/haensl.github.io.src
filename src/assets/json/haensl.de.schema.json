@@ -7,32 +7,32 @@
   "name": "Hans-Peter Dietz",
   "familyName": "Dietz",
   "givenName": "Hans-Peter",
-  "description": "Architect, Coder, Coach.",
+  "description": "Software Architekt, Coder, Coach.",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "Munich",
-    "addressRegion": "Bavaria"
+    "addressLocality": "München",
+    "addressRegion": "Bayern"
   },
   "alumniOf" : {
     "@type": "EducationalOrganization",
-    "name": "Ludwig-Maximilans-University",
+    "name": "Ludwig-Maximilans-Universität",
     "url": "https://uni-muenchen.de",
     "location": {
       "@type": "Place",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Munich",
-        "addressRegion": "Bavaria"
+        "addressLocality": "München",
+        "addressRegion": "Bayern"
       }
     },
     "department": {
       "@type": "Organization",
       "@id": "http://mimuc.de",
-      "name": "Media Informatics",
+      "name": "Medieninformatik",
       "url": "http://www.medien.ifi.lmu.de"
     }
   },
-  "jobTitle": "Senior Software Architect",
+  "jobTitle": "Senior Software Architekt",
   "nationality": {
     "@type": "Country",
     "name": "Germany"
@@ -59,8 +59,8 @@
       "@type": "Place",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Munich",
-        "addressRegion": "Bavaria"
+        "addressLocality": "München",
+        "addressRegion": "Bayern"
       }
     },
     "logo": "http://www.watersun.net/wp-content/uploads/2013/07/logo_hal_orig.png"

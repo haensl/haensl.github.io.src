@@ -1,6 +1,7 @@
 {
   "greeting": "Software",
   "description": "Software projects HP Dietz works on.",
+  "intro": "This is a compilation of open and closed source software projects I contribute to.",
   "items": [
     {
       "schema": "json-transform-stream.schema.json",
@@ -309,8 +310,8 @@
       "href": "https://js-profiler.com",
       "hint": "Visit JS-Profiler.",
       "project": "js-profiler.com",
-      "title": "JS-Profiler | https://js-profiler.com",
-      "description": "Collection of performance profiles, benchmarks and comparisons for various JavaScript built-ins. This site is the <a href=\"#js-profiler-lib\">JS Profiler Node.js library</a> brought to live.",
+      "title": "JS-Profiler<br>https://js-profiler.com",
+      "description": "Collection of performance profiles, benchmarks and comparisons for various JavaScript built-ins. This site is the <a href=\"#js-profiler-lib\">JS Profiler Node.js library</a> brought to life.",
       "links": [
         {
           "href": "https://js-profiler.com",
@@ -432,7 +433,7 @@
       "hint": "Visit pfs on Github.",
       "project": "pfs",
       "title": "pfs",
-      "description": "Lightweight, dependency-free, Promise-Wrapper around Node.js' <code>fs</code>.",
+      "description": "Lightweight, dependency-free, Promise-Wrapper around Node.js'&nbsp;<code>fs</code>.",
       "links": [
         {
           "schema": "pfs.src.schema.json",
@@ -626,16 +627,25 @@
       "href": "https://hpdietz.com",
       "hint": "Visit hpdietz.com.",
       "project": "hpdietz.com",
-      "title": "hpdietz.com",
-      "description": "Design and implementation of this site.",
+      "title": "HP Dietz<br>https://hpdietz.com<br>https://hpdietz.de<br>https://haensl.github.io",
+      "description": "Design, localization and implementation of this site.",
       "links": [
         {
           "href": "https://hpdietz.com",
-          "hint": "Visit hpdietz.com.",
+          "hint": "Visit hpdietz.com. English version of this site.",
           "project": "hpdietz.com",
           "img": {
             "src": "/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w",
             "alt": "https://hpdietz.com"
+          }
+        },
+        {
+          "href": "https://hpdietz.de",
+          "hint": "Visit hpdietz.de. German version of this site.",
+          "project": "hpdietz.de",
+          "img": {
+            "src": "/assets/img/avatar_1x.png 24w, /assets/img/avatar_2x.png 48w",
+            "alt": "https://hpdietz.de"
           }
         },
         {
@@ -801,7 +811,7 @@
       "href": "http://rovers.band",
       "hint": "Visit The Rovers | Pub Music.",
       "project": "rovers",
-      "title": "The Rovers | Pub Music - https://rovers.band",
+      "title": "The Rovers | Pub Music<br>https://rovers.band",
       "description": "Design, implementation and maintenance of the band's website.",
       "links": [
         {

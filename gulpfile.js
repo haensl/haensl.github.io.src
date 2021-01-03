@@ -19,11 +19,6 @@ const DIRECTIVE_INCLUCE_VERSION = '<!-- INCLUDE_VERSION -->';
 const DIRECTIVE_INCLUDE_REVISED = '<!-- INCLUDE_REVISED -->';
 const sites = require(`./${DIR_TEMPLATES}/sites`);
 const DATE_NOW_ISO = (new Date()).toISOString();
-const DOMAINS = {
-  github: 'haensl.github.io',
-  hpdietz: 'hpdietz.com'
-};
-
 const OPTS_HTMLMIN = {
   collapseWhitespace: true,
   removeComments: true,
@@ -60,9 +55,9 @@ gulp.task('ensureDistDirsExists',
     'ensureDistDirExists',
     (done) => {
       for (const domain of pkg.domains) {
-        createDir(path.join(DIR_DIST, `/${domain}`));
-        createDir(path.join(DIR_DIST, `/${domain}/public`));
-        createDir(path.join(DIR_DIST, `/${domain}/assets`));
+        createDir(path.join(DIR_DIST, `/${domain.domain}`));
+        createDir(path.join(DIR_DIST, `/${domain.domain}/public`));
+        createDir(path.join(DIR_DIST, `/${domain.domain}/public/assets`));
       }
 
       done();
@@ -152,11 +147,16 @@ gulp.task('seofiles',
 gulp.task('server',
   gulp.series(
     'clean:serverfiles',
-    () => new Promise((resolve, reject) =>
-      gulp.src(FILES_SERVER)
-        .pipe(gulp.dest(`${DIR_DIST}/${DOMAINS.hpdietz}/`))
-        .on('end', resolve)
-        .on('error', reject))
+    () => Promise.all(
+      pkg.domains
+        .filter((domain) => domain.includeServer)
+        .map((domain) => new Promise((resolve, reject) =>
+          gulp.src(FILES_SERVER)
+            .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}/`))
+            .on('end', resolve)
+            .on('error', reject))
+        )
+    )
   )
 );
 
@@ -183,12 +183,14 @@ gulp.task('sitemap',
     'clean:sitemap',
     () => Promise.all(
       pkg.domains.map((domain) => new Promise((resolve, reject) => {
+        const now = (new Date()).toISOString();
         gulp.src(`${DIR_TEMPLATES}/sitemap/template.mustache`)
           .pipe($.mustache({
-            domain
+            domain: domain.domain,
+            modified: now
           }))
           .pipe($.rename('sitemap.xml'))
-          .pipe(gulp.dest(`${DIR_DIST}/${domain}/public`))
+          .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}/public`))
           .on('end', resolve)
           .on('error', reject)
       }))
@@ -246,45 +248,45 @@ gulp.task(
         for (const site of sites) {
           const template = await pfs.readFile(`${DIR_TEMPLATES}/${site}/template.mustache`, 'utf-8');
 
-          for (const lang of pkg.langs) {
-            const vars = {
-              ...skeletonLocalizations[lang],
-              ...require(path.resolve(`${DIR_TEMPLATES}/index/i18n/${lang}.json`)),
-              ...require(path.resolve(`${DIR_TEMPLATES}/${site}/i18n/${lang}.json`)),
-              site,
-              domain,
-              lang,
-              year: (new Date()).getFullYear()
-            };
+          const vars = {
+            ...skeletonLocalizations[domain.lang],
+            ...require(path.resolve(`${DIR_TEMPLATES}/index/i18n/${domain.lang}.json`)),
+            ...require(path.resolve(`${DIR_TEMPLATES}/${site}/i18n/${domain.lang}.json`)),
+            site,
+            domain: domain.domain,
+            lang: domain.lang,
+            year: (new Date()).getFullYear()
+          };
 
-            for (const item of vars.menuItems) {
-              item.active = item.id === site;
-            }
-
-            for (const item of vars.footerMenuItems) {
-              item.active = item.id === site;
-            };
-
-            await new Promise((resolve, reject) => {
-              gulp.src(`${DIR_TEMPLATES}/index/template.mustache`)
-                .pipe($.mustache(
-                  vars,
-                  {},
-                  {
-                    view: template,
-                    ...skeleton
-                  }
-                ))
-                .pipe($.rename((path) => {
-                  path.basename = 'index';
-                  path.extname = '.html';
-                  return path;
-                }))
-                .pipe(gulp.dest(`${DIR_DIST}/${domain}/public/${lang}/${site !== 'about' ? `${site}/` : ''}`))
-                .on('end', resolve)
-                .on('error', reject);
-            });
+          for (const item of vars.menuItems) {
+            item.active = item.id === site;
           }
+
+          for (const item of vars.footerMenuItems) {
+            item.active = item.id === site;
+          };
+
+          const destDir = `${DIR_DIST}/${domain.domain}/${domain.includeServer ? 'public' : ''}/${site !== 'about' ? `${site}/` : ''}`;
+
+          await new Promise((resolve, reject) => {
+            gulp.src(`${DIR_TEMPLATES}/index/template.mustache`)
+              .pipe($.mustache(
+                vars,
+                {},
+                {
+                  view: template,
+                  ...skeleton
+                }
+              ))
+              .pipe($.rename((path) => {
+                path.basename = 'index';
+                path.extname = '.html';
+                return path;
+              }))
+              .pipe(gulp.dest(destDir))
+              .on('end', resolve)
+              .on('error', reject);
+          });
         }
       }
 
@@ -301,8 +303,8 @@ gulp.task('html',
     ),
     () => Promise.all(
       pkg.domains
-        .map((domain) => new Promise((resolve, reject) =>
-           gulp.src(`${DIR_DIST}/${domain}/**/*.html`)
+        .map((domain) => new Promise((resolve, reject) => {
+          gulp.src(`${DIR_DIST}/${domain.domain}/**/*.html`)
             .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ pfs.readFileSync(path.join(DIR_DIST, 'style.tmp.css'))}</style>`))
             .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
             .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => `<meta name="revised" content="${ DATE_NOW_ISO }"><meta name="date" content="${ DATE_NOW_ISO }">`)))
@@ -314,9 +316,10 @@ gulp.task('html',
               createSpritesheet: true
             }))
             .pipe($.htmlmin(OPTS_HTMLMIN))
-            .pipe(gulp.dest(`${DIR_DIST}/${domain}`))
+            .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}`))
             .on('end', resolve)
-            .on('error', reject))
+            .on('error', reject);
+        })
       )
     )
   )
@@ -325,16 +328,20 @@ gulp.task('html',
 gulp.task('github:errorPages:prependFrontMatter',
   gulp.series(
     'html',
-    () => new Promise((resolve, reject) =>
-     gulp.src(`${DIR_DIST}/${DOMAINS.github}/public/**/404/index.html`)
-        .pipe($.insert.prepend('---\npermalink: /404.html\n---\n'))
-        .pipe($.rename((path) => {
-          path.basename = '404';
-          return path;
-        }))
-        .pipe(gulp.dest(`${DIR_DIST}/${DOMAINS.github}`))
-        .on('end', resolve)
-        .on('error', reject)
+    () => Promise.all(
+      pkg.domains
+        .filter((domain) => domain.isGithub)
+        .map((domain) => new Promise((resolve, reject) =>
+           gulp.src(`${DIR_DIST}/${domain.domain}/404/index.html`)
+            .pipe($.insert.prepend('---\npermalink: /404.html\n---\n'))
+            .pipe($.rename((path) => {
+              path.basename = '404';
+              return path;
+            }))
+            .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}`))
+            .on('end', resolve)
+            .on('error', reject)
+        ))
     )
   )
 );
@@ -342,12 +349,16 @@ gulp.task('github:errorPages:prependFrontMatter',
 gulp.task('github:errorPages',
   gulp.series(
     'github:errorPages:prependFrontMatter',
-    () => del(
-      [
-        `${DIR_DIST}/${DOMAINS.github}/404/index.html`,
-        `${DIR_DIST}/${DOMAINS.github}/404`
-      ],
-      { force: true }
+    () => Promise.all(
+      pkg.domains
+        .filter((domain) => domain.isGithub)
+        .map((domain) => del(
+          [
+            `${DIR_DIST}/${domain.domain}/404/index.html`,
+            `${DIR_DIST}/${domain.domain}/404`
+          ],
+          { force: true }
+        ))
     )
   )
 );
@@ -368,12 +379,14 @@ gulp.task('compile',
 gulp.task('assets',
   gulp.series(
     'clean:assets',
-    () => new Promise((resolve, reject) =>
-      gulp.src(`${DIR_SRC}/assets/+(img|docs|poe)/*`)
-      .pipe(gulp.dest(`${DIR_DIST}/${DOMAINS.hpdietz}/assets`))
-      .pipe(gulp.dest(`${DIR_DIST}/${DOMAINS.github}/assets`))
-        .on('end', resolve)
-        .on('error', reject)
+    () => Promise.all(
+      pkg.domains
+        .map((domain) => new Promise((resolve, reject) =>
+          gulp.src(`${DIR_SRC}/assets/+(img|docs|poe)/*`)
+            .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}/public/assets`))
+            .on('end', resolve)
+            .on('error', reject)
+        ))
     )
   )
 );
@@ -406,7 +419,7 @@ gulp.task('watch',
 gulp.task('serve', (done) => {
   browserSync.init({
     server: {
-      baseDir: `${DIR_DIST}/${DOMAINS.hpdietz}`
+      baseDir: `${DIR_DIST}/haensl.github.io`
     }
   });
   done();

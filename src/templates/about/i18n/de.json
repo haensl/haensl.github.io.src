@@ -1,8 +1,9 @@
 {
   "greeting": "Servus &amp; willkommen auf meiner Seite!",
+  "description": "Über mich.",
   "lines": [
     "Ich bin Hans-Peter Dietz.",
-    "I bin Software Architekt.",
+    "Ich bin Software Architekt.",
     "Coach.",
     "UX Typ.",
     "Ich baue verteilte Systeme.",
@@ -15,7 +16,7 @@
       "text": "&rarr; Arbeite mit mir."
     },
     {
-      "href": "/projects",
+      "href": "/software",
       "text": "&rarr; Schau Dir an was ich mache."
     }
   ]

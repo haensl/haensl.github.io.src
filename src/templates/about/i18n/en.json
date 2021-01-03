@@ -1,5 +1,6 @@
 {
   "greeting": "Hi there &amp; welcome to my site!",
+  "description": "About me.",
   "lines": [
     "I am Hans-Peter Dietz.",
     "I am a software architect.",
@@ -15,7 +16,7 @@
       "text": "&rarr; Work with me."
     },
     {
-      "href": "/projects",
+      "href": "/software",
       "text": "&rarr; See what I do."
     }
   ]
