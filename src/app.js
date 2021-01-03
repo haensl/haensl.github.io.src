@@ -4,11 +4,15 @@ const compress = require('koa-compress');
 const etag = require('koa-etag');
 const conditional = require('koa-conditional-get');
 const send = require('koa-send');
+const gracefulShutdown = require('http-graceful-shutdown');
 const hostname = require('os').hostname();
 const path = require('path');
 const Z_SYNC_FLUSH = require('zlib').Z_SYNC_FLUSH;
 const log = require('@haensl/log');
-const pkg = require('./package');
+const {
+  name,
+  version
+} = require('./package');
 
 const statuscodes = {
   NOT_FOUND: 404,
@@ -19,63 +23,64 @@ const publicDir = process.env.PUBLIC_DIR ||
   path.resolve(__dirname, './public/');
 
 const start = async (port) => {
-  try {
-    const server = new Koa();
-    server
-      .use(async (ctx, next) => {
-        try {
-          await next();
-          const status = ctx.status || statuscodes.NOT_FOUND;
-          if (status === statuscodes.NOT_FOUND) {
-            ctx.throw(statuscodes.NOT_FOUND);
-          }
-        } catch (err) {
-          ctx.status = err.status || statuscodes.INTERNAL_SERVER_ERROR;
-          let errorPage;
-          switch (ctx.status) {
-            case 404:
-              log.debug('404: Not Found', ctx.request);
-              ctx.redirect('/404');
-              break;
-            default:
-              log.error('500: Internal Server Error', err, 'Request', ctx.request);
-              ctx.redirect('/500');
-              break;
-          }
+  const server = new Koa();
+  server
+    .use(async (ctx, next) => {
+      try {
+        await next();
+        const status = ctx.status || statuscodes.NOT_FOUND;
+        if (status === statuscodes.NOT_FOUND) {
+          ctx.throw(statuscodes.NOT_FOUND);
         }
-      })
-      .use(compress({
-        threshold: process.env.COMPRESSION_THRESHOLD || 0,
-        flush: Z_SYNC_FLUSH
-      }))
-      .use(conditional())
-      .use(etag())
-      .use(serve(publicDir, {
-        maxage: process.env.PUBLIC_CACHE_MAXAGE || 0
-      }));
+      } catch (err) {
+        ctx.status = err.status || statuscodes.INTERNAL_SERVER_ERROR;
+        let errorPage;
+        switch (ctx.status) {
+          case 404:
+            log.debug('404: Not Found', ctx.request);
+            ctx.redirect('/404');
+            break;
+          default:
+            log.error('500: Internal Server Error', err, 'Request', ctx.request);
+            ctx.redirect('/500');
+            break;
+        }
+      }
+    })
+    .use(compress({
+      threshold: process.env.COMPRESSION_THRESHOLD || 0,
+      flush: Z_SYNC_FLUSH
+    }))
+    .use(conditional())
+    .use(etag())
+    .use(serve(publicDir, {
+      maxage: process.env.PUBLIC_CACHE_MAXAGE || 0
+    }));
 
-    await server.listen(port);
+  await server.listen(port);
 
-    log.info(`${pkg.name}@${pkg.version} listening on http://${hostname}:${port}`);
-    log.debug(`serving ${publicDir}`);
+  log.info(`${name}@${version} listening on http://${hostname}:${port}`);
+  log.debug(`serving ${publicDir}`);
 
-    const cleanup = () => {
-      log.info(`${pkg.name}@${pkg.version} shutting down.`);
-      server.close();
-    };
+  log.debug('attaching shutdown handler');
+  gracefulShutdown(
+    server,
+    {
+      development: process.env.NODE_ENV !== 'production',
+      finally: () => {
+        log.info(`${name}@${version} shutting down gracefully.`);
+        process.exit(0);
+      }
+    }
+  );
 
-    process.on('beforeExit', cleanup);
-    process.on('uncaughtException', (err) => {
-      log.error('Uncaught exception', err);
-      cleanup();
-      process.exit(1);
-    });
-
-    return server;
-  } catch (err) {
-    log.error(`Failing to start ${pkg.name}@${pkg.version}!`, err);
-    process.exit(1);
-  }
+  server.on('error', (error) => {
+    log.error('Uncaught Koa error', error);
+  });
 };
 
-start(process.env.PORT || 8080);
+start(process.env.PORT || 8080)
+  .catch((error) => {
+    log.error(`Failing to start ${name}@${version}`, error);
+    process.exit(1);
+  });

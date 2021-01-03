@@ -1,0 +1,12 @@
+<section id="services">
+  <h2 id="greeting">{{greeting}}</h2>
+  <p>{{content}}</p>
+  <p>{{services.intro}}</p>
+  <ul>
+    {{#services.items}}
+    <li>{{.}}</li>
+    {{/services.items}}
+  </ul>
+  <h2 class="m2010">{{contactCTA}}</h2>
+  {{> social-nav}}
+</section>

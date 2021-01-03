@@ -1,0 +1,21 @@
+<nav class="social-links">
+  <ul>
+    {{#socialChannels}}
+    <li>
+      <a
+        href="{{{url}}}"
+        title="{{title}}"
+        data-vars-network="{{name}}"
+        {{#external}}
+        target="_blank"
+        rel="noopener me"
+        {{/external}}>
+        <svg class="{{name}}-icon icon-light icon-small"
+          width="24"
+          height="24"
+          src="{{name}}-icon.svg"></svg>
+      </a>
+    </li>
+    {{/socialChannels}}
+  </ul>
+</nav>

@@ -1,0 +1,5 @@
+{
+  "greeting": "Sorry, the page you are trying to reach does not exist.",
+  "description": "404: Not Found",
+  "content": "Please check your URL and try again or return to the <a title=\"Go to https://{{domain}}\" href=\"/\">Home Page</a>."
+}

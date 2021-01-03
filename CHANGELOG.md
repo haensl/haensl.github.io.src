@@ -1,3 +1,9 @@
+### 3.0.0
+* Localize application:
+  * Add new domain: https://hpdietz.de for german visitors.
+  * Use existing domains for english/international visitors.
+  * Refactor build process.
+
 ### 2.62.0
 * [#252: Add "hire me" feature.](https://github.com/haensl/haensl.github.io.src/issues/252)
 * Add services page.

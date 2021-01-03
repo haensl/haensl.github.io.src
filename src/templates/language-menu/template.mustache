@@ -1,0 +1,21 @@
+<ul>
+{{#languageMenuItems}}
+  {{#active}}
+    <li class="active m0">
+  {{/active}}
+  {{^active}}
+    <li class="m0">
+  {{/active}}
+      <a
+        title="{{title}}"
+        data-vars-lang="{{lang}}"
+        href="{{{href}}}{{path}}"
+        target="_self"
+        hreflang="{{lang}}"
+        rel="localization"
+      >
+        <svg class="icon-small m0" src="{{img}}" width="16" height="16"></svg>
+      </a>
+    </li>
+{{/languageMenuItems}}
+</ul>

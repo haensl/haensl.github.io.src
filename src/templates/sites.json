@@ -1,66 +1,12 @@
 [
-  {
-    "name": "about",
-    "partial": "about",
-    "vars": {
-      "description": "Hans-Peter Dietz. Full-Stack anything coder, unix guy, bass player and motorcyclist."
-    }
-  },
-  {
-    "name": "cv",
-    "partial": "cv",
-    "vars": {
-      "description": "Hans-Peter Dietz's curriculum vitae."
-    }
-  },
-  {
-    "name": "software",
-    "partial": "software",
-    "vars": {
-      "description": "Software projects of Hans-Peter Dietz."
-    }
-  },
-  {
-    "name": "resources",
-    "partial": "resources",
-    "vars": {
-      "description": "Resources provided by Hans-Peter Dietz."
-    }
-  },
-  {
-    "name": "services",
-    "partial": "services",
-    "vars": {
-      "description": "Hire Hans-Peter Dietz to develop your project."
-    }
-  },
-  {
-    "name": "impressum",
-    "partial": "impressum",
-    "vars": {
-      "description": "Imprint."
-    }
-  },
-  {
-    "name": "privacy",
-    "partial": "privacy",
-    "vars": {
-      "description": "Privacy Policy"
-    }
-  },
-  {
-    "name": "404",
-    "partial": "404",
-    "vars": {
-      "description": "404. Page not found."
-    }
-  },
-  {
-    "name": "500",
-    "partial": "500",
-    "vars": {
-      "description": "500. Internal server error."
-    }
-  }
+  "about",
+  "cv",
+  "software",
+  "resources",
+  "services",
+  "impressum",
+  "privacy",
+  "404",
+  "500"
 ]
 

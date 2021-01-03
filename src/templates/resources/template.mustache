@@ -1,0 +1,118 @@
+<section id="resources">
+  <h2 id="greeting">{{teaching.heading}}</h2>
+  <ol class="no-list m0 p0">
+    {{#teaching.items}}
+      <li class="item">
+        <h4 class="m-column-d-row">
+          <time class="year" datetime="{{date.iso}}">{{date.text}}</time>
+          <a
+            class="project-link"
+            href="{{{href}}}"
+            target="_blank"
+            rel="noopener"
+            title="{{hint}}"
+            data-vars-document="{{document}}"
+            >{{title}}</a>
+        </h4>
+        <article class="m0 p0">{{description}}</article>
+      </li>
+    {{/teaching.items}}
+  </ol>
+  <h2 class="m2010">{{publications.heading}}</h2>
+  <ol class="no-list m0 p0"
+    id="publications-list">
+      <li class="item">
+        <script type="application/ld+json" src="{{publications.ansible.schema}}"></script>
+        <h4 class="m-column-d-row">
+          <time class="year" datetime="{{publications.ansible.date.iso}}">{{publications.ansible.date.text}}</time>
+          <a
+            href="{{{publications.ansible.href}}}"
+            data-vars-document="{{publications.ansible.document}}"
+            target="_blank"
+            title="{{publications.ansible.hint}}"
+            class="pdf-download-link doc-link project-link"
+            ><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.ansible.title}}</a>
+        </h4>
+        <article class="m0 p0">{{publications.ansible.description}}<a
+                 href="{{{publications.ansible.descriptionLink.href}}}"
+        rel="noopener, nofollow"
+        target="_blank"
+        >{{publications.ansible.descriptionLink.text}}</a>.</article>
+    </li>
+    <li class="item ">
+      <script type="application/ld+json" src="{{publications.chaos.schema}}"></script>
+      <h4 class="m-column-d-row">
+        <time class="year" datetime="{{publications.chaos.date.iso}}">{{publications.chaos.date.text}}</time>
+        <a href="{{{publications.chaos.href}}}"
+           data-vars-document="{{publications.chaos.document}}"
+          rel="noopener"
+          target="_blank"
+          title="{{publications.chaos.hint}}"
+          class="pdf-download-link doc-link project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.chaos.title}}</a>
+        </h4>
+        <article class="m0 p0">{{publications.chaos.description}}</article>
+    </li>
+    <li class="item">
+      <script type="application/ld+json" src="{{publications.askTheCrowd.schema}}"></script>
+      <h4 class="m-column-d-row">
+        <time class="year" datetime="{{publications.askTheCrowd.date.iso}}">{{publications.askTheCrowd.date.text}}</time>
+        <a href="{{{publications.askTheCrowd.href}}}"
+          target="_blank"
+          title="{{publications.askTheCrowd.hint}}"
+          class="pdf-download-link doc-link project-link"
+          data-vars-document="{{publications.askTheCrowd.document}}"><svg src="pdf-icon.svg" class="pdf-icon"></svg>{{publications.askTheCrowd.title}}</a>
+      </h4>
+      <article class="m0 p0">{{publications.askTheCrowd.description}}</article>
+    </li>
+    <li class="item">
+      <script type="application/ld+json" src="{{publications.implicitAuth.schema}}"></script>
+      <h4 class="m-column-d-row">
+        <time class="year" datetime="{{publications.implicitAuth.date.iso}}">{{publications.implicitAuth.date.text}}</time>
+        <a href="{{{publications.implicitAuth.href}}}"
+          target="_blank"
+          rel="noopener"
+          title="{{publications.implicitAuth.hint}}"
+          data-vars-document="{{publications.implicitAuth.document}}"
+          class="pdf-download-link doc-link project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.implicitAuth.title}}</a>
+      </h4>
+      <article class="m0 p0">{{publications.implicitAuth.description}}</article>
+    </li>
+  </ol>
+  <h2 class="m2010">{{talks.heading}}</h2>
+  <ol class="no-list m0 p0">
+    <li class="item">
+      <h4 class="m-column-d-row">
+        <time class="year" datetime="{{talks.analytics.date.iso}}">{{talks.analytics.date.text}}</time>
+        <span class="project-link">{{talks.analytics.title}}</span>
+      </h4>
+      <article class="m0 p0">{{talks.analytics.description}}</article>
+    </li>
+    <li class="item">
+      <h4 class="m-column-d-row">
+        <time class="year" datetime="{{talks.amp.date.iso}}">{{talks.amp.date.text}}</time>
+        <span class="project-link">{{talks.amp.title}}</span>
+      </h4>
+      <article class="m0 p0">{{talks.amp.description}} <a href="{{{talks.amp.descriptionLink.href}}}" title="{{talks.amp.descriptionLink.hint}}" target="_blank" rel="noopener">{{talks.amp.descriptionLink.text}}</a>. {{talks.amp.location}}.</article>
+    </li>
+    <li class="item">
+      <h4 class="m-column-d-row">
+        <time class="year" datetime="{{talks.bash.date.iso}}">{{talks.bash.date.text}}</time>
+        <a href="{{{talks.bash.href}}}"
+          target="_blank"
+          rel="noopener"
+          title="{{talks.bash.hint}}"
+          data-vars-document="{{talks.bash.document}}"
+          class="doc-link project-link">{{talks.bash.title}}</a>
+        </h4>
+        <article class="m0 p0">{{talks.bash.description}}</article>
+    </li>
+    <li class="item">
+      <h4 class="m-column-d-row">
+        <time class="year" datetime="{{talks.webcomponents.date.iso}}">{{talks.webcomponents.date.text}}</time>
+        <span class="project-link">{{talks.webcomponents.title}}</span>
+      </h4>
+      <article class="m0 p0">{{talks.webcomponents.description}}</article>
+    </li>
+  </ol>
+</section>
+

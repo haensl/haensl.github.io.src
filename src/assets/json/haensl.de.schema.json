@@ -1,0 +1,68 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "@id": "https://hpdietz.com",
+  "sameAs": "https://haensl.github.io",
+  "sameAs": "https://hpdietz.de",
+  "name": "Hans-Peter Dietz",
+  "familyName": "Dietz",
+  "givenName": "Hans-Peter",
+  "description": "Software Architekt, Coder, Coach.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "München",
+    "addressRegion": "Bayern"
+  },
+  "alumniOf" : {
+    "@type": "EducationalOrganization",
+    "name": "Ludwig-Maximilans-Universität",
+    "url": "https://uni-muenchen.de",
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "München",
+        "addressRegion": "Bayern"
+      }
+    },
+    "department": {
+      "@type": "Organization",
+      "@id": "http://mimuc.de",
+      "name": "Medieninformatik",
+      "url": "http://www.medien.ifi.lmu.de"
+    }
+  },
+  "jobTitle": "Senior Software Architekt",
+  "nationality": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "image": "https://haensl.github.io/assets/img/avatar_x2.png",
+  "mainEntityOfPage": "https://hpdietz.com",
+  "url": "https://hpdietz.com",
+  "sameAs": [
+    "https://haensl.github.io",
+    "https://twitter.com/h_p_d"
+  ],
+  "affiliation": {
+    "@type": "MusicGroup",
+    "genre": "Post Rock",
+    "email": "marc@watersun.net",
+    "url": "http://www.watersun.net",
+    "sameAs": [
+      "https://twitter.com/watersun_band",
+      "https://www.facebook.com/pages/WATERSUN/156493289675",
+      "https://www.youtube.com/user/fozzy75"
+    ],
+    "name": "Watersun",
+    "location": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "München",
+        "addressRegion": "Bayern"
+      }
+    },
+    "logo": "http://www.watersun.net/wp-content/uploads/2013/07/logo_hal_orig.png"
+  }
+}

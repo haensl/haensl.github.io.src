@@ -1,16 +1,35 @@
 version: '3'
 services:
-  haensl.github.io:
+  com.hpdietz.www:
     build: .
-    image: registry.gitlab.com/hpd/haensl.github.io.src:$VERSION
-    container_name: 'io.github.haensl'
+    image: registry.gitlab.com/hpd/haensl.github.io.src:$VERSION-en
+    container_name: 'com.hpdietz.www'
     networks:
-      - io.github.haensl
+      - com.hpdietz
     restart: unless-stopped
     environment:
+      PUBLIC_CACHE_MAXAGE: 31536000000
+      COMPRESSION_THRESHOLD: 1024
       NODE_ENV: production
-      PORT: 8081
+      PORT: 8080
+
+  de.hpdietz.www:
+    build:
+      context: .
+      dockerfile: Dockerfile.de
+    image: registry.gitlab.com/hpd/haensl.github.io.src:$VERSION-de
+    container_name: 'de.hpdietz.www'
+    networks:
+      - de.hpdietz
+    restart: unless-stopped
+    environment:
+      PUBLIC_CACHE_MAXAGE: 31536000000
+      COMPRESSION_THRESHOLD: 1024
+      NODE_ENV: production
+      PORT: 8080
 
 networks:
-  io.github.haensl:
+  com.hpdietz:
+    external: true
+  de.hpdietz:
     external: true

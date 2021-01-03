@@ -1,0 +1,24 @@
+{
+  "greeting": "Hi there &amp; welcome to my site!",
+  "description": "About HP Dietz. Software Architect. Coder. Coach. UX Guy.",
+  "name": "About",
+  "lines": [
+    "I am Hans-Peter Dietz.",
+    "I am a software architect.",
+    "Coach.",
+    "UX guy.",
+    "I build distributed systems.",
+    "Code mostly JavaScript.",
+    "In unixoid environments."
+  ],
+  "links": [
+    {
+      "href": "/services",
+      "text": "&rarr; Work with me."
+    },
+    {
+      "href": "/software",
+      "text": "&rarr; See what I do."
+    }
+  ]
+}

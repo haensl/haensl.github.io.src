@@ -1,0 +1,152 @@
+{
+  "description": "Resources provided by HP Dietz. Coaching. Publications. Talks.",
+  "name": "Resources",
+  "teaching": {
+    "heading": "Coaching",
+    "items": [
+      {
+        "date": {
+          "iso": "2020-11",
+          "text": "2020"
+        },
+        "href": "https://github.com/haensl/reading.list",
+        "description": "Recommended reading list for aspiring software developers.",
+        "title": "reading.list",
+        "document": "reading.list",
+        "hint": "List of books I deem worthy reading."
+      },
+      {
+        "date": {
+          "iso": "2019-08",
+          "text": "2020"
+        },
+        "href": "https://github.com/haensl/js-sessions",
+        "hint": "Example sources created as part of JavaScript coaching sessions.",
+        "description": "In depth JavaScript and web-related coaching sessions.",
+        "title": "js-sessions",
+        "document": "js-sessions"
+      },
+      {
+        "date": {
+          "iso": "2020-06",
+          "text": "2020"
+        },
+        "href": "https://github.com/haensl/nodejs1",
+        "hint": "Example sources created as part of Node.js coaching sessions.",
+        "description": "Entry level Node.js coaching.",
+        "title": "node.js sessions",
+        "document": "nodejs1"
+      },
+      {
+        "date": {
+          "iso": "2020-04",
+          "text": "2020"
+        },
+        "href": "https://github.com/haensl/react-redux-session",
+        "hint": "Example sources created as part of Redux coaching sessions.",
+        "description": "Entry level Redux coaching.",
+        "title": "redux sessions",
+        "document": "react-redux-session"
+      }
+    ]
+  },
+  "publications": {
+    "heading": "Publications",
+    "ansible": {
+      "schema": "ansible.schema.json",
+      "date": {
+        "iso": "2016",
+        "text": "2016"
+      },
+      "href": "/assets/docs/ansible.tar.gz.pdf",
+      "document": "Ansible.tar.gz",
+      "hint": "Tech-Report: Ansible.tar.gz",
+      "title": "Ansible.tar.gz",
+      "description": "Technical Report about configuration management focussing on the ",
+      "descriptionLink": {
+        "href": "https://ansible.com",
+        "text": "Ansible Automation Platform"
+      }
+    },
+    "chaos": {
+      "schema": "controlled-chaos.schema.json",
+      "date": {
+        "iso": "2015",
+        "text": "2015"
+      },
+      "href": "/assets/docs/controlled-chaos.pdf",
+      "document": "Controlled Chaos",
+      "hint": "Controlled Chaos: Randomization in Level Design.",
+      "title": "Controlled Chaos: Randomization in Level Design",
+      "description": "Introduction to randomization strategies in level design."
+    },
+    "askTheCrowd": {
+      "schema": "ask-the-crowd.schema.json",
+      "date": {
+        "iso": "2013",
+        "text": "2013"
+      },
+      "href": "/assets/docs/ask-the-crowd.pdf",
+      "document": "Ask The Crowd",
+      "hint": "Ask The Crowd: Crowdsourcing Knowledge Generation",
+      "title": "Ask The Crowd: Crowdsourcing Knowledge Generation",
+      "description": "Evaluation of crowdsourcing and gamification mechanisms for the purpose of knowledge generation."
+    },
+    "implicitAuth": {
+      "schema": "implicit-authentication.schema.json",
+      "date": {
+        "iso": "2011",
+        "text": "2011"
+      },
+      "href": "https://www.medien.ifi.lmu.de/pubdb/publications/pub/hausen2011ubicompHS/hausen2011ubicompHS.pdf",
+      "document": "Implicit Authentication",
+      "hint": "Implicit Authentication on Mobile Devices",
+      "title": "Implicit Authentication on Mobile Devices",
+      "description": "Overview and analysis of mechanisms for implicit authentication on mobile devices. Ludwig-Maximilians-University, Munich."
+    }
+  },
+  "talks": {
+    "heading": "Talks",
+    "analytics": {
+      "date": {
+        "iso": "2018",
+        "text": "2018"
+      },
+      "title": "Analytics",
+      "description": "Application analytics for IoT solutions from conception to implementation. Osram, Munich."
+    },
+    "amp": {
+      "date": {
+        "iso": "2017",
+        "text": "2017"
+      },
+      "title": "Accelerated Mobile Pages",
+      "description": "An introduction to",
+      "descriptionLink": {
+        "href": "https://www.ampproject.org/",
+        "text": "Google AMP",
+        "hint": "Visit the Google AMP project."
+      },
+      "location": "CHECK24, Munich"
+    },
+    "bash": {
+      "date": {
+        "iso": "2017",
+        "text": "2017"
+      },
+      "href": "https://github.com/haensl/bash-talk",
+      "hint": "Linux, the Bash &amp; everything",
+      "document": "Linux, the Bash &amp; everything",
+      "title": "Linux, the Bash &amp; everything",
+      "description": "Fundamentals of UNIX-based operating systems and shell programming. CHECK24, Munich."
+    },
+    "webcomponents": {
+      "date": {
+        "iso": "2016",
+        "text": "2016"
+      },
+      "title": "Componentization in modern web architectures",
+      "description": "Concepts and architectural patterns of state of the art web applications. Technical University, Munich."
+    }
+  }
+}

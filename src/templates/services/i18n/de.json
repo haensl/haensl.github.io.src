@@ -1,0 +1,20 @@
+{
+  "greeting": "Arbeite mit mir",
+  "description": "Arbeite mit mir. Software Entwicklung. Architektur. Programmierung. Coaching.",
+  "name": "Services",
+  "content": "Wenn Du auf der Suche nach jemandem bist, der Deine Idee umzusetzt, dann hast Du den Richtigen gefunden! ",
+  "services": {
+    "intro": "Egal ob Web-Anwendung, mobiler Native Client oder IoT System, ich helfe Dir...",
+    "items": [
+      "...Deine Idee in einen umsetzbaren Plan zu verwandeln.",
+      "...die richtigen Technologien f&uuml;r die Realisierung Deiner Idee auszuw&auml;hlen.",
+      "...ein System Design aus ben&ouml;tigten Komponenten und Services zu entwerfen.",
+      "...in die Cloud zu umzuziehen.",
+      "...Deine Entwickler zu coachen.",
+      "...Deinen Prozess abzustimmen.",
+      "...Deine User-Erfahrung zu verbessern.",
+      "...Deine Idee zu implementieren."
+    ]
+  },
+  "contactCTA": "Melde Dich bei mir:"
+}

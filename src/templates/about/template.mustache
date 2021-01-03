@@ -1,0 +1,9 @@
+<section id="about" class="flex column m1000">
+  <code id="greeting" class="typewriter">{{ greeting }}</code>
+  {{#lines}}
+    <code class="typewriter">{{.}}</code>
+  {{/lines}}
+  {{#links}}
+  <code class="typewriter"><a href="{{href}}">{{text}}</a></code>
+  {{/links}}
+</section>

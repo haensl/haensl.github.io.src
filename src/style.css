@@ -4,7 +4,7 @@
   --beige: #f7ede4;
   --white: #eee;
   --black: #000;
-  --defaultPadding: 1rem;
+  --defaultPadding: 1em;
   --twitterBlue: #5ea9dd;
   --xingLightGreen: #d4d600;
   --xingDarkGreen: #005a5f;
@@ -15,8 +15,10 @@
   --vagrantLightBlue: #127eff;
   --vagrantDarkBlue: #1159cc;
   --nodejsGreen: #81cf08;
-  --fontFamily: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  --fontFamily: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Arial, sans-serif;
+  --fontFamilyMono: 'Roboto Mono', monospace;
   --fontWeight: 100;
+  --fontWeightBold: 600;
   --lineHeight: 1.63;
   --transitionDuration: .25s;
   --boxShadow: 2px 0 3px 1px var(--gray);
@@ -122,14 +124,21 @@ footer.active > a {
 
 p {
   text-align: justify;
+  margin: 1em 0;
 }
 
 p,
 q,
 article {
-  font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
+  font-family: var(--fontFamily);
   font-weight: var(--fontWeight);
   line-height: var(--lineHeight);
+}
+
+code {
+  font-family: var(--fontFamilyMono);
+  line-height: var(--lineHeight);
+  font-weight: var(--fontWeight);
 }
 
 a {
@@ -163,16 +172,13 @@ svg {
   transition: all var(--transitionDuration) ease;
 }
 
-section > h2 {
-  margin: 2rem 0 var(--defaultPadding) 0;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-weight: var(--fontWeight);
+  margin: 1em 0;
 }
 
 h4 {
@@ -180,8 +186,8 @@ h4 {
 }
 
 h5 {
-  margin: 0 0 .5rem 0;
-  font-size: .7rem;
+  margin: 0 0 .5em 0;
+  font-size: .7em;
 }
 
 ul,
@@ -259,6 +265,14 @@ li:last-of-type {
   margin: calc(2 * var(--defaultPadding)) 0 0 0;
 }
 
+.m2010 {
+  margin: calc(2 * var(--defaultPadding)) 0 var(--defaultPadding) 0;
+}
+
+.m0020 {
+  margin: 0 0 calc(2 * var(--defaultPadding)) 0
+}
+
 .mb {
   margin-bottom: var(--defaultPadding);
 }
@@ -272,7 +286,7 @@ li:last-of-type {
 }
 
 .bold {
-  font-weight: var(--fontWeightLatoBlack);
+  font-weight: var(--fontWeightBold);
 }
 
 .horizontal-space-between {
@@ -286,6 +300,7 @@ li:last-of-type {
 
 .horizontal-list > li {
   margin-right: var(--defaultPadding);
+  margin-bottom: 0;
 }
 
 .horizontal-list > li:last-of-type {
@@ -300,6 +315,7 @@ li:last-of-type {
   text-align: center;
 }
 
+.horizontal-list.vcentering,
 .row.vcentering {
   align-items: center;
 }
@@ -319,7 +335,7 @@ li:last-of-type {
 }
 
 .small {
-  font-size: .85rem;
+  font-size: .85em;
 }
 
 .svg-sprites {
@@ -332,23 +348,15 @@ li:last-of-type {
 
 ul.small > li {
   font-weight: var(--fontWeight);
-  font-size: .7rem;
+  font-size: .7em;
 }
 
 .italic {
   font-style: italic;
 }
 
-.no-text {
-  font-family: var(--fontFamily)
-}
-
-.text {
-  font-family: Cormorant, Garamond, Big Caslon, Palatino, Georgia, Times, Times New Roman, serif;
-}
-
 .w5 {
-  width: 5rem;
+  width: 5em;
 }
 
 .hidden {
@@ -375,8 +383,8 @@ ul.small > li {
 }
 
 .pdf-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 1em;
+  height: 1em;
   fill: var(--black);
 }
 
@@ -413,12 +421,12 @@ a:hover > .pdf-icon,
   transform: rotate3d(1, 0, 0, -40deg) translateZ(1px);
   animation: rotate 5s linear infinite;
   display: inline-block;
-  font-size: 5rem;
-  font-family: 'Hack', 'Inconsolata', Courier, mono;
+  font-size: 5em;
+  font-family: var(--fontFamilyMono);
 }
 
 .rotating-icon {
-  margin: 7.5rem 0;
+  margin: 7.5em 0;
   display: flex;
   justify-content: center;
   perspective: 500px;
@@ -531,7 +539,7 @@ a > .icon-small:hover {
   flex: 1 0 auto;
   font-weight: var(--fontWeight);
   margin-bottom: var(--defaultPadding);
-  min-width: 9rem;
+  min-width: 9em;
 }
 
 .item {
@@ -550,8 +558,8 @@ a > .icon-small:hover {
 }
 
 .item.m-column-d-row > .m-row-d-column .company-logo {
-  margin-left: 2rem;
-  max-width: 10rem;
+  margin-left: 2em;
+  max-width: 10em;
   display: flex;
 }
 
@@ -604,75 +612,146 @@ a > .icon-small:hover {
   white-space: nowrap;
   margin: 0 auto .5em 0;
   letter-spacing: .15em;
-  font-family: monospace;
-  line-height: 1.5em;
+  font-family: var(--fontFamilyMono);
+  font-weight: var(--fontWeight);
+  line-height: var(--lineHeight);
   display: block;
 }
 
-#about .typewriter:nth-child(1) {
+[lang="en"] #about .typewriter:nth-child(1) {
   width: 23em;
   animation: typing 3s steps(40, end);
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(2) {
-  width: 21em;
+[lang="en"] #about .typewriter:nth-child(2) {
+  width: 16.5em;
   opacity: 0;
   animation: typing2 2.7s steps(40, end) 3.2s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(3) {
-  width: 20em;
+[lang="en"] #about .typewriter:nth-child(3) {
+  width: 19.5em;
   opacity: 0;
   animation: typing2 2.6s steps(40, end) 6.1s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(4) {
-  width: 5em;
+[lang="en"] #about .typewriter:nth-child(4) {
+  width: 4.5em;
   opacity: 0;
   animation: typing2 1s steps(10, end) 9.4s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(5) {
-  width: 5em;
+[lang="en"] #about .typewriter:nth-child(5) {
+  width: 5.5em;
   opacity: 0;
   animation: typing2 1s steps(10, end) 10.6s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(6) {
+[lang="en"] #about .typewriter:nth-child(6) {
   width: 21em;
   opacity: 0;
   animation: typing2 3.2s steps(50, end) 11.9s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(7) {
-  width: 18em;
+[lang="en"] #about .typewriter:nth-child(7) {
+  width: 17.5em;
   opacity: 0;
   animation: typing2 2.3s steps(40, end) 15.2s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(8) {
+[lang="en"] #about .typewriter:nth-child(8) {
   width: 18em;
   opacity: 0;
   animation: typing2 2.3s steps(30, end) 17.7s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(9) {
-  width: 12em;
+[lang="en"] #about .typewriter:nth-child(9) {
+  width: 11em;
   opacity: 0;
   animation: typing2 2s steps(30, end) 20.2s;
   animation-fill-mode: forwards;
 }
 
-#about .typewriter:nth-child(10) {
-  width: 16em;
+[lang="en"] #about .typewriter:nth-child(10) {
+  width: 12em;
+  opacity: 0;
+  animation: typing3 2s steps(35, end) 22.4s,
+    blink .5s step-end infinite alternate 24.2s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(1) {
+  width: 28em;
+  animation: typing 3s steps(40, end);
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(2) {
+  width: 18.5em;
+  opacity: 0;
+  animation: typing2 2.7s steps(40, end) 3.2s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(3) {
+  width: 20em;
+  opacity: 0;
+  animation: typing2 2.6s steps(40, end) 6.1s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(4) {
+  width: 4.5em;
+  opacity: 0;
+  animation: typing2 1s steps(10, end) 9.4s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(5) {
+  width: 5.5em;
+  opacity: 0;
+  animation: typing2 1s steps(10, end) 10.6s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(6) {
+  width: 20.5em;
+  opacity: 0;
+  animation: typing2 3.2s steps(50, end) 11.9s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(7) {
+  width: 31em;
+  opacity: 0;
+  animation: typing2 2.3s steps(40, end) 15.2s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(8) {
+  width: 18em;
+  opacity: 0;
+  animation: typing2 2.3s steps(30, end) 17.7s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(9) {
+  width: 13.5em;
+  opacity: 0;
+  animation: typing2 2s steps(30, end) 20.2s;
+  animation-fill-mode: forwards;
+}
+
+[lang="de"] #about .typewriter:nth-child(10) {
+  width: 22em;
   opacity: 0;
   animation: typing3 2s steps(35, end) 22.4s,
     blink .5s step-end infinite alternate 24.2s;
@@ -686,6 +765,13 @@ a > .icon-small:hover {
   width: 100%;
   box-shadow: -1 2px 3px 0px var(--gray);
   z-index: 1;
+}
+
+#header-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 #header-social-wrapper {
@@ -713,19 +799,35 @@ a > .icon-small:hover {
 }
 
 #header-tagline {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
+  display: none;
+  margin-right: 1em;
+}
+
+#burger-menu-nav {
+  margin-top: 1.5em;
+}
+
+#header-menu-wrapper {
   display: none;
 }
 
-#burger-menu-nav,
-#main-menu {
-  border-top: 1px dashed var(--gray);
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
+#language-menu > ul {
+  display: flex;
+  justify-content: center;
 }
 
-#main-menu {
-  display: none;
+#language-menu > ul > li {
+  margin-right: .5em;
+}
+
+#language-menu > ul > li.active svg,
+#language-menu > ul > li:hover svg {
+  border-left: 2px solid var(--white);
+}
+
+#language-menu > ul > li:last-of-type {
+  margin-right: 0;
 }
 
 #main-menu > ul {
@@ -734,7 +836,6 @@ a > .icon-small:hover {
   flex-wrap: wrap;
   overflow: auto;
 }
-
 
 #burger-menu li.active > a,
 #main-menu li.active > a,
@@ -761,10 +862,27 @@ a > .icon-small:hover {
   flex-direction: column;
 }
 
+#burger-menu hr {
+  margin: 1.5em 0 0 0;
+  border-color: var(--white);
+  border-top: 1px solid;
+  opacity: .1;
+}
+
 #burger-menu #cta {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin-top: auto;
   justify-self: flex-end;
+  margin-bottom: 1.5em;
+}
+
+#burger-menu #language-menu {
+  justify-self: flex-end;
+}
+
+#burger-menu #language-menu ul {
+  justify-content: flex-start;
+  margin-left: var(--defaultPadding);
 }
 
 #sidebar {
@@ -791,17 +909,17 @@ a > .icon-small:hover {
 }
 
 #cta {
-  font-size: 2rem;
+  font-size: 2em;
   font-family: var(--fontFamily);
 }
 
 #profile-tagline {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: var(--fontFamily);
 }
 
 #profile-id {
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 #wrapper {
@@ -824,6 +942,14 @@ a > .icon-small:hover {
   font-weight: var(--fontWeight);
 }
 
+#services .social-links li {
+  margin-right: 1em;
+}
+
+#services .social-links li:last-of-type {
+  margin-right: 0;
+}
+
 #services .social-links .email-icon:not(:hover),
 #services .social-links .linkedin-icon:not(:hover),
 #services .social-links .xing-icon:not(:hover),
@@ -842,12 +968,12 @@ a > .icon-small:hover {
 }
 
 .item > .row > .daterange {
-  flex-basis: 7.5rem;
+  flex-basis: 7.5em;
 }
 
 .item .m-column-d-row {
   flex-direction: column-reverse;
-  margin: 0 0 1 0;
+  margin: 0 0 1em 0;
 }
 
 .item .m-column-d-row .daterange,
@@ -895,11 +1021,11 @@ a > .icon-small:hover {
   }
 
   .daterange {
-    min-width: 12rem;
+    min-width: 12em;
   }
 
   .year {
-    min-width: 4rem;
+    min-width: 4em;
   }
 
   .icon-small {
@@ -928,7 +1054,7 @@ a > .icon-small:hover {
   }
 }
 
-@media(min-width: 1070px) {
+@media(min-width: 1240px) {
   #header-social-wrapper {
     display: none;
   }
@@ -937,7 +1063,7 @@ a > .icon-small:hover {
     display: none;
   }
 
-  #main-menu {
+  #header-menu-wrapper {
     display: flex;
     border-top: none;
     margin-top: 0;
@@ -950,7 +1076,7 @@ a > .icon-small:hover {
 
   #sidebar {
     display: flex;
-    flex: 1 1 17rem;
+    flex: 1 1 17em;
     animation: fadeIn var(--transitionDuration);
   }
 }
@@ -967,7 +1093,7 @@ a > .icon-small:hover {
 
 @media(max-width: 625px) {
   #sidebar {
-    padding-top: 5rem;
+    padding-top: 5em;
   }
 
   #cv .column {
@@ -975,7 +1101,7 @@ a > .icon-small:hover {
   }
 
   .item.m-column-d-row > .m-row-d-column .company-logo {
-    max-width: 6rem;
+    max-width: 6em;
   }
 }
 
@@ -984,7 +1110,7 @@ a > .icon-small:hover {
  */
 @media(max-width: 768px) {
   main {
-    margin-top: 3rem;
+    margin-top: 3em;
   }
 
   #profile-avatar-wrapper {
@@ -998,7 +1124,7 @@ a > .icon-small:hover {
   }
 
   .social-links > ul > li {
-    margin-left: .5rem;
+    margin-left: .5em;
   }
 
   .social-links > ul > li:first-of-type {
@@ -1034,11 +1160,11 @@ a > .icon-small:hover {
   }
 
   main {
-    padding: 0 3rem 3rem 3rem;
+    padding: 0 3em 3em 3em;
   }
 
   #sidebar {
-    flex-basis: 23rem;
+    flex-basis: 23em;
   }
 
   #profile-avatar-wrapper {
@@ -1047,7 +1173,7 @@ a > .icon-small:hover {
   }
 
   #profile-tagline {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 
   #header {
@@ -1060,7 +1186,7 @@ a > .icon-small:hover {
   }
 
   .social-links > ul > li {
-    margin-left: .5rem;
+    margin-left: .5em;
   }
 
   .social-links > ul > li:first-of-type {
@@ -1070,7 +1196,7 @@ a > .icon-small:hover {
 
 @media(min-width: 850px) {
   :root {
-    --defaultPadding: 1.5rem;
+    --defaultPadding: 1.5em;
   }
 }
 

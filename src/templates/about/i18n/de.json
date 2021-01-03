@@ -1,0 +1,24 @@
+{
+  "greeting": "Servus &amp; willkommen auf meiner Seite!",
+  "description": "Über HP Dietz. Software Architekt. Coder. Coach. UX Guy.",
+  "name": "&Uuml;ber",
+  "lines": [
+    "Ich bin Hans-Peter Dietz.",
+    "Ich bin Software Architekt.",
+    "Coach.",
+    "UX Typ.",
+    "Ich baue verteilte Systeme.",
+    "Programmiere hauptsächlich in JavaScript.",
+    "In unixoiden Umgebungen."
+  ],
+  "links": [
+    {
+      "href": "/services",
+      "text": "&rarr; Arbeite mit mir."
+    },
+    {
+      "href": "/software",
+      "text": "&rarr; Schau Dir an was ich mache."
+    }
+  ]
+}

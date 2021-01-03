@@ -1,0 +1,298 @@
+{
+  "name": "CV",
+  "description": "HP Dietz curriculum vitae.",
+  "pdf": {
+    "href": "/assets/docs/cv-hpdietz.pdf",
+    "text": "View/Download my CV as PDF.",
+    "hint": "View/Download HP's CV as PDF."
+  },
+  "skills": {
+    "heading": "Key Skills",
+    "items": [
+      {
+        "title": "Architecture",
+        "description": "Planning and designing distributed systems is my primary focus. Regardless of whether you are starting, extending or migrating your project - a good concept saves time and effort."
+      },
+      {
+        "title": "Software Engineering",
+        "description": "I am passionate about high quality software development. In process, operations and code. I love to share my knowledge and coach teams."
+      },
+      {
+        "title": "Code",
+        "description": "I code. Quite a bit. Mostly JavaScript."
+      },
+      {
+        "title": "User Experience",
+        "description": "Well implemented user experience design separates excellent from good software. I am knowledgeable in human computer interaction. By education and vocational experience."
+      }
+    ]
+  },
+  "vocations": {
+    "heading": "Vocations",
+    "experteer": {
+      "date": {
+        "iso": "2019-07",
+        "text": "2019&nbsp&ndash; PRSNT"
+      },
+      "href": "https://experteer.com",
+      "logo": {
+        "height": 60,
+        "src": "experteer-logo.svg"
+      },
+      "title": "Senior Software Architect",
+      "name": "Experteer",
+      "location": "Munich",
+      "description": "Software Architect and interim Frontend Team Lead in the Engineering Team. Creating system designs, implementing web services and single page applications for new products as well as transitioning the leacy system to a state-of-the-art web service architecture, cloud infrastructure and frontend technology stack."
+    },
+    "osram": {
+      "date": {
+        "iso": "2018-04",
+        "text": "2018&nbsp&ndash; 2019"
+      },
+      "href": "https://osram.com/einstone",
+      "logo": {
+        "height": 60,
+        "src": "OSRAM-EINSTONE-Logo.svg"
+      },
+      "title": "Application Architect &amp; UX Responsible",
+      "name": "OSRAM",
+      "location": "Munich",
+      "description": "Application Software Architect, UX Responsible and fullstack JavaScript engineer in the Smart Positioning Solutions research and development team. Design and implementation of location based services and IoT applications for OSRAM EINSTONE."
+    },
+    "check24": {
+      "date": {
+        "iso": "2015-10",
+        "text": "2015&nbsp;&ndash; 2018"
+      },
+      "href": "https://check24.de",
+      "logo": {
+        "height": 48,
+        "width": 120,
+        "src": "/assets/img/check24-logo_1x.jpg 1x, /assets/img/check24-logo_2x.jpg 2x"
+      },
+      "title": "Software Engineer",
+      "name": "CHECK24",
+      "location": "Munich",
+      "description": "Fullstack JavaScript developer and DevOps in the animal insurance team."
+    },
+    "jandh": {
+      "date": {
+        "iso": "2014-06-01",
+        "text": "2014&nbsp;&ndash; 2016"
+      },
+      "href": "http://jandh.org",
+      "logo": {
+        "height": 48,
+        "width": 96,
+        "src": "/assets/img/jandh-logo_1x.jpg 1x, /assets/img/jandh-logo_2x.jpg 2x"
+      },
+      "title": "Co-Founder &amp; CTO, J&amp;H, Freising",
+      "name": "J&amp;H",
+      "location": "Freising",
+      "description": "Commisional web and native mobile development, as well as UX consulting."
+    },
+    "lmu": {
+      "date": {
+        "iso": "2011-10-01",
+        "text": "2011&nbsp;&ndash; 2014"
+      },
+      "href": "http://www.medien.ifi.lmu.de",
+      "logo": {
+        "height": 48,
+        "width": 101,
+        "src": "/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
+      },
+      "title": "Student assistant",
+      "name": "LFE Media Informatics, Ludwig-Maximilans-University",
+      "location": "Munich",
+      "description": "Held weekly tutorials accompanying the following lectures:",
+      "lectures": [
+        {
+          "href": "http://www.medien.ifi.lmu.de/lehre/ws1112/dm/",
+          "name": "Digital Multimedia",
+          "description": "Fundamental concepts of digital multimedia."
+        },
+        {
+          "href": "http://www.medien.ifi.lmu.de/lehre/ss12/mmp/",
+          "name": "Multimedia Programming",
+          "description": "Developing multimedia applications and games using Python and JavaFX."
+        },
+        {
+          "href": "http://www.medien.ifi.lmu.de/lehre/ws1213/mmn/",
+          "name": "Online Multimedia",
+          "description": "Technical concepts and implementation of websites and webservices using PHP, JavaScript, JQuery, Prototype and JBoss/JSF/JSP."
+        }
+      ]
+    },
+    "efdis": {
+      "date": {
+        "iso": "2008-10-01",
+        "text": "2008&nbsp;&ndash; 2010"
+      },
+      "href": "http://efdis.de",
+      "logo": {
+        "height": 48,
+        "width": 78,
+        "src": "/assets/img/efdis-logo_1x.jpg 1x, /assets/img/efdis-logo_2x.jpg 2x"
+      },
+      "title": "Working student",
+      "name": "Efidis AG",
+      "location": "Freising",
+      "description": "Working student in software development."
+    },
+    "bmw": {
+      "date": {
+        "iso": "2007-10-01",
+        "text": "2007"
+      },
+      "href": "https://www.bmwgroup.com",
+      "logo": {
+        "height": 48,
+        "width": 96,
+        "src": "/assets/img/bmw-group-logo_1x.jpg 1x, /assets/img/bmw-group-logo_2x.jpg 2x"
+      },
+      "title": "Working student",
+      "name": "BMW Group",
+      "location": "Munich",
+      "description": "Working student in taxes/national."
+    }
+  },
+  "certifications": {
+    "heading": "Certifications",
+    "items": [
+      {
+        "date": {
+          "iso": "2009-10-01",
+          "text": "2009"
+        },
+        "href": "https://www.tuev-sued.de/management-systeme/it-dienstleistungen/iso-20000",
+        "logo": {
+          "height": 48,
+          "width": 48,
+          "src": "/assets/img/itsm-iso20000-logo_1x.jpg 1x, /assets/img/itsm-iso20000-logo_2x.jpg 2x"
+        },
+        "name": "Foundation Certificate in IT Service Management according to ISO/IEC 20000"
+      }
+    ]
+  },
+  "education": {
+    "heading": "Education",
+    "masters": {
+      "date": {
+        "iso": "2010-10-01",
+        "text": "2010&nbsp;&ndash; 2014"
+      },
+      "href": "http://www.medien.ifi.lmu.de",
+      "logo": {
+        "height": 48,
+        "width": 101,
+        "src": "/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
+      },
+      "title": "Master of Science",
+      "name": "Media Informatics, Ludwig-Maximilians-University",
+      "location": "Munich",
+      "details": [
+        {
+          "heading": "Focus areas:",
+          "description": "User experience, security, distributed computing, web and mobile applications."
+        },
+        {
+          "heading": "Master Thesis:",
+          "description": "Ask The Crowd: Crowdsourcing Knowledge Generation.",
+          "href": "/assets/docs/ask-the-crowd.pdf"
+        }
+      ]
+    },
+    "bachelors": {
+      "date": {
+        "iso": "2007-10-01",
+        "text": "2007&nbsp;&ndash; 2010"
+      },
+      "href": "http://www.medien.ifi.lmu.de",
+      "logo": {
+        "height": 48,
+        "width": 101,
+        "src": "/assets/img/lmu-logo_1x.jpg 1x, /assets/img/lmu-logo_2x.jpg 2x"
+      },
+      "title": "Bachelor of Science",
+      "name": "Media Informatics, Ludwig-Maximilians-University",
+      "location": "Munich",
+      "details": [
+        {
+          "heading": "Focus areas:",
+          "description": "Human computer interaction, multimedia, software development."
+        },
+        {
+          "heading": "Secondary subject:",
+          "description": "Media business studies."
+        },
+        {
+          "heading": "Bachelor Thesis:",
+          "description": "Supporting association, reminiscing and social discovery in a music player."
+        }
+      ]
+    },
+    "horti": {
+      "date": {
+        "iso": "2006-09-01",
+        "text": "2006&nbsp;&ndash; 2007"
+      },
+      "href": "http://www.agrar.wzw.tum.de/",
+      "logo": {
+        "height": 48,
+        "width": 91,
+        "src": "/assets/img/tum-logo_1x.jpg 1x, /assets/img/tum-logo_2x.jpg 2x"
+      },
+      "title": "Student",
+      "name": "Horticultural Science, Technical University",
+      "location": "Munich/Weihenstephan"
+    },
+    "alevel": {
+      "date": {
+        "iso": "1997-06-01",
+        "text": "1997&nbsp;&ndash; 2006"
+      },
+      "href": "http://www.gwsg.net/",
+      "logo": {
+        "height": 48,
+        "width": 51,
+        "src": "/assets/img/gwsg-logo_1x.jpg 1x, /assets/img/gwsg-logo_2x.jpg 2x"
+      },
+      "title": "A-Levels",
+      "name": "Georg-Wilhelm-Steller-Gymnasium",
+      "location": "Bad Windsheim"
+    }
+  },
+  "languages": {
+    "heading": "<i>(Spoken)</i> Languages",
+    "items": [
+      {
+        "logo": {
+          "src": "flag-german.svg",
+          "width": 48,
+          "height": 48
+        },
+        "name": "German",
+        "level": "Mothertongue"
+      },
+      {
+        "logo": {
+          "src": "flag-us.svg",
+          "width": 48,
+          "height": 48
+        },
+        "name": "English",
+        "level": "Fluent"
+      },
+      {
+        "logo": {
+          "src": "flag-french.svg",
+          "width": 48,
+          "height": 48
+        },
+        "name": "French",
+        "level": "Basics"
+      }
+    ]
+  }
+}
