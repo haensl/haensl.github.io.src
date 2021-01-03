@@ -205,6 +205,7 @@ gulp.task(
     async (done) => {
       const components = [
         'footer-menu',
+        'language-menu',
         'menu',
         'social-nav',
         'social-nav-small'
