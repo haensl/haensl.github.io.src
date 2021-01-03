@@ -53,6 +53,7 @@
         alt="Avatar"></amp-img>
       <h1 class="centering m0 p1">{{ me.name }}</h1>
       <q class="no-text centering small block">{{ me.tagline }}</q>
+      <hr />
       <nav id="burger-menu-nav">
         {{> menu }}
       </nav>
@@ -61,6 +62,9 @@
         id="cta"
         title="{{cta.hint}}"
         href="{{{cta.href}}}">{{cta.text}}</a>
+      <nav id="language-menu">
+        {{> language-menu }}
+      </nav>
     </amp-sidebar>
     <div id="wrapper">
       <div id="content-wrapper">

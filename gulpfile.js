@@ -256,7 +256,8 @@ gulp.task(
             site,
             domain: domain.domain,
             lang: domain.lang,
-            year: (new Date()).getFullYear()
+            year: (new Date()).getFullYear(),
+            path: `${site === 'about' ? '/' : `/${site}`}`
           };
 
           for (const item of vars.menuItems) {

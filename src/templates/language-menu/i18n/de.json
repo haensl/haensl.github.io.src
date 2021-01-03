@@ -1,0 +1,18 @@
+{
+  "languageMenuItems": [
+    {
+      "href": "https://hpdietz.de",
+      "title": "Deutsche Version.",
+      "lang": "de",
+      "active": true,
+      "img": "flag-german.svg"
+    },
+    {
+      "href": "https://hpdietz.com",
+      "title": "Englische Version.",
+      "lang": "en",
+      "active": false,
+      "img": "flag-us.svg"
+    }
+  ]
+}
