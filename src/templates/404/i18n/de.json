@@ -1,5 +1,5 @@
 {
   "greeting": "Sorry, die Seite die Du suchst existiert nicht.",
   "description": "404: Nicht gefunden",
-  "content": "Bitte &uuml;berpr&uuml;fe die URL und versuche es erneut oder kehre zur <a title=\"Gehe zu https://{{domain}}\" href=\"/\">Home Page</a> zur&uuml;k."
+  "content": "Bitte &uuml;berpr&uuml;fe die URL und versuche es erneut oder kehre zur <a title=\"Gehe zu https://{{domain}}\" href=\"/\">Home Page</a> zur&uuml;ck."
 }
