@@ -6,7 +6,7 @@
         <h4 class="m-column-d-row">
           <time class="year" datetime="{{date.iso}}">{{date.text}}</time>
           <a
-            class="no-text project-link"
+            class="project-link"
             href="{{{href}}}"
             target="_blank"
             rel="noopener"
@@ -30,7 +30,7 @@
             data-vars-document="{{publications.ansible.document}}"
             target="_blank"
             title="{{publications.ansible.hint}}"
-            class="pdf-download-link doc-link no-text project-link"
+            class="pdf-download-link doc-link project-link"
             ><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.ansible.title}}</a>
         </h4>
         <article class="m0 p0">{{publications.ansible.description}}<a
@@ -48,7 +48,7 @@
           rel="noopener"
           target="_blank"
           title="{{publications.chaos.hint}}"
-          class="pdf-download-link doc-link no-text project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.chaos.title}}</a>
+          class="pdf-download-link doc-link project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.chaos.title}}</a>
         </h4>
         <article class="m0 p0">{{publications.chaos.description}}</article>
     </li>
@@ -59,7 +59,7 @@
         <a href="{{{publications.askTheCrowd.href}}}"
           target="_blank"
           title="{{publications.askTheCrowd.hint}}"
-          class="pdf-download-link doc-link no-text project-link"
+          class="pdf-download-link doc-link project-link"
           data-vars-document="{{publications.askTheCrowd.document}}"><svg src="pdf-icon.svg" class="pdf-icon"></svg>{{publications.askTheCrowd.title}}</a>
       </h4>
       <article class="m0 p0">{{publications.askTheCrowd.description}}</article>
@@ -73,7 +73,7 @@
           rel="noopener"
           title="{{publications.implicitAuth.hint}}"
           data-vars-document="{{publications.implicitAuth.document}}"
-          class="pdf-download-link doc-link no-text project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.implicitAuth.title}}</a>
+          class="pdf-download-link doc-link project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.implicitAuth.title}}</a>
       </h4>
       <article class="m0 p0">{{publications.implicitAuth.description}}</article>
     </li>
@@ -83,14 +83,14 @@
     <li class="item">
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{talks.analytics.date.iso}}">{{talks.analytics.date.text}}</time>
-        <span class="no-text project-link">{{talks.analytics.title}}</span>
+        <span class="project-link">{{talks.analytics.title}}</span>
       </h4>
       <article class="m0 p0">{{talks.analytics.description}}</article>
     </li>
     <li class="item">
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{talks.amp.date.iso}}">{{talks.amp.date.text}}</time>
-        <span class="no-text project-link">{{talks.amp.title}}</span>
+        <span class="project-link">{{talks.amp.title}}</span>
       </h4>
       <article class="m0 p0">{{talks.amp.description}} <a href="{{{talks.amp.descriptionLink.href}}}" title="{{talks.amp.descriptionLink.hint}}" target="_blank" rel="noopener">{{talks.amp.descriptionLink.text}}</a>. {{talks.amp.location}}.</article>
     </li>
@@ -102,14 +102,14 @@
           rel="noopener"
           title="{{talks.bash.hint}}"
           data-vars-document="{{talks.bash.document}}"
-          class="doc-link no-text project-link">{{talks.bash.title}}</a>
+          class="doc-link project-link">{{talks.bash.title}}</a>
         </h4>
         <article class="m0 p0">{{talks.bash.description}}</article>
     </li>
     <li class="item">
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{talks.webcomponents.date.iso}}">{{talks.webcomponents.date.text}}</time>
-        <span class="no-text project-link">{{talks.webcomponents.title}}</span>
+        <span class="project-link">{{talks.webcomponents.title}}</span>
       </h4>
       <article class="m0 p0">{{talks.webcomponents.description}}</article>
     </li>
