@@ -835,6 +835,11 @@ a > .icon-small:hover {
   margin-right: .5em;
 }
 
+#language-menu > ul > li.active,
+#language-menu > ul > li:hover {
+  border-left: 1px solid var(--white);
+}
+
 #language-menu > ul > li:last-of-type {
   margin-right: 0;
 }

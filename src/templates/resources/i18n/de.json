@@ -1,5 +1,6 @@
 {
   "description": "Resourcen die von HP Dietz bereitgestellt werden. Coaching. Publikationen. Talks.",
+  "name": "Resources",
   "teaching": {
     "heading": "Coaching",
     "items": [
