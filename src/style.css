@@ -300,6 +300,7 @@ li:last-of-type {
 
 .horizontal-list > li {
   margin-right: var(--defaultPadding);
+  margin-bottom: 0;
 }
 
 .horizontal-list > li:last-of-type {
@@ -314,6 +315,7 @@ li:last-of-type {
   text-align: center;
 }
 
+.horizontal-list.vcentering,
 .row.vcentering {
   align-items: center;
 }
