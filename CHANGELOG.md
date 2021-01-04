@@ -1,3 +1,6 @@
+### 3.0.1
+* [#258: Fix german Docker image.](https://github.com/haensl/haensl.github.io.src/issues/258)
+
 ### 3.0.0
 * Localize application:
   * Add new domain: https://hpdietz.de for german visitors.

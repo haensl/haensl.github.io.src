@@ -54,7 +54,7 @@ docker image de:
     - export CI_REGISTRY_AUTH_TOKEN=$(echo -n "gitlab-ci-token:${CI_JOB_TOKEN}" | base64)
   script:
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
-    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from $CI_REGISTRY_IMAGE:latest --tag $CI_REGISTRY_IMAGE:$VERSION-de --tag $CI_REGISTRY_IMAGE:latest-de .
+    - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from $CI_REGISTRY_IMAGE:latest -f Dockerfile.de --tag $CI_REGISTRY_IMAGE:$VERSION-de --tag $CI_REGISTRY_IMAGE:latest-de .
     - docker push $CI_REGISTRY_IMAGE:$VERSION-de
     - docker push $CI_REGISTRY_IMAGE:latest-de
     - docker logout $CI_REGISTRY
