@@ -1,3 +1,6 @@
+### 3.0.3
+* [#257: Bump ini from 1.3.5 to 1.3.8 via dependabot.](https://github.com/haensl/haensl.github.io.src/pull/257)
+
 ### 3.0.2
 * [#260: Fix mobile UI.](https://github.com/haensl/haensl.github.io.src/issues/260)
 * Update dependencies.
