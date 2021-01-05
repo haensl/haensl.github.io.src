@@ -616,6 +616,7 @@ a > .icon-small:hover {
   font-weight: var(--fontWeight);
   line-height: var(--lineHeight);
   display: block;
+  font-size: 75%;
 }
 
 [lang="en"] #about .typewriter:nth-child(1) {
@@ -1032,6 +1033,10 @@ a > .icon-small:hover {
     width: 24px;
     height: 24px;
   }
+
+  #about .typewriter {
+    font-size: 90%;
+  }
 }
 
 @media(min-width: 700px) {
@@ -1051,6 +1056,10 @@ a > .icon-small:hover {
 
   .item > p {
     max-width: auto;
+  }
+
+  #about .typewriter {
+    font-size: 120%;
   }
 }
 

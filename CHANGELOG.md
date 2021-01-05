@@ -1,3 +1,7 @@
+### 3.0.2
+* [#260: Fix mobile UI.](https://github.com/haensl/haensl.github.io.src/issues/260)
+* Update dependencies.
+
 ### 3.0.1
 * [#258: Fix german Docker image.](https://github.com/haensl/haensl.github.io.src/issues/258)
 
