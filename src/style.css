@@ -619,6 +619,10 @@ a > .icon-small:hover {
   font-size: 75%;
 }
 
+[lang="de"]#about .typewriter {
+  font-size: 60%;
+}
+
 [lang="en"] #about .typewriter:nth-child(1) {
   width: 23em;
   animation: typing 3s steps(40, end);
@@ -1037,6 +1041,10 @@ a > .icon-small:hover {
   #about .typewriter {
     font-size: 90%;
   }
+
+  [lang="de"] #about .typewriter {
+    font-size: 68%;
+  }
 }
 
 @media(min-width: 700px) {
@@ -1060,6 +1068,10 @@ a > .icon-small:hover {
 
   #about .typewriter {
     font-size: 120%;
+  }
+
+  [lang="de"] #about .typewriter {
+    font-size: 100%;
   }
 }
 
@@ -1087,6 +1099,10 @@ a > .icon-small:hover {
     display: flex;
     flex: 1 1 17em;
     animation: fadeIn var(--transitionDuration);
+  }
+
+  [lang="de"] #about .typewriter {
+    font-size: 120%;
   }
 }
 
