@@ -1,3 +1,6 @@
+### 3.0.5
+* [#260: Fix mobile UI.](https://github.com/haensl/haensl.github.io.src/issues/260)
+
 ### 3.0.4
 * [#260: Fix mobile UI.](https://github.com/haensl/haensl.github.io.src/issues/260)
 
