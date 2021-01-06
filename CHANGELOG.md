@@ -1,3 +1,6 @@
+### 3.0.7
+* [#267: Update CVs.](https://github.com/haensl/haensl.github.io.src/issues/267)
+
 ### 3.0.6
 * [#265: Fix hpdietz.de Google Analytics configuration.](https://github.com/haensl/haensl.github.io.src/issues/265)
 * Update dependencies.
