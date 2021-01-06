@@ -2,7 +2,7 @@
   "name": "CV",
   "description": "HP Dietz curriculum vitae.",
   "pdf": {
-    "href": "/assets/docs/cv-hpdietz.pdf",
+    "href": "/assets/docs/cv-hpdietz_en.pdf",
     "text": "View/Download my CV as PDF.",
     "hint": "View/Download HP's CV as PDF."
   },
