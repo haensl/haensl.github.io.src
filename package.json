@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "The github.io page of HP Dietz.",
   "domains": [
     {
@@ -61,7 +61,7 @@
   "repository": "https://github.com/haensl/haensl.github.io.src/haensl.github.io.src.git",
   "devDependencies": {
     "@haensl/pfs": "^2.4.0",
-    "autoprefixer": "^10.1.0",
+    "autoprefixer": "^10.2.0",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",

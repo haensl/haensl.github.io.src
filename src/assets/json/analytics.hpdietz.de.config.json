@@ -1,5 +1,7 @@
 {
   "vars": {
+    "credentials": "include",
+    "type": "gtag",
     "gtag_id": "G-WXK2WMD3Y1",
     "config": {
       "G-WXK2WMD3Y1": { "groups": "default" }

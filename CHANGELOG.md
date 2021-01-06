@@ -1,3 +1,7 @@
+### 3.0.6
+* [#265: Fix hpdietz.de Google Analytics configuration.](https://github.com/haensl/haensl.github.io.src/issues/265)
+* Update dependencies.
+
 ### 3.0.5
 * [#260: Fix mobile UI.](https://github.com/haensl/haensl.github.io.src/issues/260)
 
