@@ -38,7 +38,12 @@
         "site": "{{site}}"
       }</script>
     </amp-state>
-    <amp-analytics type="googleanalytics">
+    <amp-analytics
+      {{#credentials}}
+        data-credentials="{{credentials}}"
+      {{/credentials}}
+      type="{{type}}"
+    >
       <script type="application/json" src="analytics.{{domain}}.config.json"></script>
     </amp-analytics>
     <amp-sidebar

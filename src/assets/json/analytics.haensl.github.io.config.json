@@ -1,5 +1,6 @@
 {
   "vars": {
+    "type": "googleanalytics",
     "account": "UA-109682541-1"
   },
   "triggers": {
