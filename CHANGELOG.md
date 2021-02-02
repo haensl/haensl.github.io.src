@@ -1,3 +1,6 @@
+### 3.0.10
+* [#273: Fix software mustache template.](github.com/haensl/haensl.github.io.src/issues/273)
+
 ### 3.0.9
 * [#271: Update haensl.github.io build task.](github.com/haensl/haensl.github.io.src/issues/271)
 
