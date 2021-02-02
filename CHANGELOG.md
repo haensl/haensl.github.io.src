@@ -1,3 +1,18 @@
+### 3.0.8
+* [#269: Update dependencies.](github.com/haensl/haensl.github.io.src/issues/269)
+
+### 3.0.6
+* [#265: Fix hpdietz.de Google Analytics configuration.](https://github.com/haensl/haensl.github.io.src/issues/265)
+* Update dependencies.
+
+### 3.0.5
+* [#260: Fix mobile UI.](https://github.com/haensl/haensl.github.io.src/issues/260)
+
+### 3.0.4
+* [#260: Fix mobile UI.](https://github.com/haensl/haensl.github.io.src/issues/260)
+
+### 3.0.3
+* [#257: Bump ini from 1.3.5 to 1.3.8 via dependabot.](https://github.com/haensl/haensl.github.io.src/pull/257))
 ### 3.0.7
 * [#267: Update CVs.](https://github.com/haensl/haensl.github.io.src/issues/267)
 
