@@ -1,3 +1,6 @@
+### 3.0.9
+* [#271: Update haensl.github.io build task.](github.com/haensl/haensl.github.io.src/issues/271)
+
 ### 3.0.8
 * [#269: Update dependencies.](github.com/haensl/haensl.github.io.src/issues/269)
 

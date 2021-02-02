@@ -56,8 +56,10 @@ gulp.task('ensureDistDirsExists',
     (done) => {
       for (const domain of pkg.domains) {
         createDir(path.join(DIR_DIST, `/${domain.domain}`));
-        createDir(path.join(DIR_DIST, `/${domain.domain}/public`));
-        createDir(path.join(DIR_DIST, `/${domain.domain}/public/assets`));
+        if (domain.includeServer) {
+          createDir(path.join(DIR_DIST, `/${domain.domain}/public`));
+          createDir(path.join(DIR_DIST, `/${domain.domain}/public/assets`));
+        }
       }
 
       done();
@@ -190,7 +192,7 @@ gulp.task('sitemap',
             modified: now
           }))
           .pipe($.rename('sitemap.xml'))
-          .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}/public`))
+          .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}/${domain.includeServer ? 'public' : ''}`))
           .on('end', resolve)
           .on('error', reject)
       }))
@@ -385,7 +387,7 @@ gulp.task('assets',
       pkg.domains
         .map((domain) => new Promise((resolve, reject) =>
           gulp.src(`${DIR_SRC}/assets/+(img|docs|poe)/*`)
-            .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}/public/assets`))
+          .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}/${domain.includeServer ? 'public' : ''}/assets`))
             .on('end', resolve)
             .on('error', reject)
         ))
