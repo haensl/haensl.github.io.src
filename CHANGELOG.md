@@ -1,3 +1,6 @@
+### 3.0.11
+* [#275: Fix HTML entities.](github.com/haensl/haensl.github.io.src/issues/275)
+
 ### 3.0.10
 * [#273: Fix software mustache template.](github.com/haensl/haensl.github.io.src/issues/273)
 
