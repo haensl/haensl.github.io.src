@@ -1,23 +1,23 @@
 <section id="privacy">
-  <h1 id="greeting">{{greeting}}</h1>
+  <h1 id="greeting">{{{greeting}}}</h1>
   {{#sections}}
     <section>
       {{#heading}}
         <h4>{{heading}}</h4>
       {{/heading}}
       {{#paragraphs}}
-        <p class="small">{{.}}</p>
+        <p class="small">{{{.}}}</p>
       {{/paragraphs}}
       {{#list}}
         <ol class="small">
-          <li>{{.}}</li>
+          <li>{{{.}}}</li>
         </ol>
       {{/list}}
       {{#link}}
-        <a href="{{href}}"
+        <a href="{{{href}}}"
           target="_blank"
           rel="noopener noreferrer"
-          title="{{hint}}">{{text}}</a>
+          title="{{hint}}">{{{text}}}</a>
       {{/link}}
     </section>
   {{/sections}}

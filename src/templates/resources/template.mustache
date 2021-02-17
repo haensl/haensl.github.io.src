@@ -14,7 +14,7 @@
             data-vars-document="{{document}}"
             >{{title}}</a>
         </h4>
-        <article class="m0 p0">{{description}}</article>
+        <article class="m0 p0">{{{description}}}</article>
       </li>
     {{/teaching.items}}
   </ol>
@@ -33,7 +33,7 @@
             class="pdf-download-link doc-link project-link"
             ><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.ansible.title}}</a>
         </h4>
-        <article class="m0 p0">{{publications.ansible.description}}<a
+        <article class="m0 p0">{{{publications.ansible.description}}}<a
                  href="{{{publications.ansible.descriptionLink.href}}}"
         rel="noopener, nofollow"
         target="_blank"
@@ -50,7 +50,7 @@
           title="{{publications.chaos.hint}}"
           class="pdf-download-link doc-link project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.chaos.title}}</a>
         </h4>
-        <article class="m0 p0">{{publications.chaos.description}}</article>
+        <article class="m0 p0">{{{publications.chaos.description}}}</article>
     </li>
     <li class="item">
       <script type="application/ld+json" src="{{publications.askTheCrowd.schema}}"></script>
@@ -62,7 +62,7 @@
           class="pdf-download-link doc-link project-link"
           data-vars-document="{{publications.askTheCrowd.document}}"><svg src="pdf-icon.svg" class="pdf-icon"></svg>{{publications.askTheCrowd.title}}</a>
       </h4>
-      <article class="m0 p0">{{publications.askTheCrowd.description}}</article>
+      <article class="m0 p0">{{{publications.askTheCrowd.description}}}</article>
     </li>
     <li class="item">
       <script type="application/ld+json" src="{{publications.implicitAuth.schema}}"></script>
@@ -75,7 +75,7 @@
           data-vars-document="{{publications.implicitAuth.document}}"
           class="pdf-download-link doc-link project-link"><svg class="pdf-icon" src="pdf-icon.svg"></svg>{{publications.implicitAuth.title}}</a>
       </h4>
-      <article class="m0 p0">{{publications.implicitAuth.description}}</article>
+      <article class="m0 p0">{{{publications.implicitAuth.description}}}</article>
     </li>
   </ol>
   <h2 class="m2010">{{talks.heading}}</h2>
@@ -85,7 +85,7 @@
         <time class="year" datetime="{{talks.analytics.date.iso}}">{{talks.analytics.date.text}}</time>
         <span class="project-link">{{talks.analytics.title}}</span>
       </h4>
-      <article class="m0 p0">{{talks.analytics.description}}</article>
+      <article class="m0 p0">{{{talks.analytics.description}}}</article>
     </li>
     <li class="item">
       <h4 class="m-column-d-row">
@@ -104,14 +104,14 @@
           data-vars-document="{{talks.bash.document}}"
           class="doc-link project-link">{{{talks.bash.title}}}</a>
         </h4>
-        <article class="m0 p0">{{talks.bash.description}}</article>
+        <article class="m0 p0">{{{talks.bash.description}}}</article>
     </li>
     <li class="item">
       <h4 class="m-column-d-row">
         <time class="year" datetime="{{talks.webcomponents.date.iso}}">{{talks.webcomponents.date.text}}</time>
         <span class="project-link">{{talks.webcomponents.title}}</span>
       </h4>
-      <article class="m0 p0">{{talks.webcomponents.description}}</article>
+      <article class="m0 p0">{{{talks.webcomponents.description}}}</article>
     </li>
   </ol>
 </section>
