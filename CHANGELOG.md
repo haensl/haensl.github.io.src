@@ -1,3 +1,6 @@
+### 3.0.15
+* [#280: Fix page title.](https://github.com/haensl/haensl.github.io.src/issues/280)
+
 ### 3.0.14
 * [#280: Fix page title.](https://github.com/haensl/haensl.github.io.src/issues/280)
 * Update dependencies.
