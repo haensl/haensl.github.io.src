@@ -1,3 +1,7 @@
+### 3.0.14
+* [#280: Fix page title.](https://github.com/haensl/haensl.github.io.src/issues/280)
+* Update dependencies.
+
 ### 3.0.13
 * [#277: Fix german HTML entities.](https://github.com/haensl/haensl.github.io.src/issues/277)
 

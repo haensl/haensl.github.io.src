@@ -2,6 +2,7 @@
   "greeting": "Arbeite mit mir",
   "description": "Arbeite mit mir. Software Entwicklung. Architektur. Programmierung. Coaching.",
   "name": "Services",
+  "nameUnescaped": "Services",
   "content": "Wenn Du auf der Suche nach jemandem bist, der Deine Idee umzusetzt, dann hast Du den Richtigen gefunden! ",
   "services": {
     "intro": "Egal ob Web-Anwendung, mobiler Native Client oder IoT System, ich helfe Dir...",

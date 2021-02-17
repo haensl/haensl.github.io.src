@@ -2,6 +2,7 @@
   "greeting": "Privacy Policy",
   "description": "Privacy Policy.",
   "name": "Privacy Policy",
+  "nameUnescaped": "Privacy Policy",
   "sections": [
     {
       "paragraphs": [

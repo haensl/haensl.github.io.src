@@ -2,6 +2,7 @@
   "greeting": "Datenschutzerkl&auml;rung",
   "description": "Datenschutz",
   "name": "Datenschutz",
+  "nameUnescaped": "Datenschutz",
   "sections": [
     {
       "heading": "Datenschutz",

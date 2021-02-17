@@ -1,5 +1,6 @@
 {
   "name": "CV",
+  "nameUnescaped": "CV",
   "description": "HP Dietz Curriculum Vitae.",
   "pdf": {
     "href": "/assets/docs/cv-hpdietz_de.pdf",
