@@ -2,6 +2,7 @@
   "greeting": "Work with me",
   "description": "Work with me. Software Development. Architecture. Coding. Coaching.",
   "name": "Servcies",
+  "nameUnescaped": "Services",
   "content": "If you are looking for someone to realize your idea, you have found the right guy!",
   "services": {
     "intro": "Regardless of Web-App, native mobile client or IoT system, I help you...",

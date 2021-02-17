@@ -2,6 +2,7 @@
   "greeting": "Software",
   "description": "Software projects HP Dietz works on.",
   "name": "Software",
+  "nameUnescaped": "Software",
   "intro": "This is a compilation of open and closed source software projects I contribute to.",
   "items": [
     {

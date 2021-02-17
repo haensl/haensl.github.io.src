@@ -1,6 +1,7 @@
 {
   "description": "Resources provided by HP Dietz. Coaching. Publications. Talks.",
   "name": "Resources",
+  "nameUnescaped": "Resources",
   "teaching": {
     "heading": "Coaching",
     "items": [
