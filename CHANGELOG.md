@@ -1,3 +1,6 @@
+### 3.0.13
+* [#277: Fix german HTML entities.](https://github.com/haensl/haensl.github.io.src/issues/277)
+
 ### 3.0.12
 * [#277: Fix german HTML entities.](https://github.com/haensl/haensl.github.io.src/issues/277)
 * Update dependencies.

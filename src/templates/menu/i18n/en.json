@@ -3,13 +3,13 @@
     {
       "id": "about",
       "name": "about",
-      "title": "About HP.",
+      "title": "About HP Dietz. Software Architect. Coder. Coach. UX Guy.",
       "href": "/"
     },
     {
       "id": "services",
       "name": "services",
-      "title": "Work with HP.",
+      "title": "Work with HP Dietz. Software Development. Architecture. Coding. Coaching.",
       "href": "/services"
     },
     {
@@ -21,7 +21,7 @@
     {
       "id": "resources",
       "name": "resources",
-      "title": "Resources provided by HP.",
+      "title": "Resources provided by HP. Coaching. Publications. Talks.",
       "href": "/resources"
     },
     {
