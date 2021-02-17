@@ -2,6 +2,7 @@
   "greeting": "Servus &amp; willkommen auf meiner Seite!",
   "description": "Über HP Dietz. Software Architekt. Coder. Coach. UX Guy.",
   "name": "&Uuml;ber",
+  "nameUnescaped": "Über",
   "lines": [
     "Ich bin Hans-Peter Dietz.",
     "Ich bin Software Architekt.",

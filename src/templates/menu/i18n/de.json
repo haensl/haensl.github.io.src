@@ -3,25 +3,25 @@
     {
       "id": "about",
       "name": "&uuml;ber",
-      "title": "&Uuml; HP.",
+      "title": "Über HP Dietz. Software Architekt. Coder. Coach. UX Guy.",
       "href": "/"
     },
     {
       "id": "services",
       "name": "services",
-      "title": "Arbeite mit HP.",
+      "title": "Arbeite mit HP Dietz. Software Entwicklung. Architektur. Programmierung. Coaching.",
       "href": "/services"
     },
     {
       "id": "software",
       "name": "software",
-      "title": "HP's Software Projekte.",
+      "title": "Software Projekte an denen HP Dietz arbeitet.",
       "href": "/software"
     },
     {
       "id": "resources",
       "name": "resourcen",
-      "title": "Resourcen die HP bereitstellt.",
+      "title": "Resourcen die von HP Dietz bereitgestellt werden. Coaching. Publikationen. Talks.",
       "href": "/resources"
     },
     {
