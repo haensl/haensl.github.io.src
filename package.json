@@ -1,6 +1,6 @@
 {
   "name": "haensl.github.io",
-  "version": "3.0.15",
+  "version": "3.0.16",
   "description": "The github.io page of HP Dietz.",
   "domains": [
     {
@@ -81,7 +81,7 @@
   },
   "dependencies": {
     "@haensl/log": "^1.2.2",
-    "http-graceful-shutdown": "^2.3.2",
+    "http-graceful-shutdown": "^3.0.1",
     "koa": "^2.13.1",
     "koa-compress": "^5.0.1",
     "koa-conditional-get": "^3.0.0",

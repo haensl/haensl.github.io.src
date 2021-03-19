@@ -1063,7 +1063,7 @@ a > .icon-small:hover {
   }
 
   .item > p {
-    max-width: auto;
+    max-width: initial;
   }
 
   #about .typewriter {
