@@ -1,3 +1,7 @@
+### 3.0.16
+* [#265: Fix hpdietz.de Google Analytics configuration.](https://github.com/haensl/haensl.github.io.src/issues/265)
+* Update dependencies.
+
 ### 3.0.15
 * [#280: Fix page title.](https://github.com/haensl/haensl.github.io.src/issues/280)
 

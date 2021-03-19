@@ -312,12 +312,13 @@ gulp.task('html',
             .pipe($.replace(DIRECTIVE_CSS_INCLUDE, (match) => `<style amp-custom>${ pfs.readFileSync(path.join(DIR_DIST, 'style.tmp.css'))}</style>`))
             .pipe($.replace(DIRECTIVE_INCLUCE_VERSION, (match) => `<meta name="version" content="${VERSION}" >`))
             .pipe($.replace(DIRECTIVE_INCLUDE_REVISED, (match => `<meta name="revised" content="${ DATE_NOW_ISO }"><meta name="date" content="${ DATE_NOW_ISO }">`)))
-            .pipe($.embedJson({
-              root: path.join(DIR_SRC_ASSETS, 'json')
-            }))
             .pipe($.embedSvg({
               root: path.join(__dirname, 'src/artwork'),
-              createSpritesheet: true
+              createSpritesheet: true,
+              xmlMode: false
+            }))
+            .pipe($.embedJson({
+              root: path.join(DIR_SRC_ASSETS, 'json')
             }))
             .pipe($.htmlmin(OPTS_HTMLMIN))
             .pipe(gulp.dest(`${DIR_DIST}/${domain.domain}`))
