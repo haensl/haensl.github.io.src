@@ -1,3 +1,7 @@
+### 3.0.17
+* [#284: Fix HTML entities on CV page.](https://github.com/haensl/haensl.github.io.src/issues/284)
+* Update dependencies.
+
 ### 3.0.16
 * [#265: Fix hpdietz.de Google Analytics configuration.](https://github.com/haensl/haensl.github.io.src/issues/265)
 * Update dependencies.
