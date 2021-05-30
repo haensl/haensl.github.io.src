@@ -79,15 +79,15 @@
         "text": "2020 - PRSNT"
       },
       "href": "https://github.com/haensl/hooks",
-      "hint": "Besuche @haensl/hooks auf Github",
-      "project": "@haensl/hooks",
-      "title": "hooks",
+      "hint": "Besuche @haensl/react-hooks auf Github",
+      "project": "@haensl/react-hooks",
+      "title": "react-hooks",
       "description": "Ausgew&auml;hlte React Hooks.",
       "links": [
         {
           "schema": "hooks.src.schema.json",
           "href": "https://github.com/haensl/hooks",
-          "hint": "Besuche @haensl/hooks auf Github.",
+          "hint": "Besuche @haensl/react-hooks auf Github.",
           "project": "@haensl/hooks",
           "svg": {
             "src": "github-icon.svg",
@@ -95,8 +95,8 @@
           }
         },
         {
-          "href": "https://www.npmjs.com/package/@haensl/hooks",
-          "hint": "Besuche @haensl/hooks auf npm.",
+          "href": "https://www.npmjs.com/package/@haensl/react-hooks",
+          "hint": "Besuche @haensl/react-hooks auf npm.",
           "project": "@haensl/hooks",
           "svg": {
             "src": "npm-icon.svg",
@@ -293,7 +293,7 @@
           }
         },
         {
-          "href": "https://www.npmjs.com/package/assign-reducers",
+          "href": "https://www.npmjs.com/package/@haensl/assign-reducers",
           "hint": "Besuche assign-reducers auf npm.",
           "project": "assign-reducers",
           "svg": {

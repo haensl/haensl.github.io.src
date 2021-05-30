@@ -1,3 +1,7 @@
+### 3.0.18
+* [#287: Update project links.](https://github.com/haensl/haensl.github.io.src/issues/287)
+* Update dependencies.
+
 ### 3.0.17
 * [#284: Fix HTML entities on CV page.](https://github.com/haensl/haensl.github.io.src/issues/284)
 * Update dependencies.
