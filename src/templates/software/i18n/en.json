@@ -81,13 +81,13 @@
       "href": "https://github.com/haensl/hooks",
       "hint": "Visit @haensl/hooks on Github",
       "project": "@haensl/hooks",
-      "title": "hooks",
+      "title": "react-hooks",
       "description": "Assorted React hooks.",
       "links": [
         {
           "schema": "hooks.src.schema.json",
           "href": "https://github.com/haensl/hooks",
-          "hint": "Visit @haensl/hooks on Github.",
+          "hint": "Visit @haensl/react-hooks on Github.",
           "project": "@haensl/hooks",
           "svg": {
             "src": "github-icon.svg",
@@ -95,8 +95,8 @@
           }
         },
         {
-          "href": "https://www.npmjs.com/package/@haensl/hooks",
-          "hint": "Visit @haensl/hooks on npm.",
+          "href": "https://www.npmjs.com/package/@haensl/react-hooks",
+          "hint": "Visit @haensl/react-hooks on npm.",
           "project": "@haensl/hooks",
           "svg": {
             "src": "npm-icon.svg",
@@ -293,7 +293,7 @@
           }
         },
         {
-          "href": "https://www.npmjs.com/package/assign-reducers",
+          "href": "https://www.npmjs.com/package/@haensl/assign-reducers",
           "hint": "Visit assign-reducers on npm.",
           "project": "assign-reducers",
           "svg": {
