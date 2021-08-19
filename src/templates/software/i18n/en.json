@@ -426,6 +426,39 @@
       ]
     },
     {
+      "schema": "json-parser.schema.json",
+      "date": {
+        "iso": "2018-04",
+        "text": "2018 - PRSNT"
+      },
+      "href": "https://github.com/haensl/json-parser",
+      "hint": "Visit json-parser on Github.",
+      "project": "json-parser",
+      "title": "json-parser",
+      "description": "Minimal JSON file parser for node.js.",
+      "links": [
+        {
+          "schema": "json-parser.src.schema.json",
+          "href": "https://github.com/haensl/json-parser",
+          "hint": "Visit json-parser on Github.",
+          "project": "json-parser",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        },
+        {
+          "href": "https://www.npmjs.com/package/@haensl/json-parser",
+          "hint": "Visit json-parser on npm.",
+          "project": "json-parser",
+          "svg": {
+            "src": "npm-icon.svg",
+            "class": "icon-small npm-icon"
+          }
+        }
+      ]
+    },
+    {
       "schema": "pfs.schema.json",
       "date": {
         "iso": "2018-03",

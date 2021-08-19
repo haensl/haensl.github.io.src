@@ -1,3 +1,6 @@
+### 3.1.0
+* [#237: Add json-parser to projects.](https://github.com/haensl/haensl.github.io.src/issues/237)
+
 ### 3.0.19
 * [#289: Update dependencies.](https://github.com/haensl/haensl.github.io.src/issues/289)
 * Update react-component-console NPM link.

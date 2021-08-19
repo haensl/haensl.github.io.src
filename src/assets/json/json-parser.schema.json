@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/json-parser",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Parser",
+  "applicationSuite": "Node.js",
+  "downloadUrl": "https://github.com/haensl/json-parser/releases",
+  "releaseNotes": "https://github.com/haensl/json-parser/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://hpdietz.com"
+  },
+  "copyrightHolder": {
+    "@id": "https://hpdietz.com"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/json-parser/issues",
+  "keywords": "json, parser, async, asynchronous",
+  "license": "https://github.com/haensl/json-parser/blob/master/LICENSE",
+  "description": "Minimal asynchronous JSON file parser for Node.js",
+  "name": "json-parsers",
+  "url": "https://github.com/haensl/json-parser",
+  "sameAs": "https://www.npmjs.com/package/@haensl/json-parser"
+}
