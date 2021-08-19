@@ -1,3 +1,6 @@
+### 3.2.0
+* [#240: Add moonlight to projects.](https://github.com/haensl/haensl.github.io.src/issues/240)
+
 ### 3.1.0
 * [#237: Add json-parser to projects.](https://github.com/haensl/haensl.github.io.src/issues/237)
 

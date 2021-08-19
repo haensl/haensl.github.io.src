@@ -1,0 +1,29 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://github.com/haensl/moonlight",
+  "applicationCategory": "Utility",
+  "applicationSubCategory": "Simulation",
+  "applicationSuite": "Arduino",
+  "downloadUrl": "https://github.com/haensl/moonlight/releases",
+  "releaseNotes": "https://github.com/haensl/moonlight/blob/master/CHANGELOG.md",
+  "operatingSystem": [
+    "Windows",
+    "Linux",
+    "OSX"
+  ],
+  "author": {
+    "@id": "https://hpdietz.com"
+  },
+  "copyrightHolder": {
+    "@id": "https://hpdietz.com"
+  },
+  "copyrightYear": 2018,
+  "datePublished": 2018,
+  "discussionUrl": "https://github.com/haensl/moonlight/issues",
+  "keywords": "arduino, pwm, dimmer, moon",
+  "license": "https://github.com/haensl/moonlight/blob/master/LICENSE",
+  "description": "Arduino PWM dimmer simulating moonlight for my aquascape.",
+  "name": "moonlight",
+  "url": "https://github.com/haensl/moonlight"
+}

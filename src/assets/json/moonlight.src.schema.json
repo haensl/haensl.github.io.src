@@ -1,0 +1,11 @@
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "https://github.com/haensl/moonlight",
+  "codeSampleType": "full",
+  "programmingLanguage": "C",
+  "runtimePlatform": "Arduino",
+  "targetProduct": {
+    "@id": "https://github.com/haensl/moonlight"
+  }
+}
