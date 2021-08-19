@@ -106,6 +106,30 @@
       ]
     },
     {
+      "schema": "moonlight.schema.json",
+      "date": {
+        "iso": "2020-04",
+        "text": "2020 - PRSNT"
+      },
+      "href": "https://github.com/haensl/moonlight",
+      "hint": "Visit moonlight on Github",
+      "project": "moonlight",
+      "title": "moonlight",
+      "description": "Arduino PWM dimmer simulating moonrise and -set for my aquascape.",
+      "links": [
+        {
+          "schema": "moonlight.src.schema.json",
+          "href": "https://github.com/haensl/moonlight",
+          "hint": "Visit moonlight on Github.",
+          "project": "moonlight",
+          "svg": {
+            "src": "github-icon.svg",
+            "class": "github-icon icon-small icon-dark"
+          }
+        }
+      ]
+    },
+    {
       "schema": "google-optimize-service.schema.json",
       "date": {
         "iso": "2020-02",
