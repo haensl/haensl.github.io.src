@@ -26,5 +26,5 @@
   "description": "Console emulator react component. Emulates realistic typing via dynamic char-typing delays.",
   "name": "react-component-console",
   "url": "https://github.com/haensl/react-component-console",
-  "sameAs": "https://www.npmjs.com/package/react-component-console"
+  "sameAs": "https://www.npmjs.com/package/@haensl/react-component-console"
 }
