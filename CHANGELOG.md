@@ -1,3 +1,7 @@
+### 3.0.19
+* [#289: Update dependencies.](https://github.com/haensl/haensl.github.io.src/issues/289)
+* Update react-component-console NPM link.
+
 ### 3.0.18
 * [#287: Update project links.](https://github.com/haensl/haensl.github.io.src/issues/287)
 * Update dependencies.
