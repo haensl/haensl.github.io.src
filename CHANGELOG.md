@@ -1,3 +1,6 @@
+### 3.2.1
+* [#293: Update dependencies.](https://github.com/haensl/haensl.github.io.src/issues/293)
+
 ### 3.2.0
 * [#240: Add moonlight to projects.](https://github.com/haensl/haensl.github.io.src/issues/240)
 
