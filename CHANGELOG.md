@@ -1,3 +1,6 @@
+### 3.2.4
+* [#300: Update dependencies.](https://github.com/haensl/haensl.github.io.src/issues/300)
+
 ### 3.2.3
 * [#297: Update dependencies.](https://github.com/haensl/haensl.github.io.src/issues/297)
 
